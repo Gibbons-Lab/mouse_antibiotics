@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# alignment related
+raw
+merged
+filtered
+alignments
+ref
