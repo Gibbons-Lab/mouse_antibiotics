@@ -3,6 +3,6 @@
 library(mbtools)
 
 reads <- find_illumina("filtered")
-alns <- align_bowtie2(reads, "ref/resistance_genes")
+alns <- align_bowtie2(reads, "ref/resistance_genes", threads=30)
 counts <- count_hits("alignments")
 fwrite(counts, "counts.csv")
