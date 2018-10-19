@@ -1,0 +1,770 @@
+seqnames,description,sample,counts,reads
+NG_048058.1,"Serratia marcescens S-95 rmtB gene for 16S rRNA (guanine(1405)-N(7))-methyltransferase RmtB1, complete CDS",01-13-A6D25,3,27588820
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",01-13-A6D25,2,27588820
+NG_050155.1,"Proteus mirabilis 217C5 blaTEM gene for class A extended-spectrum beta-lactamase TEM-11, complete CDS",01-13-A6D25,1,27588820
+NG_050207.1,"Escherichia coli 3343 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-163, complete CDS",01-13-A6D25,1,27588820
+NG_050175.1,"Salmonella enterica subsp. enterica serovar Typhimurium blaTEM gene for class A extended-spectrum beta-lactamase TEM-131, complete CDS",01-13-A6D25,1,27588820
+NG_048178.1,"Chlamydia suis R27 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",01-13-A6D25,4,27588820
+NG_050247.1,"Escherichia coli 866330 blaTEM gene for class A beta-lactamase TEM-214, complete CDS",01-13-A6D25,1,27588820
+NG_050218.1,"Escherichia sp. Sflu5 pAK51 blaTEM gene for class A beta-lactamase TEM-181, complete CDS",01-13-A6D25,2,27588820
+NG_050276.1,"Escherichia coli F4-Zhengzhou unnamed blaTEM gene for class A broad-spectrum beta-lactamase TEM-57, complete CDS",01-13-A6D25,2,27588820
+NG_050237.1,"Pseudomonas aeruginosa 12 blaTEM gene for class A beta-lactamase TEM-205, complete CDS",01-13-A6D25,2,27588820
+NG_050232.1,"Klebsiella pneumoniae FSP 286/05 blaTEM gene for class A extended-spectrum beta-lactamase TEM-197, complete CDS",01-13-A6D25,6,27588820
+NG_047440.1,"Enterobacter cloacae pEC-IMP aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",01-13-A6D25,1,27588820
+NG_050206.1,"Acinetobacter haemolyticus pUPI191 blaTEM gene for class A beta-lactamase TEM-162, complete CDS",01-13-A6D25,7,27588820
+NG_050179.1,"Salmonella enterica subsp. enterica serovar Typhimurium pFPTB1 blaTEM gene for class A broad-spectrum beta-lactamase TEM-135, complete CDS",01-13-A6D25,2,27588820
+NG_048174.1,"Francisella tularensis LVS pOM1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",01-13-A6D25,1,27588820
+NG_050282.1,"Escherichia coli SM91 blaTEM gene for class A beta-lactamase TEM-70, complete CDS",01-13-A6D25,1,27588820
+NG_050279.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-63, complete CDS",01-13-A6D25,1,27588820
+NG_050299.1,"Escherichia coli 7604 pMG204b blaTEM gene for class A broad-spectrum beta-lactamase TEM-90, complete CDS",01-13-A6D25,2,27588820
+NG_050157.1,"Escherichia coli Ur7883/2001 blaTEM gene for class A beta-lactamase TEM-111, complete CDS",01-13-A6D25,1,27588820
+NG_050201.1,"Enterobacter cloacae pEC005 blaTEM gene for class A extended-spectrum beta-lactamase TEM-157, complete CDS",01-13-A6D25,2,27588820
+NG_050266.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-40, complete CDS",01-13-A6D25,1,27588820
+NG_050195.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-151, complete CDS",01-13-A6D25,1,27588820
+NG_056416.1,"Acinetobacter haemolyticus AN3 blaTEM gene for class A beta-lactamase TEM-229, complete CDS",01-13-A6D25,5,27588820
+NG_050291.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-81, complete CDS",01-13-A6D25,2,27588820
+NG_050165.1,"Escherichia coli KB-1 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-121, complete CDS",01-13-A6D25,2,27588820
+NG_050278.1,"Providencia stuartii VR-1 blaTEM gene for class A extended-spectrum beta-lactamase TEM-60, complete CDS",01-13-A6D25,1,27588820
+NG_050166.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-122, complete CDS",01-13-A6D25,2,27588820
+NG_050244.1,"Proteus mirabilis IHMA 845676 blaTEM gene for class A extended-spectrum beta-lactamase TEM-211, complete CDS",01-13-A6D25,1,27588820
+NG_050283.1,"Klebsiella pneumoniae 3635 pMG259 blaTEM gene for class A extended-spectrum beta-lactamase TEM-71, complete CDS",01-13-A6D25,1,27588820
+NG_047828.1,"Bacteroides thetaiotaomicron 7853 erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",01-13-A6D25,1,27588820
+NG_050277.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-6, complete CDS",01-13-A6D25,3,27588820
+NG_050252.1,"Klebsiella pneumoniae SLK52 blaTEM gene for class A extended-spectrum beta-lactamase TEM-22, complete CDS",01-13-A6D25,1,27588820
+NG_050238.1,"Escherichia coli S2.2-EK pEC-S2.2 blaTEM gene for class A broad-spectrum beta-lactamase TEM-206, complete CDS",01-13-A6D25,2,27588820
+NG_048177.1,"Aeromonas salmonicida pRAS3.2 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",01-13-A6D25,5,27588820
+NG_050308.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-99, complete CDS",01-13-A6D25,1,27588820
+NG_050194.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-150, complete CDS",01-13-A6D25,2,27588820
+NG_050260.1,"Escherichia coli pINSRA99 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-30, complete CDS",01-13-A6D25,1,27588820
+NG_050272.1,"Klebsiella pneumoniae blaTEM gene for class A extended-spectrum beta-lactamase TEM-52, complete CDS",01-13-A6D25,1,27588820
+NG_050162.1,"Staphylococcus aureus pJ3356::POX7 blaTEM gene for class A broad-spectrum beta-lactamase TEM-116, complete CDS",01-13-A6D25,6,27588820
+NG_048175.1,"Salmonella enterica subsp. enterica serovar Typhimurium R46 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",01-13-A6D25,3,27588820
+NG_050182.1,"Salmonella enterica pCN2310 blaTEM gene for class A extended-spectrum beta-lactamase TEM-138, complete CDS",01-13-A6D25,2,27588820
+NG_050236.1,"Escherichia coli WDR-13 unnamed blaTEM gene for class A beta-lactamase TEM-201, complete CDS",01-13-A6D25,1,27588820
+NG_051939.1,"Klebsiella pneumoniae subsp. pneumoniae ST101:945169659 blaTEM gene for class A beta-lactamase TEM-213, complete CDS",01-13-A6D25,1,27588820
+NG_050177.1,"Klebsiella pneumoniae blaTEM gene for class A extended-spectrum beta-lactamase TEM-133, complete CDS",01-13-A6D25,1,27588820
+NG_050220.1,"Klebsiella pneumoniae HS-153 blaTEM gene for class A broad-spectrum beta-lactamase TEM-183, complete CDS",01-13-A6D25,4,27588820
+NG_050294.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-84, complete CDS",01-13-A6D25,1,27588820
+NG_050224.1,"Proteus mirabilis 7001324 unnamed blaTEM gene for class A extended-spectrum beta-lactamase TEM-187, complete CDS",01-13-A6D25,1,27588820
+NG_048179.1,"Escherichia coli invasion plasmid pIS2 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",01-13-A6D25,2,27588820
+NG_050290.1,"Enterobacter cloacae blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-80, complete CDS",01-13-A6D25,2,27588820
+NG_050214.1,"Escherichia coli pAm08CQ6130 blaTEM gene for class A beta-lactamase TEM-171, complete CDS",01-13-A6D25,5,27588820
+NG_050253.1,"Neisseria gonorrhoeae IM4519 blaTEM gene for class A beta-lactamase TEM-220, complete CDS",01-13-A6D25,1,27588820
+NG_050292.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-82, complete CDS",01-13-A6D25,1,27588820
+NG_050200.1,"Proteus mirabilis blaTEM gene for class A beta-lactamase TEM-156, complete CDS",01-13-A6D25,2,27588820
+NG_050231.1,"Acinetobacter baumannii 195 blaTEM gene for class A beta-lactamase TEM-195, complete CDS",01-13-A6D25,1,27588820
+NG_056418.1,"Escherichia coli ESY001 blaTEM gene for class A beta-lactamase TEM-231, complete CDS",01-13-A6D25,1,27588820
+NG_047430.1,"Escherichia coli aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",01-13-A6D25,3,27588820
+NG_050264.1,"Escherichia coli 13S00929-3 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-35, complete CDS",01-13-A6D25,1,27588820
+NG_050146.1,"Morganella morganii FFLM15 blaTEM gene for class A extended-spectrum beta-lactamase TEM-10, complete CDS",01-13-A6D25,1,27588820
+NG_048254.1,"Streptococcus mutans tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",01-13-A6D25,1,27588820
+NG_047829.1,"Bacteroides ovatus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",01-13-A6D25,1,27588820
+NG_050203.1,"Proteus mirabilis blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-159, complete CDS",01-13-A6D25,1,27588820
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",01-13-A6D25,1,27588820
+NG_050270.1,"Klebsiella pneumoniae CLSiS L-491 blaTEM gene for class A extended-spectrum beta-lactamase TEM-48, complete CDS",01-13-A6D25,1,27588820
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",01-13-A6D25,1,27588820
+NG_047432.1,"Plasmid pFA6 aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",01-13-A6D25,1,27588820
+NG_050265.1,"Klebsiella pneumoniae H67 pRYC11 blaTEM gene for class A extended-spectrum beta-lactamase TEM-4, complete CDS",01-13-A6D25,1,27588820
+NG_047435.1,"Salmonella enterica subsp. enterica serovar Typhimurium NTP16 aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",01-13-A6D25,1,27588820
+NG_048265.1,"Streptococcus pneumoniae tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",01-13-A6D25,1,27588820
+NG_057609.1,"Pseudomonas aeruginosa 1722300 blaTEM gene for class A beta-lactamase TEM-234, complete CDS",01-13-A6D25,1,27588820
+NG_050243.1,"Escherichia coli pH1519-88 blaTEM gene for class A beta-lactamase TEM-210, complete CDS",01-13-A6D25,1,27588820
+NG_050226.1,"Escherichia coli bMX-907669 blaTEM gene for class A beta-lactamase TEM-189, complete CDS",01-13-A6D25,1,27588820
+NG_050186.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-143, complete CDS",01-13-A6D25,1,27588820
+NG_050233.1,"Klebsiella pneumoniae KUN5033 blaTEM gene for class A beta-lactamase TEM-198, complete CDS",01-13-A6D25,1,27588820
+NG_050153.1,"Salmonella enterica subsp. enterica serovar Typhimurium DT193 blaTEM gene for class A beta-lactamase TEM-108, complete CDS",01-13-A6D25,1,27588820
+NG_050158.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-112, complete CDS",01-13-A6D25,1,27588820
+NG_050219.1,"Haemophilus parainfluenzae 201025861 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-182, complete CDS",01-13-A6D25,1,27588820
+NG_047977.1,"Exiguobacterium sp. S3-2 pMC1 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",01-13-A6D25,1,27588820
+NG_050240.1,"Escherichia coli 3805 blaTEM gene for class A beta-lactamase TEM-208, complete CDS",01-13-A6D25,1,27588820
+NG_050251.1,"Escherichia coli EV25 blaTEM gene for class A beta-lactamase TEM-219, complete CDS",01-13-A6D25,1,27588820
+NG_050164.1,"Klebsiella oxytoca blaTEM gene for class A extended-spectrum beta-lactamase TEM-120, complete CDS",01-13-A6D25,1,27588820
+NG_061611.1,"Escherichia coli CNR2389 unnamed blaTEM gene for class A extended-spectrum beta-lactamase TEM-236, complete CDS",01-13-A6D25,1,27588820
+NG_050256.1,"Enterobacter sp. GN02186 blaTEM gene for class A extended-spectrum beta-lactamase TEM-26, complete CDS",01-13-A6D25,1,27588820
+NG_050258.1,"Pseudomonas aeruginosa pPA3-104 blaTEM gene for class A extended-spectrum beta-lactamase TEM-29, complete CDS",01-13-A6D25,1,27588820
+NG_050296.1,"Klebsiella pneumoniae CLSiS 2946/98 pbla-TEM-86 blaTEM gene for class A extended-spectrum beta-lactamase TEM-86, complete CDS",01-13-A6D25,1,27588820
+NG_050229.1,"Acinetobacter baumannii 197 blaTEM gene for class A beta-lactamase TEM-193, complete CDS",01-13-A6D25,1,27588820
+NG_050211.1,"Escherichia coli N08-1503 blaTEM gene for class A extended-spectrum beta-lactamase TEM-168, complete CDS",01-13-A6D25,1,27588820
+NG_050156.1,"Klebsiella pneumoniae Va32447 blaTEM gene for class A broad-spectrum beta-lactamase TEM-110, complete CDS",01-13-A6D25,1,27588820
+NG_050198.1,"Escherichia coli H258 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-154, complete CDS",01-13-A6D25,1,27588820
+NG_050305.1,"Escherichia coli H28 pOZ188 blaTEM gene for class A beta-lactamase TEM-96, complete CDS",01-13-A6D25,1,27588820
+NG_050170.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-126, complete CDS",01-13-A6D25,1,27588820
+NG_050269.1,"Klebsiella pneumoniae CLSiS 1590/96 blaTEM gene for class A extended-spectrum beta-lactamase TEM-47, complete CDS",01-13-A6D25,1,27588820
+NG_050241.1,"Klebsiella pneumoniae 49 blaTEM gene for class A beta-lactamase TEM-209, complete CDS",01-13-A6D25,1,27588820
+NG_050208.1,"Klebsiella pneumoniae pML1708 blaTEM gene for class A extended-spectrum beta-lactamase TEM-164, complete CDS",01-13-A6D25,1,27588820
+NG_050250.1,"Enterobacter cloacae ST137 blaTEM gene for class A beta-lactamase TEM-217, complete CDS",01-13-A6D25,1,27588820
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",02-21-A4D20,3,15991405
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",02-21-A4D20,1,15991405
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",02-21-A4D20,1,15991405
+NG_050146.1,"Morganella morganii FFLM15 blaTEM gene for class A extended-spectrum beta-lactamase TEM-10, complete CDS",02-21-A4D20,1,15991405
+NG_050201.1,"Enterobacter cloacae pEC005 blaTEM gene for class A extended-spectrum beta-lactamase TEM-157, complete CDS",02-21-A4D20,4,15991405
+NG_050265.1,"Klebsiella pneumoniae H67 pRYC11 blaTEM gene for class A extended-spectrum beta-lactamase TEM-4, complete CDS",02-21-A4D20,1,15991405
+NG_047829.1,"Bacteroides ovatus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",02-21-A4D20,2,15991405
+NG_048177.1,"Aeromonas salmonicida pRAS3.2 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",02-21-A4D20,2,15991405
+NG_047440.1,"Enterobacter cloacae pEC-IMP aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",02-21-A4D20,1,15991405
+NG_050230.1,"Acinetobacter baumannii 194 blaTEM gene for class A beta-lactamase TEM-194, complete CDS",02-21-A4D20,1,15991405
+NG_050168.1,"Morganella morganii blaTEM gene for class A extended-spectrum beta-lactamase TEM-124, complete CDS",02-21-A4D20,1,15991405
+NG_050214.1,"Escherichia coli pAm08CQ6130 blaTEM gene for class A beta-lactamase TEM-171, complete CDS",02-21-A4D20,2,15991405
+NG_050218.1,"Escherichia sp. Sflu5 pAK51 blaTEM gene for class A beta-lactamase TEM-181, complete CDS",02-21-A4D20,4,15991405
+NG_050195.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-151, complete CDS",02-21-A4D20,1,15991405
+NG_050285.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-76, complete CDS",02-21-A4D20,1,15991405
+NG_050179.1,"Salmonella enterica subsp. enterica serovar Typhimurium pFPTB1 blaTEM gene for class A broad-spectrum beta-lactamase TEM-135, complete CDS",02-21-A4D20,4,15991405
+NG_056416.1,"Acinetobacter haemolyticus AN3 blaTEM gene for class A beta-lactamase TEM-229, complete CDS",02-21-A4D20,3,15991405
+NG_050206.1,"Acinetobacter haemolyticus pUPI191 blaTEM gene for class A beta-lactamase TEM-162, complete CDS",02-21-A4D20,3,15991405
+NG_050255.1,"Klebsiella pneumoniae CF 1104 blaTEM gene for class A extended-spectrum beta-lactamase TEM-24, complete CDS",02-21-A4D20,1,15991405
+NG_048257.1,"Campylobacter jejuni tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",02-21-A4D20,1,15991405
+NG_050198.1,"Escherichia coli H258 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-154, complete CDS",02-21-A4D20,2,15991405
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",02-21-A4D20,1,15991405
+NG_050304.1,"Escherichia coli Co52 blaTEM gene for class A broad-spectrum beta-lactamase TEM-95, complete CDS",02-21-A4D20,2,15991405
+NG_050239.1,"Escherichia coli 5971R blaTEM gene for class A extended-spectrum beta-lactamase TEM-207, complete CDS",02-21-A4D20,1,15991405
+NG_048175.1,"Salmonella enterica subsp. enterica serovar Typhimurium R46 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",02-21-A4D20,1,15991405
+NG_050243.1,"Escherichia coli pH1519-88 blaTEM gene for class A beta-lactamase TEM-210, complete CDS",02-21-A4D20,2,15991405
+NG_050162.1,"Staphylococcus aureus pJ3356::POX7 blaTEM gene for class A broad-spectrum beta-lactamase TEM-116, complete CDS",02-21-A4D20,4,15991405
+NG_050277.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-6, complete CDS",02-21-A4D20,1,15991405
+NG_048125.1,"Streptococcus salivarius FStet12 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",02-21-A4D20,1,15991405
+NG_050184.1,"Enterobacter cloacae EC002 blaTEM gene for class A broad-spectrum beta-lactamase TEM-141, complete CDS",02-21-A4D20,1,15991405
+NG_050232.1,"Klebsiella pneumoniae FSP 286/05 blaTEM gene for class A extended-spectrum beta-lactamase TEM-197, complete CDS",02-21-A4D20,1,15991405
+NG_056168.1,"Escherichia coli ECO0584 blaTEM gene for class A extended-spectrum beta-lactamase TEM-9, complete CDS",02-21-A4D20,1,15991405
+NG_050291.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-81, complete CDS",02-21-A4D20,1,15991405
+NG_047436.1,"Proteus vulgaris UR-75 Rts1 aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",02-21-A4D20,1,15991405
+NG_048058.1,"Serratia marcescens S-95 rmtB gene for 16S rRNA (guanine(1405)-N(7))-methyltransferase RmtB1, complete CDS",02-21-A4D20,1,15991405
+NG_050299.1,"Escherichia coli 7604 pMG204b blaTEM gene for class A broad-spectrum beta-lactamase TEM-90, complete CDS",02-21-A4D20,1,15991405
+NG_050260.1,"Escherichia coli pINSRA99 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-30, complete CDS",02-21-A4D20,1,15991405
+NG_048181.1,"Escherichia coli SE11 pSE11-1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",02-21-A4D20,1,15991405
+NG_050153.1,"Salmonella enterica subsp. enterica serovar Typhimurium DT193 blaTEM gene for class A beta-lactamase TEM-108, complete CDS",02-21-A4D20,1,15991405
+NG_050262.1,"Escherichia coli B24 pEC_B24 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-33, complete CDS",02-21-A4D20,1,15991405
+NG_047439.1,"Avibacterium paragallinarum A14 pYMH5 aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",02-21-A4D20,1,15991405
+NG_050276.1,"Escherichia coli F4-Zhengzhou unnamed blaTEM gene for class A broad-spectrum beta-lactamase TEM-57, complete CDS",02-21-A4D20,1,15991405
+NG_048180.1,"uncultured bacterium tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",02-21-A4D20,1,15991405
+NG_050165.1,"Escherichia coli KB-1 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-121, complete CDS",02-21-A4D20,1,15991405
+NG_050186.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-143, complete CDS",02-21-A4D20,1,15991405
+NG_050302.1,"Escherichia coli CLSiS 3445/98 pblaTEM-93 blaTEM gene for class A extended-spectrum beta-lactamase TEM-93, complete CDS",02-21-A4D20,1,15991405
+NG_061611.1,"Escherichia coli CNR2389 unnamed blaTEM gene for class A extended-spectrum beta-lactamase TEM-236, complete CDS",02-21-A4D20,1,15991405
+NG_048178.1,"Chlamydia suis R27 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",02-21-A4D20,1,15991405
+NG_050275.1,"Escherichia coli MDD39 blaTEM gene for class A broad-spectrum beta-lactamase TEM-55, complete CDS",02-21-A4D20,1,15991405
+NG_054684.1,"Escherichia coli 1447376 blaTEM gene for class A beta-lactamase TEM-226, complete CDS",02-21-A4D20,1,15991405
+NG_050149.1,"Klebsiella pneumoniae blaTEM gene for class A beta-lactamase TEM-104, complete CDS",02-21-A4D20,1,15991405
+NG_050249.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-216, complete CDS",02-21-A4D20,1,15991405
+NG_057609.1,"Pseudomonas aeruginosa 1722300 blaTEM gene for class A beta-lactamase TEM-234, complete CDS",02-21-A4D20,1,15991405
+NG_050158.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-112, complete CDS",02-21-A4D20,1,15991405
+NG_050306.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-97, complete CDS",02-21-A4D20,1,15991405
+NG_050233.1,"Klebsiella pneumoniae KUN5033 blaTEM gene for class A beta-lactamase TEM-198, complete CDS",02-21-A4D20,1,15991405
+NG_047827.1,"Lysinibacillus sphaericus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",02-21-A4D20,1,15991405
+NG_048126.1,"Streptococcus parasanguinis 41.1T tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",02-21-A4D20,1,15991405
+NG_050235.2,"Escherichia coli 2006-01-1248 blaTEM gene for class A extended-spectrum beta-lactamase TEM-20, complete CDS",02-21-A4D20,1,15991405
+NG_047968.1,"Streptococcus agalactiae Hk115 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",02-21-A4D20,1,15991405
+NG_050300.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-91, complete CDS",03-16-C2D25,1,19107748
+NG_050238.1,"Escherichia coli S2.2-EK pEC-S2.2 blaTEM gene for class A broad-spectrum beta-lactamase TEM-206, complete CDS",03-16-C2D25,1,19107748
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",03-16-C2D25,1,19107748
+NG_050170.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-126, complete CDS",03-16-C2D25,1,19107748
+NG_050232.1,"Klebsiella pneumoniae FSP 286/05 blaTEM gene for class A extended-spectrum beta-lactamase TEM-197, complete CDS",03-16-C2D25,1,19107748
+NG_050279.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-63, complete CDS",03-16-C2D25,1,19107748
+NG_048174.1,"Francisella tularensis LVS pOM1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",03-16-C2D25,1,19107748
+NG_050150.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-105, complete CDS",03-16-C2D25,1,19107748
+NG_050206.1,"Acinetobacter haemolyticus pUPI191 blaTEM gene for class A beta-lactamase TEM-162, complete CDS",04-3-C6D25,1,21839662
+NG_047828.1,"Bacteroides thetaiotaomicron 7853 erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",04-3-C6D25,1,21839662
+NG_050241.1,"Klebsiella pneumoniae 49 blaTEM gene for class A beta-lactamase TEM-209, complete CDS",04-3-C6D25,1,21839662
+NG_050207.1,"Escherichia coli 3343 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-163, complete CDS",04-3-C6D25,1,21839662
+NG_049170.1,"Enterobacter cloacae 29181 blaIMI gene for carbapenem-hydrolyzing class A beta-lactamase IMI-8, complete CDS",04-3-C6D25,1,21839662
+NG_050278.1,"Providencia stuartii VR-1 blaTEM gene for class A extended-spectrum beta-lactamase TEM-60, complete CDS",04-3-C6D25,1,21839662
+NG_050223.1,"Escherichia coli RS60 unnamed blaTEM gene for class A broad-spectrum beta-lactamase TEM-186, complete CDS",04-3-C6D25,1,21839662
+NG_047963.1,"Streptococcus pyogenes mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",04-3-C6D25,1,21839662
+NG_050218.1,"Escherichia sp. Sflu5 pAK51 blaTEM gene for class A beta-lactamase TEM-181, complete CDS",04-3-C6D25,1,21839662
+NG_052865.1,"Acinetobacter baumannii 1233161 blaTEM gene for class A beta-lactamase TEM-191, complete CDS",04-3-C6D25,1,21839662
+NG_050299.1,"Escherichia coli 7604 pMG204b blaTEM gene for class A broad-spectrum beta-lactamase TEM-90, complete CDS",04-3-C6D25,1,21839662
+NG_057472.1,"Klebsiella pneumoniae blaTEM gene for class A beta-lactamase TEM-232, complete CDS",04-3-C6D25,1,21839662
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",04-3-C6D25,2,21839662
+NG_047968.1,"Streptococcus agalactiae Hk115 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",04-3-C6D25,1,21839662
+NG_047429.1,"Escherichia coli aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",04-3-C6D25,1,21839662
+NG_050285.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-76, complete CDS",04-3-C6D25,1,21839662
+NG_050280.1,"Proteus mirabilis NEL-1 pANG-1 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-67, complete CDS",04-3-C6D25,1,21839662
+NG_050274.1,"Escherichia coli BM2728 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-54, complete CDS",04-3-C6D25,1,21839662
+NG_056416.1,"Acinetobacter haemolyticus AN3 blaTEM gene for class A beta-lactamase TEM-229, complete CDS",04-3-C6D25,1,21839662
+NG_047829.1,"Bacteroides ovatus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",04-3-C6D25,1,21839662
+NG_050163.1,"Klebsiella oxytoca 0400-1 blaTEM gene for class A extended-spectrum beta-lactamase TEM-12, complete CDS",04-3-C6D25,1,21839662
+NG_047827.1,"Lysinibacillus sphaericus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",04-3-C6D25,1,21839662
+NG_050222.1,"Escherichia coli 0710C blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-185, complete CDS",04-3-C6D25,1,21839662
+NG_047378.1,"Pediococcus acidilactici NCIMB 6990 pEOC01 aadE gene for aminoglycoside 6-adenylyltransferase AadE, complete CDS",05-2-A5D25,6,25645472
+NG_048125.1,"Streptococcus salivarius FStet12 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",05-2-A5D25,1,25645472
+NG_048180.1,"uncultured bacterium tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",05-2-A5D25,5,25645472
+NG_050218.1,"Escherichia sp. Sflu5 pAK51 blaTEM gene for class A beta-lactamase TEM-181, complete CDS",05-2-A5D25,3,25645472
+NG_047966.1,"Gemella haemolysans mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",05-2-A5D25,1,25645472
+NG_050170.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-126, complete CDS",05-2-A5D25,1,25645472
+NG_050182.1,"Salmonella enterica pCN2310 blaTEM gene for class A extended-spectrum beta-lactamase TEM-138, complete CDS",05-2-A5D25,1,25645472
+NG_048293.1,"uncultured bacterium tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",05-2-A5D25,1,25645472
+NG_050201.1,"Enterobacter cloacae pEC005 blaTEM gene for class A extended-spectrum beta-lactamase TEM-157, complete CDS",05-2-A5D25,3,25645472
+NG_048181.1,"Escherichia coli SE11 pSE11-1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",05-2-A5D25,3,25645472
+NG_047438.1,"Proteus mirabilis R772 aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",05-2-A5D25,1,25645472
+NG_047827.1,"Lysinibacillus sphaericus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",05-2-A5D25,1,25645472
+NG_050259.1,"Klebsiella pneumoniae CF104 pCFF04 blaTEM gene for class A extended-spectrum beta-lactamase TEM-3, complete CDS",05-2-A5D25,1,25645472
+NG_047829.1,"Bacteroides ovatus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",05-2-A5D25,1,25645472
+NG_050192.1,"[Enterobacter] aerogenes blaTEM gene for class A extended-spectrum beta-lactamase TEM-149, complete CDS",05-2-A5D25,1,25645472
+NG_050187.1,"Salmonella enterica subsp. enterica serovar Derby str. D1 blaTEM gene for class A extended-spectrum beta-lactamase TEM-144, complete CDS",05-2-A5D25,1,25645472
+NG_048175.1,"Salmonella enterica subsp. enterica serovar Typhimurium R46 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",05-2-A5D25,3,25645472
+NG_050251.1,"Escherichia coli EV25 blaTEM gene for class A beta-lactamase TEM-219, complete CDS",05-2-A5D25,5,25645472
+NG_050291.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-81, complete CDS",05-2-A5D25,1,25645472
+NG_048177.1,"Aeromonas salmonicida pRAS3.2 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",05-2-A5D25,4,25645472
+NG_050299.1,"Escherichia coli 7604 pMG204b blaTEM gene for class A broad-spectrum beta-lactamase TEM-90, complete CDS",05-2-A5D25,1,25645472
+NG_050298.1,"Klebsiella pneumoniae K28 pMG272 blaTEM gene for class A extended-spectrum beta-lactamase TEM-88, complete CDS",05-2-A5D25,1,25645472
+NG_050206.1,"Acinetobacter haemolyticus pUPI191 blaTEM gene for class A beta-lactamase TEM-162, complete CDS",05-2-A5D25,3,25645472
+NG_050258.1,"Pseudomonas aeruginosa pPA3-104 blaTEM gene for class A extended-spectrum beta-lactamase TEM-29, complete CDS",05-2-A5D25,2,25645472
+NG_056416.1,"Acinetobacter haemolyticus AN3 blaTEM gene for class A beta-lactamase TEM-229, complete CDS",05-2-A5D25,3,25645472
+NG_056168.1,"Escherichia coli ECO0584 blaTEM gene for class A extended-spectrum beta-lactamase TEM-9, complete CDS",05-2-A5D25,1,25645472
+NG_050166.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-122, complete CDS",05-2-A5D25,1,25645472
+NG_047430.1,"Escherichia coli aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",05-2-A5D25,1,25645472
+NG_050183.1,"Klebsiella pneumoniae conjugative plasmid blaTEM gene for class A extended-spectrum beta-lactamase TEM-139, complete CDS",05-2-A5D25,1,25645472
+NG_050248.1,"Escherichia coli 872597 blaTEM gene for class A beta-lactamase TEM-215, complete CDS",05-2-A5D25,2,25645472
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",05-2-A5D25,3,25645472
+NG_048005.1,"Streptococcus pneumoniae MF4 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",05-2-A5D25,2,25645472
+NG_050211.1,"Escherichia coli N08-1503 blaTEM gene for class A extended-spectrum beta-lactamase TEM-168, complete CDS",05-2-A5D25,1,25645472
+NG_050197.1,"Escherichia coli C467 blaTEM gene for class A extended-spectrum beta-lactamase TEM-153, complete CDS",05-2-A5D25,1,25645472
+NG_048174.1,"Francisella tularensis LVS pOM1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",05-2-A5D25,2,25645472
+NG_048262.1,"Enterococcus faecalis e27 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",05-2-A5D25,1,25645472
+NG_047961.1,"Streptococcus sp. 'group G' 02M157741 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",05-2-A5D25,1,25645472
+NG_050228.1,"Escherichia coli bMX-908599 blaTEM gene for class A beta-lactamase TEM-190, complete CDS",05-2-A5D25,1,25645472
+NG_050268.1,"Escherichia coli clinical blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-45, complete CDS",05-2-A5D25,1,25645472
+NG_050289.1,"Klebsiella pneumoniae CF 704 blaTEM gene for class A extended-spectrum beta-lactamase TEM-8, complete CDS",05-2-A5D25,1,25645472
+NG_050272.1,"Klebsiella pneumoniae blaTEM gene for class A extended-spectrum beta-lactamase TEM-52, complete CDS",05-2-A5D25,2,25645472
+NG_050195.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-151, complete CDS",05-2-A5D25,1,25645472
+NG_050257.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-28, complete CDS",05-2-A5D25,2,25645472
+NG_050274.1,"Escherichia coli BM2728 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-54, complete CDS",05-2-A5D25,2,25645472
+NG_050155.1,"Proteus mirabilis 217C5 blaTEM gene for class A extended-spectrum beta-lactamase TEM-11, complete CDS",05-2-A5D25,1,25645472
+NG_050162.1,"Staphylococcus aureus pJ3356::POX7 blaTEM gene for class A broad-spectrum beta-lactamase TEM-116, complete CDS",05-2-A5D25,4,25645472
+NG_050281.1,"Klebsiella pneumoniae CLSiS 3151/98 pbla-TEM-68 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-68, complete CDS",05-2-A5D25,1,25645472
+NG_050290.1,"Enterobacter cloacae blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-80, complete CDS",05-2-A5D25,1,25645472
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",05-2-A5D25,2,25645472
+NG_050260.1,"Escherichia coli pINSRA99 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-30, complete CDS",05-2-A5D25,2,25645472
+NG_050235.2,"Escherichia coli 2006-01-1248 blaTEM gene for class A extended-spectrum beta-lactamase TEM-20, complete CDS",05-2-A5D25,2,25645472
+NG_050227.1,"Acinetobacter baumannii NIPH 2884 blaTEM gene for class A extended-spectrum beta-lactamase TEM-19, complete CDS",05-2-A5D25,1,25645472
+NG_050173.1,"Klebsiella oxytoca blaTEM gene for class A extended-spectrum beta-lactamase TEM-129, complete CDS",05-2-A5D25,1,25645472
+NG_050302.1,"Escherichia coli CLSiS 3445/98 pblaTEM-93 blaTEM gene for class A extended-spectrum beta-lactamase TEM-93, complete CDS",05-2-A5D25,1,25645472
+NG_050184.1,"Enterobacter cloacae EC002 blaTEM gene for class A broad-spectrum beta-lactamase TEM-141, complete CDS",05-2-A5D25,2,25645472
+NG_050294.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-84, complete CDS",05-2-A5D25,1,25645472
+NG_050188.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-145, complete CDS",05-2-A5D25,1,25645472
+NG_050147.1,"Escherichia coli pBP311 blaTEM gene for class A extended-spectrum beta-lactamase TEM-101, complete CDS",05-2-A5D25,1,25645472
+NG_047828.1,"Bacteroides thetaiotaomicron 7853 erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",05-2-A5D25,1,25645472
+NG_050199.1,"Proteus mirabilis blaTEM gene for class A extended-spectrum beta-lactamase TEM-155, complete CDS",05-2-A5D25,1,25645472
+NG_050262.1,"Escherichia coli B24 pEC_B24 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-33, complete CDS",05-2-A5D25,1,25645472
+NG_050205.1,"Proteus mirabilis blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-160, complete CDS",05-2-A5D25,1,25645472
+NG_052651.1,"Escherichia coli 13-62 blaTEM gene for class A beta-lactamase TEM-225, complete CDS",05-2-A5D25,1,25645472
+NG_048178.1,"Chlamydia suis R27 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",05-2-A5D25,2,25645472
+NG_047437.1,"Escherichia coli aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",05-2-A5D25,1,25645472
+NG_050292.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-82, complete CDS",05-2-A5D25,1,25645472
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",05-2-A5D25,1,25645472
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",05-2-A5D25,1,25645472
+NG_050306.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-97, complete CDS",05-2-A5D25,1,25645472
+NG_050145.1,"Escherichia coli pC15-1a blaTEM gene for class A broad-spectrum beta-lactamase TEM-1, complete CDS",05-2-A5D25,1,25645472
+NG_050282.1,"Escherichia coli SM91 blaTEM gene for class A beta-lactamase TEM-70, complete CDS",05-2-A5D25,1,25645472
+NG_050297.1,"Proteus mirabilis pPm87 blaTEM gene for class A extended-spectrum beta-lactamase TEM-87, complete CDS",05-2-A5D25,2,25645472
+NG_047439.1,"Avibacterium paragallinarum A14 pYMH5 aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",05-2-A5D25,1,25645472
+NG_047967.1,"Streptococcus mitis mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",05-2-A5D25,1,25645472
+NG_050273.1,"Klebsiella pneumoniae BM2733 blaTEM gene for class A extended-spectrum beta-lactamase TEM-53, complete CDS",05-2-A5D25,1,25645472
+NG_050256.1,"Enterobacter sp. GN02186 blaTEM gene for class A extended-spectrum beta-lactamase TEM-26, complete CDS",05-2-A5D25,1,25645472
+NG_050250.1,"Enterobacter cloacae ST137 blaTEM gene for class A beta-lactamase TEM-217, complete CDS",05-2-A5D25,1,25645472
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",05-2-A5D25,1,25645472
+NG_048364.1,"Enterococcus gallinarum N04-0414 vanD gene for D-alanine--(R)-lactate ligase VanD, complete CDS",06-25-A6D20,1,25636657
+NG_047378.1,"Pediococcus acidilactici NCIMB 6990 pEOC01 aadE gene for aminoglycoside 6-adenylyltransferase AadE, complete CDS",06-25-A6D20,11,25636657
+NG_047435.1,"Salmonella enterica subsp. enterica serovar Typhimurium NTP16 aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",06-25-A6D20,2,25636657
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",06-25-A6D20,1,25636657
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",06-25-A6D20,3,25636657
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",06-25-A6D20,2,25636657
+NG_048179.1,"Escherichia coli invasion plasmid pIS2 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",06-25-A6D20,1,25636657
+NG_048180.1,"uncultured bacterium tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",06-25-A6D20,3,25636657
+NG_050154.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-109, complete CDS",06-25-A6D20,2,25636657
+NG_047439.1,"Avibacterium paragallinarum A14 pYMH5 aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",06-25-A6D20,1,25636657
+NG_048264.1,"Actinobacillus pleuropneumoniae 13142 p13142 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",06-25-A6D20,2,25636657
+NG_050170.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-126, complete CDS",06-25-A6D20,1,25636657
+NG_052865.1,"Acinetobacter baumannii 1233161 blaTEM gene for class A beta-lactamase TEM-191, complete CDS",06-25-A6D20,2,25636657
+NG_050293.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-83, complete CDS",06-25-A6D20,1,25636657
+NG_048267.1,"Streptococcus suis YM12 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",06-25-A6D20,6,25636657
+NG_048262.1,"Enterococcus faecalis e27 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",06-25-A6D20,2,25636657
+NG_050206.1,"Acinetobacter haemolyticus pUPI191 blaTEM gene for class A beta-lactamase TEM-162, complete CDS",06-25-A6D20,2,25636657
+NG_050224.1,"Proteus mirabilis 7001324 unnamed blaTEM gene for class A extended-spectrum beta-lactamase TEM-187, complete CDS",06-25-A6D20,4,25636657
+NG_050178.1,"Citrobacter koseri blaTEM gene for class A extended-spectrum beta-lactamase TEM-134, complete CDS",06-25-A6D20,1,25636657
+NG_050198.1,"Escherichia coli H258 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-154, complete CDS",06-25-A6D20,1,25636657
+NG_050286.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-77, complete CDS",06-25-A6D20,1,25636657
+NG_050190.1,"Pseudomonas aeruginosa pPA4-141 blaTEM gene for class A extended-spectrum beta-lactamase TEM-147, complete CDS",06-25-A6D20,1,25636657
+NG_050262.1,"Escherichia coli B24 pEC_B24 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-33, complete CDS",06-25-A6D20,1,25636657
+NG_050259.1,"Klebsiella pneumoniae CF104 pCFF04 blaTEM gene for class A extended-spectrum beta-lactamase TEM-3, complete CDS",06-25-A6D20,1,25636657
+NG_048058.1,"Serratia marcescens S-95 rmtB gene for 16S rRNA (guanine(1405)-N(7))-methyltransferase RmtB1, complete CDS",06-25-A6D20,3,25636657
+NG_050208.1,"Klebsiella pneumoniae pML1708 blaTEM gene for class A extended-spectrum beta-lactamase TEM-164, complete CDS",06-25-A6D20,1,25636657
+NG_050249.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-216, complete CDS",06-25-A6D20,1,25636657
+NG_050153.1,"Salmonella enterica subsp. enterica serovar Typhimurium DT193 blaTEM gene for class A beta-lactamase TEM-108, complete CDS",06-25-A6D20,2,25636657
+NG_050179.1,"Salmonella enterica subsp. enterica serovar Typhimurium pFPTB1 blaTEM gene for class A broad-spectrum beta-lactamase TEM-135, complete CDS",06-25-A6D20,1,25636657
+NG_048266.1,"Streptococcus suis BM407 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",06-25-A6D20,2,25636657
+NG_050210.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-167, complete CDS",06-25-A6D20,1,25636657
+NG_050272.1,"Klebsiella pneumoniae blaTEM gene for class A extended-spectrum beta-lactamase TEM-52, complete CDS",06-25-A6D20,1,25636657
+NG_050218.1,"Escherichia sp. Sflu5 pAK51 blaTEM gene for class A beta-lactamase TEM-181, complete CDS",06-25-A6D20,2,25636657
+NG_050247.1,"Escherichia coli 866330 blaTEM gene for class A beta-lactamase TEM-214, complete CDS",06-25-A6D20,1,25636657
+NG_047437.1,"Escherichia coli aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",06-25-A6D20,1,25636657
+NG_050240.1,"Escherichia coli 3805 blaTEM gene for class A beta-lactamase TEM-208, complete CDS",06-25-A6D20,1,25636657
+NG_050151.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-106, complete CDS",06-25-A6D20,1,25636657
+NG_050200.1,"Proteus mirabilis blaTEM gene for class A beta-lactamase TEM-156, complete CDS",06-25-A6D20,1,25636657
+NG_050150.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-105, complete CDS",06-25-A6D20,3,25636657
+NG_050265.1,"Klebsiella pneumoniae H67 pRYC11 blaTEM gene for class A extended-spectrum beta-lactamase TEM-4, complete CDS",06-25-A6D20,1,25636657
+NG_050171.1,"Escherichia coli unnamed blaTEM gene for class A broad-spectrum beta-lactamase TEM-127, complete CDS",06-25-A6D20,1,25636657
+NG_050199.1,"Proteus mirabilis blaTEM gene for class A extended-spectrum beta-lactamase TEM-155, complete CDS",06-25-A6D20,1,25636657
+NG_050164.1,"Klebsiella oxytoca blaTEM gene for class A extended-spectrum beta-lactamase TEM-120, complete CDS",06-25-A6D20,1,25636657
+NG_050207.1,"Escherichia coli 3343 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-163, complete CDS",06-25-A6D20,1,25636657
+NG_050299.1,"Escherichia coli 7604 pMG204b blaTEM gene for class A broad-spectrum beta-lactamase TEM-90, complete CDS",06-25-A6D20,1,25636657
+NG_050214.1,"Escherichia coli pAm08CQ6130 blaTEM gene for class A beta-lactamase TEM-171, complete CDS",06-25-A6D20,1,25636657
+NG_050162.1,"Staphylococcus aureus pJ3356::POX7 blaTEM gene for class A broad-spectrum beta-lactamase TEM-116, complete CDS",06-25-A6D20,3,25636657
+NG_050235.2,"Escherichia coli 2006-01-1248 blaTEM gene for class A extended-spectrum beta-lactamase TEM-20, complete CDS",06-25-A6D20,1,25636657
+NG_050194.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-150, complete CDS",06-25-A6D20,2,25636657
+NG_050229.1,"Acinetobacter baumannii 197 blaTEM gene for class A beta-lactamase TEM-193, complete CDS",06-25-A6D20,1,25636657
+NG_048258.1,"Megasphaera elsdenii Fern tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",06-25-A6D20,1,25636657
+NG_050173.1,"Klebsiella oxytoca blaTEM gene for class A extended-spectrum beta-lactamase TEM-129, complete CDS",06-25-A6D20,1,25636657
+NG_050193.1,"Haemophilus parainfluenzae pSF2 blaTEM gene for class A extended-spectrum beta-lactamase TEM-15, complete CDS",06-25-A6D20,1,25636657
+NG_050232.1,"Klebsiella pneumoniae FSP 286/05 blaTEM gene for class A extended-spectrum beta-lactamase TEM-197, complete CDS",06-25-A6D20,1,25636657
+NG_050227.1,"Acinetobacter baumannii NIPH 2884 blaTEM gene for class A extended-spectrum beta-lactamase TEM-19, complete CDS",06-25-A6D20,1,25636657
+NG_050233.1,"Klebsiella pneumoniae KUN5033 blaTEM gene for class A beta-lactamase TEM-198, complete CDS",06-25-A6D20,1,25636657
+NG_050261.1,"Shigella sonnei 144375 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-32, complete CDS",06-25-A6D20,1,25636657
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",06-25-A6D20,1,25636657
+NG_048181.1,"Escherichia coli SE11 pSE11-1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",06-25-A6D20,2,25636657
+NG_050197.1,"Escherichia coli C467 blaTEM gene for class A extended-spectrum beta-lactamase TEM-153, complete CDS",06-25-A6D20,2,25636657
+NG_050251.1,"Escherichia coli EV25 blaTEM gene for class A beta-lactamase TEM-219, complete CDS",06-25-A6D20,1,25636657
+NG_047432.1,"Plasmid pFA6 aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",06-25-A6D20,1,25636657
+NG_050236.1,"Escherichia coli WDR-13 unnamed blaTEM gene for class A beta-lactamase TEM-201, complete CDS",06-25-A6D20,1,25636657
+NG_048265.1,"Streptococcus pneumoniae tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",06-25-A6D20,1,25636657
+NG_047827.1,"Lysinibacillus sphaericus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",06-25-A6D20,1,25636657
+NG_050234.1,"Pseudomonas aeruginosa blaTEM gene for class A broad-spectrum beta-lactamase TEM-2, complete CDS",06-25-A6D20,1,25636657
+NG_048177.1,"Aeromonas salmonicida pRAS3.2 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",06-25-A6D20,1,25636657
+NG_050169.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-125, complete CDS",06-25-A6D20,1,25636657
+NG_048139.1,"Clostridiaceae bacterium K10 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",06-25-A6D20,1,25636657
+NG_048178.1,"Chlamydia suis R27 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",06-25-A6D20,1,25636657
+NG_056168.1,"Escherichia coli ECO0584 blaTEM gene for class A extended-spectrum beta-lactamase TEM-9, complete CDS",06-25-A6D20,1,25636657
+NG_050238.1,"Escherichia coli S2.2-EK pEC-S2.2 blaTEM gene for class A broad-spectrum beta-lactamase TEM-206, complete CDS",06-25-A6D20,1,25636657
+NG_048261.1,"Streptococcus pyogenes tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",06-25-A6D20,1,25636657
+NG_048254.1,"Streptococcus mutans tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",06-25-A6D20,1,25636657
+NG_048174.1,"Francisella tularensis LVS pOM1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",06-25-A6D20,1,25636657
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",07-12-C7D29,6,22779397
+NG_047829.1,"Bacteroides ovatus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",07-12-C7D29,1,22779397
+NG_048268.1,"Bacteroides thetaiotaomicron DOT tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",07-12-C7D29,2,22779397
+NG_050206.1,"Acinetobacter haemolyticus pUPI191 blaTEM gene for class A beta-lactamase TEM-162, complete CDS",07-12-C7D29,1,22779397
+NG_048493.1,"Enterococcus faecium A902 vanX-D gene for D-Ala-D-Ala dipeptidase VanX-D, complete CDS",07-12-C7D29,1,22779397
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",07-12-C7D29,4,22779397
+NG_050261.1,"Shigella sonnei 144375 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-32, complete CDS",07-12-C7D29,1,22779397
+NG_047957.1,"Streptococcus pyogenes 02C1064 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",07-12-C7D29,2,22779397
+NG_047964.1,"Streptococcus pyogenes mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",07-12-C7D29,1,22779397
+NG_047827.1,"Lysinibacillus sphaericus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",07-12-C7D29,1,22779397
+NG_050275.1,"Escherichia coli MDD39 blaTEM gene for class A broad-spectrum beta-lactamase TEM-55, complete CDS",07-12-C7D29,1,22779397
+NG_048005.1,"Streptococcus pneumoniae MF4 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",07-12-C7D29,3,22779397
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",07-12-C7D29,3,22779397
+NG_050285.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-76, complete CDS",07-12-C7D29,1,22779397
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",07-12-C7D29,1,22779397
+NG_047977.1,"Exiguobacterium sp. S3-2 pMC1 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",07-12-C7D29,4,22779397
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",07-12-C7D29,9,22779397
+NG_050251.1,"Escherichia coli EV25 blaTEM gene for class A beta-lactamase TEM-219, complete CDS",07-12-C7D29,1,22779397
+NG_050262.1,"Escherichia coli B24 pEC_B24 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-33, complete CDS",07-12-C7D29,1,22779397
+NG_047972.1,"Streptococcus pneumoniae mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",07-12-C7D29,1,22779397
+NG_057581.1,"Escherichia coli E9A52022 blaTEM gene for class A beta-lactamase TEM-233, complete CDS",07-12-C7D29,1,22779397
+NG_048180.1,"uncultured bacterium tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",07-12-C7D29,1,22779397
+NG_048138.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",07-12-C7D29,1,22779397
+NG_050304.1,"Escherichia coli Co52 blaTEM gene for class A broad-spectrum beta-lactamase TEM-95, complete CDS",07-12-C7D29,1,22779397
+NG_047963.1,"Streptococcus pyogenes mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",07-12-C7D29,1,22779397
+NG_047828.1,"Bacteroides thetaiotaomicron 7853 erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",07-12-C7D29,1,22779397
+NG_050201.1,"Enterobacter cloacae pEC005 blaTEM gene for class A extended-spectrum beta-lactamase TEM-157, complete CDS",07-12-C7D29,1,22779397
+NG_050229.1,"Acinetobacter baumannii 197 blaTEM gene for class A beta-lactamase TEM-193, complete CDS",07-12-C7D29,1,22779397
+NG_047378.1,"Pediococcus acidilactici NCIMB 6990 pEOC01 aadE gene for aminoglycoside 6-adenylyltransferase AadE, complete CDS",08-17-B1D29,3,30382378
+NG_048017.1,"Bacteroides fragilis HMW 615 nimJ gene for nitroimidazole resistance protein NimJ, complete CDS",08-17-B1D29,1,30382378
+NG_050206.1,"Acinetobacter haemolyticus pUPI191 blaTEM gene for class A beta-lactamase TEM-162, complete CDS",08-17-B1D29,1,30382378
+NG_048258.1,"Megasphaera elsdenii Fern tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",08-17-B1D29,1,30382378
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",08-17-B1D29,3,30382378
+NG_050223.1,"Escherichia coli RS60 unnamed blaTEM gene for class A broad-spectrum beta-lactamase TEM-186, complete CDS",08-17-B1D29,1,30382378
+NG_047967.1,"Streptococcus mitis mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",08-17-B1D29,1,30382378
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",08-17-B1D29,2,30382378
+NG_048141.1,"Streptococcus suis A3 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",08-17-B1D29,3,30382378
+NG_048125.1,"Streptococcus salivarius FStet12 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",08-17-B1D29,2,30382378
+NG_048175.1,"Salmonella enterica subsp. enterica serovar Typhimurium R46 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",08-17-B1D29,1,30382378
+NG_048138.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",08-17-B1D29,1,30382378
+NG_048126.1,"Streptococcus parasanguinis 41.1T tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",08-17-B1D29,1,30382378
+NG_047378.1,"Pediococcus acidilactici NCIMB 6990 pEOC01 aadE gene for aminoglycoside 6-adenylyltransferase AadE, complete CDS",09-22-A5D20,9,15527524
+NG_048145.1,"Clostridium perfringens C str. JGS1495 tet(44) gene for tetracycline resistance ribosomal protection protein Tet(44), complete CDS",09-22-A5D20,1,15527524
+NG_047829.1,"Bacteroides ovatus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",09-22-A5D20,2,15527524
+NG_048005.1,"Streptococcus pneumoniae MF4 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",09-22-A5D20,3,15527524
+NG_050292.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-82, complete CDS",09-22-A5D20,1,15527524
+NG_047962.1,"Streptococcus sp. 'group G' 01M128672 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",09-22-A5D20,1,15527524
+NG_048267.1,"Streptococcus suis YM12 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",09-22-A5D20,2,15527524
+NG_050300.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-91, complete CDS",09-22-A5D20,1,15527524
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",09-22-A5D20,1,15527524
+NG_056418.1,"Escherichia coli ESY001 blaTEM gene for class A beta-lactamase TEM-231, complete CDS",09-22-A5D20,1,15527524
+NG_050188.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-145, complete CDS",09-22-A5D20,1,15527524
+NG_047828.1,"Bacteroides thetaiotaomicron 7853 erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",09-22-A5D20,2,15527524
+NG_048180.1,"uncultured bacterium tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",09-22-A5D20,1,15527524
+NG_048256.1,"Campylobacter jejuni pCjA13 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",09-22-A5D20,1,15527524
+NG_048284.1,"Trueperella pyogenes tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",09-22-A5D20,1,15527524
+NG_050217.1,"Serratia marcescens S5 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-178, complete CDS",09-22-A5D20,1,15527524
+NG_047972.1,"Streptococcus pneumoniae mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",09-22-A5D20,1,15527524
+NG_050212.1,"Escherichia coli U184 pUE184 blaTEM gene for class A extended-spectrum beta-lactamase TEM-169, complete CDS",09-22-A5D20,1,15527524
+NG_048178.1,"Chlamydia suis R27 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",09-22-A5D20,1,15527524
+NG_048295.1,"Rothia sp. T40-1 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",09-22-A5D20,1,15527524
+NG_048260.1,"Campylobacter jejuni subsp. jejuni 81-176 pTet tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",09-22-A5D20,1,15527524
+NG_050158.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-112, complete CDS",09-22-A5D20,1,15527524
+NG_050155.1,"Proteus mirabilis 217C5 blaTEM gene for class A extended-spectrum beta-lactamase TEM-11, complete CDS",09-22-A5D20,1,15527524
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",09-22-A5D20,1,15527524
+NG_050200.1,"Proteus mirabilis blaTEM gene for class A beta-lactamase TEM-156, complete CDS",09-22-A5D20,1,15527524
+NG_050175.1,"Salmonella enterica subsp. enterica serovar Typhimurium blaTEM gene for class A extended-spectrum beta-lactamase TEM-131, complete CDS",09-22-A5D20,1,15527524
+NG_050148.1,"Plasmid pWW100 blaTEM gene for class A extended-spectrum beta-lactamase TEM-102, complete CDS",09-22-A5D20,1,15527524
+NG_050170.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-126, complete CDS",09-22-A5D20,1,15527524
+NG_050201.1,"Enterobacter cloacae pEC005 blaTEM gene for class A extended-spectrum beta-lactamase TEM-157, complete CDS",09-22-A5D20,1,15527524
+NG_048303.1,"Streptococcus suis 33421 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",09-22-A5D20,1,15527524
+NG_048174.1,"Francisella tularensis LVS pOM1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",09-22-A5D20,1,15527524
+NG_050198.1,"Escherichia coli H258 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-154, complete CDS",09-22-A5D20,1,15527524
+NG_050231.1,"Acinetobacter baumannii 195 blaTEM gene for class A beta-lactamase TEM-195, complete CDS",09-22-A5D20,1,15527524
+NG_050153.1,"Salmonella enterica subsp. enterica serovar Typhimurium DT193 blaTEM gene for class A beta-lactamase TEM-108, complete CDS",09-22-A5D20,1,15527524
+NG_048416.1,"Enterococcus gallinarum N04-0414 vanR gene for VanD-type vancomycin resistance DNA-binding response regulator VanR, complete CDS",09-22-A5D20,1,15527524
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",10-11-C6D29,11,19703226
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",10-11-C6D29,7,19703226
+NG_047977.1,"Exiguobacterium sp. S3-2 pMC1 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",10-11-C6D29,6,19703226
+NG_048005.1,"Streptococcus pneumoniae MF4 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",10-11-C6D29,8,19703226
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",10-11-C6D29,5,19703226
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",10-11-C6D29,6,19703226
+NG_048141.1,"Streptococcus suis A3 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",10-11-C6D29,3,19703226
+NG_048271.1,"Prevotella intermedia PDRC-11 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",10-11-C6D29,2,19703226
+NG_047958.1,"Streptococcus pneumoniae 02J1175 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",10-11-C6D29,3,19703226
+NG_048490.1,"Enterococcus gallinarum N04-0414 vanX-D gene for D-Ala-D-Ala dipeptidase VanX-D, complete CDS",10-11-C6D29,1,19703226
+NG_050298.1,"Klebsiella pneumoniae K28 pMG272 blaTEM gene for class A extended-spectrum beta-lactamase TEM-88, complete CDS",10-11-C6D29,1,19703226
+NG_048268.1,"Bacteroides thetaiotaomicron DOT tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",10-11-C6D29,1,19703226
+NG_047972.1,"Streptococcus pneumoniae mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",10-11-C6D29,1,19703226
+NG_048272.1,"Bifidobacterium longum B200304 pBIF10 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",10-11-C6D29,1,19703226
+NG_047957.1,"Streptococcus pyogenes 02C1064 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",10-11-C6D29,1,19703226
+NG_055990.1,"Lawsonia intracellularis PHE/MN1-00 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",10-11-C6D29,1,19703226
+NG_047829.1,"Bacteroides ovatus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",10-11-C6D29,2,19703226
+NG_048126.1,"Streptococcus parasanguinis 41.1T tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",10-11-C6D29,1,19703226
+NG_050261.1,"Shigella sonnei 144375 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-32, complete CDS",10-11-C6D29,1,19703226
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",10-11-C6D29,1,19703226
+NG_047828.1,"Bacteroides thetaiotaomicron 7853 erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",10-11-C6D29,1,19703226
+NG_048139.1,"Clostridiaceae bacterium K10 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",10-11-C6D29,2,19703226
+NG_047976.1,"Clostridium perfringens mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",10-11-C6D29,1,19703226
+NG_047378.1,"Pediococcus acidilactici NCIMB 6990 pEOC01 aadE gene for aminoglycoside 6-adenylyltransferase AadE, complete CDS",11-15-C1D25,10,19411657
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",11-15-C1D25,18,19411657
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",11-15-C1D25,9,19411657
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",11-15-C1D25,2,19411657
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",11-15-C1D25,6,19411657
+NG_048125.1,"Streptococcus salivarius FStet12 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",11-15-C1D25,4,19411657
+NG_048141.1,"Streptococcus suis A3 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",11-15-C1D25,14,19411657
+NG_047977.1,"Exiguobacterium sp. S3-2 pMC1 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",11-15-C1D25,2,19411657
+NG_048138.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",11-15-C1D25,9,19411657
+NG_047961.1,"Streptococcus sp. 'group G' 02M157741 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",11-15-C1D25,1,19411657
+NG_048139.1,"Clostridiaceae bacterium K10 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",11-15-C1D25,11,19411657
+NG_050292.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-82, complete CDS",11-15-C1D25,1,19411657
+NG_048005.1,"Streptococcus pneumoniae MF4 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",11-15-C1D25,1,19411657
+NG_050228.1,"Escherichia coli bMX-908599 blaTEM gene for class A beta-lactamase TEM-190, complete CDS",11-15-C1D25,1,19411657
+NG_048284.1,"Trueperella pyogenes tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",11-15-C1D25,1,19411657
+NG_050252.1,"Klebsiella pneumoniae SLK52 blaTEM gene for class A extended-spectrum beta-lactamase TEM-22, complete CDS",11-15-C1D25,1,19411657
+NG_050285.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-76, complete CDS",11-15-C1D25,1,19411657
+NG_048126.1,"Streptococcus parasanguinis 41.1T tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",11-15-C1D25,1,19411657
+NG_050275.1,"Escherichia coli MDD39 blaTEM gene for class A broad-spectrum beta-lactamase TEM-55, complete CDS",11-15-C1D25,1,19411657
+NG_048124.1,"Clostridiaceae bacterium K10 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",11-15-C1D25,2,19411657
+NG_048269.1,"Bacteroides fragilis 1126 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",11-15-C1D25,1,19411657
+NG_047322.1,"Campylobacter jejuni CG8245 pCG8245 aad9 gene for aminoglycoside nucleotidyltransferase ANT9, complete CDS",11-15-C1D25,1,19411657
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",11-15-C1D25,4,19411657
+NG_050255.1,"Klebsiella pneumoniae CF 1104 blaTEM gene for class A extended-spectrum beta-lactamase TEM-24, complete CDS",11-15-C1D25,1,19411657
+NG_050234.1,"Pseudomonas aeruginosa blaTEM gene for class A broad-spectrum beta-lactamase TEM-2, complete CDS",11-15-C1D25,1,19411657
+NG_047440.1,"Enterobacter cloacae pEC-IMP aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",11-15-C1D25,1,19411657
+NG_048271.1,"Prevotella intermedia PDRC-11 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",11-15-C1D25,1,19411657
+NG_048272.1,"Bifidobacterium longum B200304 pBIF10 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",11-15-C1D25,1,19411657
+NG_050218.1,"Escherichia sp. Sflu5 pAK51 blaTEM gene for class A beta-lactamase TEM-181, complete CDS",11-15-C1D25,2,19411657
+NG_050306.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-97, complete CDS",11-15-C1D25,1,19411657
+NG_050148.1,"Plasmid pWW100 blaTEM gene for class A extended-spectrum beta-lactamase TEM-102, complete CDS",11-15-C1D25,1,19411657
+NG_047378.1,"Pediococcus acidilactici NCIMB 6990 pEOC01 aadE gene for aminoglycoside 6-adenylyltransferase AadE, complete CDS",12-19-D1D29,1,28214183
+NG_050261.1,"Shigella sonnei 144375 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-32, complete CDS",12-19-D1D29,1,28214183
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",12-19-D1D29,3,28214183
+NG_048139.1,"Clostridiaceae bacterium K10 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",12-19-D1D29,2,28214183
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",12-19-D1D29,1,28214183
+NG_048141.1,"Streptococcus suis A3 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",12-19-D1D29,3,28214183
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",12-19-D1D29,1,28214183
+NG_050206.1,"Acinetobacter haemolyticus pUPI191 blaTEM gene for class A beta-lactamase TEM-162, complete CDS",12-19-D1D29,1,28214183
+NG_047966.1,"Gemella haemolysans mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",12-19-D1D29,1,28214183
+NG_050269.1,"Klebsiella pneumoniae CLSiS 1590/96 blaTEM gene for class A extended-spectrum beta-lactamase TEM-47, complete CDS",12-19-D1D29,1,28214183
+NG_048138.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",12-19-D1D29,1,28214183
+NG_048178.1,"Chlamydia suis R27 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",12-19-D1D29,1,28214183
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,59,38315231
+NG_048124.1,"Clostridiaceae bacterium K10 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",13-10-A5D29,3,38315231
+NG_048271.1,"Prevotella intermedia PDRC-11 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",13-10-A5D29,14,38315231
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",13-10-A5D29,65,38315231
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",13-10-A5D29,32,38315231
+NG_048005.1,"Streptococcus pneumoniae MF4 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",13-10-A5D29,35,38315231
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",13-10-A5D29,116,38315231
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,22,38315231
+NG_047977.1,"Exiguobacterium sp. S3-2 pMC1 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,24,38315231
+NG_047829.1,"Bacteroides ovatus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",13-10-A5D29,8,38315231
+NG_048141.1,"Streptococcus suis A3 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",13-10-A5D29,41,38315231
+NG_048138.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",13-10-A5D29,28,38315231
+NG_048272.1,"Bifidobacterium longum B200304 pBIF10 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",13-10-A5D29,23,38315231
+NG_047972.1,"Streptococcus pneumoniae mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,5,38315231
+NG_047961.1,"Streptococcus sp. 'group G' 02M157741 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,4,38315231
+NG_048269.1,"Bacteroides fragilis 1126 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",13-10-A5D29,9,38315231
+NG_048268.1,"Bacteroides thetaiotaomicron DOT tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",13-10-A5D29,14,38315231
+NG_050162.1,"Staphylococcus aureus pJ3356::POX7 blaTEM gene for class A broad-spectrum beta-lactamase TEM-116, complete CDS",13-10-A5D29,1,38315231
+NG_055990.1,"Lawsonia intracellularis PHE/MN1-00 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",13-10-A5D29,5,38315231
+NG_048139.1,"Clostridiaceae bacterium K10 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",13-10-A5D29,21,38315231
+NG_050274.1,"Escherichia coli BM2728 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-54, complete CDS",13-10-A5D29,1,38315231
+NG_047958.1,"Streptococcus pneumoniae 02J1175 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,1,38315231
+NG_047827.1,"Lysinibacillus sphaericus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",13-10-A5D29,3,38315231
+NG_048261.1,"Streptococcus pyogenes tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",13-10-A5D29,1,38315231
+NG_047962.1,"Streptococcus sp. 'group G' 01M128672 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,4,38315231
+NG_050145.1,"Escherichia coli pC15-1a blaTEM gene for class A broad-spectrum beta-lactamase TEM-1, complete CDS",13-10-A5D29,1,38315231
+NG_047959.1,"Neisseria gonorrhoeae mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,3,38315231
+NG_050270.1,"Klebsiella pneumoniae CLSiS L-491 blaTEM gene for class A extended-spectrum beta-lactamase TEM-48, complete CDS",13-10-A5D29,1,38315231
+NG_047974.1,"Streptococcus pyogenes MB56Spyo027 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,2,38315231
+NG_047957.1,"Streptococcus pyogenes 02C1064 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,9,38315231
+NG_050165.1,"Escherichia coli KB-1 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-121, complete CDS",13-10-A5D29,1,38315231
+NG_050232.1,"Klebsiella pneumoniae FSP 286/05 blaTEM gene for class A extended-spectrum beta-lactamase TEM-197, complete CDS",13-10-A5D29,2,38315231
+NG_050243.1,"Escherichia coli pH1519-88 blaTEM gene for class A beta-lactamase TEM-210, complete CDS",13-10-A5D29,1,38315231
+NG_050201.1,"Enterobacter cloacae pEC005 blaTEM gene for class A extended-spectrum beta-lactamase TEM-157, complete CDS",13-10-A5D29,1,38315231
+NG_047967.1,"Streptococcus mitis mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,6,38315231
+NG_048058.1,"Serratia marcescens S-95 rmtB gene for 16S rRNA (guanine(1405)-N(7))-methyltransferase RmtB1, complete CDS",13-10-A5D29,3,38315231
+NG_048017.1,"Bacteroides fragilis HMW 615 nimJ gene for nitroimidazole resistance protein NimJ, complete CDS",13-10-A5D29,4,38315231
+NG_050154.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-109, complete CDS",13-10-A5D29,1,38315231
+NG_050168.1,"Morganella morganii blaTEM gene for class A extended-spectrum beta-lactamase TEM-124, complete CDS",13-10-A5D29,1,38315231
+NG_047966.1,"Gemella haemolysans mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,5,38315231
+NG_050303.1,"Escherichia coli CLSiS 3657/98 pblaTEM-94 blaTEM gene for class A extended-spectrum beta-lactamase TEM-94, complete CDS",13-10-A5D29,1,38315231
+NG_047968.1,"Streptococcus agalactiae Hk115 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,4,38315231
+NG_050215.1,"Escherichia coli D7111 blaTEM gene for class A beta-lactamase TEM-176, complete CDS",13-10-A5D29,1,38315231
+NG_050166.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-122, complete CDS",13-10-A5D29,1,38315231
+NG_050207.1,"Escherichia coli 3343 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-163, complete CDS",13-10-A5D29,1,38315231
+NG_048299.1,"Bifidobacterium longum LMG 13197 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",13-10-A5D29,1,38315231
+NG_050306.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-97, complete CDS",13-10-A5D29,1,38315231
+NG_047963.1,"Streptococcus pyogenes mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,1,38315231
+NG_048174.1,"Francisella tularensis LVS pOM1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",13-10-A5D29,1,38315231
+NG_050150.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-105, complete CDS",13-10-A5D29,1,38315231
+NG_048177.1,"Aeromonas salmonicida pRAS3.2 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",13-10-A5D29,2,38315231
+NG_050199.1,"Proteus mirabilis blaTEM gene for class A extended-spectrum beta-lactamase TEM-155, complete CDS",13-10-A5D29,1,38315231
+NG_050261.1,"Shigella sonnei 144375 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-32, complete CDS",13-10-A5D29,1,38315231
+NG_048178.1,"Chlamydia suis R27 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",13-10-A5D29,2,38315231
+NG_048416.1,"Enterococcus gallinarum N04-0414 vanR gene for VanD-type vancomycin resistance DNA-binding response regulator VanR, complete CDS",13-10-A5D29,2,38315231
+NG_050214.1,"Escherichia coli pAm08CQ6130 blaTEM gene for class A beta-lactamase TEM-171, complete CDS",13-10-A5D29,1,38315231
+NG_048125.1,"Streptococcus salivarius FStet12 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",13-10-A5D29,1,38315231
+NG_050263.1,"Haemophilus parainfluenzae 72322 unnamed blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-34, complete CDS",13-10-A5D29,1,38315231
+NG_047440.1,"Enterobacter cloacae pEC-IMP aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",13-10-A5D29,1,38315231
+NG_047969.1,"Fusobacterium nucleatum mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",13-10-A5D29,1,38315231
+NG_047430.1,"Escherichia coli aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",13-10-A5D29,1,38315231
+NG_050224.1,"Proteus mirabilis 7001324 unnamed blaTEM gene for class A extended-spectrum beta-lactamase TEM-187, complete CDS",13-10-A5D29,1,38315231
+NG_050297.1,"Proteus mirabilis pPm87 blaTEM gene for class A extended-spectrum beta-lactamase TEM-87, complete CDS",13-10-A5D29,1,38315231
+NG_050276.1,"Escherichia coli F4-Zhengzhou unnamed blaTEM gene for class A broad-spectrum beta-lactamase TEM-57, complete CDS",13-10-A5D29,1,38315231
+NG_048175.1,"Salmonella enterica subsp. enterica serovar Typhimurium R46 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",13-10-A5D29,1,38315231
+NG_048284.1,"Trueperella pyogenes tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",13-10-A5D29,1,38315231
+NG_047378.1,"Pediococcus acidilactici NCIMB 6990 pEOC01 aadE gene for aminoglycoside 6-adenylyltransferase AadE, complete CDS",14-18-B2D29,5,42665034
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",14-18-B2D29,10,42665034
+NG_047977.1,"Exiguobacterium sp. S3-2 pMC1 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",14-18-B2D29,2,42665034
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",14-18-B2D29,3,42665034
+NG_050214.1,"Escherichia coli pAm08CQ6130 blaTEM gene for class A beta-lactamase TEM-171, complete CDS",14-18-B2D29,1,42665034
+NG_048138.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",14-18-B2D29,4,42665034
+NG_048005.1,"Streptococcus pneumoniae MF4 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",14-18-B2D29,3,42665034
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",14-18-B2D29,3,42665034
+NG_048141.1,"Streptococcus suis A3 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",14-18-B2D29,3,42665034
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",14-18-B2D29,1,42665034
+NG_050164.1,"Klebsiella oxytoca blaTEM gene for class A extended-spectrum beta-lactamase TEM-120, complete CDS",14-18-B2D29,1,42665034
+NG_047829.1,"Bacteroides ovatus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",14-18-B2D29,1,42665034
+NG_056416.1,"Acinetobacter haemolyticus AN3 blaTEM gene for class A beta-lactamase TEM-229, complete CDS",14-18-B2D29,2,42665034
+NG_047827.1,"Lysinibacillus sphaericus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",14-18-B2D29,1,42665034
+NG_048272.1,"Bifidobacterium longum B200304 pBIF10 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",14-18-B2D29,1,42665034
+NG_047472.1,"Streptomyces hygroscopicus aph(7'')-Ia gene for aminoglycoside O-phosphotransferase APH(7'')-Ia, complete CDS",15-20-D2D29,1,20385080
+NG_050259.1,"Klebsiella pneumoniae CF104 pCFF04 blaTEM gene for class A extended-spectrum beta-lactamase TEM-3, complete CDS",15-20-D2D29,1,20385080
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",16-14-A7D25,80,53779806
+NG_048125.1,"Streptococcus salivarius FStet12 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",16-14-A7D25,63,53779806
+NG_047378.1,"Pediococcus acidilactici NCIMB 6990 pEOC01 aadE gene for aminoglycoside 6-adenylyltransferase AadE, complete CDS",16-14-A7D25,25,53779806
+NG_048409.1,"Enterococcus faecium 10/96A vanR gene for VanD-type vancomycin resistance DNA-binding response regulator VanR, complete CDS",16-14-A7D25,3,53779806
+NG_055990.1,"Lawsonia intracellularis PHE/MN1-00 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",16-14-A7D25,9,53779806
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,62,53779806
+NG_048444.1,"Enterococcus gallinarum N04-0414 vanS gene for VanD-type vancomycin resistance histidine kinase VanS, complete CDS",16-14-A7D25,10,53779806
+NG_048522.1,"Enterococcus gallinarum N04-0414 vanY-D gene for transpeptidase-like D-Ala-D-Ala carboxypeptidase VanY-D, complete CDS",16-14-A7D25,5,53779806
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",16-14-A7D25,103,53779806
+NG_048005.1,"Streptococcus pneumoniae MF4 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",16-14-A7D25,45,53779806
+NG_047977.1,"Exiguobacterium sp. S3-2 pMC1 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,34,53779806
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,29,53779806
+NG_048141.1,"Streptococcus suis A3 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",16-14-A7D25,74,53779806
+NG_048126.1,"Streptococcus parasanguinis 41.1T tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",16-14-A7D25,22,53779806
+NG_047829.1,"Bacteroides ovatus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",16-14-A7D25,3,53779806
+NG_047968.1,"Streptococcus agalactiae Hk115 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,6,53779806
+NG_050251.1,"Escherichia coli EV25 blaTEM gene for class A beta-lactamase TEM-219, complete CDS",16-14-A7D25,3,53779806
+NG_048146.1,"Campylobacter fetus subsp. fetus IMD 523 tet(44) gene for tetracycline resistance ribosomal protection protein Tet(44), complete CDS",16-14-A7D25,1,53779806
+NG_050194.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-150, complete CDS",16-14-A7D25,1,53779806
+NG_048265.1,"Streptococcus pneumoniae tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",16-14-A7D25,1,53779806
+NG_047963.1,"Streptococcus pyogenes mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,10,53779806
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",16-14-A7D25,48,53779806
+NG_048139.1,"Clostridiaceae bacterium K10 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",16-14-A7D25,46,53779806
+NG_056416.1,"Acinetobacter haemolyticus AN3 blaTEM gene for class A beta-lactamase TEM-229, complete CDS",16-14-A7D25,5,53779806
+NG_050280.1,"Proteus mirabilis NEL-1 pANG-1 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-67, complete CDS",16-14-A7D25,3,53779806
+NG_047972.1,"Streptococcus pneumoniae mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,11,53779806
+NG_047958.1,"Streptococcus pneumoniae 02J1175 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,4,53779806
+NG_050162.1,"Staphylococcus aureus pJ3356::POX7 blaTEM gene for class A broad-spectrum beta-lactamase TEM-116, complete CDS",16-14-A7D25,5,53779806
+NG_048272.1,"Bifidobacterium longum B200304 pBIF10 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",16-14-A7D25,12,53779806
+NG_050298.1,"Klebsiella pneumoniae K28 pMG272 blaTEM gene for class A extended-spectrum beta-lactamase TEM-88, complete CDS",16-14-A7D25,1,53779806
+NG_048268.1,"Bacteroides thetaiotaomicron DOT tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",16-14-A7D25,4,53779806
+NG_050281.1,"Klebsiella pneumoniae CLSiS 3151/98 pbla-TEM-68 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-68, complete CDS",16-14-A7D25,1,53779806
+NG_048124.1,"Clostridiaceae bacterium K10 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",16-14-A7D25,13,53779806
+NG_047959.1,"Neisseria gonorrhoeae mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,2,53779806
+NG_048293.1,"uncultured bacterium tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",16-14-A7D25,4,53779806
+NG_048177.1,"Aeromonas salmonicida pRAS3.2 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",16-14-A7D25,6,53779806
+NG_047962.1,"Streptococcus sp. 'group G' 01M128672 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,10,53779806
+NG_047961.1,"Streptococcus sp. 'group G' 02M157741 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,6,53779806
+NG_048271.1,"Prevotella intermedia PDRC-11 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",16-14-A7D25,7,53779806
+NG_048258.1,"Megasphaera elsdenii Fern tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",16-14-A7D25,2,53779806
+NG_048138.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",16-14-A7D25,45,53779806
+NG_047966.1,"Gemella haemolysans mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,8,53779806
+NG_047967.1,"Streptococcus mitis mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,10,53779806
+NG_047975.1,"Streptococcus pyogenes MB56Spyo045 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,2,53779806
+NG_047976.1,"Clostridium perfringens mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,5,53779806
+NG_050243.1,"Escherichia coli pH1519-88 blaTEM gene for class A beta-lactamase TEM-210, complete CDS",16-14-A7D25,1,53779806
+NG_050288.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-79, complete CDS",16-14-A7D25,1,53779806
+NG_050205.1,"Proteus mirabilis blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-160, complete CDS",16-14-A7D25,1,53779806
+NG_050285.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-76, complete CDS",16-14-A7D25,1,53779806
+NG_050179.1,"Salmonella enterica subsp. enterica serovar Typhimurium pFPTB1 blaTEM gene for class A broad-spectrum beta-lactamase TEM-135, complete CDS",16-14-A7D25,3,53779806
+NG_050184.1,"Enterobacter cloacae EC002 blaTEM gene for class A broad-spectrum beta-lactamase TEM-141, complete CDS",16-14-A7D25,1,53779806
+NG_048017.1,"Bacteroides fragilis HMW 615 nimJ gene for nitroimidazole resistance protein NimJ, complete CDS",16-14-A7D25,4,53779806
+NG_054658.1,"Francisella philomiragia subsp. philomiragia ATCC 25015 O#319L blaFPH gene for carbapenem-hydrolyzing class A beta-lactamase FPH-1, complete CDS",16-14-A7D25,1,53779806
+NG_048058.1,"Serratia marcescens S-95 rmtB gene for 16S rRNA (guanine(1405)-N(7))-methyltransferase RmtB1, complete CDS",16-14-A7D25,1,53779806
+NG_048416.1,"Enterococcus gallinarum N04-0414 vanR gene for VanD-type vancomycin resistance DNA-binding response regulator VanR, complete CDS",16-14-A7D25,13,53779806
+NG_048175.1,"Salmonella enterica subsp. enterica serovar Typhimurium R46 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",16-14-A7D25,2,53779806
+NG_050259.1,"Klebsiella pneumoniae CF104 pCFF04 blaTEM gene for class A extended-spectrum beta-lactamase TEM-3, complete CDS",16-14-A7D25,1,53779806
+NG_050155.1,"Proteus mirabilis 217C5 blaTEM gene for class A extended-spectrum beta-lactamase TEM-11, complete CDS",16-14-A7D25,1,53779806
+NG_050223.1,"Escherichia coli RS60 unnamed blaTEM gene for class A broad-spectrum beta-lactamase TEM-186, complete CDS",16-14-A7D25,1,53779806
+NG_050170.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-126, complete CDS",16-14-A7D25,1,53779806
+NG_050180.1,"Klebsiella pneumoniae Kp 403 blaTEM gene for class A extended-spectrum beta-lactamase TEM-136, complete CDS",16-14-A7D25,1,53779806
+NG_048255.1,"Streptococcus pneumoniae SA40300 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",16-14-A7D25,2,53779806
+NG_048292.1,"Lactobacillus johnsonii G41 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",16-14-A7D25,2,53779806
+NG_050287.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-78, complete CDS",16-14-A7D25,1,53779806
+NG_050188.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-145, complete CDS",16-14-A7D25,1,53779806
+NG_048266.1,"Streptococcus suis BM407 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",16-14-A7D25,1,53779806
+NG_050212.1,"Escherichia coli U184 pUE184 blaTEM gene for class A extended-spectrum beta-lactamase TEM-169, complete CDS",16-14-A7D25,1,53779806
+NG_048269.1,"Bacteroides fragilis 1126 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",16-14-A7D25,6,53779806
+NG_047828.1,"Bacteroides thetaiotaomicron 7853 erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",16-14-A7D25,1,53779806
+NG_050198.1,"Escherichia coli H258 blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-154, complete CDS",16-14-A7D25,1,53779806
+NG_050201.1,"Enterobacter cloacae pEC005 blaTEM gene for class A extended-spectrum beta-lactamase TEM-157, complete CDS",16-14-A7D25,5,53779806
+NG_050191.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-148, complete CDS",16-14-A7D25,1,53779806
+NG_050232.1,"Klebsiella pneumoniae FSP 286/05 blaTEM gene for class A extended-spectrum beta-lactamase TEM-197, complete CDS",16-14-A7D25,3,53779806
+NG_050208.1,"Klebsiella pneumoniae pML1708 blaTEM gene for class A extended-spectrum beta-lactamase TEM-164, complete CDS",16-14-A7D25,1,53779806
+NG_050302.1,"Escherichia coli CLSiS 3445/98 pblaTEM-93 blaTEM gene for class A extended-spectrum beta-lactamase TEM-93, complete CDS",16-14-A7D25,3,53779806
+NG_048267.1,"Streptococcus suis YM12 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",16-14-A7D25,2,53779806
+NG_048490.1,"Enterococcus gallinarum N04-0414 vanX-D gene for D-Ala-D-Ala dipeptidase VanX-D, complete CDS",16-14-A7D25,4,53779806
+NG_050275.1,"Escherichia coli MDD39 blaTEM gene for class A broad-spectrum beta-lactamase TEM-55, complete CDS",16-14-A7D25,1,53779806
+NG_048181.1,"Escherichia coli SE11 pSE11-1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",16-14-A7D25,1,53779806
+NG_047969.1,"Fusobacterium nucleatum mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,2,53779806
+NG_050192.1,"[Enterobacter] aerogenes blaTEM gene for class A extended-spectrum beta-lactamase TEM-149, complete CDS",16-14-A7D25,1,53779806
+NG_050256.1,"Enterobacter sp. GN02186 blaTEM gene for class A extended-spectrum beta-lactamase TEM-26, complete CDS",16-14-A7D25,4,53779806
+NG_050189.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-146, complete CDS",16-14-A7D25,1,53779806
+NG_050211.1,"Escherichia coli N08-1503 blaTEM gene for class A extended-spectrum beta-lactamase TEM-168, complete CDS",16-14-A7D25,1,53779806
+NG_047974.1,"Streptococcus pyogenes MB56Spyo027 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,5,53779806
+NG_047957.1,"Streptococcus pyogenes 02C1064 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,2,53779806
+NG_050264.1,"Escherichia coli 13S00929-3 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-35, complete CDS",16-14-A7D25,2,53779806
+NG_048174.1,"Francisella tularensis LVS pOM1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",16-14-A7D25,2,53779806
+NG_047960.1,"Streptococcus sp. 'group G' 99M148714 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",16-14-A7D25,1,53779806
+NG_048180.1,"uncultured bacterium tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",16-14-A7D25,2,53779806
+NG_048262.1,"Enterococcus faecalis e27 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",16-14-A7D25,1,53779806
+NG_050261.1,"Shigella sonnei 144375 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-32, complete CDS",16-14-A7D25,1,53779806
+NG_050236.1,"Escherichia coli WDR-13 unnamed blaTEM gene for class A beta-lactamase TEM-201, complete CDS",16-14-A7D25,1,53779806
+NG_050209.1,"Escherichia coli ayfy2005-2926 blaTEM gene for class A beta-lactamase TEM-166, complete CDS",16-14-A7D25,1,53779806
+NG_048257.1,"Campylobacter jejuni tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",16-14-A7D25,1,53779806
+NG_050151.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-106, complete CDS",16-14-A7D25,1,53779806
+NG_050273.1,"Klebsiella pneumoniae BM2733 blaTEM gene for class A extended-spectrum beta-lactamase TEM-53, complete CDS",16-14-A7D25,2,53779806
+NG_048284.1,"Trueperella pyogenes tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",16-14-A7D25,1,53779806
+NG_048288.1,"Bifidobacterium longum tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",16-14-A7D25,2,53779806
+NG_047322.1,"Campylobacter jejuni CG8245 pCG8245 aad9 gene for aminoglycoside nucleotidyltransferase ANT9, complete CDS",16-14-A7D25,1,53779806
+NG_050166.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-122, complete CDS",16-14-A7D25,1,53779806
+NG_047827.1,"Lysinibacillus sphaericus erm(G) gene for 23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(G), complete CDS",16-14-A7D25,2,53779806
+NG_050218.1,"Escherichia sp. Sflu5 pAK51 blaTEM gene for class A beta-lactamase TEM-181, complete CDS",16-14-A7D25,2,53779806
+NG_050244.1,"Proteus mirabilis IHMA 845676 blaTEM gene for class A extended-spectrum beta-lactamase TEM-211, complete CDS",16-14-A7D25,1,53779806
+NG_050284.1,"Morganella morganii FI-13 pMNFI-13 blaTEM gene for class A extended-spectrum beta-lactamase TEM-72, complete CDS",16-14-A7D25,1,53779806
+NG_050163.1,"Klebsiella oxytoca 0400-1 blaTEM gene for class A extended-spectrum beta-lactamase TEM-12, complete CDS",16-14-A7D25,1,53779806
+NG_050274.1,"Escherichia coli BM2728 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-54, complete CDS",16-14-A7D25,1,53779806
+NG_050220.1,"Klebsiella pneumoniae HS-153 blaTEM gene for class A broad-spectrum beta-lactamase TEM-183, complete CDS",16-14-A7D25,2,53779806
+NG_050187.1,"Salmonella enterica subsp. enterica serovar Derby str. D1 blaTEM gene for class A extended-spectrum beta-lactamase TEM-144, complete CDS",16-14-A7D25,1,53779806
+NG_050306.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-97, complete CDS",16-14-A7D25,1,53779806
+NG_050272.1,"Klebsiella pneumoniae blaTEM gene for class A extended-spectrum beta-lactamase TEM-52, complete CDS",16-14-A7D25,1,53779806
+NG_050237.1,"Pseudomonas aeruginosa 12 blaTEM gene for class A beta-lactamase TEM-205, complete CDS",16-14-A7D25,1,53779806
+NG_050221.1,"Escherichia coli PI-12197 pCT-1 blaTEM gene for class A extended-spectrum beta-lactamase TEM-184, complete CDS",16-14-A7D25,1,53779806
+NG_050214.1,"Escherichia coli pAm08CQ6130 blaTEM gene for class A beta-lactamase TEM-171, complete CDS",16-14-A7D25,1,53779806
+NG_050282.1,"Escherichia coli SM91 blaTEM gene for class A beta-lactamase TEM-70, complete CDS",16-14-A7D25,1,53779806
+NG_048435.1,"Enterococcus faecalis BM4518 vanS gene for VanG-type vancomycin resistance histidine kinase VanS, complete CDS",16-14-A7D25,2,53779806
+NG_048283.1,"Roseburia sp. A2-183 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",16-14-A7D25,1,53779806
+NG_047378.1,"Pediococcus acidilactici NCIMB 6990 pEOC01 aadE gene for aminoglycoside 6-adenylyltransferase AadE, complete CDS",17-26-A7D20,6,36086618
+NG_047970.1,"Clostridium kluyveri DSM 555 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",17-26-A7D20,6,36086618
+NG_048522.1,"Enterococcus gallinarum N04-0414 vanY-D gene for transpeptidase-like D-Ala-D-Ala carboxypeptidase VanY-D, complete CDS",17-26-A7D20,3,36086618
+NG_048416.1,"Enterococcus gallinarum N04-0414 vanR gene for VanD-type vancomycin resistance DNA-binding response regulator VanR, complete CDS",17-26-A7D20,9,36086618
+NG_048125.1,"Streptococcus salivarius FStet12 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",17-26-A7D20,41,36086618
+NG_048141.1,"Streptococcus suis A3 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",17-26-A7D20,99,36086618
+NG_055990.1,"Lawsonia intracellularis PHE/MN1-00 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",17-26-A7D20,5,36086618
+NG_048126.1,"Streptococcus parasanguinis 41.1T tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",17-26-A7D20,16,36086618
+NG_047977.1,"Exiguobacterium sp. S3-2 pMC1 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",17-26-A7D20,9,36086618
+NG_048139.1,"Clostridiaceae bacterium K10 tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",17-26-A7D20,55,36086618
+NG_048140.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",17-26-A7D20,95,36086618
+NG_047429.1,"Escherichia coli aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",17-26-A7D20,1,36086618
+NG_048138.1,"uncultured bacterium tet(40) gene for tetracycline efflux MFS transporter Tet(40), complete CDS",17-26-A7D20,60,36086618
+NG_051939.1,"Klebsiella pneumoniae subsp. pneumoniae ST101:945169659 blaTEM gene for class A beta-lactamase TEM-213, complete CDS",17-26-A7D20,1,36086618
+NG_050214.1,"Escherichia coli pAm08CQ6130 blaTEM gene for class A beta-lactamase TEM-171, complete CDS",17-26-A7D20,1,36086618
+NG_050225.1,"Salmonella enterica SS10 blaTEM gene for class A extended-spectrum beta-lactamase TEM-188, complete CDS",17-26-A7D20,2,36086618
+NG_047968.1,"Streptococcus agalactiae Hk115 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",17-26-A7D20,2,36086618
+NG_047963.1,"Streptococcus pyogenes mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",17-26-A7D20,1,36086618
+NG_050236.1,"Escherichia coli WDR-13 unnamed blaTEM gene for class A beta-lactamase TEM-201, complete CDS",17-26-A7D20,1,36086618
+NG_048293.1,"uncultured bacterium tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",17-26-A7D20,2,36086618
+NG_050206.1,"Acinetobacter haemolyticus pUPI191 blaTEM gene for class A beta-lactamase TEM-162, complete CDS",17-26-A7D20,4,36086618
+NG_048124.1,"Clostridiaceae bacterium K10 tet(32) gene for tetracycline resistance ribosomal protection protein Tet(32), complete CDS",17-26-A7D20,7,36086618
+NG_050280.1,"Proteus mirabilis NEL-1 pANG-1 blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-67, complete CDS",17-26-A7D20,1,36086618
+NG_050202.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-158, complete CDS",17-26-A7D20,1,36086618
+NG_047962.1,"Streptococcus sp. 'group G' 01M128672 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",17-26-A7D20,2,36086618
+NG_048292.1,"Lactobacillus johnsonii G41 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",17-26-A7D20,4,36086618
+NG_050194.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-150, complete CDS",17-26-A7D20,1,36086618
+NG_050162.1,"Staphylococcus aureus pJ3356::POX7 blaTEM gene for class A broad-spectrum beta-lactamase TEM-116, complete CDS",17-26-A7D20,2,36086618
+NG_048289.1,"Selenomonas ruminantium FB322 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",17-26-A7D20,1,36086618
+NG_048444.1,"Enterococcus gallinarum N04-0414 vanS gene for VanD-type vancomycin resistance histidine kinase VanS, complete CDS",17-26-A7D20,4,36086618
+NG_048400.1,"Enterococcus faecium BM4339 vanR gene for VanD-type vancomycin resistance DNA-binding response regulator VanR, complete CDS",17-26-A7D20,1,36086618
+NG_048006.1,"Streptococcus pneumoniae GA3488 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",17-26-A7D20,5,36086618
+NG_048490.1,"Enterococcus gallinarum N04-0414 vanX-D gene for D-Ala-D-Ala dipeptidase VanX-D, complete CDS",17-26-A7D20,2,36086618
+NG_047973.1,"Streptococcus pyogenes MB56Spyo005 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",17-26-A7D20,2,36086618
+NG_047961.1,"Streptococcus sp. 'group G' 02M157741 mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",17-26-A7D20,1,36086618
+NG_050232.1,"Klebsiella pneumoniae FSP 286/05 blaTEM gene for class A extended-spectrum beta-lactamase TEM-197, complete CDS",17-26-A7D20,2,36086618
+NG_050277.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-6, complete CDS",17-26-A7D20,1,36086618
+NG_050256.1,"Enterobacter sp. GN02186 blaTEM gene for class A extended-spectrum beta-lactamase TEM-26, complete CDS",17-26-A7D20,2,36086618
+NG_050179.1,"Salmonella enterica subsp. enterica serovar Typhimurium pFPTB1 blaTEM gene for class A broad-spectrum beta-lactamase TEM-135, complete CDS",17-26-A7D20,1,36086618
+NG_048288.1,"Bifidobacterium longum tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",17-26-A7D20,1,36086618
+NG_050160.1,"[Enterobacter] aerogenes blaTEM gene for class A extended-spectrum beta-lactamase TEM-114, complete CDS",17-26-A7D20,1,36086618
+NG_048261.1,"Streptococcus pyogenes tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",17-26-A7D20,2,36086618
+NG_050196.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-152, complete CDS",17-26-A7D20,1,36086618
+NG_050200.1,"Proteus mirabilis blaTEM gene for class A beta-lactamase TEM-156, complete CDS",17-26-A7D20,1,36086618
+NG_050169.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-125, complete CDS",17-26-A7D20,1,36086618
+NG_050201.1,"Enterobacter cloacae pEC005 blaTEM gene for class A extended-spectrum beta-lactamase TEM-157, complete CDS",17-26-A7D20,2,36086618
+NG_048005.1,"Streptococcus pneumoniae MF4 msr(D) gene for ABC-F type ribosomal protection protein Msr(D), complete CDS",17-26-A7D20,1,36086618
+NG_050279.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-63, complete CDS",17-26-A7D20,1,36086618
+NG_047972.1,"Streptococcus pneumoniae mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",17-26-A7D20,3,36086618
+NG_050188.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-145, complete CDS",17-26-A7D20,2,36086618
+NG_050269.1,"Klebsiella pneumoniae CLSiS 1590/96 blaTEM gene for class A extended-spectrum beta-lactamase TEM-47, complete CDS",17-26-A7D20,1,36086618
+NG_050189.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-146, complete CDS",17-26-A7D20,1,36086618
+NG_048179.1,"Escherichia coli invasion plasmid pIS2 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",17-26-A7D20,1,36086618
+NG_050308.1,"Escherichia coli blaTEM gene for class A beta-lactamase TEM-99, complete CDS",17-26-A7D20,2,36086618
+NG_048175.1,"Salmonella enterica subsp. enterica serovar Typhimurium R46 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",17-26-A7D20,3,36086618
+NG_050166.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-122, complete CDS",17-26-A7D20,1,36086618
+NG_048174.1,"Francisella tularensis LVS pOM1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",17-26-A7D20,1,36086618
+NG_048284.1,"Trueperella pyogenes tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",17-26-A7D20,2,36086618
+NG_050305.1,"Escherichia coli H28 pOZ188 blaTEM gene for class A beta-lactamase TEM-96, complete CDS",17-26-A7D20,1,36086618
+NG_050155.1,"Proteus mirabilis 217C5 blaTEM gene for class A extended-spectrum beta-lactamase TEM-11, complete CDS",17-26-A7D20,1,36086618
+NG_047322.1,"Campylobacter jejuni CG8245 pCG8245 aad9 gene for aminoglycoside nucleotidyltransferase ANT9, complete CDS",17-26-A7D20,1,36086618
+NG_048270.1,"Prevotella ruminicola 223 tet(Q) gene for tetracycline resistance ribosomal protection protein Tet(Q), complete CDS",17-26-A7D20,1,36086618
+NG_050289.1,"Klebsiella pneumoniae CF 704 blaTEM gene for class A extended-spectrum beta-lactamase TEM-8, complete CDS",17-26-A7D20,1,36086618
+NG_050291.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-81, complete CDS",17-26-A7D20,1,36086618
+NG_050302.1,"Escherichia coli CLSiS 3445/98 pblaTEM-93 blaTEM gene for class A extended-spectrum beta-lactamase TEM-93, complete CDS",17-26-A7D20,2,36086618
+NG_050272.1,"Klebsiella pneumoniae blaTEM gene for class A extended-spectrum beta-lactamase TEM-52, complete CDS",17-26-A7D20,2,36086618
+NG_050286.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A broad-spectrum beta-lactamase TEM-77, complete CDS",17-26-A7D20,1,36086618
+NG_050195.1,"Escherichia coli blaTEM gene for inhibitor-resistant class A extended-spectrum beta-lactamase TEM-151, complete CDS",17-26-A7D20,1,36086618
+NG_050220.1,"Klebsiella pneumoniae HS-153 blaTEM gene for class A broad-spectrum beta-lactamase TEM-183, complete CDS",17-26-A7D20,2,36086618
+NG_048266.1,"Streptococcus suis BM407 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",17-26-A7D20,1,36086618
+NG_048181.1,"Escherichia coli SE11 pSE11-1 tet(C) gene for tetracycline efflux MFS transporter Tet(C), complete CDS",17-26-A7D20,2,36086618
+NG_050276.1,"Escherichia coli F4-Zhengzhou unnamed blaTEM gene for class A broad-spectrum beta-lactamase TEM-57, complete CDS",17-26-A7D20,1,36086618
+NG_050224.1,"Proteus mirabilis 7001324 unnamed blaTEM gene for class A extended-spectrum beta-lactamase TEM-187, complete CDS",17-26-A7D20,1,36086618
+NG_050253.1,"Neisseria gonorrhoeae IM4519 blaTEM gene for class A beta-lactamase TEM-220, complete CDS",17-26-A7D20,1,36086618
+NG_048255.1,"Streptococcus pneumoniae SA40300 tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",17-26-A7D20,1,36086618
+NG_050199.1,"Proteus mirabilis blaTEM gene for class A extended-spectrum beta-lactamase TEM-155, complete CDS",17-26-A7D20,1,36086618
+NG_054696.1,"Escherichia coli CNR1655 blaTEM gene for class A beta-lactamase TEM-227, complete CDS",17-26-A7D20,1,36086618
+NG_048303.1,"Streptococcus suis 33421 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",17-26-A7D20,1,36086618
+NG_050273.1,"Klebsiella pneumoniae BM2733 blaTEM gene for class A extended-spectrum beta-lactamase TEM-53, complete CDS",17-26-A7D20,1,36086618
+NG_050213.1,"Capnocytophaga ochracea blaTEM gene for class A extended-spectrum beta-lactamase TEM-17, complete CDS",17-26-A7D20,1,36086618
+NG_050187.1,"Salmonella enterica subsp. enterica serovar Derby str. D1 blaTEM gene for class A extended-spectrum beta-lactamase TEM-144, complete CDS",17-26-A7D20,1,36086618
+NG_050298.1,"Klebsiella pneumoniae K28 pMG272 blaTEM gene for class A extended-spectrum beta-lactamase TEM-88, complete CDS",17-26-A7D20,1,36086618
+NG_050230.1,"Acinetobacter baumannii 194 blaTEM gene for class A beta-lactamase TEM-194, complete CDS",17-26-A7D20,1,36086618
+NG_047966.1,"Gemella haemolysans mef(A) gene for macrolide efflux MFS transporter Mef(A), complete CDS",17-26-A7D20,1,36086618
+NG_048254.1,"Streptococcus mutans tet(O) gene for tetracycline resistance ribosomal protection protein Tet(O), complete CDS",17-26-A7D20,1,36086618
+NG_047440.1,"Enterobacter cloacae pEC-IMP aph(3')-Ia gene for aminoglycoside O-phosphotransferase APH(3')-Ia, complete CDS",17-26-A7D20,1,36086618
+NG_048281.1,"Butyrivibrio fibrisolvens 1.230 tet(W) gene for tetracycline resistance ribosomal protection protein Tet(W), complete CDS",17-26-A7D20,1,36086618
+NG_050211.1,"Escherichia coli N08-1503 blaTEM gene for class A extended-spectrum beta-lactamase TEM-168, complete CDS",17-26-A7D20,1,36086618
+NG_050210.1,"Escherichia coli blaTEM gene for class A extended-spectrum beta-lactamase TEM-167, complete CDS",17-26-A7D20,1,36086618
