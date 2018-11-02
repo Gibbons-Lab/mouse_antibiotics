@@ -3,17 +3,46 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
-
 ```{r}
-plot(cars)
+library(data.table)
+
+counts <- fread("counts.csv")
+counts[, sample := tstrsplit(sample, "-")[[3]]]
+counts[, mouse := substr(sample, 1, 2)]
+counts[, day := as.numeric(substr(sample, 4, 6))]
+
+counts$responder <- "responder"
+counts[mouse %in% c("A4", "A5", "C6", "C7"), responder := "non-responder"]
+
+counts
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+```{r}
+library(ggplot2)
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+resistance <- counts[, .(counts = sum(counts), reads=reads[1], day=day[1], mouse=mouse[1], responder=responder[1]), by="sample"]
+beta <- counts[grepl("beta-lactamase", description), 
+               .(counts = sum(counts), reads=reads[1], day=day[1], mouse=mouse[1], responder=responder[1]), by="sample"]
+time_plot <- ggplot(beta, aes(x=responder, y=counts/reads, color=mouse)) + 
+  geom_boxplot(color="gray") + geom_jitter(size=2, width=0.25) + 
+  facet_wrap(~day) + theme_bw()
+time_plot
+ggsave("beta_time.png", width=10, height=5)
+```
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+```{r}
+time_plot %+% resistance
+ggsave("resistance_time.png", width=10, height=5)
+```
 
+```{r}
+mouse_plot <- ggplot(beta, aes(x=factor(day), y=counts/reads, color=mouse)) + 
+  geom_point(size=2) + geom_line(aes(group=mouse)) + facet_wrap(~ mouse) + theme_bw()
+mouse_plot
+ggsave("beta_time.png")
+```
+
+```{r}
+mouse_plot %+% resistance
+ggsave("resistance_time.png")
+```

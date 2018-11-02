@@ -1,0 +1,104 @@
+---
+title: "Functional analysis"
+output: html_notebook
+---
+
+Here we will perform a differential abundance analysis on the gene orthologue groups in order to quantify the functional
+capacity of different transcriptomes.
+
+## Preprocessing
+
+```{r}
+library(mbtools)
+
+counts <- fread("data/txcounts.csv")
+counts[, sample := tstrsplit(sample, "-")[[3]]]
+
+meta <- fread("data/seq_samples.csv", key="Sample")
+meta[, day := substr(Sample, 4, 6)]
+meta[, mouse := substr(Sample, 1, 3)]
+meta
+```
+
+Now we will load the SEED annotations for the contigs:
+
+```{r}
+anns <- fread("data/contig_seed.csv")
+anns
+```
+
+Now we will join the counts with the annotations:
+
+```{r}
+fncounts <- anns[counts, on=c(query="seqnames"), nomatch = 0]
+fncounts <- fncounts[, .(description=description[1], counts=sum(counts)), by=c("id", "sample")]
+fncounts
+```
+
+## Count matrix
+
+First, we will transform the counts to matrix.
+
+```{r}
+count_mat <- dcast(fncounts, id ~ sample, fill=0)
+nm <- count_mat[, id]
+count_mat[, id := NULL]
+count_mat <- as.matrix(count_mat)
+rownames(count_mat) <- nm
+dim(count_mat)
+```
+
+We will also filter low abundance transcripts from the count matrix.
+
+```{r}
+count_mat <- t(filter_counts(t(count_mat), abundance = 10, presence = 0.5))
+nrow(count_mat)
+```
+
+Let's visualize the functional counts across samples.
+
+```{r, fig.width=6, fig.height=40}
+library(pheatmap)
+
+plot_mat <- log10(mbtools::normalize(count_mat) + 1)
+plot_mat <- plot_mat[order(-rowMeans(plot_mat))[1:500],]
+idmap <- unique(anns[, .(id, description, superpathway, pathway, subpathway)])
+setkey(idmap, id)
+descs <- stringr::str_trunc(idmap[rownames(plot_mat), description], 20)
+rownames(plot_mat) <- descs
+pheatmap(plot_mat, fontsize=8)
+```
+
+## DESeq2 
+
+```{r}
+library(DESeq2)
+
+setkey(meta, Sample)
+meta <- meta[colnames(count_mat)]
+
+subsets <- list(all = rep(T, nrow(meta)),
+             `day 20 (before antibiotics)` = meta$day == 20,
+             `day 25 (after antibiotics)` = meta$day == 25,
+             `day 29 (after antibiotics)` = meta$day == 29)
+tests <- list()
+for (i in 1:length(subsets)) {
+  s <- subsets[[i]]
+  name <- names(subsets)[i]
+  ds <- DESeqDataSetFromMatrix(count_mat[, s], meta[s], ~ type)
+  ds <- DESeq(ds, parallel = TRUE)
+  res <- results(ds)
+  res <- lfcShrink(ds, 2, parallel = TRUE)
+  res$id <- rownames(res)
+  coef_name <- resultsNames(ds)[2]
+  res <- as.data.table(res)
+  res[, subset := name]
+  res[, coefficient := coef_name]
+  tests[[name]] <- res
+}
+
+tests <- rbindlist(tests)
+tests <- idmap[tests, on=c("id")]
+tests <- tests[order(padj)]
+fwrite(tests, "data/responder_tests_seed.csv")
+```

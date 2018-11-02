@@ -1,0 +1,82 @@
+---
+title: "Database construction"
+output: html_notebook
+---
+
+The general strategy for mapping the reads to functions is to first assemble contigs from the reads, then search those
+contigs in the [M5nr database](https://doi.org/10.1186/1471-2105-13-141) and use those hits to map them by the M5 ids.
+
+So, let's start by getting our mapping from contigs to M5nr ids (md5 hashes):
+
+```{r}
+devtools::load_all("~/code/mbtools")
+
+contig_map <- read_blast("data/spades2md5nr.m8")[evalue < 1e-4]
+```
+
+## eggNOG
+
+We will start by creating a map between our queries and eggNOG orthologue groups.
+
+```{r}
+eggnog <- fread("zcat < data/eggNOG.md52id2ont.gz", header=FALSE)
+names(eggnog) <- c("reference", "id", "description", "database")
+
+eggnog <- eggnog[contig_map[, .(query, reference)], on="reference", nomatch=0]
+```
+
+We fill try to reduce the mappings for each query to the unique annotations and report the fraction of found contigs.
+
+```{r}
+eggnog <- eggnog[, .(description=paste(unique(description), collapse=";")), by=c("query", "id")]
+eggnog[, uniqueN(query)] / contig_map[, uniqueN(query)]
+```
+
+So about 17% of our contigs have at least one othologue annotation. We will save the mappings for later use.
+
+We will combine this with the eggnog hierarchy.
+
+```{r}
+hierarchy <- fread("data/eggNOG.hierarchy", header=FALSE)
+names(hierarchy) <- c("group", "pathway", "function", "id", "database")
+
+eggnog <- hierarchy[eggnog, on="id"]
+dim(eggnog)
+```
+
+```{r}
+fwrite(eggnog, "data/contig_eggnog.csv")
+```
+
+## SEED database
+
+We will do the same for the subsystem database SEED. 
+
+```{r}
+seed <- fread("zcat < data/SEED.md52id2ont.gz", header=FALSE)
+seed[, V4 := NULL]
+names(seed) <- c("reference", "id", "description")
+```
+
+Let's map the annotations to our contigs again.
+
+```{r}
+seed <- seed[contig_map[, .(query, reference)], on="reference", nomatch=0]
+```
+
+And again we reduce to unique mappings.
+
+```{r}
+seed <- seed[, .(description=paste(unique(description), collapse=";")), by=c("query", "id")]
+seed[, uniqueN(query)] / contig_map[, uniqueN(query)]
+```
+
+Here we find almost 60% of the contigs. Finally, we combine that with the hierarchy to obtain the final mappings.
+
+```{r}
+hierarchy <- fread("data/SEED.id2subsystems", header = FALSE)
+names(hierarchy) <- c("superpathway", "pathway", "subpathway", "function", "id")
+
+seed <- hierarchy[seed, on="id"]
+fwrite(seed, "data/contig_seed.csv")
+```

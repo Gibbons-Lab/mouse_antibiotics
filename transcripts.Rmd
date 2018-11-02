@@ -1,0 +1,67 @@
+---
+title: "Differential transcript abundances"
+output: html_notebook
+---
+
+## Data reading and preprocesing
+
+```{r}
+library(mbtools)
+
+counts <- fread("data/txcounts.csv")
+counts[, sample := tstrsplit(sample, "-")[[3]]]
+counts <- dcast(counts, seqnames ~ sample, fill=0)
+nm <- counts[, seqnames]
+counts[, seqnames := NULL]
+counts <- as.matrix(counts)
+rownames(counts) <- nm
+
+meta <- fread("data/seq_samples.csv", key="Sample")[colnames(counts)]
+meta[, day := substr(Sample, 4, 6)]
+meta[, mouse := substr(Sample, 1, 3)]
+meta
+```
+
+We will also filter low abundance transcripts from the count matrix.
+
+```{r}
+counts <- t(filter_counts(t(counts), abundance = 10, presence = 0.25))
+nrow(counts)
+```
+
+Let's look at the samples.
+
+```{r}
+pca <- prcomp(t(counts), center = TRUE)
+red <- as.data.table(pca$x)
+red[, sample := rownames(pca$x)]
+ggplot(red, aes(x = PC1, y = PC2, color = sample, label = sample)) + geom_text()
+```
+
+```{r}
+library(pheatmap)
+
+pheatmap(log10(counts+1))
+```
+
+## With responders
+
+```{r}
+library(DESeq2)
+
+ds <- DESeqDataSetFromMatrix(counts[, meta$day == 29], meta[day == 29], ~ type)
+ds <- DESeq(ds, parallel = TRUE)
+res <- results(ds)
+res <- lfcShrink(ds, 2, parallel = TRUE)
+```
+
+We will merge this with the annotations for the contigs.
+
+```{r}
+dif <- as.data.table(res)
+dif[, transcript := rownames(res)]
+
+anns <- fread("data/best_matches.csv")
+dif <- anns[dif, on=c(query="transcript")]
+sig <- dif[padj < 0.05, .(transcript, description, log2FoldChange, padj)][order(padj)]
+```
