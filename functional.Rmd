@@ -29,12 +29,21 @@ anns <- fread("data/contig_seed.csv")
 anns
 ```
 
-Now we will join the counts with the annotations:
+..and join the counts with the annotations:
 
 ```{r}
 fncounts <- anns[counts, on=c(query="transcript"), nomatch = 0]
 fncounts <- fncounts[, .(description=description[1], counts=sum(counts)), by=c("id", "sample")]
 fncounts
+```
+
+We can check if those are more conserved across samples:
+
+```{r, fig.width=6, fig.height=4}
+cn_per_id <- fncounts[counts > 0, .N, by=id]
+ggplot(cn_per_id, aes(x=factor(N))) + geom_bar() + 
+  labs(x="num. samples", y="num. functions") + theme_bw()
+ggsave("figures/function_counts.svg", width=6, height=4)
 ```
 
 ## Count matrix
@@ -53,25 +62,27 @@ dim(count_mat)
 We will also filter low abundance transcripts from the count matrix.
 
 ```{r}
-count_mat <- t(filter_counts(t(count_mat), abundance = 10, presence = 0.5))
+count_mat <- t(filter_counts(t(count_mat), abundance = 10, presence = 0.25))
 nrow(count_mat)
 ```
 
-Let's visualize the functional counts across samples.
+Let's visualize the samples in the functional space.
 
-```{r, fig.width=6, fig.height=40}
-library(pheatmap)
-
-plot_mat <- log10(mbtools::normalize(count_mat) + 1)
-plot_mat <- plot_mat[order(-rowMeans(plot_mat))[1:500],]
-idmap <- unique(anns[, .(id, description, superpathway, pathway, subpathway)])
-setkey(idmap, id)
-descs <- stringr::str_trunc(idmap[rownames(plot_mat), description], 20)
-rownames(plot_mat) <- descs
-pheatmap(plot_mat, fontsize=8)
+```{r, fig.width=6, fig.height=4}
+pca <- prcomp(log2(mbtools::normalize(t(count_mat))+0.5))
+explained <- pca$sdev^2 / sum(pca$sdev^2)
+red <- as.data.table(pca$x)
+red[, sample := rownames(pca$x)]
+red <- meta[red, on=c(Sample="sample")]
+ggplot(red, aes(x = PC1, y = PC2, shape = day, color = type)) + geom_point(size=2) +
+  labs(x = sprintf("PC1 (%.1f%%)", explained[1] * 100), y = sprintf("PC2 (%.1f%%)", explained[2] * 100)) +
+  theme_bw()
+ggsave("figures/functional_pca.svg", width=6, height=4)
 ```
 
-## DESeq2 
+Non-responders separate less but samples group better by treatment regimes.
+
+## Differential abundance testing
 
 ```{r}
 library(DESeq2)
@@ -79,35 +90,83 @@ library(DESeq2)
 setkey(meta, Sample)
 meta <- meta[colnames(count_mat)]
 
-subsets <- list(all = rep(T, nrow(meta)),
-             `day 20 (before antibiotics)` = meta$day == 20,
-             `day 25 (after antibiotics)` = meta$day == 25,
-             `day 29 (after antibiotics)` = meta$day == 29)
+days <- c(20, 25, 29) 
 tests <- list()
-for (i in 1:length(subsets)) {
-  s <- subsets[[i]]
-  name <- names(subsets)[i]
-  ds <- DESeqDataSetFromMatrix(count_mat[, s], meta[s], ~ type)
-  ds <- DESeq(ds, parallel = TRUE)
+for (d in days) {
+  ds <- DESeqDataSetFromMatrix(count_mat[, meta$day == d], meta[day == d], ~ type)
+  ds <- DESeq(ds, parallel = TRUE, fitType = "local")
   res <- results(ds)
   res <- lfcShrink(ds, 2, parallel = TRUE)
   res$id <- rownames(res)
   coef_name <- resultsNames(ds)[2]
   res <- as.data.table(res)
-  res[, subset := name]
+  res[, day := d]
   res[, coefficient := coef_name]
-  tests[[name]] <- res
+  tests[[d]] <- res
 }
 
 tests <- rbindlist(tests)
+
+idmap <- unique(anns[, .(id, description, superpathway, pathway, subpathway)])
+setkey(idmap, id)
 tests <- idmap[tests, on=c("id")]
 tests <- tests[order(padj)]
 fwrite(tests, "data/responder_tests_seed.csv")
 ```
 
+Again below the nominal FDR for the controls.
+
+```{r}
+tests[, sum(padj < 0.05, na.rm=T), by=day]
+```
+
+Also a well-behaved p-value histogram
+
+```{r}
+hist(tests[, pvalue])
+```
+
 Lets see the most prominent pathways in the significant hits for day 29.
 
 ```{r}
-sig <- tests[grepl("day 29", subset) & padj < 0.05]
-sig[, .N, by="pathway"][order(-N)]
+sig <- tests[day == 29 & padj < 0.05]
+sig[, .N, by="superpathway"][order(-N)]
+
+num_sig <- tests[day == 29, sum(padj < 0.05, na.rm = TRUE)]
+num_used <- tests[day == 29, sum(!is.na(padj))]
+pws <- tests[day == 29, .(sig_prop = sum(padj < 0.05, na.rm =TRUE) / num_sig,
+                          all_prop = sum(!is.na(padj)) / num_used), by="superpathway"]
+pws[, score := sig_prop / all_prop]
+pws[order(-sig_prop)]
 ```
+
+Lets have a look at some of the obvious pathways:
+
+```{r, fig.height=10, fig.width=8}
+library(viridis)
+library(pheatmap)
+
+pws <- idmap[sig$id, superpathway]
+norm_counts <- t(mbtools::normalize(t(count_mat)))[, meta$day == 29]
+
+keyword <- "Defense"
+selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
+rownames(selected) <- stringr::str_trunc(sig[grepl(keyword, superpathway), description], 80)
+anns <- data.frame(type = meta[day == 29, type])
+rownames(anns) <- meta[day == 29, Sample]
+pheatmap(log10(selected + 1), annotation_col = anns, color = viridis(128), 
+         filename = sprintf("figures/heatmap_%s.pdf", keyword), 
+         cellwidth = 10, cellheight = 10,
+         legend_breaks = 0:6)
+
+pheatmap(log10(selected + 1), annotation_col = anns, color = viridis(128), 
+         cellwidth = 10, cellheight = 10,
+         legend_breaks = 0:6)
+```
+
+And globally:
+
+```{r, fig.width=6, fig.height=12}
+pheatmap(log10(norm_counts + 1), annotation_col = anns, color = viridis(128), show_rownames = FALSE)
+```
+
