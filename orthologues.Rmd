@@ -12,6 +12,8 @@ capacity of different transcriptomes.
 library(mbtools)
 
 counts <- fread("data/txcounts.csv")
+counts[, counts := round(counts)]
+counts <- counts[counts > 0]
 counts[, sample := tstrsplit(sample, "-")[[3]]]
 
 meta <- fread("data/seq_samples.csv", key="Sample")
@@ -30,7 +32,7 @@ anns
 Now we will join the counts with the annotations:
 
 ```{r}
-fncounts <- anns[counts, on=c(query="seqnames"), nomatch = 0]
+fncounts <- anns[counts, on=c(query="transcript"), nomatch = 0]
 fncounts <- fncounts[, .(description=description[1], counts=sum(counts)), by=c("id", "sample")]
 fncounts
 ```
@@ -99,4 +101,11 @@ tests <- rbindlist(tests)
 tests <- idmap[tests, on=c("id")]
 tests <- tests[order(padj)]
 fwrite(tests, "data/responder_tests_eggnog.csv")
+```
+
+Lets see the most prominent pathways in the significant hits for day 29.
+
+```{r}
+sig <- tests[grepl("day 29", subset) & padj < 0.05]
+sig[, .N, by=description][order(-N)]
 ```
