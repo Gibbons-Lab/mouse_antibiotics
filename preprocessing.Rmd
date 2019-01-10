@@ -1,0 +1,82 @@
+---
+title: "Preprocessing of the data"
+author: "Christian Diener <cdiener@systemsbioogy.org>"
+output: html_notebook
+---
+
+# Converting to a phyloseq object
+
+Both experiments were processed the same way so we can write a single function 
+to read both experiments.
+
+```{r}
+library(stringr)
+devtools::load_all("~/code/mbtools")
+
+qiime2phyloseq <- function(path) {
+  feature_table <- read.csv(file.path(path, "feature_table.csv"), 
+                            check.names = F, row.names = 1) %>% t()
+  sample_meta <- read.table(file.path(path, "metadata.tsv"), 
+                            comment.char = "#", header = 1)
+  rownames(sample_meta) <- sample_meta[, 1]
+  taxa <- read.table(file.path(path, "taxonomy.tsv"), sep = "\t", header = 1)
+  taxa_meta <- str_replace_all(taxa$Taxon, "\\w__", "") %>% 
+               str_split_fixed(., "; ", n = 7)
+  taxa_meta[taxa_meta == ""] <- NA
+  colnames(taxa_meta) <- c("kingdom", "phylum", "class", "order", 
+                           "family", "genus", "species")
+  rownames(taxa_meta) <- taxa[, 1]
+  
+  ps <- phyloseq(otu_table(feature_table, taxa_are_rows = F),
+                 tax_table(taxa_meta),
+                 sample_data(sample_meta))
+  ps
+}
+```
+
+# Exposure experiment
+
+We will extract the exposure durations from the sample names.
+
+```{r}
+exposure <- qiime2phyloseq("data/exposure")
+
+sdata <- sample_data(exposure)
+sample_data(exposure)$Exposure <- str_replace(sdata$Mouse, "[A-Z]", "") %>% 
+                                  as.numeric()
+```
+
+We will save the phyloseq object for further analyses.
+
+```{r}
+saveRDS(exposure, "data/exposure_exp.rds")
+```
+
+# Seaweed experiment
+
+Groups A and B received no seaweed in their diet whereas groups C and D did. We will
+also remove 4 samples where the diet was switched right before antibiotics (internal controls).
+
+```{r}
+seaweed <- qiime2phyloseq("data/seaweed")
+sample_data(seaweed)$seaweed <- sample_data(seaweed)$Group %in% c("C", "D")
+sample_data(seaweed)$CategoricalID <- tolower(sample_data(seaweed)$CategoricalID)
+seaweed <- subset_samples(seaweed, !(Subject %in% c("A9", "A10", "C9", 
+                                                    "C10", "X1", "X2", "Y1", 
+                                                    "Y2")))
+```
+
+We will also merge in the qPCR cycle time (Cq or Ct values):
+
+```{r}
+Ct <- read.table("data/seaweed/qpcr_data.tsv", header = TRUE)
+names(Ct) <- c("CategoricalID", "Ct")
+sample_data(seaweed) <- merge(sample_data(seaweed), 
+                              Ct, by="CategoricalID")
+```
+
+We will save the phyloseq object for further analyses.
+
+```{r}
+saveRDS(seaweed, "data/seaweed_exp.rds")
+```

@@ -73,8 +73,8 @@ pca <- prcomp(log2(mbtools::normalize(t(count_mat))+0.5))
 explained <- pca$sdev^2 / sum(pca$sdev^2)
 red <- as.data.table(pca$x)
 red[, sample := rownames(pca$x)]
-red <- meta[red, on=c(Sample="sample")]
-ggplot(red, aes(x = PC1, y = PC2, shape = day, color = type)) + geom_point(size=2) +
+red <- meta[red, on=c(Sample="sample")][day == 29]
+ggplot(red, aes(x = PC1, y = PC2, color = type)) + geom_point(size=2) +
   labs(x = sprintf("PC1 (%.1f%%)", explained[1] * 100), y = sprintf("PC2 (%.1f%%)", explained[2] * 100)) +
   theme_bw()
 ggsave("figures/functional_pca.svg", width=6, height=4)
@@ -123,7 +123,7 @@ tests[, sum(padj < 0.05, na.rm=T), by=day]
 Also a well-behaved p-value histogram
 
 ```{r}
-hist(tests[, pvalue])
+ggplot(tests, aes(x = pvalue)) + geom_histogram(bins=20) + theme_bw()
 ```
 
 Lets see the most prominent pathways in the significant hits for day 29.
@@ -149,7 +149,7 @@ library(pheatmap)
 pws <- idmap[sig$id, superpathway]
 norm_counts <- t(mbtools::normalize(t(count_mat)))[, meta$day == 29]
 
-keyword <- "Defense"
+keyword <- "DNA Metabolism"
 selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
 rownames(selected) <- stringr::str_trunc(sig[grepl(keyword, superpathway), description], 80)
 anns <- data.frame(type = meta[day == 29, type])
@@ -166,7 +166,45 @@ pheatmap(log10(selected + 1), annotation_col = anns, color = viridis(128),
 
 And globally:
 
-```{r, fig.width=6, fig.height=12}
-pheatmap(log10(norm_counts + 1), annotation_col = anns, color = viridis(128), show_rownames = FALSE)
+```{r, fig.width=8, fig.height=10}
+superpathways <- data.frame(superpathway = tests[day == 29, superpathway])
+rownames(superpathways) <- tests[day == 29, id]
+pheatmap(log10(norm_counts + 1), annotation_col = anns, annotation_row = superpathways, color = viridis(128), show_rownames = FALSE)
 ```
 
+## Pulling out particular function sets
+
+We can also show particular sets of functions. For that let we will write a quick function to build up a merged count data set.
+
+```{r}
+tidy_counts <- function(ids, count_matrix, sample_data, function_groups) {
+  cn <- as.data.table(count_matrix[ids, ])
+  cn$id <- ids
+  cn <- melt(cn, id.vars = "id", variable.name = "Sample", value.name = "reads")
+  cn <- sample_data[cn, on="Sample"]
+  cn <- function_groups[cn, on="id"]
+  cn
+}
+```
+
+We can now use that to pull out entire subsystems. Let us have a look at the Vancomycin tolerance locus
+that showed up in the significant results.
+
+```{r}
+vanc <- sig[grepl("Vancomycin", subpathway), id]
+vanc_counts <- tidy_counts(vanc, norm_counts, meta, sig)
+vanc_counts[, gene := str_match(description, "V.+")[, 1]]
+vanc_counts
+```
+
+We can use that tidy data set to easily visualize a set of genes at once:
+
+```{r, fig.width=4.5, fig.height=3}
+pl <- ggplot(vanc_counts, aes(x=gene, y=reads + 0.5, col=type)) +
+  geom_jitter(width=0.2) + scale_y_log10() +
+  stat_summary(fun.ymax = mean, fun.ymin = mean, fun.y = mean, 
+               geom = "crossbar", width=0.3) +
+  theme_bw() + labs(x = "", y = "normalized reads")
+ggsave("figures/vancomycin_locus.svg", width=4.5, height=3)
+pl
+```

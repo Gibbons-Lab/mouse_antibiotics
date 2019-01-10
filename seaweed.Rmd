@@ -1,0 +1,105 @@
+---
+title: "Seaweed experiment 16s data"
+author: "Christian Diener <cdiener@systemsbiology.org>"
+output: html_notebook
+---
+
+# Effects of diet
+
+## Data preparation
+
+We will start by reading our data and required libraries.
+
+```{r}
+library(mbtools)
+
+ps <- readRDS("data/seaweed_exp.rds")
+
+resp <- sample_data(ps)$Response
+map <- c(cnt="control", non="non-responder", res="responder")
+levels(resp) <- map[levels(resp)]
+sample_data(ps)$Response <- resp
+```
+
+We sill start by building up a dataframe that combines phyla abundances and sample metadata.
+
+```{r}
+phyla <- taxa_count(ps, "phylum")
+
+sdata <- as.data.table(as(sample_data(ps), "data.frame"))
+phyla <- phyla[sdata, on=c(sample="Sample")]
+head(phyla)
+```
+
+# Phyla abundances
+
+## By exposure
+
+First we have to assemble the relative abundances for controls.
+
+```{r}
+treated <- phyla[DaysElapsed == 31]
+treated[, relative := reads / sum(reads, na.rm=T), by=c("seaweed", "Response")]
+
+high_taxa <- phyla[DaysElapsed == 31, .(taxa=taxa, rel=reads / sum(reads)), by="sample"][rel > 1e-3, unique(taxa)] 
+```
+
+Let us visualize rough differences.
+
+```{r, fig.height=6, fig.width=8}
+pl <- ggplot(treated[taxa %in% high_taxa], aes(x=factor(seaweed), y=relative, fill=taxa)) + 
+  geom_bar(stat="identity") + scale_y_continuous(labels=scales::percent) +
+  facet_wrap(~ Response) + theme_bw() +
+  scale_x_discrete(labels = c("without", "with")) +
+  labs(x="seaweed in diet", y="relative abundance", fill="phylum")
+ggsave("figures/treatment_seaweed.svg", height=6, width=8)
+pl
+```
+
+## Summarized
+
+```{r, fig.width=4, fig.height=5}
+library(gridExtra)
+
+treated <- phyla[DaysElapsed == 31]
+treated[, relative := reads / sum(reads), by="Response"]
+
+bars <- ggplot(treated[taxa %in% high_taxa], aes(x=Response, y=relative, fill=taxa)) + 
+  geom_bar(stat="identity") + scale_y_continuous(labels=scales::percent) +
+  theme_bw() + theme(axis.text.x = element_text(angle=30, hjust=1, vjust=1)) +
+  labs(x="", y="relative abundance", fill="phylum")
+after_exposure <- sdata[DaysElapsed == 31]
+resp_counts <- after_exposure[, table(Response, seaweed)][2:3, ]
+tbl <- tableGrob(resp_counts, )
+pl <- grid.arrange(bars, tbl, nrow=2, as.table=T, heights=c(3, 1))
+ggsave("figures/summary_seaweed.svg", plot = pl, height=6, width=4)
+pl
+```
+
+And the corresponding Fisher test:
+
+```{r}
+fisher.test(resp_counts) %>% print
+```
+
+# Beta diversity
+
+We are interested in the beta diversity between samples after treatment, so we will start by selecting a subset of those
+and calculating the ordination. We will look at the sequencing depth to get a decent depth for rarefaction.
+
+```{r}
+after_treat <- subset_samples(ps, DaysElapsed == 31)
+sample_sums(after_treat) %>% summary
+```
+
+Okay so we can easily rarefy to 2k reads.
+
+```{r}
+ord <- rarefy_even_depth(after_treat, 1000) %>% ordinate(., method="PCoA", distance = "bray")
+
+pl <- plot_ordination(after_treat, ord, color = "Response") +
+      stat_ellipse(aes(group=Response), type="t") +
+      labs(shape = "since treatment [days]") + theme_bw()
+ggsave("figures/post_treatment_pcoa_seaweed.svg", width=6, height=4)
+pl  
+```
