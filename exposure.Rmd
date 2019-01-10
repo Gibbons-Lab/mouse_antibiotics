@@ -46,12 +46,12 @@ high_taxa <- phyla[Day - Exposure == 0, .(taxa=taxa, rel=reads / sum(reads)), by
 
 We will plot a reference bar chart for those, removing all phyla that contribute less than 0.1% of the total reads.
 
-```{r, fig.height=6, fig.width=3}
+```{r, fig.height=4, fig.width=1.5}
 pl <- ggplot(control[taxa %in% high_taxa], aes(x=factor(Exposure), y=relative, fill=taxa)) + 
   geom_bar(stat="identity") + scale_y_continuous(labels=scales::percent) +
   theme_bw() + labs(x="antibiotic exposure [days]", y="relative abundance") +
-  facet_wrap(~ Response)
-ggsave("figures/control_exposure.svg", height=6, width=3)
+  facet_wrap(~ Response) + guides(fill = "none")
+ggsave("figures/control_exposure.svg", height=4, width=1.5)
 pl
 ```
 
