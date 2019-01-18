@@ -93,12 +93,12 @@ meta <- meta[colnames(count_mat)]
 days <- c(20, 25, 29) 
 tests <- list()
 for (d in days) {
-  ds <- DESeqDataSetFromMatrix(count_mat[, meta$day == d], meta[day == d], ~ type)
+  ds <- DESeqDataSetFromMatrix(count_mat[, meta$day == d], meta[day == d], ~ RIN + type)
   ds <- DESeq(ds, parallel = TRUE, fitType = "local")
   res <- results(ds)
-  res <- lfcShrink(ds, 2, parallel = TRUE)
+  res <- lfcShrink(ds, 3, parallel = TRUE)
   res$id <- rownames(res)
-  coef_name <- resultsNames(ds)[2]
+  coef_name <- resultsNames(ds)[3]
   res <- as.data.table(res)
   res[, day := d]
   res[, coefficient := coef_name]
@@ -130,14 +130,7 @@ Lets see the most prominent pathways in the significant hits for day 29.
 
 ```{r}
 sig <- tests[day == 29 & padj < 0.05]
-sig[, .N, by="superpathway"][order(-N)]
-
-num_sig <- tests[day == 29, sum(padj < 0.05, na.rm = TRUE)]
-num_used <- tests[day == 29, sum(!is.na(padj))]
-pws <- tests[day == 29, .(sig_prop = sum(padj < 0.05, na.rm =TRUE) / num_sig,
-                          all_prop = sum(!is.na(padj)) / num_used), by="superpathway"]
-pws[, score := sig_prop / all_prop]
-pws[order(-sig_prop)]
+sig[, .N, by="pathway"][order(-N)]
 ```
 
 Lets have a look at some of the obvious pathways:
@@ -149,7 +142,7 @@ library(pheatmap)
 pws <- idmap[sig$id, superpathway]
 norm_counts <- t(mbtools::normalize(t(count_mat)))[, meta$day == 29]
 
-keyword <- "DNA Metabolism"
+keyword <- "Cell Division"
 selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
 rownames(selected) <- stringr::str_trunc(sig[grepl(keyword, superpathway), description], 80)
 anns <- data.frame(type = meta[day == 29, type])
@@ -204,7 +197,20 @@ pl <- ggplot(vanc_counts, aes(x=gene, y=reads + 0.5, col=type)) +
   geom_jitter(width=0.2) + scale_y_log10() +
   stat_summary(fun.ymax = mean, fun.ymin = mean, fun.y = mean, 
                geom = "crossbar", width=0.3) +
-  theme_bw() + labs(x = "", y = "normalized reads")
+  theme_bw() + labs(x = "vancomycin tolerance locus", y = "normalized reads")
 ggsave("figures/vancomycin_locus.svg", width=4.5, height=3)
+pl
+```
+
+```{r, fig.width=4, fig.height=3}
+acoa_synth <- sig[grepl("CoA synthase", description), id]
+as_counts <- tidy_counts(acoa_synth, norm_counts, meta, sig)
+
+pl <- ggplot(as_counts, aes(x=id, y=reads + 0.5, col=type)) +
+  geom_jitter(width=0.2) + scale_y_log10() +
+  stat_summary(fun.ymax = mean, fun.ymin = mean, fun.y = mean, 
+               geom = "crossbar", width=0.3) +
+  theme_bw() + labs(x = "Acetyl-CoA synthase", y = "normalized reads")
+ggsave("figures/acoa_synthase.svg", width=4, height=3)
 pl
 ```

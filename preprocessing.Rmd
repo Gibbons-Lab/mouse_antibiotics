@@ -71,8 +71,9 @@ We will also merge in the qPCR cycle time (Cq or Ct values):
 ```{r}
 Ct <- read.table("data/seaweed/qpcr_data.tsv", header = TRUE)
 names(Ct) <- c("CategoricalID", "Ct")
-sample_data(seaweed) <- merge(sample_data(seaweed), 
-                              Ct, by="CategoricalID")
+merged <- merge(as(sample_data(seaweed), "data.frame"), Ct, by="CategoricalID")
+rownames(merged) <- merged$Sample
+sample_data(seaweed) <- merged
 ```
 
 We will save the phyloseq object for further analyses.

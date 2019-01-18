@@ -11,7 +11,7 @@ output: html_notebook
 We will start by reading our data and required libraries.
 
 ```{r}
-library(mbtools)
+devtools::load_all("~/code/mbtools")
 
 ps <- readRDS("data/exposure_exp.rds")
 
@@ -50,22 +50,22 @@ We will plot a reference bar chart for those, removing all phyla that contribute
 pl <- ggplot(control[taxa %in% high_taxa], aes(x=factor(Exposure), y=relative, fill=taxa)) + 
   geom_bar(stat="identity") + scale_y_continuous(labels=scales::percent) +
   theme_bw() + labs(x="antibiotic exposure [days]", y="relative abundance") +
-  facet_wrap(~ Response) + guides(fill = "none")
-ggsave("figures/control_exposure.svg", height=4, width=1.5)
+  facet_wrap(~ Response) + guides(fill = "none") + labs(x="")
+ggsave("figures/control_exposure.png", height=4, width=1.5, dpi=300)
 pl
 ```
 
 Now we will do the same thing for the responders and non-responders.
 
-```{r, fig.height=6, fig.width=8}
+```{r, fig.height=4, fig.width=8}
 treated <- phyla[Exposure > 0 & Day - Exposure == 0]
 treated[, relative := reads / sum(reads), by=c("Exposure", "Response")]
 
 pl <- ggplot(treated[taxa %in% high_taxa], aes(x=factor(Exposure), y=relative, fill=taxa)) + 
   geom_bar(stat="identity") + scale_y_continuous(labels=scales::percent) +
   facet_wrap(~ Response) + theme_bw() +
-  labs(x="antibiotic exposure [days]", y="relative abundance", fill="phylum")
-ggsave("figures/treatment_exposure.svg", height=6, width=8)
+  labs(x="", y="", fill="phylum")
+ggsave("figures/treatment_exposure.png", height=4, width=8, dpi=300)
 pl
 ```
 
@@ -101,18 +101,18 @@ We are interested in the beta diversity between samples after treatment, so we w
 and calculating the ordination. We will look at the sequencing depth to get a decent depth for rarefaction.
 
 ```{r}
-after_treat <- subset_samples(total, Day - Exposure > 0 & Day - Exposure < 10)
+after_treat <- subset_samples(total, Day - Exposure > 0)
 sample_sums(after_treat) %>% summary
 ```
 
 Okay so we can easily rarefy to 15k reads.
 
 ```{r}
-ord <- rarefy_even_depth(after_treat, 15000) %>% ordinate(., method="PCoA", distance = "bray")
+ord <- rarefy_even_depth(after_treat, 10000) %>% ordinate(., method="PCoA", distance = "bray")
 sda <- sample_data(after_treat)
 sample_data(after_treat)$since_treatment <- factor(sda$Day - sda$Exposure)
 
-pl <- plot_ordination(after_treat, ord, color = "Response", shape = "since_treatment") +
+pl <- plot_ordination(after_treat, ord, color = "Response", label = "since_treatment") +
       stat_ellipse(aes(group=Response), type="t") +
       labs(shape = "since treatment [days]") + theme_bw()
 ggsave("figures/post_treatment_pcoa_exposure.svg", width=6, height=4)
@@ -178,32 +178,35 @@ status_counts[response %in% c("non-responder", "responder"),
 
 ## Shannon index
 
-```{r}
+```{r, fig.width=6, fig.height=4}
 shannon <- estimate_richness(rarefy_even_depth(total, 10000), measures="Shannon")
 shannon <- data.table(sample = rownames(shannon), shannon=shannon[, 1])
 shannon <- shannon[sdata, on=c(sample="SampleID")]
 shannon[Day>=0 & Day < 32, Day := Day - Exposure]
 
-ggplot(shannon[Day >= -1 & Day < 10], aes(x=Day, y=shannon, color=Response)) + 
+pl <- ggplot(shannon[Day >= -1 & Day < 10], aes(x=Day, y=shannon, color=Response)) + 
   #geom_line(alpha=0.25, aes(group=Mouse)) +  
   stat_summary(fun.data=mean_sdl, fun.args=list(mult=1), geom="pointrange") +
   stat_summary(fun.data=mean_sdl, fun.args=list(mult=1), geom="line") +
   xlim(-1, 8) + theme_bw() + 
   labs(y = "alpha diversity [Shannon index]", x = "days after treatment")
+ggsave("figures/shannon_time.svg", width = 6, height = 4)
+pl
 ```
 
 ## Select phyla
 
-```{r}
-shifted <- phyla[Day - Exposure >= 0 & Day < 32]
+```{r, fig.height = 4, fig.width = 6}
+shifted <- phyla[Day - Exposure >= 0 & Day <= 32]
 shifted[, Day := Day - Exposure]
 shifted[, relative := reads / sum(reads), by="sample"]
-shifted <- shifted[Day < 10]
+#shifted <- shifted[Day < 10]
 
 pl <- ggplot(shifted[taxa %in% c("Bacteroidetes", "Firmicutes")], aes(x=Day, y=relative, col=taxa)) +
   geom_point(alpha=0.5) + scale_y_continuous(labels = scales::percent) +
   geom_line(aes(group=interaction(Mouse, taxa)), alpha=0.5) + 
-  facet_wrap(~ Response, nrow = 3, strip.position = "right") + theme_bw() +
+  facet_wrap(~ Response, nrow = 3, strip.position = "right", ) + theme_bw() +
   labs(x = "days after treatment", y = "relative abundance")
+ggsave("figures/bac_firm_time.svg", width = 6, height = 4)
 pl
 ```

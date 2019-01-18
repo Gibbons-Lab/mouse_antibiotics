@@ -95,12 +95,12 @@ meta <- meta[colnames(counts)]
 days <- c(20, 25, 29) 
 tests <- list()
 for (d in days) {
-  ds <- DESeqDataSetFromMatrix(counts[, meta$day == d], meta[day == d], ~ type)
+  ds <- DESeqDataSetFromMatrix(counts[, meta$day == d], meta[day == d], ~ RIN + type)
   ds <- DESeq(ds, parallel = TRUE)
   res <- results(ds)
-  res <- lfcShrink(ds, 2, parallel = TRUE)
+  res <- lfcShrink(ds, 3, parallel = TRUE)
   res$id <- rownames(res)
-  coef_name <- resultsNames(ds)[2]
+  coef_name <- resultsNames(ds)[3]
   res <- as.data.table(res)
   res[, day := d]
   res[, coefficient := coef_name]
