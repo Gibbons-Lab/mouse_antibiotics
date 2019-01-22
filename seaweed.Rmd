@@ -94,10 +94,11 @@ sample_sums(after_treat) %>% summary
 
 Okay so we can easily rarefy to 2k reads.
 
-```{r}
+```{r, fig.width=6, fig.height=4}
 ord <- rarefy_even_depth(after_treat, 1000) %>% ordinate(., method="PCoA", distance = "bray")
 
 pl <- plot_ordination(after_treat, ord, color = "Response", label="DaysElapsed") +
+      geom_text(aes(label = since_treatment), size=3, vjust=1, nudge_y=-0.01
       stat_ellipse(aes(group=interaction(Response)), type="t") +
       labs(shape = "since treatment [days]") + theme_bw()
 ggsave("figures/post_treatment_pcoa_seaweed.svg", width=6, height=4)

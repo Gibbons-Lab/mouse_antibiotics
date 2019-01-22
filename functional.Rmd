@@ -131,11 +131,17 @@ ggplot(tests, aes(x = pvalue)) + geom_histogram(bins=20) + theme_bw()
 
 To see the large transcriptional shift we can use a volcano plot:
 
-```{r}
+```{r, fig.height=4, fig.width=5}
 pl <- ggplot(tests, aes(x=log2FoldChange, y=-log10(pvalue), color=factor(day))) +
-  geom_point(aes(size=(padj < 0.05 & !is.na(padj))), stroke=0) + 
-  scale_size_discrete(range=c(0.5, 1.5)) +
-  theme_bw()
+  geom_point(aes(size=(padj < 0.05 & !is.na(padj))), alpha=0.5, stroke=0) + 
+  scale_size_discrete(range=c(1, 2)) + guides(size="none") +
+  theme_bw() + theme(legend.position=c(0.5, 0.85), 
+                     legend.background=element_blank(),
+                     legend.key=element_blank(),
+                     legend.text=element_text(size=10)) + 
+  labs(x="log2 fold change", color="") + 
+  scale_color_discrete(labels = sig_counts[order(day), sprintf("day %d - %2.1f%%", day, 100 * ptr)])
+ggsave("figures/volcano_functional.png", height=4, width=5, dpi=300)
 pl
 ```
 
