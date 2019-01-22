@@ -117,13 +117,26 @@ fwrite(tests, "data/responder_tests_seed.csv")
 Again below the nominal FDR for the controls.
 
 ```{r}
-tests[, sum(padj < 0.05, na.rm=T), by=day]
+sig_counts <- tests[, .(nsig=sum(padj < 0.05, na.rm=T), 
+                        n=.N), by=day]
+sig_counts[, ptr := nsig / n]
+sig_counts
 ```
 
 Also a well-behaved p-value histogram
 
 ```{r}
 ggplot(tests, aes(x = pvalue)) + geom_histogram(bins=20) + theme_bw()
+```
+
+To see the large transcriptional shift we can use a volcano plot:
+
+```{r}
+pl <- ggplot(tests, aes(x=log2FoldChange, y=-log10(pvalue), color=factor(day))) +
+  geom_point(aes(size=(padj < 0.05 & !is.na(padj))), stroke=0) + 
+  scale_size_discrete(range=c(0.5, 1.5)) +
+  theme_bw()
+pl
 ```
 
 Lets see the most prominent pathways in the significant hits for day 29.
