@@ -42,25 +42,29 @@ contigs[, count := rowSums(counts > 0)]
 transcript lengths:
 
 ```{r, fig.width=6, fig.height=4}
-ggplot(contigs, aes(x=length)) + geom_histogram(bins=50) + scale_x_log10() + 
+ggplot(contigs, aes(x = length)) + 
+  geom_histogram(bins = 50) + 
+  scale_x_log10() + 
   labs(x="transcript length [bps]") + theme_bw()
-ggsave("figures/transcript_length.svg", width=6, height=4)
+ggsave("figures/transcript_length.svg", width = 6, height = 4)
 ```
 
 transcript coverage:
 
 ```{r, fig.width=6, fig.height=4}
-ggplot(contigs, aes(x=kmer_coverage)) + geom_histogram(bins=50) + scale_x_log10() + 
-  labs(x="transcript kmer coverage") + theme_bw()
-ggsave("figures/transcript_cov.svg", width=6, height=4)
+ggplot(contigs, aes(x = kmer_coverage)) + 
+  geom_histogram(bins = 50) + scale_x_log10() + 
+  labs(x = "transcript kmer coverage") + theme_bw()
+ggsave("figures/transcript_cov.svg", width = 6, height = 4)
 ```
 
 presence in samples:
 
 ```{r, fig.width=6, fig.height=4}
-ggplot(contigs, aes(x=factor(count))) + geom_bar(stat="count") + 
-  labs(x="num. samples", "num. contigs") + theme_bw()
-ggsave("figures/contig_counts.svg", width=6, height=4)
+ggplot(contigs, aes(x=factor(count))) + 
+  geom_bar(stat = "count") + 
+  labs(x = "number of samples", y = "contig counts") + theme_bw()
+ggsave("figures/contig_counts.svg", width = 6, height = 4)
 ```
 
 We will also filter low abundance transcripts from the count matrix.
@@ -73,20 +77,22 @@ nrow(counts)
 Let's look at the samples.
 
 ```{r, fig.width=6, fig.height=4}
-pca <- prcomp(log2(mbtools::normalize(t(counts))+0.5))
+pca <- prcomp(log2(mbtools::normalize(t(counts)) + 0.5))
 explained <- pca$sdev^2 / sum(pca$sdev^2)
 red <- as.data.table(pca$x)
 red[, sample := rownames(pca$x)]
-red <- meta[red, on=c(Sample="sample")]
-ggplot(red[day == 29], aes(x = PC1, y = PC2, shape = day, color = type)) + geom_point(size=2) +
-  labs(x = sprintf("PC1 (%.1f%%)", explained[1] * 100), y = sprintf("PC2 (%.1f%%)", explained[2] * 100)) +
+red <- meta[red, on = c(Sample = "sample")]
+ggplot(red[day == 29], aes(x = PC1, y = PC2, shape = day, color = type)) + 
+  geom_point(size = 2) +
+  labs(x = sprintf("PC1 (%.1f%%)", explained[1] * 100), 
+       y = sprintf("PC2 (%.1f%%)", explained[2] * 100)) +
   theme_bw()
-ggsave("figures/transcript_pca.svg", width=6, height=4)
+ggsave("figures/transcript_pca.svg", width = 6, height = 4)
 ```
 
 ## With responders
 
-```{r}
+```{r, message = FALSE, warning = FALSE}
 library(DESeq2)
 
 setkey(meta, Sample)
@@ -114,7 +120,7 @@ We will merge this with the annotations for the contigs.
 
 ```{r}
 anns <- fread("data/contig_seed.csv")
-tests <- anns[tests, on=c(query="id")]
+tests <- anns[tests, on = c(query = "id")]
 sig <- tests[padj < 0.05][order(padj)]
 ```
 
@@ -127,7 +133,7 @@ tests[day == 29, table(padj < 0.05)]
 So more than a third of all tests are significant. We can also check that by day.
 
 ```{r}
-tests[, sum(padj < 0.05, na.rm=T), by=day]
+tests[, sum(padj < 0.05, na.rm = T) / sum(!is.na(padj)), by = day]
 ```
 
-This is still below the nominal FDR, but the transcripts themselves are sample specific. 
+This is still below the nominal p-value, but the transcripts themselves are sample specific. 

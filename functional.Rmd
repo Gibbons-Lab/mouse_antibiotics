@@ -16,7 +16,7 @@ counts[, counts := round(counts)]
 counts <- counts[counts > 0]
 counts[, sample := tstrsplit(sample, "-")[[3]]]
 
-meta <- fread("data/seq_samples.csv", key="Sample")
+meta <- fread("data/seq_samples.csv", key = "Sample")
 meta[, day := substr(Sample, 4, 6)]
 meta[, mouse := substr(Sample, 1, 2)]
 meta
@@ -32,18 +32,20 @@ anns
 ..and join the counts with the annotations:
 
 ```{r}
-fncounts <- anns[counts, on=c(query="transcript"), nomatch = 0]
-fncounts <- fncounts[, .(description=description[1], counts=sum(counts)), by=c("id", "sample")]
+fncounts <- anns[counts, on = c(query = "transcript"), nomatch = 0]
+fncounts <- fncounts[, .(description = description[1], 
+                         counts = sum(counts)), 
+                     by = c("id", "sample")]
 fncounts
 ```
 
 We can check if those are more conserved across samples:
 
 ```{r, fig.width=6, fig.height=4}
-cn_per_id <- fncounts[counts > 0, .N, by=id]
-ggplot(cn_per_id, aes(x=factor(N))) + geom_bar() + 
-  labs(x="num. samples", y="num. functions") + theme_bw()
-ggsave("figures/function_counts.svg", width=6, height=4)
+cn_per_id <- fncounts[counts > 0, .N, by = id]
+ggplot(cn_per_id, aes(x = factor(N))) + geom_bar() + 
+  labs(x = "number of samples", y = "shared functions [count]") + theme_bw()
+ggsave("figures/function_counts.svg", width = 6, height = 4)
 ```
 
 ## Count matrix
@@ -51,7 +53,7 @@ ggsave("figures/function_counts.svg", width=6, height=4)
 First, we will transform the counts to matrix.
 
 ```{r}
-count_mat <- dcast(fncounts, id ~ sample, fill=0)
+count_mat <- dcast(fncounts, id ~ sample, fill = 0)
 nm <- count_mat[, id]
 count_mat[, id := NULL]
 count_mat <- as.matrix(count_mat)
@@ -69,22 +71,34 @@ nrow(count_mat)
 Let's visualize the samples in the functional space.
 
 ```{r, fig.width=6, fig.height=4}
-pca <- prcomp(log2(mbtools::normalize(t(count_mat))+0.5))
+pca <- prcomp(log2(mbtools::normalize(t(count_mat)) + 0.5))
 explained <- pca$sdev^2 / sum(pca$sdev^2)
 red <- as.data.table(pca$x)
 red[, sample := rownames(pca$x)]
-red <- meta[red, on=c(Sample="sample")][day == 29]
-ggplot(red, aes(x = PC1, y = PC2, color = type)) + geom_point(size=2) +
-  labs(x = sprintf("PC1 (%.1f%%)", explained[1] * 100), y = sprintf("PC2 (%.1f%%)", explained[2] * 100)) +
+red <- meta[red, on = c(Sample = "sample")][day == 29]
+ggplot(red, aes(x = PC1, y = PC2, color = type)) + geom_point(size = 2) +
+  labs(x = sprintf("PC1 (%.1f%%)", explained[1] * 100), 
+       y = sprintf("PC2 (%.1f%%)", explained[2] * 100)) +
   theme_bw()
-ggsave("figures/functional_pca.svg", width=6, height=4)
+ggsave("figures/functional_pca.svg", width = 6, height = 4)
+```
+
+PERMANOVA:
+
+```{r}
+library(vegan)
+
+counts <- log2(mbtools::normalize(t(count_mat[, meta$day >= 29])) + 0.5)
+permanova <- adonis2(counts ~ type, data = meta[meta$day >= 29], 
+                     method = "euclidean")
+permanova
 ```
 
 Non-responders separate less but samples group better by treatment regimes.
 
 ## Differential abundance testing
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(DESeq2)
 
 setkey(meta, Sample)
@@ -93,7 +107,8 @@ meta <- meta[colnames(count_mat)]
 days <- c(20, 25, 29) 
 tests <- list()
 for (d in days) {
-  ds <- DESeqDataSetFromMatrix(count_mat[, meta$day == d], meta[day == d], ~ RIN + type)
+  ds <- DESeqDataSetFromMatrix(count_mat[, meta$day == d], 
+                               meta[day == d], ~ RIN + type)
   ds <- DESeq(ds, parallel = TRUE, fitType = "local")
   res <- results(ds)
   res <- lfcShrink(ds, 3, parallel = TRUE)
@@ -109,7 +124,7 @@ tests <- rbindlist(tests)
 
 idmap <- unique(anns[, .(id, description, superpathway, pathway, subpathway)])
 setkey(idmap, id)
-tests <- idmap[tests, on=c("id")]
+tests <- idmap[tests, on = c("id")]
 tests <- tests[order(padj)]
 fwrite(tests, "data/responder_tests_seed.csv")
 ```
@@ -117,8 +132,9 @@ fwrite(tests, "data/responder_tests_seed.csv")
 Again below the nominal FDR for the controls.
 
 ```{r}
-sig_counts <- tests[, .(nsig=sum(padj < 0.05, na.rm=T), 
-                        n=.N), by=day]
+sig_counts <- tests[, .(nsig = sum(padj < 0.05, na.rm = T), 
+                        n = .N), 
+                    by = day]
 sig_counts[, ptr := nsig / n]
 sig_counts
 ```
@@ -126,22 +142,28 @@ sig_counts
 Also a well-behaved p-value histogram
 
 ```{r}
-ggplot(tests, aes(x = pvalue)) + geom_histogram(bins=20) + theme_bw()
+ggplot(tests, aes(x = pvalue)) + geom_histogram(bins = 20) + theme_bw()
 ```
 
 To see the large transcriptional shift we can use a volcano plot:
 
 ```{r, fig.height=4, fig.width=5}
-pl <- ggplot(tests, aes(x=log2FoldChange, y=-log10(pvalue), color=factor(day))) +
-  geom_point(aes(size=(padj < 0.05 & !is.na(padj))), alpha=0.5, stroke=0) + 
-  scale_size_discrete(range=c(1, 2)) + guides(size="none") +
-  theme_bw() + theme(legend.position=c(0.5, 0.85), 
-                     legend.background=element_blank(),
-                     legend.key=element_blank(),
-                     legend.text=element_text(size=10)) + 
-  labs(x="log2 fold change", color="") + 
-  scale_color_discrete(labels = sig_counts[order(day), sprintf("day %d - %2.1f%%", day, 100 * ptr)])
-ggsave("figures/volcano_functional.png", height=4, width=5, dpi=300)
+day_labels <- sig_counts[order(day), 
+                         sprintf("day %d - %2.1f%%", day, 100 * ptr)]
+
+pl <- ggplot(tests, aes(x = log2FoldChange, y = -log10(pvalue), 
+                        color = factor(day))) +
+  geom_vline(xintercept = 0, lty = "dashed") +
+  geom_point(aes(size = (padj < 0.05 & !is.na(padj))), 
+             alpha = 0.5, stroke = 0) + 
+  scale_size_discrete(range = c(1, 2)) + guides(size = "none") +
+  theme_bw() + theme(legend.position = c(0.15, 0.9), 
+                     legend.background = element_blank(),
+                     legend.key = element_blank(),
+                     legend.text = element_text(size = 10)) + 
+  labs(x = "log2 fold change", color = "") + 
+  scale_color_discrete(labels = day_labels)
+ggsave("figures/volcano_functional.png", height = 4, width = 5, dpi = 300)
 pl
 ```
 
@@ -149,7 +171,7 @@ Lets see the most prominent pathways in the significant hits for day 29.
 
 ```{r}
 sig <- tests[day == 29 & padj < 0.05]
-sig[, .N, by="pathway"][order(-N)]
+sig[, .N, by = "subpathway"][order(-N)]
 ```
 
 Lets have a look at some of the obvious pathways:
@@ -163,7 +185,8 @@ norm_counts <- t(mbtools::normalize(t(count_mat)))[, meta$day == 29]
 
 keyword <- "Cell Division"
 selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
-rownames(selected) <- stringr::str_trunc(sig[grepl(keyword, superpathway), description], 80)
+rownames(selected) <- stringr::str_trunc(sig[grepl(keyword, superpathway), 
+                                             description], 80)
 anns <- data.frame(type = meta[day == 29, type])
 rownames(anns) <- meta[day == 29, Sample]
 pheatmap(log10(selected + 1), annotation_col = anns, color = viridis(128), 
@@ -181,7 +204,9 @@ And globally:
 ```{r, fig.width=8, fig.height=10}
 superpathways <- data.frame(superpathway = tests[day == 29, superpathway])
 rownames(superpathways) <- tests[day == 29, id]
-pheatmap(log10(norm_counts + 1), annotation_col = anns, annotation_row = superpathways, color = viridis(128), show_rownames = FALSE)
+pheatmap(log10(norm_counts + 1), annotation_col = anns, 
+         annotation_row = superpathways, color = viridis(128), 
+         show_rownames = FALSE)
 ```
 
 ## Pulling out particular function sets
@@ -193,8 +218,8 @@ tidy_counts <- function(ids, count_matrix, sample_data, function_groups) {
   cn <- as.data.table(count_matrix[ids, ])
   cn$id <- ids
   cn <- melt(cn, id.vars = "id", variable.name = "Sample", value.name = "reads")
-  cn <- sample_data[cn, on="Sample"]
-  cn <- function_groups[cn, on="id"]
+  cn <- sample_data[cn, on = "Sample"]
+  cn <- function_groups[cn, on = "id"]
   cn
 }
 ```
@@ -205,19 +230,19 @@ that showed up in the significant results.
 ```{r}
 vanc <- sig[grepl("Vancomycin", subpathway), id]
 vanc_counts <- tidy_counts(vanc, norm_counts, meta, sig)
-vanc_counts[, gene := str_match(description, "V.+")[, 1]]
+vanc_counts[, gene := stringr::str_match(description, "V.+")[, 1]]
 vanc_counts
 ```
 
 We can use that tidy data set to easily visualize a set of genes at once:
 
 ```{r, fig.width=4.5, fig.height=3}
-pl <- ggplot(vanc_counts, aes(x=gene, y=reads + 0.5, col=type)) +
-  geom_jitter(width=0.2) + scale_y_log10() +
+pl <- ggplot(vanc_counts, aes(x = gene, y = reads + 0.5, col = type)) +
+  geom_jitter(width = 0.2) + scale_y_log10() +
   stat_summary(fun.ymax = mean, fun.ymin = mean, fun.y = mean, 
-               geom = "crossbar", width=0.3) +
+               geom = "crossbar", width = 0.3) +
   theme_bw() + labs(x = "vancomycin tolerance locus", y = "normalized reads")
-ggsave("figures/vancomycin_locus.svg", width=4.5, height=3)
+ggsave("figures/vancomycin_locus.svg", width = 4.5, height = 3)
 pl
 ```
 
@@ -225,11 +250,11 @@ pl
 acoa_synth <- sig[grepl("CoA synthase", description), id]
 as_counts <- tidy_counts(acoa_synth, norm_counts, meta, sig)
 
-pl <- ggplot(as_counts, aes(x=id, y=reads + 0.5, col=type)) +
-  geom_jitter(width=0.2) + scale_y_log10() +
+pl <- ggplot(as_counts, aes(x = id, y = reads + 0.5, col = type)) +
+  geom_jitter(width = 0.2) + scale_y_log10() +
   stat_summary(fun.ymax = mean, fun.ymin = mean, fun.y = mean, 
-               geom = "crossbar", width=0.3) +
+               geom = "crossbar", width = 0.3) +
   theme_bw() + labs(x = "Acetyl-CoA synthase", y = "normalized reads")
-ggsave("figures/acoa_synthase.svg", width=4, height=3)
+ggsave("figures/acoa_synthase.svg", width = 4, height = 3)
 pl
 ```

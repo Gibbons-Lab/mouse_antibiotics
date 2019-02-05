@@ -69,6 +69,18 @@ ggsave("figures/treatment_exposure.png", height=4, width=8, dpi=300)
 pl
 ```
 
+We can see that most of the Cyanobacteria and Proteobacteria are actually Chloroplasts and Mitochondria:
+
+```{r}
+responders <- subset_samples(total, Response == "responder")
+cyano_proteo <- subset_taxa(responders, 
+                            phylum %in% c("Cyanobacteria", "Proteobacteria"))
+class <- taxa_count(cyano_proteo, "class")[order(-reads), sum(reads), by = taxa]
+fam <- taxa_count(cyano_proteo, "family")[order(-reads), sum(reads), by = taxa]
+print(class[, .(taxa, relative = V1 / sum(V1))])
+print(fam[, .(taxa, relative = V1 / sum(V1))])
+```
+
 ## Summarized
 
 ```{r, fig.width=4, fig.height=5}
@@ -113,12 +125,24 @@ sda <- sample_data(after_treat)
 sample_data(after_treat)$since_treatment <- factor(sda$Day - sda$Exposure)
 
 pl <- plot_ordination(after_treat, ord, color = "Response") +
-      geom_text(aes(label = since_treatment), size=8) +
+      geom_text(aes(label = since_treatment), size=3, vjust=1, nudge_y=-0.01) +
       stat_ellipse(aes(group=Response), type="t") +
       labs(shape = "since treatment [days]") + theme_bw()
 
 ggsave("figures/post_treatment_pcoa_exposure.svg", width=6, height=4)
 pl  
+```
+
+# Corresponding PERMANOVA
+
+```{r}
+library(vegan)
+
+ps <- subset_samples(after_treat, Response != "responder") %>% rarefy_even_depth(., 10000)
+counts <- as.matrix(taxa_count(ps, NA))
+sda <- as(sample_data(ps), "data.frame")
+permanova <- adonis(counts ~ since_treatment*Response, data = sda)
+permanova
 ```
 
 # Gained/lost taxa
@@ -162,18 +186,13 @@ And the corresponding tests:
 
 control vs. non-responder
 
-```{r}
-status_counts[response %in% c("control", "non-responder"), 
-              .(pval = wilcox.test(n ~ response, .SD)$p.value), 
-              by=status]
-```
-
-non-responder vs. responder
-
-```{r}
-status_counts[response %in% c("non-responder", "responder"), 
-              .(pval = wilcox.test(n ~ response, .SD)$p.value), 
-              by=status]
+```{r, message=FALSE}
+for (lev in status_counts[, unique(status)]) {
+  cat(lev)
+  pairwise.wilcox.test(status_counts[status == lev, n], 
+                       status_counts[status == lev, response], 
+                       p.adjust.method = "bonferroni") %>% print
+}
 ```
 
 # Time courses

@@ -56,6 +56,18 @@ ggsave("figures/treatment_seaweed.png", height=4, width=8, dpi=300)
 pl
 ```
 
+We can see that most of the Cyanobacteria and Proteobacteria are actually Chloroplasts and Mitochondria:
+
+```{r}
+responders <- subset_samples(ps, Response == "responder")
+cyano_proteo <- subset_taxa(responders, 
+                            phylum %in% c("Cyanobacteria", "Proteobacteria"))
+class <- taxa_count(cyano_proteo, "class")[order(-reads), sum(reads), by = taxa]
+fam <- taxa_count(cyano_proteo, "family")[order(-reads), sum(reads), by = taxa]
+print(class[, .(taxa, relative = V1 / sum(V1))])
+print(fam[, .(taxa, relative = V1 / sum(V1))])
+```
+
 ## Summarized
 
 ```{r, fig.width=4, fig.height=5}
@@ -70,7 +82,7 @@ bars <- ggplot(treated[taxa %in% high_taxa], aes(x=Response, y=relative, fill=ta
   labs(x="", y="relative abundance", fill="phylum")
 after_exposure <- sdata[DaysElapsed == 31]
 resp_counts <- after_exposure[, table(Response, seaweed)][2:3, ]
-tbl <- tableGrob(resp_counts, )
+tbl <- tableGrob(resp_counts)
 pl <- grid.arrange(bars, tbl, nrow=2, as.table=T, heights=c(3, 1))
 ggsave("figures/summary_seaweed.svg", plot = pl, height=6, width=4)
 pl
@@ -97,12 +109,25 @@ Okay so we can easily rarefy to 2k reads.
 ```{r, fig.width=6, fig.height=4}
 ord <- rarefy_even_depth(after_treat, 1000) %>% ordinate(., method="PCoA", distance = "bray")
 
-pl <- plot_ordination(after_treat, ord, color = "Response", label="DaysElapsed") +
-      geom_text(aes(label = since_treatment), size=3, vjust=1, nudge_y=-0.01
-      stat_ellipse(aes(group=interaction(Response)), type="t") +
+pl <- plot_ordination(after_treat, ord, color = "Response") +
+      geom_text(aes(label = DaysElapsed - 31), size=3, vjust=1, 
+                nudge_y=-0.01, show.legend = FALSE) +
+      stat_ellipse(aes(group=interaction(Response)), type="t") + 
       labs(shape = "since treatment [days]") + theme_bw()
 ggsave("figures/post_treatment_pcoa_seaweed.svg", width=6, height=4)
 pl  
+```
+
+And the corresponding PERMANOVA
+
+```{r}
+library(vegan)
+
+noresp <- subset_samples(after_treat, Response != "responder") %>% rarefy_even_depth(., 1000)
+counts <- as.matrix(taxa_count(noresp, NA))
+sda <- as(sample_data(noresp), "data.frame")
+permanova <- adonis(counts ~ DaysElapsed*Response, data = sda)
+permanova
 ```
 
 # Relationship with qPCR cycle numbers
@@ -122,10 +147,8 @@ pl
 And we can see that there is a relationship between qPCR abundance estimates and response.
 
 ```{r}
-fit <- aov(1/Ct ~ Response, data = sdata[DaysElapsed == 31])
-summary(fit) %>% print
-
-TukeyHSD(fit)
+pairwise.wilcox.test(sdata[, 1/Ct], sdata[, Response], 
+                     p.adjust.method = "bonferroni")
 ```
 
 We can check how that corresponds to the abundance of Mitochondria and Chloroplasts. For that we
@@ -173,10 +196,8 @@ And there is also a relationship between the fraction of Chloroplasts and Mitoch
 and Response:
 
 ```{r}
-fit <- aov(relative ~ Response, data = rel[DaysElapsed == 31])
-summary(fit) %>% print
-
-TukeyHSD(fit)
+pairwise.wilcox.test(rel[, relative], rel[, Response], 
+                     p.adjust.method = "bonferroni")
 ```
 
 ## Weight
@@ -195,10 +216,11 @@ weights
 ```
 
 ```{r, fig.width=7, fig.height=4}
-pl <- ggplot(weights, aes(x=day, y=weight, col=Response)) + 
-  geom_vline(xintercept = c(20, 25, 31), lty="dashed") +
+pl <- ggplot(weights, aes(x=day, y=weight)) + 
+  annotate("rect", xmin=0, xmax=20, ymin=15, ymax=23, fill="seagreen", alpha=0.3) +
+  annotate("rect", xmin=25, xmax=31, ymin=15, ymax=23, fill="tomato", alpha=0.3) +
   geom_point(alpha=0.5) + geom_line(aes(group=Subject), alpha=0.5) + 
-  facet_grid(seaweed ~ Response) + theme_bw() +
+  facet_grid(seaweed ~ Response) + theme_bw() + ylim(15, 23) +
   labs(x="time [days]", y="weight [g]") + guides(color="none")
 ggsave("figures/weights_seaweed.svg", width=7, height=4)
 pl

@@ -112,6 +112,6 @@
 <g clip-path='url(#cpMHw0MzJ8Mjg4fDA=)'><text x='363.63' y='266.84' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='10.01px' lengthAdjust='spacingAndGlyphs'>15</text></g>
 <g clip-path='url(#cpMHw0MzJ8Mjg4fDA=)'><text x='385.89' y='266.84' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='10.01px' lengthAdjust='spacingAndGlyphs'>16</text></g>
 <g clip-path='url(#cpMHw0MzJ8Mjg4fDA=)'><text x='408.16' y='266.84' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='10.01px' lengthAdjust='spacingAndGlyphs'>17</text></g>
-<g clip-path='url(#cpMHw0MzJ8Mjg4fDA=)'><text x='200.81' y='279.99' style='font-size: 11.00px; font-family: Arial;' textLength='68.47px' lengthAdjust='spacingAndGlyphs'>num. samples</text></g>
-<g clip-path='url(#cpMHw0MzJ8Mjg4fDA=)'><text transform='translate(13.35,166.25) rotate(-90)' style='font-size: 11.00px; font-family: Arial;' textLength='71.54px' lengthAdjust='spacingAndGlyphs'>num. functions</text></g>
+<g clip-path='url(#cpMHw0MzJ8Mjg4fDA=)'><text x='188.28' y='279.99' style='font-size: 11.00px; font-family: Arial;' textLength='93.54px' lengthAdjust='spacingAndGlyphs'>number of samples</text></g>
+<g clip-path='url(#cpMHw0MzJ8Mjg4fDA=)'><text transform='translate(13.35,188.87) rotate(-90)' style='font-size: 11.00px; font-family: Arial;' textLength='116.79px' lengthAdjust='spacingAndGlyphs'>shared functions [count]</text></g>
 </svg>
