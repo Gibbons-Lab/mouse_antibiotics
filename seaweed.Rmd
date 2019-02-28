@@ -14,20 +14,15 @@ We will start by reading our data and required libraries.
 library(mbtools)
 
 ps <- readRDS("data/seaweed_exp.rds")
-
-resp <- sample_data(ps)$Response
-map <- c(cnt="control", non="non-responder", res="responder")
-levels(resp) <- map[levels(resp)]
-sample_data(ps)$Response <- resp
 ```
 
 We sill start by building up a dataframe that combines phyla abundances and sample metadata.
 
 ```{r}
-phyla <- taxa_count(ps, "phylum")
+phyla <- taxa_count(ps, "Phylum")
 
 sdata <- as.data.table(as(sample_data(ps), "data.frame"))
-phyla <- phyla[sdata, on=c(sample="Sample")]
+phyla <- phyla[sdata, on = c(sample = "CategoricalID")]
 head(phyla)
 ```
 
@@ -39,31 +34,35 @@ First we have to assemble the relative abundances for controls.
 
 ```{r}
 treated <- phyla[DaysElapsed == 31]
-treated[, relative := reads / sum(reads, na.rm=T), by=c("seaweed", "Response")]
+treated[, relative := reads / sum(reads, na.rm=T), 
+        by = c("seaweed", "Response")]
 
-high_taxa <- phyla[DaysElapsed == 31, .(taxa=taxa, rel=reads / sum(reads)), by="sample"][rel > 1e-3, unique(taxa)] 
+high_taxa <- phyla[DaysElapsed == 31, 
+                   .(taxa=taxa, rel=reads / sum(reads)), 
+                   by = "sample"][rel > 1e-3, unique(taxa)] 
 ```
 
 Let us visualize rough differences.
 
 ```{r, fig.height=4, fig.width=8}
-pl <- ggplot(treated[taxa %in% high_taxa], aes(x=factor(seaweed), y=relative, fill=taxa)) + 
-  geom_bar(stat="identity") + scale_y_continuous(labels=scales::percent) +
+pl <- ggplot(treated[taxa %in% high_taxa], 
+             aes(x = factor(seaweed), y = relative, fill = taxa)) + 
+  geom_bar(stat = "identity") + scale_y_continuous(labels = scales::percent) +
   facet_wrap(~ Response) + theme_bw() +
   scale_x_discrete(labels = c("without", "with")) +
-  labs(x="seaweed in diet", y="relative abundance", fill="phylum")
-ggsave("figures/treatment_seaweed.png", height=4, width=8, dpi=300)
+  labs(x = "seaweed in diet", y = "relative abundance", fill = "phylum")
+ggsave("figures/treatment_seaweed.png", height = 4, width = 8, dpi = 300)
 pl
 ```
 
 We can see that most of the Cyanobacteria and Proteobacteria are actually Chloroplasts and Mitochondria:
 
 ```{r}
-responders <- subset_samples(ps, Response == "responder")
-cyano_proteo <- subset_taxa(responders, 
-                            phylum %in% c("Cyanobacteria", "Proteobacteria"))
-class <- taxa_count(cyano_proteo, "class")[order(-reads), sum(reads), by = taxa]
-fam <- taxa_count(cyano_proteo, "family")[order(-reads), sum(reads), by = taxa]
+non_resistors <- subset_samples(ps, Response == "non-resistor")
+cyano_proteo <- subset_taxa(non_resistors, 
+                            Phylum %in% c("Cyanobacteria", "Proteobacteria"))
+class <- taxa_count(cyano_proteo, "Order")[order(-reads), sum(reads), by = taxa]
+fam <- taxa_count(cyano_proteo, "Family")[order(-reads), sum(reads), by = taxa]
 print(class[, .(taxa, relative = V1 / sum(V1))])
 print(fam[, .(taxa, relative = V1 / sum(V1))])
 ```
@@ -74,17 +73,19 @@ print(fam[, .(taxa, relative = V1 / sum(V1))])
 library(gridExtra)
 
 treated <- phyla[DaysElapsed == 31]
-treated[, relative := reads / sum(reads), by="Response"]
+treated[, relative := reads / sum(reads), by = "Response"]
 
-bars <- ggplot(treated[taxa %in% high_taxa], aes(x=Response, y=relative, fill=taxa)) + 
-  geom_bar(stat="identity") + scale_y_continuous(labels=scales::percent) +
-  theme_bw() + theme(axis.text.x = element_text(angle=30, hjust=1, vjust=1)) +
-  labs(x="", y="relative abundance", fill="phylum")
+bars <- ggplot(treated[taxa %in% high_taxa], 
+               aes(x = Response, y = relative, fill = taxa)) + 
+  geom_bar(stat = "identity") + scale_y_continuous(labels = scales::percent) +
+  theme_bw() + 
+  theme(axis.text.x = element_text(angle = 30, hjust = 1, vjust = 1)) +
+  labs(x = "", y = "relative abundance", fill = "phylum")
 after_exposure <- sdata[DaysElapsed == 31]
 resp_counts <- after_exposure[, table(Response, seaweed)][2:3, ]
 tbl <- tableGrob(resp_counts)
-pl <- grid.arrange(bars, tbl, nrow=2, as.table=T, heights=c(3, 1))
-ggsave("figures/summary_seaweed.svg", plot = pl, height=6, width=4)
+pl <- grid.arrange(bars, tbl, nrow = 2, as.table = T, heights = c(3, 1))
+ggsave("figures/summary_seaweed.svg", plot = pl, height = 6, width = 4)
 pl
 ```
 
@@ -100,21 +101,22 @@ We are interested in the beta diversity between samples after treatment, so we w
 and calculating the ordination. We will look at the sequencing depth to get a decent depth for rarefaction.
 
 ```{r}
-after_treat <- subset_samples(ps, DaysElapsed >= 31)
-sample_sums(after_treat) %>% summary
+treat <- subset_samples(ps, DaysElapsed >= 20)
+sample_sums(treat)
 ```
 
-Okay so we can easily rarefy to 2k reads.
+Okay so we can easily rarefy to 10k reads.
 
 ```{r, fig.width=6, fig.height=4}
-ord <- rarefy_even_depth(after_treat, 1000) %>% ordinate(., method="PCoA", distance = "bray")
+ord <- rarefy_even_depth(treat, 5000) %>% 
+       ordinate(., method = "PCoA", distance = "bray")
 
-pl <- plot_ordination(after_treat, ord, color = "Response") +
-      geom_text(aes(label = DaysElapsed - 31), size=3, vjust=1, 
-                nudge_y=-0.01, show.legend = FALSE) +
-      stat_ellipse(aes(group=interaction(Response)), type="t") + 
-      labs(shape = "since treatment [days]") + theme_bw()
-ggsave("figures/post_treatment_pcoa_seaweed.svg", width=6, height=4)
+pl <- plot_ordination(treat, ord, color = "Response", 
+                      shape = "TimepointCat") +
+      stat_ellipse(aes(group = Response), type = "t") +
+      scale_shape_manual(values = c(before = 1, during = 10, after = 19)) +
+      labs(shape = "sample time") + theme_bw()
+ggsave("figures/treatment_pcoa_seaweed.svg", width = 6, height = 4)
 pl  
 ```
 
@@ -123,11 +125,23 @@ And the corresponding PERMANOVA
 ```{r}
 library(vegan)
 
-noresp <- subset_samples(after_treat, Response != "responder") %>% rarefy_even_depth(., 1000)
+noresp <- subset_samples(treat, Response != "non-resistor") %>% 
+          rarefy_even_depth(., 5000)
 counts <- as.matrix(taxa_count(noresp, NA))
 sda <- as(sample_data(noresp), "data.frame")
-permanova <- adonis(counts ~ DaysElapsed*Response, data = sda)
+permanova <- adonis(counts ~ seaweed*Response, data = sda)
 permanova
+```
+
+So seaweed is not related to the response type.
+
+To see which taxa mostly drive that:
+
+```{r}
+coef <- permanova$coefficients["Response1", ]
+coeffs <- as(tax_table(ps)[names(coef), ], "matrix") %>% as.data.table
+coeffs[, coef := coef]
+coeffs[order(-abs(coef)), !"sequence", with = F]
 ```
 
 # Relationship with qPCR cycle numbers
@@ -135,7 +149,7 @@ permanova
 ```{r, fig.height=4, fig.width=3}
 pl <- ggplot(sdata[DaysElapsed == 31], aes(x = Response, y = 1 / Ct, 
                                            col = Response)) +
-  geom_boxplot(width=0.5) + geom_jitter(width=0.3) +
+  geom_boxplot(width=0.5) + geom_jitter(width = 0.3) +
   guides(color = "none") + labs(x = "", y = "qPCR abundance [1/Ct]") +
   geom_hline(yintercept = 0.07, lty = "dashed") +
   theme_bw() + theme(axis.text.x = element_text(angle = 30, hjust = 1, 
@@ -156,10 +170,10 @@ will first get the relative abundances of those two in each sample.
 
 ```{r}
 chloro_mit <- subset_taxa(ps, 
-                          class == "Chloroplast" | family == "mitochondria")
+                          Class == "Chloroplast" | Family == "Mitochondria")
 rel <- data.table(sample = sample_names(ps), 
                   relative = sample_sums(chloro_mit) / sample_sums(ps))
-rel <- sdata[rel, on=c(Sample = "sample")]
+rel <- sdata[rel, on = c(CategoricalID = "sample")]
 ```
 
 Now we can check how that refers to cycles.
@@ -172,6 +186,7 @@ pl <- ggplot(rel[DaysElapsed == 31], aes(x = 1/Ct, y = relative, col = Response)
   theme_bw() + labs(x = "qPCR abundance [1/Ct]", 
                     y = "Mitochondria or Chloroplasts")
 ggsave("figures/qpcr_vs_chloro_mit.svg", height = 4, width = 6)
+pl
 ```
 
 Or rather do it with discretized cycle times.
@@ -217,11 +232,65 @@ weights
 
 ```{r, fig.width=7, fig.height=4}
 pl <- ggplot(weights, aes(x=day, y=weight)) + 
-  annotate("rect", xmin=0, xmax=20, ymin=15, ymax=23, fill="seagreen", alpha=0.3) +
-  annotate("rect", xmin=25, xmax=31, ymin=15, ymax=23, fill="tomato", alpha=0.3) +
-  geom_point(alpha=0.5) + geom_line(aes(group=Subject), alpha=0.5) + 
+  annotate("rect", xmin = 0, xmax = 20, ymin = 15, ymax = 23, 
+           fill = "seagreen", alpha = 0.3) +
+  annotate("rect", xmin = 25, xmax = 31, ymin = 15, ymax = 23, 
+           fill = "tomato", alpha = 0.3) +
+  geom_point(alpha = 0.5) + geom_line(aes(group = Subject), alpha = 0.5) + 
   facet_grid(seaweed ~ Response) + theme_bw() + ylim(15, 23) +
-  labs(x="time [days]", y="weight [g]") + guides(color="none")
-ggsave("figures/weights_seaweed.svg", width=7, height=4)
+  labs(x = "time [days]", y = "weight [g]") + guides(color = "none")
+ggsave("figures/weights_seaweed.svg", width = 7, height = 4)
 pl
+```
+
+## Diet effect on diversity
+
+## Shannon index
+
+```{r, fig.width=6, fig.height=4}
+controls <- subset_samples(ps, Response == "control") %>% 
+            rarefy_even_depth(10000)
+shannon <- estimate_richness(controls, measures = "Shannon")
+shannon <- data.table(sample = rownames(shannon), shannon = shannon[, 1])
+shannon <- sdata[shannon, on = c(CategoricalID = "sample")]
+
+pl <- ggplot(shannon, 
+             aes(x = factor(DaysElapsed), y = shannon, color = seaweed, 
+                 group = interaction(DaysElapsed, seaweed))) + 
+  geom_jitter(position = position_dodge(width = 0.5)) +
+  theme_bw() + scale_color_discrete(labels = c("normal diet", "seaweed diet")) +
+  labs(y = "alpha diversity [Shannon index]", x = "day", color = "")
+ggsave("figures/shannon_seaweed_time.svg", width = 6, height = 4)
+pl
+```
+
+Corresponding tests:
+
+```{r}
+shannon[, .(pval = wilcox.test(shannon[seaweed], shannon[!seaweed])$p.value), 
+        by = "DaysElapsed"]
+```
+
+Phyla distributions:
+
+```{r, fig.height = 5, fig.width = 8}
+phyla[, relative := reads / sum(reads), by = Sample]
+pl <- ggplot(phyla[taxa %in% high_taxa], 
+             aes(x = factor(DaysElapsed), y = reads, fill = taxa)) + 
+  geom_bar(stat = "identity", position = "fill") + 
+  scale_y_continuous(labels = scales::percent) +
+  facet_grid(c("normal diet", "seaweed diet")[as.numeric(seaweed) + 1] ~ Response) + 
+  theme_classic() +
+  labs(x = "day", y = "relative abundance", fill = "phylum")
+ggsave("figures/phyla_day_seaweed.png", height = 5, width = 8, dpi = 300)
+pl
+```
+
+And the corresponding PERMANOVA:
+
+```{r}
+counts <- as.matrix(taxa_count(controls, NA))
+sda <- as(sample_data(controls), "data.frame")
+permanova <- adonis(counts ~ seaweed, data = sda)
+permanova
 ```

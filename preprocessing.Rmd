@@ -34,31 +34,64 @@ qiime2phyloseq <- function(path) {
 }
 ```
 
-# Exposure experiment
+# duration experiment
 
-We will extract the exposure durations from the sample names.
+We will start by reading the DADA2 results and metadata and bundling everything
+in a phyloseq object.
 
 ```{r}
-exposure <- qiime2phyloseq("data/exposure")
+dada <- readRDS("data/duration/dada2.rds")
+meta <- read.table("data/duration/metadata.tsv", 
+                   comment.char = "#", header = 1)
+rownames(meta) <- meta$Description
+meta <- meta[rownames(dada$feature_table), ]
+duration <- phyloseq(otu_table(dada$feature_table, taxa_are_rows = FALSE),
+                     tax_table(dada$taxonomy),
+                     sample_data(meta))
+```
 
-sdata <- sample_data(exposure)
-sample_data(exposure)$Exposure <- str_replace(sdata$Mouse, "[A-Z]", "") %>% 
-                                  as.numeric()
+We will extract the duration durations from the sample names.
+
+```{r}
+map <- c(cnt = "control", non = "resistor", res = "non-resistor")
+
+sdata <- sample_data(duration)
+sdata$duration <- str_replace(sdata$Mouse, "[A-Z]", "") %>% as.numeric()
+sdata$TimepointCat <- "before"
+sdata$TimepointCat[sdata$Day == sdata$duration] <- "during"
+sdata$TimepointCat[sdata$Day > sdata$duration] <- "after"
+sdata$TimepointCat[sdata$Response == "cnt"] <- "before"
+sdata$TimepointCat <- factor(sdata$TimepointCat, 
+                             levels = c("before", "during", "after"))
+sdata$Response <- factor(map[as.character(sdata$Response)], levels = map)
+sample_data(duration) <- sdata
 ```
 
 We will save the phyloseq object for further analyses.
 
 ```{r}
-saveRDS(exposure, "data/exposure_exp.rds")
+saveRDS(duration, "data/duration_exp.rds")
 ```
 
 # Seaweed experiment
+
+Again we start by adding the metadata and bundling as a phyloseq object.
+
+```{r}
+dada <- readRDS("data/seaweed/dada2.rds")
+meta <- read.table("data/seaweed/metadata.tsv", 
+                   comment.char = "#", header = 1)
+rownames(meta) <- tolower(meta$CategoricalID)
+meta <- meta[rownames(dada$feature_table), ]
+seaweed <- phyloseq(otu_table(dada$feature_table, taxa_are_rows = FALSE),
+                    tax_table(dada$taxonomy),
+                    sample_data(meta))
+```
 
 Groups A and B received no seaweed in their diet whereas groups C and D did. We will
 also remove 4 samples where the diet was switched right before antibiotics (internal controls).
 
 ```{r}
-seaweed <- qiime2phyloseq("data/seaweed")
 sample_data(seaweed)$seaweed <- sample_data(seaweed)$Group %in% c("C", "D")
 sample_data(seaweed)$CategoricalID <- tolower(sample_data(seaweed)$CategoricalID)
 seaweed <- subset_samples(seaweed, !(Subject %in% c("A9", "A10", "C9", 
@@ -66,13 +99,28 @@ seaweed <- subset_samples(seaweed, !(Subject %in% c("A9", "A10", "C9",
                                                     "Y2")))
 ```
 
+Let's clean up annotations and add some variables:
+
+```{r}
+sdata <- as(sample_data(seaweed), "data.frame")
+sdata$TimepointCat <- "before"
+sdata$TimepointCat[sdata$Days == 31] <- "during"
+sdata$TimepointCat[sdata$Days > 31] <- "after"
+sdata$TimepointCat[sdata$Response == "cnt"] <- "before"
+sdata$TimepointCat <- factor(sdata$TimepointCat, 
+                             levels = c("before", "during", "after"))
+sdata$Response <- factor(map[as.character(sdata$Response)], 
+                         levels = map)
+sample_data(seaweed) <- sdata
+```
+
 We will also merge in the qPCR cycle time (Cq or Ct values):
 
 ```{r}
 Ct <- read.table("data/seaweed/qpcr_data.tsv", header = TRUE)
 names(Ct) <- c("CategoricalID", "Ct")
-merged <- merge(as(sample_data(seaweed), "data.frame"), Ct, by="CategoricalID")
-rownames(merged) <- merged$Sample
+merged <- merge(sdata, Ct, by="CategoricalID")
+rownames(merged) <- merged$CategoricalID
 sample_data(seaweed) <- merged
 ```
 
