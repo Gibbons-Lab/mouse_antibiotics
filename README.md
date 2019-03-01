@@ -44,7 +44,7 @@ If you do run them please make sure to go through them in order.
 2. Infer sequence variants and abundances for the seaweed experiment - [output](https://gibbons-lab.github.io/mouse_antibiotics/asvs_seaweed.nb.html)
 3. Annotate the data with additional metadata - [output](https://gibbons-lab.github.io/mouse_antibiotics/preprocessing.nb.html)
 4. Run all analyses for the duration experiment - [output](https://gibbons-lab.github.io/mouse_antibiotics/duration.nb.html)
-5. Annotate the data with additional metadata - [output](https://gibbons-lab.github.io/mouse_antibiotics/seaweed.nb.html) 
+5. Run all analyses for the seaweed experiment - [output](https://gibbons-lab.github.io/mouse_antibiotics/seaweed.nb.html) 
 
 As a side effect this will recreate all the figures in the figures sub-folder.
 
