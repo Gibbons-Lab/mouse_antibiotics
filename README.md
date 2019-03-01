@@ -40,11 +40,11 @@ Rscript -e "devtools::install_github('gibbons-lab/mbtools')"
 The steps are separated into R notebooks and the output can be inspected online here without running them.
 If you do run them please make sure to go through them in order.
 
-1. Infer sequence variants and abundances for the duration experiment - [output](docs/asvs_duration.nb.html)
-2. Infer sequence variants and abundances for the seaweed experiment - [output](docs/asvs_seaweed.nb.html)
-3. Annotate the data with additional metadata - [output](docs/preprocessing.nb.html)
-4. Run all analyses for the duration experiment - [output](docs/duration.nb.html)
-5. Annotate the data with additional metadata - [output](docs/seaweed.nb.html) 
+1. Infer sequence variants and abundances for the duration experiment - [output](https://gibbons-lab.github.io/asvs_duration.nb.html)
+2. Infer sequence variants and abundances for the seaweed experiment - [output](https://gibbons-lab.github.io/asvs_seaweed.nb.html)
+3. Annotate the data with additional metadata - [output](https://gibbons-lab.github.io/preprocessing.nb.html)
+4. Run all analyses for the duration experiment - [output](https://gibbons-lab.github.io/duration.nb.html)
+5. Annotate the data with additional metadata - [output](https://gibbons-lab.github.io/seaweed.nb.html) 
 
 As a side effect this will recreate all the figures in the figures sub-folder.
 
@@ -60,6 +60,6 @@ again. The following steps were performed:
 2. Build *de novo* transcript assemblies with metaspades
 3. Align the filtered reads to the transcripts and count transcript abundances - [script](txcount.R)
 4. Map the transcripts to the M5NR database with diamond
-5. Join the transcripts with M5NR-based SEED subsystem annotations - [output](docs/annotations.nb.html)
-6. Perform basic quality assessment and association analyses for the transcripts - [output](docs/transcripts.nb.html)
-7. Perform functional association analyses based on SEED annotations - [output](docs/functional.nb.html)
+5. Join the transcripts with M5NR-based SEED subsystem annotations - [output](https://gibbons-lab.github.io/annotations.nb.html)
+6. Perform basic quality assessment and association analyses for the transcripts - [output](https://gibbons-lab.github.io/transcripts.nb.html)
+7. Perform functional association analyses based on SEED annotations - [output](https://gibbons-lab.github.io/functional.nb.html)
