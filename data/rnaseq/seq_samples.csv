@@ -1,0 +1,18 @@
+Sample ID,Sample,RIN,concentration [ng/ul],abundance [ng],Comments,type
+2,A5D25,1,12,600,"RIN could not be measured, set to 1",non-responder
+3,C6D25,2.9,12,600,,non-responder
+10,A5D29,6.8,10,500,,non-responder
+11,C6D29,6.5,20,1000,,non-responder
+12,C7D29,5,28,1400,,non-responder
+13,A6D25,2.1,12,600,,responder
+14,A7D25,9.1,40,2000,,responder
+15,C1D25,6.5,30,1500,,responder
+16,C2D25,2.6,22,1100,,responder
+17,B1D29,5.2,17,850,,untreated
+18,B2D29,7.2,22,1100,,untreated
+19,D1D29,6.6,25,1250,,untreated
+20,D2D29,7.4,38,1900,,untreated
+21,A4D20,2.2,29.6,1480,,non-responder
+22,A5D20,5.8,31.6,1580,,non-responder
+25,A6D20,4.7,174,8700,,responder
+26,A7D20,9.3,53.8,2690,,responder

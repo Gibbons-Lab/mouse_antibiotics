@@ -1,0 +1,100 @@
+---
+title: "Duration experiment sequence variants"
+output: html_notebook
+---
+
+# Downloading the data
+
+If you do not have the raw data yet we will begin by downloading the raw
+FASTQ files from sequence read archive and renaming them to the original
+file names. In case you downloaded the files on your own you may have
+to edit the "id" column so it matches the `Sample_Name` column from the
+SRA run table. This is done automatically here:
+
+You may want to play around with the `thread` argument to see which gives you 
+the maximum download speed.
+
+```{r}
+library(mbtools)
+
+downloaded <- fread("data/duration_files.csv") %>% download_files(threads = 8)
+downloaded
+```
+
+# Quality control
+
+We will start by inspecting the general qualities of the sequencing files.
+
+```{r}
+library(mbtools)
+
+pattern <- "(.+)_R(\\d+)_001.fastq"
+annotations <- c("id", "direction")
+
+files <- find_read_files("data/duration/raw", pattern, annotations)
+```
+This gives us our list of raw inputs:
+
+```{r}
+files
+```
+
+We can now set up our quality assessment.
+
+```{r}
+quals <- quality_control(files)
+```
+
+```{r}
+quals$quality_plot
+```
+
+So we should probbaly trim off the first few bases. For the forward reads we so not have to trim too much, another
+10 bp on 3' should be fine. For the reverse we definitely see a decay after 150 bp so we trim that away.
+
+# Processing with DADA2
+
+We will start by setting up the configuration for dada2.
+
+```{r}
+config <- list(
+  preprocess = config_preprocess(
+    lefTrim = 10,
+    truncLen = c(240, 150),
+    out_dir = "data/duration/preprocessed"
+  ),
+  denoise = config_denoise()
+)
+config
+```
+
+Now let's run the workflow.
+
+```{r}
+dada <- quals %>% preprocess(config$preprocess) %>% denoise(config$denoise)
+```
+
+We will the entire analysis artifact for later use:
+
+```{r}
+saveRDS(dada, "data/duration/dada2.rds")
+```
+
+Now we can first inspect how well DADA2 did in the error rate estimation:
+
+```{r}
+dada$error_plots$all$forward
+```
+
+That looks good. And checking the reverse reads:
+
+```{r}
+dada$error_plots$all$reverse
+```
+
+We can also check how many reads we retained in each step:
+
+```{r}
+dada$passed_reads
+dada$passed_reads[, summary(non_chimera / preprocessed)]
+```

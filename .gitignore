@@ -105,8 +105,15 @@ venv.bak/
 
 # alignment related
 raw
+other
 merged
 filtered
+preprocessed
 alignments
-ref
+refs
+data/rnaseq/transcripts_seed.csv
+data/rnaseq/txcounts.csv
 .Rproj.user
+SEED.*
+*.m8
+.DS_Store

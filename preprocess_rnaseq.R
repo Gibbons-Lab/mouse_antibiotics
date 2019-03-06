@@ -1,20 +1,6 @@
 # Preprocess reads
 
 library(mbtools)
-
-SILVA_DB <- paste0("https://www.arb-silva.de/fileadmin/silva_databases/",
-                   "current/Exports/SILVA_132_SSURef_tax_silva_trunc.fasta.gz")
-MOUSE_DB <- paste0("ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/635/",
-                   "GCF_000001635.26_GRCm38.p6/",
-                   "GCF_000001635.26_GRCm38.p6_rna.fna.gz")
-
-if (!dir.exists("data/rnaseq/refs")) {
-    dir.create("data/rnaseq/refs", recursive = TRUE)
-    flog.info("Downloading SILVA ribosomal reference database.")
-    download.file(SILVA_DB, "data/rnaseq/refs/silva_dna_132.fna.gz")
-    flog.info("Downloading mouse transcript db.")
-    download.file(MOUSE_DB, "data/rnaseq/refs/mus_musculus_rna.fna.gz")
-}
     
 config <- list(
     preprocess = config_preprocess(
@@ -32,12 +18,18 @@ config <- list(
     )
 )
 
-reads <- find_read_files("raw")
+# Download sequencing files
+if (!dir.exists("data/rnaseq/raw")) {
+  flog.info("Downloading raw sequencing files.")
+  dl <- fread("data/rnaseq_files.csv") %>% download_files(threads = 8)
+}
+
+reads <- find_read_files("data/rnaseq/raw")
 quals <- quality_control(reads)
 ggplot2::ggsave("figures/rnaseq_qualities.png", plot = quals$quality_plot)
 if (!dir.exists("filtered")) {
     filtered <- preprocess(quals, config$preprocess)
-    fwrite(filtered$passed, "preprocess.csv")
+    fwrite(filtered$passed, "data/rnaseq/preprocess.csv")
 } else {
   filtered <- find_read_files("data/rnaseq/filtered")
 }
@@ -47,3 +39,10 @@ if (!dir.exists("filtered")) {
 filtered <- filtered %>% filter_reference(config$filter_mouse) %>% 
             filter_reference(config$filter_ribosomal)
 unlink(config$filter_mouse$out_dir)
+
+# Write file list for metaspades
+metaspades <- list(
+  type = "single",
+  `single reads` = filtered$files$forward
+)
+yaml::write_yaml(list(metaspades), "data/rnaseq/spades.yml")

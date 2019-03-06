@@ -1,0 +1,6 @@
+url,target,description
+ftp://ftp.metagenomics.anl.gov/data/misc/JGI/SEED.id2subsystems,data/rnaseq/SEED.id2subsystems,SEED subsystem mapping file
+ftp://ftp.metagenomics.anl.gov/data/misc/JGI/SEED.md52id2ont,data/rnaseq/SEED.md52id2ont,M5NR to SEED ontology mapping file
+ftp://ftp.metagenomics.anl.gov/data/MD5nr/current/md5nr.gz,data/rnaseq/refs/md5nr.gz,M5NR database
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/635/GCF_000001635.26_GRCm38.p6/GCF_000001635.26_GRCm38.p6_rna.fna.gz,data/rnaseq/refs/mus_musculus_rna.fna.gz,all mouse transcripts
+https://www.arb-silva.de/fileadmin/silva_databases/release_132/Exports/SILVA_132_SSURef_Nr99_tax_silva_trunc.fasta.gz,data/rnaseq/refs/silva_dna_132.fna.gz,SILVA non-redundant ribosomal database

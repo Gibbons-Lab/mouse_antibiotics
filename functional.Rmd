@@ -11,12 +11,12 @@ capacity of different transcriptomes.
 ```{r}
 library(mbtools)
 
-counts <- fread("data/txcounts.csv")
+counts <- fread("data/rnaseq/txcounts.csv")
 counts[, counts := round(counts)]
 counts <- counts[counts > 0]
 counts[, sample := tstrsplit(sample, "-")[[3]]]
 
-meta <- fread("data/seq_samples.csv", key = "Sample")
+meta <- fread("data/rnaseq/seq_samples.csv", key = "Sample")
 meta[, day := substr(Sample, 4, 6)]
 meta[, mouse := substr(Sample, 1, 2)]
 meta
@@ -25,7 +25,7 @@ meta
 Now we will load the SEED annotations for the contigs:
 
 ```{r}
-anns <- fread("data/contig_seed.csv")
+anns <- fread("data/rnaseq/transcripts_seed.csv")
 anns
 ```
 
@@ -176,38 +176,32 @@ sig[, .N, by = "subpathway"][order(-N)]
 
 Lets have a look at some of the obvious pathways:
 
-```{r, fig.height=10, fig.width=8}
+```{r, fig.height=8, fig.width=10}
 library(viridis)
+library(scales)
 library(pheatmap)
 
 pws <- idmap[sig$id, superpathway]
 norm_counts <- t(mbtools::normalize(t(count_mat)))[, meta$day == 29]
 
-keyword <- "Cell Division"
+keyword <- "Motility"
 selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
 rownames(selected) <- stringr::str_trunc(sig[grepl(keyword, superpathway), 
                                              description], 80)
 anns <- data.frame(type = meta[day == 29, type])
+cols <- list(type = hue_pal()(2))
+names(cols$type) <- levels(anns$type)
 rownames(anns) <- meta[day == 29, Sample]
-pheatmap(log10(selected + 1), annotation_col = anns, color = viridis(128), 
+pheatmap(log10(selected + 1), annotation_col = anns, annotation_colors = cols,
+         color = viridis(128),
          filename = sprintf("figures/heatmap_%s.pdf", keyword), 
-         cellwidth = 10, cellheight = 10,
-         legend_breaks = 0:6)
+         cellwidth = 10, cellheight = 10, legend_breaks = 0:6)
 
-pheatmap(log10(selected + 1), annotation_col = anns, color = viridis(128), 
-         cellwidth = 10, cellheight = 10,
-         legend_breaks = 0:6)
+pheatmap(log10(selected + 1), annotation_col = anns, annotation_colors = cols,
+         color = viridis(128), legend_breaks = 0:6)
 ```
 
-And globally:
-
-```{r, fig.width=8, fig.height=10}
-superpathways <- data.frame(superpathway = tests[day == 29, superpathway])
-rownames(superpathways) <- tests[day == 29, id]
-pheatmap(log10(norm_counts + 1), annotation_col = anns, 
-         annotation_row = superpathways, color = viridis(128), 
-         show_rownames = FALSE)
-```
+You can vary the keyword on top to get different submodules.
 
 ## Pulling out particular function sets
 

@@ -8,7 +8,7 @@ output: html_notebook
 ```{r}
 library(mbtools)
 
-counts <- fread("data/txcounts.csv")
+counts <- fread("data/rnaseq/txcounts.csv")
 counts[, sample := tstrsplit(sample, "-")[[3]]]
 counts[, counts := round(counts)]
 counts[counts > 0]
@@ -18,7 +18,7 @@ counts[, transcript := NULL]
 counts <- as.matrix(counts)
 rownames(counts) <- nm
 
-meta <- fread("data/seq_samples.csv", key="Sample")[colnames(counts)]
+meta <- fread("data/rnaseq/seq_samples.csv", key="Sample")[colnames(counts)]
 meta[, day := substr(Sample, 4, 6)]
 meta[, mouse := substr(Sample, 1, 3)]
 meta
@@ -119,7 +119,7 @@ tests <- rbindlist(tests)
 We will merge this with the annotations for the contigs.
 
 ```{r}
-anns <- fread("data/contig_seed.csv")
+anns <- fread("data/rnaseq/transcripts_seed.csv")
 tests <- anns[tests, on = c(query = "id")]
 sig <- tests[padj < 0.05][order(padj)]
 ```

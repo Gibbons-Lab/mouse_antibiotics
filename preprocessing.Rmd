@@ -6,34 +6,6 @@ output: html_notebook
 
 # Converting to a phyloseq object
 
-Both experiments were processed the same way so we can write a single function 
-to read both experiments.
-
-```{r}
-library(stringr)
-devtools::load_all("~/code/mbtools")
-
-qiime2phyloseq <- function(path) {
-  feature_table <- read.csv(file.path(path, "feature_table.csv"), 
-                            check.names = F, row.names = 1) %>% t()
-  sample_meta <- read.table(file.path(path, "metadata.tsv"), 
-                            comment.char = "#", header = 1)
-  rownames(sample_meta) <- sample_meta[, 1]
-  taxa <- read.table(file.path(path, "taxonomy.tsv"), sep = "\t", header = 1)
-  taxa_meta <- str_replace_all(taxa$Taxon, "\\w__", "") %>% 
-               str_split_fixed(., "; ", n = 7)
-  taxa_meta[taxa_meta == ""] <- NA
-  colnames(taxa_meta) <- c("kingdom", "phylum", "class", "order", 
-                           "family", "genus", "species")
-  rownames(taxa_meta) <- taxa[, 1]
-  
-  ps <- phyloseq(otu_table(feature_table, taxa_are_rows = F),
-                 tax_table(taxa_meta),
-                 sample_data(sample_meta))
-  ps
-}
-```
-
 # duration experiment
 
 We will start by reading the DADA2 results and metadata and bundling everything
