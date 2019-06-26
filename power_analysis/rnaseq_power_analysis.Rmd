@@ -1,0 +1,159 @@
+---
+title: "Functional analysis"
+output: html_notebook
+---
+
+Here we will perform a power analysis on the gene orthologue groups in order to quantify the functional
+capacity of different transcriptomes. We will use a mouse transcriptomics data set from https://dx.doi.org/10.1016%2Fj.chom.2015.04.008.
+
+# Functional Annotations
+
+We will start by assembling the functional annotations for the *de novo* assembled transcripts.
+
+So, let's start by getting our mapping from contigs to M5nr ids (md5 hashes):
+
+```{r}
+library(mbtools)
+
+contig_map <- read_blast("data/rnaseq/spades2m5nr.m8")[evalue < 1e-4]
+```
+
+We will now annotate our assembled transcripts via the mapping to the
+M5NR database.
+
+```{r}
+seed <- fread("../data/rnaseq/SEED.md52id2ont", header = FALSE)
+seed[, V4 := NULL]
+names(seed) <- c("reference", "id", "description")
+```
+
+Let's map the annotations to our contigs.
+
+```{r}
+seed <- seed[contig_map[, .(query, reference)], 
+             on = "reference", nomatch = 0]
+```
+
+And we reduce to unique mappings.
+
+```{r}
+seed <- seed[, .(description = paste(unique(description), collapse = ";")), 
+             by = c("query", "id")]
+seed[, uniqueN(query)] / contig_map[, uniqueN(query)]
+```
+
+Here we find almost 60% of the contigs. Finally, we combine that with the 
+hierarchy to obtain the final mappings.
+
+```{r}
+hierarchy <- fread("../data/rnaseq/SEED.id2subsystems", header = FALSE)
+names(hierarchy) <- c("superpathway", "pathway", "subpathway", "function", "id")
+
+seed <- hierarchy[seed, on="id"]
+fwrite(seed, "data/rnaseq/transcripts_seed.csv")
+```
+
+## Preprocessing
+
+```{r}
+library(mbtools)
+
+counts <- fread("data/rnaseq/txcounts.csv")
+counts[, counts := round(counts)]
+counts <- counts[counts > 0]
+```
+
+Now we will load the SEED annotations for the contigs:
+
+```{r}
+anns <- fread("data/rnaseq/transcripts_seed.csv")
+anns
+```
+
+..and join the counts with the annotations:
+
+```{r}
+fncounts <- anns[counts, on = c(query = "reference"), nomatch = 0]
+fncounts <- fncounts[, .(description = description[1], 
+                         counts = sum(counts)), 
+                     by = c("id", "sample")]
+fncounts
+```
+
+We can check if those are more conserved across samples:
+
+```{r, fig.width=6, fig.height=4}
+cn_per_id <- fncounts[counts > 0, .N, by = id]
+ggplot(cn_per_id, aes(x = factor(N))) + geom_bar() + 
+  labs(x = "number of samples", y = "shared functions [count]") + theme_bw()
+ggsave("figures/function_counts.svg", width = 6, height = 4)
+```
+
+## Count matrix
+
+First, we will transform the counts to matrix.
+
+```{r}
+count_mat <- dcast(fncounts, id ~ sample, fill = 0)
+nm <- count_mat[, id]
+count_mat[, id := NULL]
+count_mat <- as.matrix(count_mat)
+rownames(count_mat) <- nm
+dim(count_mat)
+```
+
+We will also filter low abundance transcripts from the count matrix.
+
+```{r}
+count_mat <- t(filter_counts(t(count_mat), abundance = 10, presence = 0.25))
+nrow(count_mat)
+```
+
+# Power analysis
+
+We will first model the underlying parameters of a negative binomial distribution and inject custom
+effect sizes later on.
+
+```{r, fig.width = 10, fig.height = 8}
+library(powsimR)
+
+params <- estimateParam(count_mat, Distribution = "NB", 
+                        Normalisation = "PosCounts",
+                        RNAseq = "bulk")
+plotParam(params, annot = F)
+```
+
+Now let's simulate some effect sizes.
+
+```{r}
+lfc = function(x) sample(c(-1,1), size = x,replace = T)  *runif(x, 0, 5)
+de.opts = DESetup(ngenes = nrow(count_mat), nsims = 30,
+                  p.DE = 0.25, pLFC = lfc)
+sim.opts = SimSetup(desetup = de.opts,
+                    params = params,
+                    spike = NULL,
+                    size.factors = 'equal',
+                    downsample = FALSE, geneset = FALSE)
+```
+
+Now we can simulate our power analysis.
+
+```{r, warning = FALSE}
+if (!file.exists("data/power_rnaseq.rds")) {
+  sim <- simulateDE(n1 = c(2, 3, 4, 5, 10, 20, 50), 
+                    n2 = c(2, 3, 4, 5, 10, 20, 50),
+                    sim.settings = sim.opts, 
+                    DEmethod = "DESeq2", Normalisation = "PosCounts",
+                    NCores = 8)
+  saveRDS(sim, "data/power_rnaseq.rds")
+} else {
+  sim <- readRDS("data/power_rnaseq.rds")
+}
+```
+
+```{r, fig.width = 10, fig.height = 8}
+evalDE <- evaluateDE(sim, alpha.type = "adjusted", MTC = "BH", 
+                     alpha.nominal = 0.05, stratify.by = "mean")
+plotEvalDE(evalDE, rate = "stratified", annot = FALSE)
+ggsave("figures/power_rnaseq.svg", width = 10, height = 8)
+```

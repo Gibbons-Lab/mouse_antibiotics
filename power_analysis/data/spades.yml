@@ -1,0 +1,10 @@
+- type: single
+  single reads:
+  - data/rnaseq/filtered/rna_stool_ss_R1_1.fastq.gz
+  - data/rnaseq/filtered/rna_stool_ss_R1_2.fastq.gz
+  - data/rnaseq/filtered/rna_stool_ss_R2_1.fastq.gz
+  - data/rnaseq/filtered/rna_stool_ss_R2_2.fastq.gz
+  - data/rnaseq/filtered/rna_stool_ss_R3_1.fastq.gz
+  - data/rnaseq/filtered/rna_stool_ss_R3_2.fastq.gz
+  - data/rnaseq/filtered/rna_stool_ss_R4_1.fastq.gz
+  - data/rnaseq/filtered/rna_stool_ss_R4_2.fastq.gz

@@ -1,0 +1,130 @@
+---
+title: "16S Power Analysis"
+output: html_notebook
+---
+
+In order to perform power analysis for 16S data we will need a decent distribution model 
+for the data. We will model counts using Beta-Binomial model as used in 
+[corncob](https://arxiv.org/pdf/1902.02776.pdf). For that you will need to install the
+`corncob` package first.
+
+```{r}
+devtools::install_github("bryandmartin/corncob")
+```
+
+We can now start running power analyses for the data. For that we will use a reference dataset
+generated in the same lab and under the same protocol as our datasets (described in
+https://doi.org/10.1016/j.celrep.2018.07.032). We will only use control samples.
+
+```{r}
+library(mbtools)
+
+seqtab <- readRDS(url(
+  "https://data.mendeley.com/datasets/86xzh5c85p/1/files/da2d4b0c-4c8c-4a73-bfa1-4eb43a24c7d5/seqtab_final.rds?dl=1"))
+taxa <- readRDS(url(
+  "https://data.mendeley.com/datasets/86xzh5c85p/1/files/b98de0af-f296-4c17-84b4-46397fe9e36d/tax_final.rds?dl=1"))
+meta <- read.csv(url(
+  "https://data.mendeley.com/datasets/86xzh5c85p/1/files/4b44d05d-a341-4c6d-8420-feeef4fbe4db/meta.csv?dl=1"))
+rownames(meta) <- rownames(seqtab)
+ref <- phyloseq(otu_table(seqtab, taxa_are_rows = FALSE), tax_table(taxa),
+                sample_data(meta))
+ref <- subset_samples(ref, Treatment == "NC")
+```
+
+This leaves us with 48 samples. We will now generate new data from the fitted
+Beta-Binomial of the reference data. Many ASVs will be omitted in that step
+since they have zero counts in all of the control samples.
+
+# PERMANOVA power analysis
+
+We will start by testing the power of PERMANOVA. Power will bes estimated across 100
+sampled count matrices with 10 replicates (1000 samples in total). The effect size used
+here is the inverse fold change. Meaning if we use an effect of $\alpha$ for an ASV with proportion
+$p_i$ the treated group will be assigned a proportion $(1 - \alpha)\cdot p_i$. If we would do this
+for all ASVs we would obtain a mean Bray-Curtis distance of $\alpha$ between any control and treatment
+sample. If only half of all ASVs are differential this would yield a mean distance of $\alpha/2$ and
+so on.
+
+```{r}
+if (!file.exists("data/permanova_power.csv")) {
+  pa <- power_analysis(ref, fraction_differential = 0.1,
+                       n = ceiling(2 ^ seq(2, 6, length.out = 12) / 2) * 2)
+  power <- pa$power
+  fwrite(power, "data/permanova_power.csv")
+} else {
+  power <- fread("data/permanova_power.csv")
+}
+```
+
+We can now plot the power curves for the different $R^2$ values:
+
+```{r, fig.width = 6, fig.height = 4}
+theme_set(theme_minimal())
+
+ggplot(power[effect > 0], aes(x = n, y = power, col = asym_r2, 
+                              group = effect)) +
+  scale_x_log10() + 
+  geom_hline(yintercept = 0.8, lty = "dashed") + 
+  geom_point() + geom_line() +
+  geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd)) +
+  labs(color = expression(R^2))
+ggsave("figures/permanova_power.svg", width = 6, height = 4)
+```
+
+We can also look at the false discovery rate which is simply the power for a zero effect (no true difference).
+
+```{r, fig.width = 5, fig.height = 4}
+ggplot(power[effect == 0], aes(x = n, y = power, group = effect)) +
+  scale_x_log10() + ylim(0, 0.1) +
+  geom_hline(yintercept = 0.05, lty = "dashed") + 
+  geom_point() + geom_line() +
+  geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd)) +
+  labs(y = "false discovery rate", color = "R2 [log10]")
+ggsave("figures/permanova_fdr.svg", width = 5, height = 4)
+```
+
+# Mann-Whitney Power Analysis
+
+We can do the same for the Mann-Whitney test on proportions. This is run for each taxa. We will never
+look at ranks more detailed than genus so we will summarize the data on that level. One thing to note
+is that power will depend on the proportion. Very rare taxa will have lower power.
+
+```{r}
+if (!file.exists("data/mw_power.csv")) {
+  pa <- power_analysis(tax_glom(ref, "Genus"), 
+                       fraction_differential = 0.5, method = "mw")
+  power <- pa$power
+  fwrite(power, "data/mw_power.csv")
+} else {
+  power <- fread("data/mw_power.csv")
+}
+```
+
+And we can visualize the power curves again. Since we have an additional level of information
+this time (individual taxa), we will stratify by the effect size (fold change).
+
+```{r, fig.width = 7, fig.height = 5}
+power[, "fold_change" := 1 / (1 - effect)]
+label <- as_labeller(function(x) sprintf("fold change = %.2gx", as.numeric(x)))
+ggplot(power[effect > 0], aes(x = n, y = power, col = log10(mu/phi), group = taxa)) +
+  scale_x_log10() +
+  geom_hline(yintercept = 0.8, lty = "dashed") + 
+  geom_point(alpha = 0.5) + geom_line(alpha = 0.5) +
+  geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd),
+                 alpha = 0.5) +
+  facet_wrap(~ fold_change, labeller = label) + guides(color = FALSE)
+ggsave("figures/mw_power.png", width = 7, height = 5, dpi = 300)
+```
+
+And we can agin estimate the FDR:
+
+```{r, fig.width = 6, fig.height = 4}
+ggplot(power[effect == 0], aes(x = n, y = power, col = log10(mu/phi), group = taxa)) +
+  scale_x_log10() + ylim(0, 0.1) +
+  geom_hline(yintercept = 0.05, lty = "dashed") + 
+  geom_point(alpha = 0.5) + geom_line(alpha = 0.5) +
+  geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd),
+                 alpha = 0.5) + 
+  labs(y = "false discovery rate", color = "signal/noise [log10]")
+ggsave("figures/mw_fdr.svg", width = 6, height = 4)
+```
