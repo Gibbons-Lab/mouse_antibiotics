@@ -146,7 +146,7 @@ coeffs[order(-abs(coef)), !"sequence", with = F]
 
 # Relationship with qPCR cycle numbers
 
-```{r, fig.height=4, fig.width=3}
+```{r, fig.height=4, fig.width=1.5}
 pl <- ggplot(sdata[DaysElapsed == 31], aes(x = Response, y = 1 / Ct, 
                                            col = Response)) +
   geom_boxplot(width=0.5) + geom_jitter(width = 0.3) +
@@ -154,7 +154,7 @@ pl <- ggplot(sdata[DaysElapsed == 31], aes(x = Response, y = 1 / Ct,
   geom_hline(yintercept = 0.07, lty = "dashed") +
   theme_bw() + theme(axis.text.x = element_text(angle = 30, hjust = 1, 
                                                 vjust = 1)) 
-ggsave("figures/qpcr_cycles.svg", width = 3, height = 4)
+ggsave("figures/qpcr_cycles.svg", width = 1.5, height = 4)
 pl
 ```
 
