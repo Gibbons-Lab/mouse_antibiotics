@@ -20,11 +20,11 @@ https://doi.org/10.1016/j.celrep.2018.07.032). We will only use control samples.
 library(mbtools)
 
 seqtab <- readRDS(url(
-  "https://data.mendeley.com/datasets/86xzh5c85p/1/files/da2d4b0c-4c8c-4a73-bfa1-4eb43a24c7d5/seqtab_final.rds?dl=1"))
+  "https://data.mendeley.com/public-files/datasets/86xzh5c85p/files/e547053f-094a-46a5-9e7b-e0d3867b698c/file_downloaded"))
 taxa <- readRDS(url(
-  "https://data.mendeley.com/datasets/86xzh5c85p/1/files/b98de0af-f296-4c17-84b4-46397fe9e36d/tax_final.rds?dl=1"))
+  "https://data.mendeley.com/public-files/datasets/86xzh5c85p/files/df0f29dd-f66f-48e5-b3af-1ee4f3ffbf2c/file_downloaded"))
 meta <- read.csv(url(
-  "https://data.mendeley.com/datasets/86xzh5c85p/1/files/4b44d05d-a341-4c6d-8420-feeef4fbe4db/meta.csv?dl=1"))
+  "https://data.mendeley.com/public-files/datasets/86xzh5c85p/files/294bf92b-5484-4cbe-94bc-81cf290a25d3/file_downloaded"))
 rownames(meta) <- rownames(seqtab)
 ref <- phyloseq(otu_table(seqtab, taxa_are_rows = FALSE), tax_table(taxa),
                 sample_data(meta))
@@ -58,29 +58,29 @@ if (!file.exists("data/permanova_power.csv")) {
 
 We can now plot the power curves for the different $R^2$ values:
 
-```{r, fig.width = 6, fig.height = 4}
+```{r, fig.width = 5, fig.height = 3}
 theme_set(theme_minimal())
 
 ggplot(power[effect > 0], aes(x = n, y = power, col = asym_r2, 
                               group = effect)) +
   scale_x_log10() + 
   geom_hline(yintercept = 0.8, lty = "dashed") + 
-  geom_point() + geom_line() +
+  geom_point(size = 2) + geom_line(size = 1) +
   geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd)) +
   labs(color = expression(R^2))
-ggsave("figures/permanova_power.svg", width = 6, height = 4)
+ggsave("figures/permanova_power.svg", width = 5, height = 3)
 ```
 
 We can also look at the false discovery rate which is simply the power for a zero effect (no true difference).
 
-```{r, fig.width = 5, fig.height = 4}
+```{r, fig.width = 4, fig.height = 3}
 ggplot(power[effect == 0], aes(x = n, y = power, group = effect)) +
   scale_x_log10() + ylim(0, 0.1) +
   geom_hline(yintercept = 0.05, lty = "dashed") + 
   geom_point() + geom_line() +
   geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd)) +
   labs(y = "false discovery rate", color = "R2 [log10]")
-ggsave("figures/permanova_fdr.svg", width = 5, height = 4)
+ggsave("figures/permanova_fdr.svg", width = 4, height = 3)
 ```
 
 # Mann-Whitney Power Analysis
@@ -96,35 +96,35 @@ if (!file.exists("data/mw_power.csv")) {
   power <- pa$power
   fwrite(power, "data/mw_power.csv")
 } else {
-  power <- fread("data/mw_power.csv")
+  mw_power <- fread("data/mw_power.csv")
 }
 ```
 
 And we can visualize the power curves again. Since we have an additional level of information
 this time (individual taxa), we will stratify by the effect size (fold change).
 
-```{r, fig.width = 7, fig.height = 5}
+```{r, fig.width = 5, fig.height = 3}
+power <- mw_power[mu>1e-3, .(power = mean(power), power_sd = sd(power)), by = c("effect", "n")]
 power[, "fold_change" := 1 / (1 - effect)]
 label <- as_labeller(function(x) sprintf("fold change = %.2gx", as.numeric(x)))
-ggplot(power[effect > 0], aes(x = n, y = power, col = log10(mu/phi), group = taxa)) +
+ggplot(power[effect > 0], aes(x = n, y = power, col=factor(round(fold_change, 1)), group=fold_change)) +
   scale_x_log10() +
   geom_hline(yintercept = 0.8, lty = "dashed") + 
-  geom_point(alpha = 0.5) + geom_line(alpha = 0.5) +
+  geom_point(size=2) + geom_line(size = 1) +
   geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd),
                  alpha = 0.5) +
-  facet_wrap(~ fold_change, labeller = label) + guides(color = FALSE)
-ggsave("figures/mw_power.png", width = 7, height = 5, dpi = 300)
+  labs(color = "fold change")
+ggsave("figures/mw_power.png", width = 5, height = 3, dpi = 300)
 ```
 
 And we can agin estimate the FDR:
 
-```{r, fig.width = 6, fig.height = 4}
-ggplot(power[effect == 0], aes(x = n, y = power, col = log10(mu/phi), group = taxa)) +
+```{r, fig.width = 4, fig.height = 3}
+ggplot(power[effect == 0], aes(x = n, y = power)) +
   scale_x_log10() + ylim(0, 0.1) +
   geom_hline(yintercept = 0.05, lty = "dashed") + 
-  geom_point(alpha = 0.5) + geom_line(alpha = 0.5) +
-  geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd),
-                 alpha = 0.5) + 
+  geom_point() + geom_line() +
+  geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd)) + 
   labs(y = "false discovery rate", color = "signal/noise [log10]")
-ggsave("figures/mw_fdr.svg", width = 6, height = 4)
+ggsave("figures/mw_fdr.svg", width = 4, height = 3)
 ```

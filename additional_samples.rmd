@@ -1,0 +1,57 @@
+---
+title: "Additional seaweed samples (validation)"
+output: html_notebook
+---
+
+Let's import the additional samples to check whether there were differences prior to antibiotic treatment.
+
+```{r}
+library(mbtools)
+
+ps <- readRDS("data/additional_seaweed.rds")
+sdata <- sample_data(ps) %>% as("data.frame")
+sdata[["Subject"]] <- substr(sdata$id, 1, 2)
+sdata[["Days"]] <- substr(sdata$id, 4, 5) %>% as.numeric()
+manifest <- readRDS("data/seaweed_exp.rds") %>% sample_data() %>% as("data.frame")
+sdata <- merge(
+  sdata, 
+  unique(manifest[, c("Subject", "Response")]), 
+  by = "Subject"
+)
+sdata[["Treatment"]] <- c("before", "during")[(sdata$Days >= 27) + 1] %>% factor()
+rownames(sdata) <- sdata$group_id
+sample_data(ps) <- sdata
+ps
+```
+
+Now lets have a look at ordination.
+
+```{r}
+theme_set(theme_bw())
+
+rare <- rarefy_even_depth(ps, 20000)
+sample_data(rare)$Days <- factor(sample_data(rare)$Days)
+ord <- ordinate(rare, method="PCoA")
+
+plot_ordination(rare, ord, color="Response", shape="Treatment") +
+    stat_ellipse(aes(group = Response), type = "t") +
+    scale_shape_manual(values = c(before = 1, during = 10)) +
+    labs(shape = "sample time")
+```
+
+Let's see if the response ype can not be distinguished from the initial samples.
+
+
+```{r}
+before <- subset_samples(rare, Treatment == "before")
+model <- vegan::adonis(otu_table(before) ~ Response, data=as(sample_data(before), "data.frame"))
+model
+```
+
+So can not be distinguished before, but can be distinguished after:
+
+```{r}
+during <- subset_samples(rare, Treatment == "during")
+model <- vegan::adonis(otu_table(during) ~ Response, data=as(sample_data(during), "data.frame"))
+model
+```

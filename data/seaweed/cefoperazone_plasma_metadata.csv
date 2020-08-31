@@ -1,0 +1,17 @@
+id,day,response,antibiotic
+A1,during AB,responder,1
+A2,during AB,responder,1
+A3,during AB,responder,1
+A9,during AB,responder,1
+A10,during AB,responder,1
+B1,during AB,control,0
+B2,during AB,control,0
+B3,during AB,control,0
+C1,during AB,responder,1
+C2,during AB,responder,1
+C3,during AB,responder,1
+C9,during AB,responder,1
+C10,during AB,responder,1
+D1,during AB,control,0
+D2,during AB,control,0
+D3,during AB,control,0

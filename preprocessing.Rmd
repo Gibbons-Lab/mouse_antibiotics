@@ -12,6 +12,9 @@ We will start by reading the DADA2 results and metadata and bundling everything
 in a phyloseq object.
 
 ```{r}
+library(phyloseq)
+library(stringr)
+
 dada <- readRDS("data/duration/dada2.rds")
 meta <- read.table("data/duration/metadata.tsv", 
                    comment.char = "#", header = 1)
@@ -25,7 +28,7 @@ duration <- phyloseq(otu_table(dada$feature_table, taxa_are_rows = FALSE),
 We will extract the duration durations from the sample names.
 
 ```{r}
-map <- c(cnt = "control", non = "resistor", res = "non-resistor")
+map <- c(cnt = "control", non = "non-responder", res = "responder")
 
 sdata <- sample_data(duration)
 sdata$duration <- str_replace(sdata$Mouse, "[A-Z]", "") %>% as.numeric()

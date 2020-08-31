@@ -11,7 +11,8 @@ output: html_notebook
 We will start by reading our data and required libraries.
 
 ```{r}
-devtools::load_all("~/code/mbtools")
+library(mbtools)
+theme_set(theme_bw())
 
 ps <- readRDS("data/duration_exp.rds")
 
@@ -26,6 +27,29 @@ phyla <- taxa_count(total, "Phylum")
 sdata <- as.data.table(as(sample_data(total), "data.frame"))
 phyla <- phyla[sdata, on = c(sample = "Description")]
 head(phyla)
+```
+
+# Community collapse
+
+Microbial collapse usually implies a lower bacterial biomass compared with background signals such as DNA from food and the host.
+
+```{r}
+chloro_mit <- subset_taxa(ps, 
+                          Class == "Chloroplast" | Family == "Mitochondria")
+rel <- data.table(sample = sample_names(ps), 
+                  relative = sample_sums(chloro_mit) / sample_sums(ps))
+rel <- sdata[rel, on = c(Description = "sample")]
+```
+
+Let's have a look at the proportion of Mitochondria or Choloroplasts by duration.
+
+```{r, fig.width=3, fig.height=4}
+ggplot(rel, aes(x = TimepointCat, y = relative, color = Response)) +
+  geom_hline(yintercept = 0.1, lty="dashed") +
+  geom_jitter(width=0.2) +
+  labs(x="sample time", y="Mitochondria/Chloroplasts [fraction of total]") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1, vjust = 1))
+ggsave("figures/duration_chloro_mit.svg", width=3, height=4)
 ```
 
 # Phyla abundances
@@ -56,7 +80,7 @@ ggsave("figures/control_duration.png", height = 4, width = 1.5, dpi = 300)
 pl
 ```
 
-Now we will do the same thing for the resistors and non-resistors.
+Now we will do the same thing for the non-responders and responders.
 
 ```{r, fig.height=4, fig.width=8}
 treated <- phyla[duration > 0 & Day - duration == 0]
@@ -74,8 +98,8 @@ pl
 We can see that most of the Cyanobacteria and Proteobacteria are actually Chloroplasts and Mitochondria:
 
 ```{r}
-non_resistors <- subset_samples(total, Response == "non-resistor")
-cyano_proteo <- subset_taxa(non_resistors, 
+non_non-responders <- subset_samples(total, Response == "responder")
+cyano_proteo <- subset_taxa(non_non-responders, 
                             Phylum %in% c("Cyanobacteria", "Proteobacteria"))
 class <- taxa_count(cyano_proteo, "Order")[order(-reads), sum(reads), by = taxa]
 fam <- taxa_count(cyano_proteo, "Family")[order(-reads), sum(reads), by = taxa]
@@ -144,7 +168,7 @@ pl
 ```{r}
 library(vegan)
 
-ps <- subset_samples(treat, Response != "non-resistor") %>% 
+ps <- subset_samples(treat, Response != "responder") %>% 
       rarefy_even_depth(., 10000)
 counts <- as.matrix(taxa_count(ps, NA))
 sda <- as(sample_data(ps), "data.frame")
