@@ -117,3 +117,8 @@ data/rnaseq/txcounts.csv
 SEED.*
 *.m8
 .DS_Store
+._*
+*_antibiotic_study/
+./*.nb.html
+power_analysis/*.nb.html
+power_analysis/data/rnaseq/

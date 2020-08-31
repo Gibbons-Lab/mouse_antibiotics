@@ -1,0 +1,1849 @@
+﻿Compound,Replicate,Precursor Mz,Precursor Charge,Product Mz,Product Charge,Fragment Ion,Retention Time,Area,Peak Rank
+Cefoperazone,6_A1D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,1381573,1
+Cefoperazone,6_A1D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,1444900,1
+Cefoperazone,6_A1D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,1399683,1
+Cefoperazone,6_A1D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.7,209893,1
+Cefoperazone,6_A1D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,206623,1
+Cefoperazone,6_A1D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,196893,1
+Cefoperazone,6_A2D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,1423791,1
+Cefoperazone,6_A2D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,1465413,1
+Cefoperazone,6_A2D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,1403402,1
+Cefoperazone,6_A2D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.65,245910,1
+Cefoperazone,6_A2D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,244558,1
+Cefoperazone,6_A2D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,246043,1
+Cefoperazone,6_A3D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,3792798,1
+Cefoperazone,6_A3D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,3828815,1
+Cefoperazone,6_A3D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,3762350,1
+Cefoperazone,6_A3D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,142958,1
+Cefoperazone,6_A3D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,134792,1
+Cefoperazone,6_A3D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,138825,1
+Cefoperazone,6_B1D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.7,868,1
+Cefoperazone,6_B1D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.7,963,1
+Cefoperazone,6_B1D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,713,1
+Cefoperazone,6_B1D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.5,7,6
+Cefoperazone,6_B1D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.7,323,1
+Cefoperazone,6_B1D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,213,1
+Cefoperazone,6_B2D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.7,610,1
+Cefoperazone,6_B2D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,456,1
+Cefoperazone,6_B2D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,221,1
+Cefoperazone,6_B2D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.7,301,1
+Cefoperazone,6_B2D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,169,1
+Cefoperazone,6_B2D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.77,316,1
+Cefoperazone,6_B3D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.65,3440,1
+Cefoperazone,6_B3D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,3420,1
+Cefoperazone,6_B3D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,4329,1
+Cefoperazone,6_B3D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.77,368,1
+Cefoperazone,6_B3D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.74,118,1
+Cefoperazone,6_B3D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,88,1
+Cefoperazone,6_C1D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.65,1769688,1
+Cefoperazone,6_C1D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,1727686,1
+Cefoperazone,6_C1D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,1740306,1
+Cefoperazone,6_C1D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,203074,1
+Cefoperazone,6_C1D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,189023,1
+Cefoperazone,6_C1D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,200267,1
+Cefoperazone,6_C2D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.65,1419932,1
+Cefoperazone,6_C2D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,1416794,1
+Cefoperazone,6_C2D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,1397595,1
+Cefoperazone,6_C2D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.65,236392,1
+Cefoperazone,6_C2D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.72,218706,1
+Cefoperazone,6_C2D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,210784,1
+Cefoperazone,6_C3D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,1457248,1
+Cefoperazone,6_C3D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.72,1390342,1
+Cefoperazone,6_C3D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,1440939,1
+Cefoperazone,6_C3D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.7,117152,1
+Cefoperazone,6_C3D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,118608,1
+Cefoperazone,6_C3D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,114697,1
+Cefoperazone,6_D1D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.62,316,1
+Cefoperazone,6_D1D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,470,1
+Cefoperazone,6_D1D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.7,529,1
+Cefoperazone,6_D2D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.65,309,1
+Cefoperazone,6_D2D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.7,81,2
+Cefoperazone,6_D2D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,279,1
+Cefoperazone,6_D3D27_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.7,661,1
+Cefoperazone,6_D3D27_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.7,669,1
+Cefoperazone,6_D3D27_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,728,1
+Cefoperazone,7_A1D15_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,16677,1
+Cefoperazone,7_A1D15_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.72,15920,1
+Cefoperazone,7_A1D15_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,15883,1
+Cefoperazone,7_A1D33_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,25130,1
+Cefoperazone,7_A1D33_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,23079,1
+Cefoperazone,7_A1D33_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,23491,1
+Cefoperazone,7_A2D33_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,31965,1
+Cefoperazone,7_A2D33_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,33568,1
+Cefoperazone,7_A2D33_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,33568,1
+Cefoperazone,7_A3D33_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,14987,1
+Cefoperazone,7_A3D33_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.7,16148,1
+Cefoperazone,7_A3D33_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,16780,1
+Cefoperazone,7_A4D15_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,17037,1
+Cefoperazone,7_A4D15_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,17419,1
+Cefoperazone,7_A4D15_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.7,17412,1
+Cefoperazone,7_A4D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.7,222998,1
+Cefoperazone,7_A4D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,224228,1
+Cefoperazone,7_A4D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,216010,1
+Cefoperazone,7_A4D33_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.74,33082,1
+Cefoperazone,7_A4D33_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.7,34796,1
+Cefoperazone,7_A4D33_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.72,33450,1
+Cefoperazone,7_A5D15_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,17368,1
+Cefoperazone,7_A5D15_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,15821,1
+Cefoperazone,7_A5D15_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.79,17390,1
+Cefoperazone,7_A5D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.65,17552,1
+Cefoperazone,7_A5D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.7,16604,1
+Cefoperazone,7_A5D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,15365,1
+Cefoperazone,7_A5D33_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,15920,1
+Cefoperazone,7_A5D33_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,16089,1
+Cefoperazone,7_A5D33_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,16861,1
+Cefoperazone,7_C1D15_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,16129,1
+Cefoperazone,7_C1D15_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,15023,1
+Cefoperazone,7_C1D15_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,17236,1
+Cefoperazone,7_C1D33_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,42461,1
+Cefoperazone,7_C1D33_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,36515,1
+Cefoperazone,7_C1D33_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,39051,1
+Cefoperazone,7_C2D33_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,30378,1
+Cefoperazone,7_C2D33_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,30951,1
+Cefoperazone,7_C2D33_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.72,31230,1
+Cefoperazone,7_C3D33_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,44107,1
+Cefoperazone,7_C3D33_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,47239,1
+Cefoperazone,7_C3D33_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,49510,1
+Cefoperazone,7_C6D15_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,17324,1
+Cefoperazone,7_C6D15_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.7,16155,1
+Cefoperazone,7_C6D15_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,15288,1
+Cefoperazone,7_C6D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.7,15773,1
+Cefoperazone,7_C6D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,14906,1
+Cefoperazone,7_C6D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,17089,1
+Cefoperazone,7_C6D33_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,14039,1
+Cefoperazone,7_C6D33_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.74,14472,1
+Cefoperazone,7_C6D33_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,15626,1
+Cefoperazone,7_C7D15_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,15795,1
+Cefoperazone,7_C7D15_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,14134,1
+Cefoperazone,7_C7D15_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,14987,1
+Cefoperazone,7_C7D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.7,15847,1
+Cefoperazone,7_C7D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.72,15281,1
+Cefoperazone,7_C7D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,18015,1
+Cefoperazone,7_C7D33_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.7,15648,1
+Cefoperazone,7_C7D33_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.72,16265,1
+Cefoperazone,7_C7D33_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.67,16155,1
+Cefoperazone,7_D1D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.65,17633,1
+Cefoperazone,7_D1D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.67,15501,1
+Cefoperazone,7_D1D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.7,17184,1
+Cefoperazone,7_D2D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.67,15740,1
+Cefoperazone,7_D2D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,16361,1
+Cefoperazone,7_D2D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.65,16166,1
+Cefoperazone,7_D3D32_r01,646.1,1,530.1339,1,Cefoperazone_t1,2.65,16795,1
+Cefoperazone,7_D3D32_r02,646.1,1,530.1339,1,Cefoperazone_t1,2.65,15303,1
+Cefoperazone,7_D3D32_r03,646.1,1,530.1339,1,Cefoperazone_t1,2.7,15744,1
+Cefoperazone,6_A1D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.62,68188,2
+Cefoperazone,6_A1D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.62,68166,2
+Cefoperazone,6_A1D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,76139,2
+Cefoperazone,6_A1D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.72,8739,2
+Cefoperazone,6_A1D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,11165,2
+Cefoperazone,6_A1D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,10790,2
+Cefoperazone,6_A2D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.62,75771,2
+Cefoperazone,6_A2D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,69188,2
+Cefoperazone,6_A2D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,74992,2
+Cefoperazone,6_A2D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.65,13553,2
+Cefoperazone,6_A2D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,12253,2
+Cefoperazone,6_A2D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,12194,2
+Cefoperazone,6_A3D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,195349,2
+Cefoperazone,6_A3D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,197584,2
+Cefoperazone,6_A3D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,190989,2
+Cefoperazone,6_A3D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.65,7460,2
+Cefoperazone,6_A3D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,7688,2
+Cefoperazone,6_A3D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,6509,2
+Cefoperazone,6_B1D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,29,4
+Cefoperazone,6_B1D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,103,3
+Cefoperazone,6_B1D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.6,103,2
+Cefoperazone,6_B1D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.7,59,3
+Cefoperazone,6_B1D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,88,2
+Cefoperazone,6_B1D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,44,3
+Cefoperazone,6_B2D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.57,118,2
+Cefoperazone,6_B2D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.79,59,2
+Cefoperazone,6_B2D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.55,44,4
+Cefoperazone,6_B2D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.65,44,4
+Cefoperazone,6_B2D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,29,4
+Cefoperazone,6_B2D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.6,0,0
+Cefoperazone,6_B3D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,44,4
+Cefoperazone,6_B3D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.62,191,2
+Cefoperazone,6_B3D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.62,103,4
+Cefoperazone,6_B3D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.65,0,0
+Cefoperazone,6_B3D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.7,0,0
+Cefoperazone,6_B3D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.6,0,0
+Cefoperazone,6_C1D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,96806,2
+Cefoperazone,6_C1D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,95720,2
+Cefoperazone,6_C1D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,86466,2
+Cefoperazone,6_C1D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.65,14450,2
+Cefoperazone,6_C1D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,9841,2
+Cefoperazone,6_C1D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,11253,2
+Cefoperazone,6_C2D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.7,73037,2
+Cefoperazone,6_C2D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,74853,2
+Cefoperazone,6_C2D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.62,73074,2
+Cefoperazone,6_C2D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,11201,2
+Cefoperazone,6_C2D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.77,10341,2
+Cefoperazone,6_C2D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.72,13098,2
+Cefoperazone,6_C3D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,80343,2
+Cefoperazone,6_C3D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.74,73698,2
+Cefoperazone,6_C3D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,86672,2
+Cefoperazone,6_C3D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.72,6174,2
+Cefoperazone,6_C3D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,6409,2
+Cefoperazone,6_C3D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.7,6078,2
+Cefoperazone,6_D1D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.74,44,4
+Cefoperazone,6_D1D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.57,0,0
+Cefoperazone,6_D1D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.77,59,2
+Cefoperazone,6_D2D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.72,66,3
+Cefoperazone,6_D2D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.57,0,0
+Cefoperazone,6_D2D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.57,0,0
+Cefoperazone,6_D3D27_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.7,147,2
+Cefoperazone,6_D3D27_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,88,2
+Cefoperazone,6_D3D27_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.72,59,4
+Cefoperazone,7_A1D15_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.7,867,2
+Cefoperazone,7_A1D15_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.74,573,2
+Cefoperazone,7_A1D15_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,853,2
+Cefoperazone,7_A1D33_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.65,1161,2
+Cefoperazone,7_A1D33_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.72,1411,2
+Cefoperazone,7_A1D33_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,1036,2
+Cefoperazone,7_A2D33_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,2205,2
+Cefoperazone,7_A2D33_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,2609,2
+Cefoperazone,7_A2D33_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,1727,2
+Cefoperazone,7_A3D33_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.74,1022,2
+Cefoperazone,7_A3D33_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.7,823,2
+Cefoperazone,7_A3D33_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,764,2
+Cefoperazone,7_A4D15_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.7,992,2
+Cefoperazone,7_A4D15_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,985,2
+Cefoperazone,7_A4D15_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.7,750,2
+Cefoperazone,7_A4D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,11745,2
+Cefoperazone,7_A4D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,11591,2
+Cefoperazone,7_A4D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,9526,2
+Cefoperazone,7_A4D33_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.72,1867,2
+Cefoperazone,7_A4D33_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.7,1662,2
+Cefoperazone,7_A4D33_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,1867,2
+Cefoperazone,7_A5D15_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.72,911,2
+Cefoperazone,7_A5D15_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,780,2
+Cefoperazone,7_A5D15_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.77,963,2
+Cefoperazone,7_A5D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.65,794,2
+Cefoperazone,7_A5D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,735,2
+Cefoperazone,7_A5D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,956,2
+Cefoperazone,7_A5D33_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.72,970,2
+Cefoperazone,7_A5D33_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,1014,2
+Cefoperazone,7_A5D33_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.7,956,2
+Cefoperazone,7_C1D15_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.72,809,2
+Cefoperazone,7_C1D15_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.7,735,2
+Cefoperazone,7_C1D15_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.72,691,2
+Cefoperazone,7_C1D33_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.7,2117,2
+Cefoperazone,7_C1D33_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,2477,2
+Cefoperazone,7_C1D33_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,1985,2
+Cefoperazone,7_C2D33_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.7,1771,2
+Cefoperazone,7_C2D33_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.72,1779,2
+Cefoperazone,7_C2D33_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.7,2080,2
+Cefoperazone,7_C3D33_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.72,2411,2
+Cefoperazone,7_C3D33_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.7,2264,2
+Cefoperazone,7_C3D33_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,2595,2
+Cefoperazone,7_C6D15_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,559,2
+Cefoperazone,7_C6D15_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,1102,2
+Cefoperazone,7_C6D15_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.7,713,2
+Cefoperazone,7_C6D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.65,1103,2
+Cefoperazone,7_C6D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,985,2
+Cefoperazone,7_C6D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.65,823,2
+Cefoperazone,7_C6D33_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,1169,2
+Cefoperazone,7_C6D33_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.74,867,2
+Cefoperazone,7_C6D33_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.7,1110,2
+Cefoperazone,7_C7D15_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.67,1191,2
+Cefoperazone,7_C7D15_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.74,1044,2
+Cefoperazone,7_C7D15_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.72,978,2
+Cefoperazone,7_C7D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.7,897,2
+Cefoperazone,7_C7D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,809,2
+Cefoperazone,7_C7D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,809,2
+Cefoperazone,7_C7D33_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.77,661,2
+Cefoperazone,7_C7D33_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.7,750,2
+Cefoperazone,7_C7D33_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,882,2
+Cefoperazone,7_D1D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.7,882,2
+Cefoperazone,7_D1D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.67,779,2
+Cefoperazone,7_D1D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.7,1029,2
+Cefoperazone,7_D2D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.62,1000,2
+Cefoperazone,7_D2D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,779,2
+Cefoperazone,7_D2D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,647,2
+Cefoperazone,7_D3D32_r01,646.1,1,143.0826,1,Cefoperazone_t2,2.7,757,2
+Cefoperazone,7_D3D32_r02,646.1,1,143.0826,1,Cefoperazone_t2,2.65,617,2
+Cefoperazone,7_D3D32_r03,646.1,1,143.0826,1,Cefoperazone_t2,2.67,801,2
+Cefoperazone,6_A1D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.65,20094,3
+Cefoperazone,6_A1D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,18770,4
+Cefoperazone,6_A1D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.7,21888,3
+Cefoperazone,6_A1D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.74,2999,3
+Cefoperazone,6_A1D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.7,3229,3
+Cefoperazone,6_A1D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,3293,3
+Cefoperazone,6_A2D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.62,20513,3
+Cefoperazone,6_A2D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,24801,3
+Cefoperazone,6_A2D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.62,21536,3
+Cefoperazone,6_A2D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.62,2984,4
+Cefoperazone,6_A2D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,3785,3
+Cefoperazone,6_A2D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.65,3072,3
+Cefoperazone,6_A3D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.67,57044,3
+Cefoperazone,6_A3D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,56338,3
+Cefoperazone,6_A3D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.7,54478,3
+Cefoperazone,6_A3D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.65,2345,3
+Cefoperazone,6_A3D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,1999,4
+Cefoperazone,6_A3D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.62,2574,3
+Cefoperazone,6_B1D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.7,15,5
+Cefoperazone,6_B1D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.55,0,0
+Cefoperazone,6_B1D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.57,29,3
+Cefoperazone,6_B1D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.67,22,5
+Cefoperazone,6_B1D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,88,3
+Cefoperazone,6_B1D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,51,2
+Cefoperazone,6_B2D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.74,88,3
+Cefoperazone,6_B2D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.79,44,3
+Cefoperazone,6_B2D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.6,74,3
+Cefoperazone,6_B2D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.72,29,5
+Cefoperazone,6_B2D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,59,3
+Cefoperazone,6_B2D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,15,5
+Cefoperazone,6_B3D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.6,118,2
+Cefoperazone,6_B3D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.7,191,3
+Cefoperazone,6_B3D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.55,22,6
+Cefoperazone,6_B3D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.65,0,0
+Cefoperazone,6_B3D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.72,29,3
+Cefoperazone,6_B3D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.6,0,0
+Cefoperazone,6_C1D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.62,25353,3
+Cefoperazone,6_C1D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,27129,3
+Cefoperazone,6_C1D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.7,24262,3
+Cefoperazone,6_C1D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.65,3153,3
+Cefoperazone,6_C1D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,2883,3
+Cefoperazone,6_C1D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.7,2058,4
+Cefoperazone,6_C2D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.62,20022,3
+Cefoperazone,6_C2D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,20191,3
+Cefoperazone,6_C2D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,22322,3
+Cefoperazone,6_C2D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.7,3741,3
+Cefoperazone,6_C2D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.72,3175,3
+Cefoperazone,6_C2D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.74,3388,3
+Cefoperazone,6_C3D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.62,21286,3
+Cefoperazone,6_C3D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.72,21271,3
+Cefoperazone,6_C3D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.65,21484,3
+Cefoperazone,6_C3D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.72,1279,4
+Cefoperazone,6_C3D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,1911,3
+Cefoperazone,6_C3D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.65,2161,3
+Cefoperazone,6_D1D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.6,15,6
+Cefoperazone,6_D1D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.57,0,0
+Cefoperazone,6_D1D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.6,59,3
+Cefoperazone,6_D2D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.55,0,0
+Cefoperazone,6_D2D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.57,0,0
+Cefoperazone,6_D2D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.57,7,4
+Cefoperazone,6_D3D27_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.84,73,5
+Cefoperazone,6_D3D27_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.72,29,4
+Cefoperazone,6_D3D27_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.87,29,6
+Cefoperazone,7_A1D15_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.7,154,3
+Cefoperazone,7_A1D15_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.77,250,4
+Cefoperazone,7_A1D15_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.62,176,4
+Cefoperazone,7_A1D33_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.65,125,5
+Cefoperazone,7_A1D33_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,353,3
+Cefoperazone,7_A1D33_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.62,537,3
+Cefoperazone,7_A2D33_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.72,397,4
+Cefoperazone,7_A2D33_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.62,617,3
+Cefoperazone,7_A2D33_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,397,4
+Cefoperazone,7_A3D33_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.62,147,4
+Cefoperazone,7_A3D33_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,419,3
+Cefoperazone,7_A3D33_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.7,235,3
+Cefoperazone,7_A4D15_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.7,323,4
+Cefoperazone,7_A4D15_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.7,220,3
+Cefoperazone,7_A4D15_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.72,206,3
+Cefoperazone,7_A4D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.7,3205,3
+Cefoperazone,7_A4D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,2573,3
+Cefoperazone,7_A4D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,3991,3
+Cefoperazone,7_A4D33_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.77,456,3
+Cefoperazone,7_A4D33_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,588,3
+Cefoperazone,7_A4D33_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,632,3
+Cefoperazone,7_A5D15_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.72,243,4
+Cefoperazone,7_A5D15_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,382,3
+Cefoperazone,7_A5D15_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.79,331,4
+Cefoperazone,7_A5D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.67,279,3
+Cefoperazone,7_A5D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,279,4
+Cefoperazone,7_A5D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.65,324,3
+Cefoperazone,7_A5D33_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.7,250,3
+Cefoperazone,7_A5D33_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.7,397,3
+Cefoperazone,7_A5D33_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.72,103,5
+Cefoperazone,7_C1D15_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.7,309,4
+Cefoperazone,7_C1D15_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,338,3
+Cefoperazone,7_C1D15_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.7,309,4
+Cefoperazone,7_C1D33_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.67,353,5
+Cefoperazone,7_C1D33_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,632,3
+Cefoperazone,7_C1D33_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.7,662,4
+Cefoperazone,7_C2D33_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.67,412,4
+Cefoperazone,7_C2D33_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.7,250,4
+Cefoperazone,7_C2D33_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.72,456,3
+Cefoperazone,7_C3D33_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.7,617,3
+Cefoperazone,7_C3D33_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,544,3
+Cefoperazone,7_C3D33_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.65,603,4
+Cefoperazone,7_C6D15_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.7,485,3
+Cefoperazone,7_C6D15_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.72,353,3
+Cefoperazone,7_C6D15_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.7,367,3
+Cefoperazone,7_C6D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.65,147,5
+Cefoperazone,7_C6D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,250,3
+Cefoperazone,7_C6D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,162,4
+Cefoperazone,7_C6D33_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.77,353,3
+Cefoperazone,7_C6D33_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.74,235,3
+Cefoperazone,7_C6D33_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,353,3
+Cefoperazone,7_C7D15_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.65,250,3
+Cefoperazone,7_C7D15_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.72,235,4
+Cefoperazone,7_C7D15_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.74,221,3
+Cefoperazone,7_C7D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.74,588,3
+Cefoperazone,7_C7D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,110,3
+Cefoperazone,7_C7D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.72,162,4
+Cefoperazone,7_C7D33_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.72,176,4
+Cefoperazone,7_C7D33_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.7,220,4
+Cefoperazone,7_C7D33_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,353,3
+Cefoperazone,7_D1D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.65,250,3
+Cefoperazone,7_D1D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,132,4
+Cefoperazone,7_D1D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.67,198,4
+Cefoperazone,7_D2D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.65,191,4
+Cefoperazone,7_D2D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.65,132,4
+Cefoperazone,7_D2D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.62,177,4
+Cefoperazone,7_D3D32_r01,646.1,1,290.1139,1,Cefoperazone_t3,2.7,368,3
+Cefoperazone,7_D3D32_r02,646.1,1,290.1139,1,Cefoperazone_t3,2.67,235,4
+Cefoperazone,7_D3D32_r03,646.1,1,290.1139,1,Cefoperazone_t3,2.65,382,3
+Cefoperazone,6_A1D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.65,17240,4
+Cefoperazone,6_A1D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,18991,3
+Cefoperazone,6_A1D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,14869,4
+Cefoperazone,6_A1D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.7,2455,4
+Cefoperazone,6_A1D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.7,2089,4
+Cefoperazone,6_A1D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,2889,4
+Cefoperazone,6_A2D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.62,17064,4
+Cefoperazone,6_A2D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,14438,4
+Cefoperazone,6_A2D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.67,18706,4
+Cefoperazone,6_A2D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.62,3168,3
+Cefoperazone,6_A2D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,3352,4
+Cefoperazone,6_A2D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,1955,4
+Cefoperazone,6_A3D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.65,43630,4
+Cefoperazone,6_A3D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,46063,4
+Cefoperazone,6_A3D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.7,44864,4
+Cefoperazone,6_A3D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.65,1470,4
+Cefoperazone,6_A3D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,2176,3
+Cefoperazone,6_A3D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.62,1500,4
+Cefoperazone,6_B1D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.55,74,3
+Cefoperazone,6_B1D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.74,132,2
+Cefoperazone,6_B1D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.57,0,0
+Cefoperazone,6_B1D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.7,59,4
+Cefoperazone,6_B1D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.7,59,5
+Cefoperazone,6_B1D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.62,29,4
+Cefoperazone,6_B2D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.67,74,4
+Cefoperazone,6_B2D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.72,37,5
+Cefoperazone,6_B2D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.55,0,0
+Cefoperazone,6_B2D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.62,59,3
+Cefoperazone,6_B2D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.67,74,2
+Cefoperazone,6_B2D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.79,162,2
+Cefoperazone,6_B3D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.65,88,3
+Cefoperazone,6_B3D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,118,4
+Cefoperazone,6_B3D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,118,3
+Cefoperazone,6_B3D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.65,0,0
+Cefoperazone,6_B3D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.7,0,0
+Cefoperazone,6_B3D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.67,44,2
+Cefoperazone,6_C1D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.7,20807,4
+Cefoperazone,6_C1D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,19875,4
+Cefoperazone,6_C1D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,22991,4
+Cefoperazone,6_C1D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.67,3146,4
+Cefoperazone,6_C1D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.67,1898,4
+Cefoperazone,6_C1D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,2315,3
+Cefoperazone,6_C2D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.65,16832,4
+Cefoperazone,6_C2D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,17552,4
+Cefoperazone,6_C2D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.67,19720,4
+Cefoperazone,6_C2D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.62,2477,4
+Cefoperazone,6_C2D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.77,2396,4
+Cefoperazone,6_C2D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.72,2962,4
+Cefoperazone,6_C3D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.65,15656,4
+Cefoperazone,6_C3D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.7,19749,4
+Cefoperazone,6_C3D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,15487,4
+Cefoperazone,6_C3D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.7,1499,3
+Cefoperazone,6_C3D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,1661,4
+Cefoperazone,6_C3D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.67,1477,4
+Cefoperazone,6_D1D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.65,74,2
+Cefoperazone,6_D1D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.77,29,3
+Cefoperazone,6_D1D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.57,0,0
+Cefoperazone,6_D2D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.7,15,4
+Cefoperazone,6_D2D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.67,118,1
+Cefoperazone,6_D2D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.57,0,0
+Cefoperazone,6_D3D27_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.62,118,4
+Cefoperazone,6_D3D27_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.62,59,3
+Cefoperazone,6_D3D27_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.92,118,2
+Cefoperazone,7_A1D15_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.7,66,4
+Cefoperazone,7_A1D15_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.77,390,3
+Cefoperazone,7_A1D15_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.72,220,3
+Cefoperazone,7_A1D33_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.72,162,4
+Cefoperazone,7_A1D33_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,294,4
+Cefoperazone,7_A1D33_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,323,4
+Cefoperazone,7_A2D33_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.72,529,3
+Cefoperazone,7_A2D33_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,559,4
+Cefoperazone,7_A2D33_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.7,691,3
+Cefoperazone,7_A3D33_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.7,294,3
+Cefoperazone,7_A3D33_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.67,59,5
+Cefoperazone,7_A3D33_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.7,73,5
+Cefoperazone,7_A4D15_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.74,360,3
+Cefoperazone,7_A4D15_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.72,191,4
+Cefoperazone,7_A4D15_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.67,176,4
+Cefoperazone,7_A4D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.67,2381,4
+Cefoperazone,7_A4D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,2323,4
+Cefoperazone,7_A4D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.72,2587,4
+Cefoperazone,7_A4D33_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.72,456,4
+Cefoperazone,7_A4D33_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,493,4
+Cefoperazone,7_A4D33_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,544,4
+Cefoperazone,7_A5D15_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.67,338,3
+Cefoperazone,7_A5D15_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.72,265,4
+Cefoperazone,7_A5D15_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.82,338,3
+Cefoperazone,7_A5D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.74,59,5
+Cefoperazone,7_A5D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,463,3
+Cefoperazone,7_A5D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.67,88,5
+Cefoperazone,7_A5D33_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.7,206,4
+Cefoperazone,7_A5D33_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.72,323,4
+Cefoperazone,7_A5D33_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,147,4
+Cefoperazone,7_C1D15_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.7,331,3
+Cefoperazone,7_C1D15_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.7,294,4
+Cefoperazone,7_C1D15_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.62,323,3
+Cefoperazone,7_C1D33_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.74,544,3
+Cefoperazone,7_C1D33_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.67,397,4
+Cefoperazone,7_C1D33_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.7,956,3
+Cefoperazone,7_C2D33_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.72,441,3
+Cefoperazone,7_C2D33_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,353,3
+Cefoperazone,7_C2D33_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.72,404,4
+Cefoperazone,7_C3D33_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.67,353,4
+Cefoperazone,7_C3D33_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.7,507,4
+Cefoperazone,7_C3D33_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.67,772,3
+Cefoperazone,7_C6D15_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.7,323,4
+Cefoperazone,7_C6D15_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.7,265,4
+Cefoperazone,7_C6D15_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,103,4
+Cefoperazone,7_C6D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.74,235,3
+Cefoperazone,7_C6D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.7,162,4
+Cefoperazone,7_C6D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.74,478,3
+Cefoperazone,7_C6D33_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.72,235,4
+Cefoperazone,7_C6D33_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.72,198,4
+Cefoperazone,7_C6D33_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.74,162,4
+Cefoperazone,7_C7D15_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.72,162,4
+Cefoperazone,7_C7D15_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,294,3
+Cefoperazone,7_C7D15_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.72,221,4
+Cefoperazone,7_C7D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.67,390,4
+Cefoperazone,7_C7D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,96,4
+Cefoperazone,7_C7D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,221,3
+Cefoperazone,7_C7D33_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.72,235,3
+Cefoperazone,7_C7D33_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.72,382,3
+Cefoperazone,7_C7D33_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.65,169,4
+Cefoperazone,7_D1D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.67,243,4
+Cefoperazone,7_D1D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.65,279,3
+Cefoperazone,7_D1D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.67,250,3
+Cefoperazone,7_D2D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.65,338,3
+Cefoperazone,7_D2D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.72,147,3
+Cefoperazone,7_D2D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.72,235,3
+Cefoperazone,7_D3D32_r01,646.1,1,318.1092,1,Cefoperazone_t4,2.67,96,4
+Cefoperazone,7_D3D32_r02,646.1,1,318.1092,1,Cefoperazone_t4,2.62,294,3
+Cefoperazone,7_D3D32_r03,646.1,1,318.1092,1,Cefoperazone_t4,2.67,279,4
+Cefoperazone,6_A1D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,4567,5
+Cefoperazone,6_A1D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.62,4707,5
+Cefoperazone,6_A1D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,4645,5
+Cefoperazone,6_A1D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,875,5
+Cefoperazone,6_A1D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.6,633,5
+Cefoperazone,6_A1D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.7,581,5
+Cefoperazone,6_A2D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.62,4516,5
+Cefoperazone,6_A2D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.62,4943,5
+Cefoperazone,6_A2D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.62,4484,5
+Cefoperazone,6_A2D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.62,1088,5
+Cefoperazone,6_A2D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.67,1036,5
+Cefoperazone,6_A2D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.65,698,5
+Cefoperazone,6_A3D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.65,11260,5
+Cefoperazone,6_A3D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.67,11760,5
+Cefoperazone,6_A3D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.7,13568,5
+Cefoperazone,6_A3D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,426,5
+Cefoperazone,6_A3D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.67,544,5
+Cefoperazone,6_A3D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.65,574,5
+Cefoperazone,6_B1D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.62,88,2
+Cefoperazone,6_B1D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.55,0,0
+Cefoperazone,6_B1D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.7,15,4
+Cefoperazone,6_B1D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.57,88,2
+Cefoperazone,6_B1D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.62,73,4
+Cefoperazone,6_B1D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.5,7,5
+Cefoperazone,6_B2D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.57,44,5
+Cefoperazone,6_B2D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.77,44,4
+Cefoperazone,6_B2D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.72,103,2
+Cefoperazone,6_B2D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.77,132,2
+Cefoperazone,6_B2D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.62,29,5
+Cefoperazone,6_B2D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.77,66,3
+Cefoperazone,6_B3D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.77,44,5
+Cefoperazone,6_B3D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.74,37,5
+Cefoperazone,6_B3D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.79,147,2
+Cefoperazone,6_B3D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.7,51,2
+Cefoperazone,6_B3D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.77,44,2
+Cefoperazone,6_B3D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.6,0,0
+Cefoperazone,6_C1D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,5752,5
+Cefoperazone,6_C1D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.65,5615,5
+Cefoperazone,6_C1D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,5086,5
+Cefoperazone,6_C1D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,853,5
+Cefoperazone,6_C1D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.65,647,5
+Cefoperazone,6_C1D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.65,889,5
+Cefoperazone,6_C2D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.62,4807,5
+Cefoperazone,6_C2D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.62,5130,5
+Cefoperazone,6_C2D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.62,4351,5
+Cefoperazone,6_C2D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.62,669,5
+Cefoperazone,6_C2D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.72,742,5
+Cefoperazone,6_C2D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.7,786,5
+Cefoperazone,6_C3D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.65,5219,5
+Cefoperazone,6_C3D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.7,5586,5
+Cefoperazone,6_C3D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,4484,5
+Cefoperazone,6_C3D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.72,470,5
+Cefoperazone,6_C3D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.62,529,5
+Cefoperazone,6_C3D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.72,551,5
+Cefoperazone,6_D1D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,37,5
+Cefoperazone,6_D1D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.77,96,2
+Cefoperazone,6_D1D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.57,0,0
+Cefoperazone,6_D2D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.7,103,2
+Cefoperazone,6_D2D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.74,73,3
+Cefoperazone,6_D2D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.62,59,2
+Cefoperazone,6_D3D27_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.7,147,3
+Cefoperazone,6_D3D27_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.67,29,5
+Cefoperazone,6_D3D27_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.79,51,5
+Cefoperazone,7_A1D15_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.65,29,6
+Cefoperazone,7_A1D15_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.7,44,5
+Cefoperazone,7_A1D15_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,88,5
+Cefoperazone,7_A1D33_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.6,235,3
+Cefoperazone,7_A1D33_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.65,110,5
+Cefoperazone,7_A1D33_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.77,118,5
+Cefoperazone,7_A2D33_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,118,5
+Cefoperazone,7_A2D33_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.6,147,5
+Cefoperazone,7_A2D33_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.72,162,5
+Cefoperazone,7_A3D33_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.6,88,5
+Cefoperazone,7_A3D33_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.62,73,4
+Cefoperazone,7_A3D33_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,118,4
+Cefoperazone,7_A4D15_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,59,5
+Cefoperazone,7_A4D15_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.72,118,5
+Cefoperazone,7_A4D15_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.57,132,5
+Cefoperazone,7_A4D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.74,794,5
+Cefoperazone,7_A4D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.67,978,5
+Cefoperazone,7_A4D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,706,5
+Cefoperazone,7_A4D33_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.65,140,5
+Cefoperazone,7_A4D33_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.7,177,5
+Cefoperazone,7_A4D33_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.65,132,5
+Cefoperazone,7_A5D15_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.55,44,5
+Cefoperazone,7_A5D15_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.74,74,6
+Cefoperazone,7_A5D15_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.77,59,5
+Cefoperazone,7_A5D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.74,103,4
+Cefoperazone,7_A5D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.77,81,5
+Cefoperazone,7_A5D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.7,177,4
+Cefoperazone,7_A5D33_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.7,103,5
+Cefoperazone,7_A5D33_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.7,213,5
+Cefoperazone,7_A5D33_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,162,3
+Cefoperazone,7_C1D15_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.6,110,5
+Cefoperazone,7_C1D15_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.87,132,5
+Cefoperazone,7_C1D15_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.74,176,5
+Cefoperazone,7_C1D33_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.79,360,4
+Cefoperazone,7_C1D33_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.72,220,5
+Cefoperazone,7_C1D33_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.72,191,5
+Cefoperazone,7_C2D33_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,118,5
+Cefoperazone,7_C2D33_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.67,132,5
+Cefoperazone,7_C2D33_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.7,206,5
+Cefoperazone,7_C3D33_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,162,5
+Cefoperazone,7_C3D33_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.72,132,5
+Cefoperazone,7_C3D33_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,323,5
+Cefoperazone,7_C6D15_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,162,5
+Cefoperazone,7_C6D15_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.62,73,6
+Cefoperazone,7_C6D15_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,59,5
+Cefoperazone,7_C6D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.62,198,4
+Cefoperazone,7_C6D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.62,73,5
+Cefoperazone,7_C6D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.6,96,5
+Cefoperazone,7_C6D33_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.7,103,5
+Cefoperazone,7_C6D33_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.7,15,6
+Cefoperazone,7_C6D33_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.82,147,5
+Cefoperazone,7_C7D15_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.55,147,5
+Cefoperazone,7_C7D15_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.67,88,5
+Cefoperazone,7_C7D15_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.77,147,5
+Cefoperazone,7_C7D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.82,37,6
+Cefoperazone,7_C7D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.55,0,0
+Cefoperazone,7_C7D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.65,147,5
+Cefoperazone,7_C7D33_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.62,176,5
+Cefoperazone,7_C7D33_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.7,118,5
+Cefoperazone,7_C7D33_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.57,81,6
+Cefoperazone,7_D1D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.67,118,5
+Cefoperazone,7_D1D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.7,51,5
+Cefoperazone,7_D1D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.7,88,5
+Cefoperazone,7_D2D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.72,103,6
+Cefoperazone,7_D2D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.7,96,5
+Cefoperazone,7_D2D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,147,5
+Cefoperazone,7_D3D32_r01,646.1,1,360.0651,1,Cefoperazone_t5,2.57,44,5
+Cefoperazone,7_D3D32_r02,646.1,1,360.0651,1,Cefoperazone_t5,2.65,118,5
+Cefoperazone,7_D3D32_r03,646.1,1,360.0651,1,Cefoperazone_t5,2.67,66,6
+Cefoperazone,6_A1D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.67,412,6
+Cefoperazone,6_A1D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.62,191,6
+Cefoperazone,6_A1D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.65,559,6
+Cefoperazone,6_A1D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.67,59,6
+Cefoperazone,6_A1D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.6,147,6
+Cefoperazone,6_A1D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.74,221,6
+Cefoperazone,6_A2D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.72,493,6
+Cefoperazone,6_A2D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.65,397,6
+Cefoperazone,6_A2D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.6,294,6
+Cefoperazone,6_A2D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.65,88,6
+Cefoperazone,6_A2D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.62,132,6
+Cefoperazone,6_A2D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.62,44,6
+Cefoperazone,6_A3D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.65,1103,6
+Cefoperazone,6_A3D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.67,1058,6
+Cefoperazone,6_A3D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.65,1147,6
+Cefoperazone,6_A3D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.62,29,6
+Cefoperazone,6_A3D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.57,74,6
+Cefoperazone,6_A3D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.6,44,6
+Cefoperazone,6_B1D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.62,15,6
+Cefoperazone,6_B1D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,6_B1D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.57,0,0
+Cefoperazone,6_B1D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.6,132,1
+Cefoperazone,6_B1D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.79,29,6
+Cefoperazone,6_B1D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.5,0,0
+Cefoperazone,6_B2D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.7,15,6
+Cefoperazone,6_B2D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.79,29,6
+Cefoperazone,6_B2D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.67,15,5
+Cefoperazone,6_B2D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.57,0,0
+Cefoperazone,6_B2D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.6,0,0
+Cefoperazone,6_B2D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.62,44,4
+Cefoperazone,6_B3D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,6_B3D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.52,0,0
+Cefoperazone,6_B3D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.72,29,5
+Cefoperazone,6_B3D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.65,7,3
+Cefoperazone,6_B3D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.7,15,4
+Cefoperazone,6_B3D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.62,29,3
+Cefoperazone,6_C1D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.7,809,6
+Cefoperazone,6_C1D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.62,485,6
+Cefoperazone,6_C1D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.62,617,6
+Cefoperazone,6_C1D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.65,132,6
+Cefoperazone,6_C1D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.72,15,6
+Cefoperazone,6_C1D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.72,44,6
+Cefoperazone,6_C2D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.65,412,6
+Cefoperazone,6_C2D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.67,500,6
+Cefoperazone,6_C2D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.6,331,6
+Cefoperazone,6_C2D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.7,132,6
+Cefoperazone,6_C2D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.84,44,6
+Cefoperazone,6_C2D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.74,88,6
+Cefoperazone,6_C3D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.62,441,6
+Cefoperazone,6_C3D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.7,382,6
+Cefoperazone,6_C3D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.62,485,6
+Cefoperazone,6_C3D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.7,29,6
+Cefoperazone,6_C3D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,6_C3D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.65,132,6
+Cefoperazone,6_D1D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.77,74,3
+Cefoperazone,6_D1D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.57,0,0
+Cefoperazone,6_D1D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.82,29,4
+Cefoperazone,6_D2D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.55,7,5
+Cefoperazone,6_D2D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.57,0,0
+Cefoperazone,6_D2D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.65,29,3
+Cefoperazone,6_D3D27_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.57,0,0
+Cefoperazone,6_D3D27_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.77,29,6
+Cefoperazone,6_D3D27_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.82,73,3
+Cefoperazone,7_A1D15_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.67,37,5
+Cefoperazone,7_A1D15_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.84,15,6
+Cefoperazone,7_A1D15_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.67,29,6
+Cefoperazone,7_A1D33_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,7_A1D33_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.65,73,6
+Cefoperazone,7_A1D33_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.65,44,6
+Cefoperazone,7_A2D33_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.7,15,6
+Cefoperazone,7_A2D33_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.65,29,6
+Cefoperazone,7_A2D33_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,7_A3D33_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.6,29,6
+Cefoperazone,7_A3D33_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.77,29,6
+Cefoperazone,7_A3D33_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.57,0,0
+Cefoperazone,7_A4D15_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.77,29,6
+Cefoperazone,7_A4D15_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.72,15,6
+Cefoperazone,7_A4D15_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.57,0,0
+Cefoperazone,7_A4D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.65,88,6
+Cefoperazone,7_A4D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.67,103,6
+Cefoperazone,7_A4D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.62,206,6
+Cefoperazone,7_A4D33_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.82,22,6
+Cefoperazone,7_A4D33_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.72,29,6
+Cefoperazone,7_A4D33_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.7,88,6
+Cefoperazone,7_A5D15_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.55,37,6
+Cefoperazone,7_A5D15_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.7,88,5
+Cefoperazone,7_A5D15_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.7,29,6
+Cefoperazone,7_A5D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.67,59,6
+Cefoperazone,7_A5D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,7_A5D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.52,0,0
+Cefoperazone,7_A5D33_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.5,15,6
+Cefoperazone,7_A5D33_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,7_A5D33_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.74,37,6
+Cefoperazone,7_C1D15_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.74,59,6
+Cefoperazone,7_C1D15_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.67,29,6
+Cefoperazone,7_C1D15_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.57,0,0
+Cefoperazone,7_C1D33_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.62,125,6
+Cefoperazone,7_C1D33_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.6,88,6
+Cefoperazone,7_C1D33_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.79,15,6
+Cefoperazone,7_C2D33_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.55,7,6
+Cefoperazone,7_C2D33_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.72,15,6
+Cefoperazone,7_C2D33_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.7,59,6
+Cefoperazone,7_C3D33_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.65,29,6
+Cefoperazone,7_C3D33_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.65,29,6
+Cefoperazone,7_C3D33_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,7_C6D15_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.57,0,0
+Cefoperazone,7_C6D15_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.74,88,5
+Cefoperazone,7_C6D15_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.57,0,0
+Cefoperazone,7_C6D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.55,51,6
+Cefoperazone,7_C6D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.67,15,6
+Cefoperazone,7_C6D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.77,29,6
+Cefoperazone,7_C6D33_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,7_C6D33_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.7,88,5
+Cefoperazone,7_C6D33_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.57,29,6
+Cefoperazone,7_C7D15_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.65,74,6
+Cefoperazone,7_C7D15_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.67,66,6
+Cefoperazone,7_C7D15_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.55,59,6
+Cefoperazone,7_C7D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.84,59,5
+Cefoperazone,7_C7D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.7,74,5
+Cefoperazone,7_C7D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.79,29,6
+Cefoperazone,7_C7D33_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.57,66,6
+Cefoperazone,7_C7D33_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.7,15,6
+Cefoperazone,7_C7D33_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.79,88,5
+Cefoperazone,7_D1D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,7_D1D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.67,15,6
+Cefoperazone,7_D1D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.7,15,6
+Cefoperazone,7_D2D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.67,132,5
+Cefoperazone,7_D2D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,7_D2D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.52,0,0
+Cefoperazone,7_D3D32_r01,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,7_D3D32_r02,646.1,1,148.0402,1,Cefoperazone_t6,2.55,0,0
+Cefoperazone,7_D3D32_r03,646.1,1,148.0402,1,Cefoperazone_t6,2.74,88,5
+Ceftiofur ,6_A1D27_r01,524,1,241.0403,1,Ceftiofur_1,2.96,1883091,1
+Ceftiofur ,6_A1D27_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1832105,1
+Ceftiofur ,6_A1D27_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1849259,1
+Ceftiofur ,6_A1D32_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1239602,1
+Ceftiofur ,6_A1D32_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1256404,1
+Ceftiofur ,6_A1D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1300674,1
+Ceftiofur ,6_A2D27_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1203748,1
+Ceftiofur ,6_A2D27_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1211451,1
+Ceftiofur ,6_A2D27_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1252692,1
+Ceftiofur ,6_A2D32_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1502804,1
+Ceftiofur ,6_A2D32_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1465260,1
+Ceftiofur ,6_A2D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1480916,1
+Ceftiofur ,6_A3D27_r01,524,1,241.0403,1,Ceftiofur_1,2.99,2589026,1
+Ceftiofur ,6_A3D27_r02,524,1,241.0403,1,Ceftiofur_1,2.99,2670736,1
+Ceftiofur ,6_A3D27_r03,524,1,241.0403,1,Ceftiofur_1,2.99,2750674,1
+Ceftiofur ,6_A3D32_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1353379,1
+Ceftiofur ,6_A3D32_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1438705,1
+Ceftiofur ,6_A3D32_r03,524,1,241.0403,1,Ceftiofur_1,2.96,1405542,1
+Ceftiofur ,6_B1D27_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1958156,1
+Ceftiofur ,6_B1D27_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1849722,1
+Ceftiofur ,6_B1D27_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1971813,1
+Ceftiofur ,6_B1D32_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1518107,1
+Ceftiofur ,6_B1D32_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1576966,1
+Ceftiofur ,6_B1D32_r03,524,1,241.0403,1,Ceftiofur_1,2.96,1530359,1
+Ceftiofur ,6_B2D27_r01,524,1,241.0403,1,Ceftiofur_1,2.96,3004946,1
+Ceftiofur ,6_B2D27_r02,524,1,241.0403,1,Ceftiofur_1,2.99,2924690,1
+Ceftiofur ,6_B2D27_r03,524,1,241.0403,1,Ceftiofur_1,2.96,2879666,1
+Ceftiofur ,6_B2D32_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1548822,1
+Ceftiofur ,6_B2D32_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1487668,1
+Ceftiofur ,6_B2D32_r03,524,1,241.0403,1,Ceftiofur_1,3.01,1537425,1
+Ceftiofur ,6_B3D27_r01,524,1,241.0403,1,Ceftiofur_1,2.96,1652471,1
+Ceftiofur ,6_B3D27_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1614773,1
+Ceftiofur ,6_B3D27_r03,524,1,241.0403,1,Ceftiofur_1,2.96,1638712,1
+Ceftiofur ,6_B3D32_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1554541,1
+Ceftiofur ,6_B3D32_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1637301,1
+Ceftiofur ,6_B3D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1570203,1
+Ceftiofur ,6_C1D27_r01,524,1,241.0403,1,Ceftiofur_1,2.96,1464569,1
+Ceftiofur ,6_C1D27_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1524736,1
+Ceftiofur ,6_C1D27_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1545875,1
+Ceftiofur ,6_C1D32_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1375011,1
+Ceftiofur ,6_C1D32_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1438528,1
+Ceftiofur ,6_C1D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1363155,1
+Ceftiofur ,6_C2D27_r01,524,1,241.0403,1,Ceftiofur_1,2.96,1448554,1
+Ceftiofur ,6_C2D27_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1456176,1
+Ceftiofur ,6_C2D27_r03,524,1,241.0403,1,Ceftiofur_1,3.01,1441931,1
+Ceftiofur ,6_C2D32_r01,524,1,241.0403,1,Ceftiofur_1,2.96,1579604,1
+Ceftiofur ,6_C2D32_r02,524,1,241.0403,1,Ceftiofur_1,3.04,1659955,1
+Ceftiofur ,6_C2D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1561263,1
+Ceftiofur ,6_C3D27_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1483959,1
+Ceftiofur ,6_C3D27_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1488493,1
+Ceftiofur ,6_C3D27_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1432002,1
+Ceftiofur ,6_C3D32_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1673426,1
+Ceftiofur ,6_C3D32_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1700577,1
+Ceftiofur ,6_C3D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1695770,1
+Ceftiofur ,6_D1D27_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1647096,1
+Ceftiofur ,6_D1D27_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1712262,1
+Ceftiofur ,6_D1D27_r03,524,1,241.0403,1,Ceftiofur_1,3.01,1748521,1
+Ceftiofur ,6_D2D27_r01,524,1,241.0403,1,Ceftiofur_1,2.96,1489184,1
+Ceftiofur ,6_D2D27_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1522465,1
+Ceftiofur ,6_D2D27_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1460248,1
+Ceftiofur ,6_D3D27_r01,524,1,241.0403,1,Ceftiofur_1,3.04,1525405,1
+Ceftiofur ,6_D3D27_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1518055,1
+Ceftiofur ,6_D3D27_r03,524,1,241.0403,1,Ceftiofur_1,3.01,1565668,1
+Ceftiofur ,7_A1D15_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1342465,1
+Ceftiofur ,7_A1D15_r02,524,1,241.0403,1,Ceftiofur_1,3.04,1299575,1
+Ceftiofur ,7_A1D15_r03,524,1,241.0403,1,Ceftiofur_1,3.01,1314483,1
+Ceftiofur ,7_A1D33_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1199417,1
+Ceftiofur ,7_A1D33_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1197218,1
+Ceftiofur ,7_A1D33_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1215892,1
+Ceftiofur ,7_A2D33_r01,524,1,241.0403,1,Ceftiofur_1,2.99,878104,1
+Ceftiofur ,7_A2D33_r02,524,1,241.0403,1,Ceftiofur_1,2.99,887928,1
+Ceftiofur ,7_A2D33_r03,524,1,241.0403,1,Ceftiofur_1,3.01,872890,1
+Ceftiofur ,7_A3D33_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1345562,1
+Ceftiofur ,7_A3D33_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1427328,1
+Ceftiofur ,7_A3D33_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1374879,1
+Ceftiofur ,7_A4D15_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1653194,1
+Ceftiofur ,7_A4D15_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1639587,1
+Ceftiofur ,7_A4D15_r03,524,1,241.0403,1,Ceftiofur_1,3.01,1645971,1
+Ceftiofur ,7_A4D32_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1611653,1
+Ceftiofur ,7_A4D32_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1645856,1
+Ceftiofur ,7_A4D32_r03,524,1,241.0403,1,Ceftiofur_1,3.01,1603510,1
+Ceftiofur ,7_A4D33_r01,524,1,241.0403,1,Ceftiofur_1,3.04,885445,1
+Ceftiofur ,7_A4D33_r02,524,1,241.0403,1,Ceftiofur_1,3.01,848596,1
+Ceftiofur ,7_A4D33_r03,524,1,241.0403,1,Ceftiofur_1,3.01,909599,1
+Ceftiofur ,7_A5D15_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1181868,1
+Ceftiofur ,7_A5D15_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1224961,1
+Ceftiofur ,7_A5D15_r03,524,1,241.0403,1,Ceftiofur_1,3.09,1172552,1
+Ceftiofur ,7_A5D32_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1574186,1
+Ceftiofur ,7_A5D32_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1580011,1
+Ceftiofur ,7_A5D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1606527,1
+Ceftiofur ,7_A5D33_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1211310,1
+Ceftiofur ,7_A5D33_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1212185,1
+Ceftiofur ,7_A5D33_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1159685,1
+Ceftiofur ,7_C1D15_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1315480,1
+Ceftiofur ,7_C1D15_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1357646,1
+Ceftiofur ,7_C1D15_r03,524,1,241.0403,1,Ceftiofur_1,3.01,1341046,1
+Ceftiofur ,7_C1D33_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1270805,1
+Ceftiofur ,7_C1D33_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1286559,1
+Ceftiofur ,7_C1D33_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1268106,1
+Ceftiofur ,7_C2D33_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1154853,1
+Ceftiofur ,7_C2D33_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1216422,1
+Ceftiofur ,7_C2D33_r03,524,1,241.0403,1,Ceftiofur_1,3.01,1168322,1
+Ceftiofur ,7_C3D33_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1087046,1
+Ceftiofur ,7_C3D33_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1067504,1
+Ceftiofur ,7_C3D33_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1071836,1
+Ceftiofur ,7_C6D15_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1786873,1
+Ceftiofur ,7_C6D15_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1795149,1
+Ceftiofur ,7_C6D15_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1843528,1
+Ceftiofur ,7_C6D32_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1452107,1
+Ceftiofur ,7_C6D32_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1464485,1
+Ceftiofur ,7_C6D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1450165,1
+Ceftiofur ,7_C6D33_r01,524,1,241.0403,1,Ceftiofur_1,2.99,885629,1
+Ceftiofur ,7_C6D33_r02,524,1,241.0403,1,Ceftiofur_1,3.04,861653,1
+Ceftiofur ,7_C6D33_r03,524,1,241.0403,1,Ceftiofur_1,3.01,922396,1
+Ceftiofur ,7_C7D15_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1788343,1
+Ceftiofur ,7_C7D15_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1753892,1
+Ceftiofur ,7_C7D15_r03,524,1,241.0403,1,Ceftiofur_1,3.01,1801815,1
+Ceftiofur ,7_C7D32_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1865378,1
+Ceftiofur ,7_C7D32_r02,524,1,241.0403,1,Ceftiofur_1,3.01,1834930,1
+Ceftiofur ,7_C7D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1868064,1
+Ceftiofur ,7_C7D33_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1227298,1
+Ceftiofur ,7_C7D33_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1278256,1
+Ceftiofur ,7_C7D33_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1250704,1
+Ceftiofur ,7_D1D32_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1596494,1
+Ceftiofur ,7_D1D32_r02,524,1,241.0403,1,Ceftiofur_1,2.99,1630606,1
+Ceftiofur ,7_D1D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1610027,1
+Ceftiofur ,7_D2D32_r01,524,1,241.0403,1,Ceftiofur_1,3.01,1655569,1
+Ceftiofur ,7_D2D32_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1665797,1
+Ceftiofur ,7_D2D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1671530,1
+Ceftiofur ,7_D3D32_r01,524,1,241.0403,1,Ceftiofur_1,2.99,1595986,1
+Ceftiofur ,7_D3D32_r02,524,1,241.0403,1,Ceftiofur_1,2.96,1635346,1
+Ceftiofur ,7_D3D32_r03,524,1,241.0403,1,Ceftiofur_1,2.99,1620352,1
+Ceftiofur ,6_A1D27_r01,524,1,210.0207,1,Ceftiofur_2,2.96,549711,2
+Ceftiofur ,6_A1D27_r02,524,1,210.0207,1,Ceftiofur_2,2.99,566947,2
+Ceftiofur ,6_A1D27_r03,524,1,210.0207,1,Ceftiofur_2,2.99,549050,3
+Ceftiofur ,6_A1D32_r01,524,1,210.0207,1,Ceftiofur_2,3.01,369770,3
+Ceftiofur ,6_A1D32_r02,524,1,210.0207,1,Ceftiofur_2,2.99,375466,3
+Ceftiofur ,6_A1D32_r03,524,1,210.0207,1,Ceftiofur_2,2.99,378299,3
+Ceftiofur ,6_A2D27_r01,524,1,210.0207,1,Ceftiofur_2,2.96,370049,3
+Ceftiofur ,6_A2D27_r02,524,1,210.0207,1,Ceftiofur_2,2.96,371019,2
+Ceftiofur ,6_A2D27_r03,524,1,210.0207,1,Ceftiofur_2,2.96,368638,2
+Ceftiofur ,6_A2D32_r01,524,1,210.0207,1,Ceftiofur_2,2.99,441314,2
+Ceftiofur ,6_A2D32_r02,524,1,210.0207,1,Ceftiofur_2,2.99,447099,2
+Ceftiofur ,6_A2D32_r03,524,1,210.0207,1,Ceftiofur_2,2.99,434376,3
+Ceftiofur ,6_A3D27_r01,524,1,210.0207,1,Ceftiofur_2,2.99,810040,3
+Ceftiofur ,6_A3D27_r02,524,1,210.0207,1,Ceftiofur_2,2.99,825321,3
+Ceftiofur ,6_A3D27_r03,524,1,210.0207,1,Ceftiofur_2,2.99,809445,3
+Ceftiofur ,6_A3D32_r01,524,1,210.0207,1,Ceftiofur_2,2.99,432898,2
+Ceftiofur ,6_A3D32_r02,524,1,210.0207,1,Ceftiofur_2,2.99,418750,3
+Ceftiofur ,6_A3D32_r03,524,1,210.0207,1,Ceftiofur_2,2.96,408357,3
+Ceftiofur ,6_B1D27_r01,524,1,210.0207,1,Ceftiofur_2,2.99,557047,3
+Ceftiofur ,6_B1D27_r02,524,1,210.0207,1,Ceftiofur_2,2.99,561618,3
+Ceftiofur ,6_B1D27_r03,524,1,210.0207,1,Ceftiofur_2,2.96,587343,3
+Ceftiofur ,6_B1D32_r01,524,1,210.0207,1,Ceftiofur_2,2.96,473757,2
+Ceftiofur ,6_B1D32_r02,524,1,210.0207,1,Ceftiofur_2,2.99,463169,3
+Ceftiofur ,6_B1D32_r03,524,1,210.0207,1,Ceftiofur_2,2.96,461732,3
+Ceftiofur ,6_B2D27_r01,524,1,210.0207,1,Ceftiofur_2,2.96,868325,3
+Ceftiofur ,6_B2D27_r02,524,1,210.0207,1,Ceftiofur_2,2.99,872610,3
+Ceftiofur ,6_B2D27_r03,524,1,210.0207,1,Ceftiofur_2,2.96,875550,3
+Ceftiofur ,6_B2D32_r01,524,1,210.0207,1,Ceftiofur_2,3.01,457594,3
+Ceftiofur ,6_B2D32_r02,524,1,210.0207,1,Ceftiofur_2,2.99,463191,2
+Ceftiofur ,6_B2D32_r03,524,1,210.0207,1,Ceftiofur_2,3.01,473680,2
+Ceftiofur ,6_B3D27_r01,524,1,210.0207,1,Ceftiofur_2,2.96,466921,3
+Ceftiofur ,6_B3D27_r02,524,1,210.0207,1,Ceftiofur_2,2.96,479144,3
+Ceftiofur ,6_B3D27_r03,524,1,210.0207,1,Ceftiofur_2,2.96,480600,3
+Ceftiofur ,6_B3D32_r01,524,1,210.0207,1,Ceftiofur_2,2.99,476828,2
+Ceftiofur ,6_B3D32_r02,524,1,210.0207,1,Ceftiofur_2,3.01,479012,3
+Ceftiofur ,6_B3D32_r03,524,1,210.0207,1,Ceftiofur_2,2.99,477226,3
+Ceftiofur ,6_C1D27_r01,524,1,210.0207,1,Ceftiofur_2,2.96,468289,2
+Ceftiofur ,6_C1D27_r02,524,1,210.0207,1,Ceftiofur_2,2.99,445474,3
+Ceftiofur ,6_C1D27_r03,524,1,210.0207,1,Ceftiofur_2,2.99,441909,3
+Ceftiofur ,6_C1D32_r01,524,1,210.0207,1,Ceftiofur_2,2.99,404263,3
+Ceftiofur ,6_C1D32_r02,524,1,210.0207,1,Ceftiofur_2,2.99,414457,3
+Ceftiofur ,6_C1D32_r03,524,1,210.0207,1,Ceftiofur_2,2.96,409224,3
+Ceftiofur ,6_C2D27_r01,524,1,210.0207,1,Ceftiofur_2,2.96,421006,3
+Ceftiofur ,6_C2D27_r02,524,1,210.0207,1,Ceftiofur_2,2.96,425365,3
+Ceftiofur ,6_C2D27_r03,524,1,210.0207,1,Ceftiofur_2,2.99,423498,3
+Ceftiofur ,6_C2D32_r01,524,1,210.0207,1,Ceftiofur_2,2.96,480850,3
+Ceftiofur ,6_C2D32_r02,524,1,210.0207,1,Ceftiofur_2,3.04,473820,3
+Ceftiofur ,6_C2D32_r03,524,1,210.0207,1,Ceftiofur_2,3.01,471164,3
+Ceftiofur ,6_C3D27_r01,524,1,210.0207,1,Ceftiofur_2,2.99,441152,2
+Ceftiofur ,6_C3D27_r02,524,1,210.0207,1,Ceftiofur_2,3.01,436159,3
+Ceftiofur ,6_C3D27_r03,524,1,210.0207,1,Ceftiofur_2,2.99,444342,3
+Ceftiofur ,6_C3D32_r01,524,1,210.0207,1,Ceftiofur_2,3.01,484253,3
+Ceftiofur ,6_C3D32_r02,524,1,210.0207,1,Ceftiofur_2,2.96,492374,3
+Ceftiofur ,6_C3D32_r03,524,1,210.0207,1,Ceftiofur_2,2.96,508059,2
+Ceftiofur ,6_D1D27_r01,524,1,210.0207,1,Ceftiofur_2,2.99,508042,3
+Ceftiofur ,6_D1D27_r02,524,1,210.0207,1,Ceftiofur_2,2.99,520230,3
+Ceftiofur ,6_D1D27_r03,524,1,210.0207,1,Ceftiofur_2,3.04,516306,2
+Ceftiofur ,6_D2D27_r01,524,1,210.0207,1,Ceftiofur_2,2.96,455580,3
+Ceftiofur ,6_D2D27_r02,524,1,210.0207,1,Ceftiofur_2,3.01,428226,3
+Ceftiofur ,6_D2D27_r03,524,1,210.0207,1,Ceftiofur_2,2.96,453177,2
+Ceftiofur ,6_D3D27_r01,524,1,210.0207,1,Ceftiofur_2,3.04,464647,2
+Ceftiofur ,6_D3D27_r02,524,1,210.0207,1,Ceftiofur_2,2.99,449789,3
+Ceftiofur ,6_D3D27_r03,524,1,210.0207,1,Ceftiofur_2,3.01,455073,3
+Ceftiofur ,7_A1D15_r01,524,1,210.0207,1,Ceftiofur_2,2.99,392554,3
+Ceftiofur ,7_A1D15_r02,524,1,210.0207,1,Ceftiofur_2,3.06,405597,3
+Ceftiofur ,7_A1D15_r03,524,1,210.0207,1,Ceftiofur_2,3.04,380398,3
+Ceftiofur ,7_A1D33_r01,524,1,210.0207,1,Ceftiofur_2,2.99,361927,3
+Ceftiofur ,7_A1D33_r02,524,1,210.0207,1,Ceftiofur_2,3.01,361559,2
+Ceftiofur ,7_A1D33_r03,524,1,210.0207,1,Ceftiofur_2,3.01,370172,3
+Ceftiofur ,7_A2D33_r01,524,1,210.0207,1,Ceftiofur_2,2.99,267135,3
+Ceftiofur ,7_A2D33_r02,524,1,210.0207,1,Ceftiofur_2,2.99,264592,3
+Ceftiofur ,7_A2D33_r03,524,1,210.0207,1,Ceftiofur_2,2.99,268075,2
+Ceftiofur ,7_A3D33_r01,524,1,210.0207,1,Ceftiofur_2,2.99,409750,3
+Ceftiofur ,7_A3D33_r02,524,1,210.0207,1,Ceftiofur_2,3.01,408830,3
+Ceftiofur ,7_A3D33_r03,524,1,210.0207,1,Ceftiofur_2,2.99,416700,3
+Ceftiofur ,7_A4D15_r01,524,1,210.0207,1,Ceftiofur_2,2.99,482425,3
+Ceftiofur ,7_A4D15_r02,524,1,210.0207,1,Ceftiofur_2,2.99,486948,3
+Ceftiofur ,7_A4D15_r03,524,1,210.0207,1,Ceftiofur_2,2.99,478460,3
+Ceftiofur ,7_A4D32_r01,524,1,210.0207,1,Ceftiofur_2,2.99,501430,3
+Ceftiofur ,7_A4D32_r02,524,1,210.0207,1,Ceftiofur_2,3.01,507501,2
+Ceftiofur ,7_A4D32_r03,524,1,210.0207,1,Ceftiofur_2,2.99,475004,3
+Ceftiofur ,7_A4D33_r01,524,1,210.0207,1,Ceftiofur_2,3.04,254848,3
+Ceftiofur ,7_A4D33_r02,524,1,210.0207,1,Ceftiofur_2,3.01,248954,3
+Ceftiofur ,7_A4D33_r03,524,1,210.0207,1,Ceftiofur_2,2.99,266804,3
+Ceftiofur ,7_A5D15_r01,524,1,210.0207,1,Ceftiofur_2,3.01,351108,2
+Ceftiofur ,7_A5D15_r02,524,1,210.0207,1,Ceftiofur_2,2.99,345937,3
+Ceftiofur ,7_A5D15_r03,524,1,210.0207,1,Ceftiofur_2,3.09,363167,2
+Ceftiofur ,7_A5D32_r01,524,1,210.0207,1,Ceftiofur_2,2.99,468443,3
+Ceftiofur ,7_A5D32_r02,524,1,210.0207,1,Ceftiofur_2,2.99,471458,3
+Ceftiofur ,7_A5D32_r03,524,1,210.0207,1,Ceftiofur_2,2.99,472603,3
+Ceftiofur ,7_A5D33_r01,524,1,210.0207,1,Ceftiofur_2,2.99,353256,3
+Ceftiofur ,7_A5D33_r02,524,1,210.0207,1,Ceftiofur_2,2.99,358757,2
+Ceftiofur ,7_A5D33_r03,524,1,210.0207,1,Ceftiofur_2,2.99,356551,3
+Ceftiofur ,7_C1D15_r01,524,1,210.0207,1,Ceftiofur_2,2.99,387655,3
+Ceftiofur ,7_C1D15_r02,524,1,210.0207,1,Ceftiofur_2,2.99,401946,3
+Ceftiofur ,7_C1D15_r03,524,1,210.0207,1,Ceftiofur_2,3.01,398658,2
+Ceftiofur ,7_C1D33_r01,524,1,210.0207,1,Ceftiofur_2,2.99,384573,3
+Ceftiofur ,7_C1D33_r02,524,1,210.0207,1,Ceftiofur_2,3.01,386331,2
+Ceftiofur ,7_C1D33_r03,524,1,210.0207,1,Ceftiofur_2,2.99,369400,3
+Ceftiofur ,7_C2D33_r01,524,1,210.0207,1,Ceftiofur_2,2.99,340671,3
+Ceftiofur ,7_C2D33_r02,524,1,210.0207,1,Ceftiofur_2,3.01,351468,3
+Ceftiofur ,7_C2D33_r03,524,1,210.0207,1,Ceftiofur_2,3.04,352350,3
+Ceftiofur ,7_C3D33_r01,524,1,210.0207,1,Ceftiofur_2,3.01,315289,3
+Ceftiofur ,7_C3D33_r02,524,1,210.0207,1,Ceftiofur_2,2.99,309802,3
+Ceftiofur ,7_C3D33_r03,524,1,210.0207,1,Ceftiofur_2,2.99,312817,3
+Ceftiofur ,7_C6D15_r01,524,1,210.0207,1,Ceftiofur_2,3.01,525354,3
+Ceftiofur ,7_C6D15_r02,524,1,210.0207,1,Ceftiofur_2,3.01,545823,2
+Ceftiofur ,7_C6D15_r03,524,1,210.0207,1,Ceftiofur_2,3.01,528239,3
+Ceftiofur ,7_C6D32_r01,524,1,210.0207,1,Ceftiofur_2,3.01,428343,2
+Ceftiofur ,7_C6D32_r02,524,1,210.0207,1,Ceftiofur_2,3.01,418738,3
+Ceftiofur ,7_C6D32_r03,524,1,210.0207,1,Ceftiofur_2,2.99,435632,2
+Ceftiofur ,7_C6D33_r01,524,1,210.0207,1,Ceftiofur_2,3.04,271798,2
+Ceftiofur ,7_C6D33_r02,524,1,210.0207,1,Ceftiofur_2,3.04,265476,3
+Ceftiofur ,7_C6D33_r03,524,1,210.0207,1,Ceftiofur_2,2.99,269761,2
+Ceftiofur ,7_C7D15_r01,524,1,210.0207,1,Ceftiofur_2,2.99,509764,3
+Ceftiofur ,7_C7D15_r02,524,1,210.0207,1,Ceftiofur_2,3.01,528901,2
+Ceftiofur ,7_C7D15_r03,524,1,210.0207,1,Ceftiofur_2,3.01,524604,3
+Ceftiofur ,7_C7D32_r01,524,1,210.0207,1,Ceftiofur_2,3.01,536180,3
+Ceftiofur ,7_C7D32_r02,524,1,210.0207,1,Ceftiofur_2,3.01,563080,2
+Ceftiofur ,7_C7D32_r03,524,1,210.0207,1,Ceftiofur_2,2.99,548047,3
+Ceftiofur ,7_C7D33_r01,524,1,210.0207,1,Ceftiofur_2,2.99,348785,3
+Ceftiofur ,7_C7D33_r02,524,1,210.0207,1,Ceftiofur_2,2.99,377836,3
+Ceftiofur ,7_C7D33_r03,524,1,210.0207,1,Ceftiofur_2,2.99,368694,3
+Ceftiofur ,7_D1D32_r01,524,1,210.0207,1,Ceftiofur_2,3.01,485282,3
+Ceftiofur ,7_D1D32_r02,524,1,210.0207,1,Ceftiofur_2,2.99,481138,2
+Ceftiofur ,7_D1D32_r03,524,1,210.0207,1,Ceftiofur_2,3.01,484720,2
+Ceftiofur ,7_D2D32_r01,524,1,210.0207,1,Ceftiofur_2,2.99,478637,3
+Ceftiofur ,7_D2D32_r02,524,1,210.0207,1,Ceftiofur_2,2.96,486825,3
+Ceftiofur ,7_D2D32_r03,524,1,210.0207,1,Ceftiofur_2,2.99,495193,2
+Ceftiofur ,7_D3D32_r01,524,1,210.0207,1,Ceftiofur_2,2.99,465067,3
+Ceftiofur ,7_D3D32_r02,524,1,210.0207,1,Ceftiofur_2,2.96,479688,3
+Ceftiofur ,7_D3D32_r03,524,1,210.0207,1,Ceftiofur_2,3.01,487046,2
+Ceftiofur ,6_A1D27_r01,524,1,285.0122,1,Ceftiofur_3,2.96,544375,3
+Ceftiofur ,6_A1D27_r02,524,1,285.0122,1,Ceftiofur_3,2.96,542163,3
+Ceftiofur ,6_A1D27_r03,524,1,285.0122,1,Ceftiofur_3,2.99,564257,2
+Ceftiofur ,6_A1D32_r01,524,1,285.0122,1,Ceftiofur_3,3.01,384506,2
+Ceftiofur ,6_A1D32_r02,524,1,285.0122,1,Ceftiofur_3,2.96,387380,2
+Ceftiofur ,6_A1D32_r03,524,1,285.0122,1,Ceftiofur_3,2.99,390391,2
+Ceftiofur ,6_A2D27_r01,524,1,285.0122,1,Ceftiofur_3,2.96,371960,2
+Ceftiofur ,6_A2D27_r02,524,1,285.0122,1,Ceftiofur_3,2.96,363559,3
+Ceftiofur ,6_A2D27_r03,524,1,285.0122,1,Ceftiofur_3,2.99,367241,3
+Ceftiofur ,6_A2D32_r01,524,1,285.0122,1,Ceftiofur_3,2.96,432531,3
+Ceftiofur ,6_A2D32_r02,524,1,285.0122,1,Ceftiofur_3,2.99,437257,3
+Ceftiofur ,6_A2D32_r03,524,1,285.0122,1,Ceftiofur_3,2.99,444982,2
+Ceftiofur ,6_A3D27_r01,524,1,285.0122,1,Ceftiofur_3,2.99,823174,2
+Ceftiofur ,6_A3D27_r02,524,1,285.0122,1,Ceftiofur_3,2.99,837228,2
+Ceftiofur ,6_A3D27_r03,524,1,285.0122,1,Ceftiofur_3,2.99,828760,2
+Ceftiofur ,6_A3D32_r01,524,1,285.0122,1,Ceftiofur_3,2.99,420154,3
+Ceftiofur ,6_A3D32_r02,524,1,285.0122,1,Ceftiofur_3,2.99,441270,2
+Ceftiofur ,6_A3D32_r03,524,1,285.0122,1,Ceftiofur_3,2.96,425306,2
+Ceftiofur ,6_B1D27_r01,524,1,285.0122,1,Ceftiofur_3,2.99,610275,2
+Ceftiofur ,6_B1D27_r02,524,1,285.0122,1,Ceftiofur_3,2.99,576796,2
+Ceftiofur ,6_B1D27_r03,524,1,285.0122,1,Ceftiofur_3,2.96,618875,2
+Ceftiofur ,6_B1D32_r01,524,1,285.0122,1,Ceftiofur_3,2.99,464981,3
+Ceftiofur ,6_B1D32_r02,524,1,285.0122,1,Ceftiofur_3,3.01,465295,2
+Ceftiofur ,6_B1D32_r03,524,1,285.0122,1,Ceftiofur_3,2.96,483356,2
+Ceftiofur ,6_B2D27_r01,524,1,285.0122,1,Ceftiofur_3,2.96,883047,2
+Ceftiofur ,6_B2D27_r02,524,1,285.0122,1,Ceftiofur_3,2.96,914607,2
+Ceftiofur ,6_B2D27_r03,524,1,285.0122,1,Ceftiofur_3,2.96,899070,2
+Ceftiofur ,6_B2D32_r01,524,1,285.0122,1,Ceftiofur_3,2.96,459204,2
+Ceftiofur ,6_B2D32_r02,524,1,285.0122,1,Ceftiofur_3,2.99,447415,3
+Ceftiofur ,6_B2D32_r03,524,1,285.0122,1,Ceftiofur_3,2.99,472679,3
+Ceftiofur ,6_B3D27_r01,524,1,285.0122,1,Ceftiofur_3,2.96,476866,2
+Ceftiofur ,6_B3D27_r02,524,1,285.0122,1,Ceftiofur_3,2.96,502047,2
+Ceftiofur ,6_B3D27_r03,524,1,285.0122,1,Ceftiofur_3,2.96,490030,2
+Ceftiofur ,6_B3D32_r01,524,1,285.0122,1,Ceftiofur_3,2.99,465722,3
+Ceftiofur ,6_B3D32_r02,524,1,285.0122,1,Ceftiofur_3,3.01,483393,2
+Ceftiofur ,6_B3D32_r03,524,1,285.0122,1,Ceftiofur_3,2.99,482570,2
+Ceftiofur ,6_C1D27_r01,524,1,285.0122,1,Ceftiofur_3,2.96,459130,3
+Ceftiofur ,6_C1D27_r02,524,1,285.0122,1,Ceftiofur_3,2.99,477726,2
+Ceftiofur ,6_C1D27_r03,524,1,285.0122,1,Ceftiofur_3,2.96,457491,2
+Ceftiofur ,6_C1D32_r01,524,1,285.0122,1,Ceftiofur_3,3.01,416906,2
+Ceftiofur ,6_C1D32_r02,524,1,285.0122,1,Ceftiofur_3,2.99,415435,2
+Ceftiofur ,6_C1D32_r03,524,1,285.0122,1,Ceftiofur_3,2.99,420903,2
+Ceftiofur ,6_C2D27_r01,524,1,285.0122,1,Ceftiofur_3,2.96,436448,2
+Ceftiofur ,6_C2D27_r02,524,1,285.0122,1,Ceftiofur_3,2.96,432671,2
+Ceftiofur ,6_C2D27_r03,524,1,285.0122,1,Ceftiofur_3,2.96,447518,2
+Ceftiofur ,6_C2D32_r01,524,1,285.0122,1,Ceftiofur_3,2.96,497769,2
+Ceftiofur ,6_C2D32_r02,524,1,285.0122,1,Ceftiofur_3,3.04,490020,2
+Ceftiofur ,6_C2D32_r03,524,1,285.0122,1,Ceftiofur_3,2.99,479777,2
+Ceftiofur ,6_C3D27_r01,524,1,285.0122,1,Ceftiofur_3,3.01,429429,3
+Ceftiofur ,6_C3D27_r02,524,1,285.0122,1,Ceftiofur_3,3.01,456327,2
+Ceftiofur ,6_C3D27_r03,524,1,285.0122,1,Ceftiofur_3,2.99,444952,2
+Ceftiofur ,6_C3D32_r01,524,1,285.0122,1,Ceftiofur_3,3.04,496542,2
+Ceftiofur ,6_C3D32_r02,524,1,285.0122,1,Ceftiofur_3,3.01,501474,2
+Ceftiofur ,6_C3D32_r03,524,1,285.0122,1,Ceftiofur_3,3.01,499195,3
+Ceftiofur ,6_D1D27_r01,524,1,285.0122,1,Ceftiofur_3,2.99,529556,2
+Ceftiofur ,6_D1D27_r02,524,1,285.0122,1,Ceftiofur_3,2.99,527298,2
+Ceftiofur ,6_D1D27_r03,524,1,285.0122,1,Ceftiofur_3,3.01,505163,3
+Ceftiofur ,6_D2D27_r01,524,1,285.0122,1,Ceftiofur_3,2.96,471243,2
+Ceftiofur ,6_D2D27_r02,524,1,285.0122,1,Ceftiofur_3,2.99,458183,2
+Ceftiofur ,6_D2D27_r03,524,1,285.0122,1,Ceftiofur_3,2.96,444210,3
+Ceftiofur ,6_D3D27_r01,524,1,285.0122,1,Ceftiofur_3,3.04,459113,3
+Ceftiofur ,6_D3D27_r02,524,1,285.0122,1,Ceftiofur_3,2.96,474837,2
+Ceftiofur ,6_D3D27_r03,524,1,285.0122,1,Ceftiofur_3,3.01,477932,2
+Ceftiofur ,7_A1D15_r01,524,1,285.0122,1,Ceftiofur_3,2.99,397570,2
+Ceftiofur ,7_A1D15_r02,524,1,285.0122,1,Ceftiofur_3,3.04,409963,2
+Ceftiofur ,7_A1D15_r03,524,1,285.0122,1,Ceftiofur_3,3.04,401036,2
+Ceftiofur ,7_A1D33_r01,524,1,285.0122,1,Ceftiofur_3,2.99,370459,2
+Ceftiofur ,7_A1D33_r02,524,1,285.0122,1,Ceftiofur_3,2.99,360574,3
+Ceftiofur ,7_A1D33_r03,524,1,285.0122,1,Ceftiofur_3,2.99,379417,2
+Ceftiofur ,7_A2D33_r01,524,1,285.0122,1,Ceftiofur_3,2.99,267731,2
+Ceftiofur ,7_A2D33_r02,524,1,285.0122,1,Ceftiofur_3,2.99,280342,2
+Ceftiofur ,7_A2D33_r03,524,1,285.0122,1,Ceftiofur_3,2.99,267171,3
+Ceftiofur ,7_A3D33_r01,524,1,285.0122,1,Ceftiofur_3,2.99,418612,2
+Ceftiofur ,7_A3D33_r02,524,1,285.0122,1,Ceftiofur_3,3.01,417267,2
+Ceftiofur ,7_A3D33_r03,524,1,285.0122,1,Ceftiofur_3,2.99,420106,2
+Ceftiofur ,7_A4D15_r01,524,1,285.0122,1,Ceftiofur_3,2.99,491744,2
+Ceftiofur ,7_A4D15_r02,524,1,285.0122,1,Ceftiofur_3,3.01,511338,2
+Ceftiofur ,7_A4D15_r03,524,1,285.0122,1,Ceftiofur_3,3.01,493774,2
+Ceftiofur ,7_A4D32_r01,524,1,285.0122,1,Ceftiofur_3,3.01,506976,2
+Ceftiofur ,7_A4D32_r02,524,1,285.0122,1,Ceftiofur_3,2.96,489501,3
+Ceftiofur ,7_A4D32_r03,524,1,285.0122,1,Ceftiofur_3,2.99,504821,2
+Ceftiofur ,7_A4D33_r01,524,1,285.0122,1,Ceftiofur_3,3.04,258648,2
+Ceftiofur ,7_A4D33_r02,524,1,285.0122,1,Ceftiofur_3,3.01,260280,2
+Ceftiofur ,7_A4D33_r03,524,1,285.0122,1,Ceftiofur_3,3.01,267635,2
+Ceftiofur ,7_A5D15_r01,524,1,285.0122,1,Ceftiofur_3,2.99,350865,3
+Ceftiofur ,7_A5D15_r02,524,1,285.0122,1,Ceftiofur_3,3.01,363751,2
+Ceftiofur ,7_A5D15_r03,524,1,285.0122,1,Ceftiofur_3,3.09,351546,3
+Ceftiofur ,7_A5D32_r01,524,1,285.0122,1,Ceftiofur_3,2.99,484764,2
+Ceftiofur ,7_A5D32_r02,524,1,285.0122,1,Ceftiofur_3,2.99,471753,2
+Ceftiofur ,7_A5D32_r03,524,1,285.0122,1,Ceftiofur_3,2.99,480416,2
+Ceftiofur ,7_A5D33_r01,524,1,285.0122,1,Ceftiofur_3,2.99,367267,2
+Ceftiofur ,7_A5D33_r02,524,1,285.0122,1,Ceftiofur_3,2.99,356985,3
+Ceftiofur ,7_A5D33_r03,524,1,285.0122,1,Ceftiofur_3,2.99,361295,2
+Ceftiofur ,7_C1D15_r01,524,1,285.0122,1,Ceftiofur_3,3.01,399048,2
+Ceftiofur ,7_C1D15_r02,524,1,285.0122,1,Ceftiofur_3,3.01,414567,2
+Ceftiofur ,7_C1D15_r03,524,1,285.0122,1,Ceftiofur_3,3.04,396665,3
+Ceftiofur ,7_C1D33_r01,524,1,285.0122,1,Ceftiofur_3,2.99,394208,2
+Ceftiofur ,7_C1D33_r02,524,1,285.0122,1,Ceftiofur_3,2.99,381146,3
+Ceftiofur ,7_C1D33_r03,524,1,285.0122,1,Ceftiofur_3,2.99,387442,2
+Ceftiofur ,7_C2D33_r01,524,1,285.0122,1,Ceftiofur_3,2.99,370260,2
+Ceftiofur ,7_C2D33_r02,524,1,285.0122,1,Ceftiofur_3,2.99,353888,2
+Ceftiofur ,7_C2D33_r03,524,1,285.0122,1,Ceftiofur_3,3.04,361508,2
+Ceftiofur ,7_C3D33_r01,524,1,285.0122,1,Ceftiofur_3,2.99,322651,2
+Ceftiofur ,7_C3D33_r02,524,1,285.0122,1,Ceftiofur_3,2.99,331558,2
+Ceftiofur ,7_C3D33_r03,524,1,285.0122,1,Ceftiofur_3,2.99,334199,2
+Ceftiofur ,7_C6D15_r01,524,1,285.0122,1,Ceftiofur_3,3.01,556400,2
+Ceftiofur ,7_C6D15_r02,524,1,285.0122,1,Ceftiofur_3,3.01,544420,3
+Ceftiofur ,7_C6D15_r03,524,1,285.0122,1,Ceftiofur_3,2.99,542663,2
+Ceftiofur ,7_C6D32_r01,524,1,285.0122,1,Ceftiofur_3,2.99,413177,3
+Ceftiofur ,7_C6D32_r02,524,1,285.0122,1,Ceftiofur_3,2.99,422172,2
+Ceftiofur ,7_C6D32_r03,524,1,285.0122,1,Ceftiofur_3,3.01,429115,3
+Ceftiofur ,7_C6D33_r01,524,1,285.0122,1,Ceftiofur_3,3.01,267290,3
+Ceftiofur ,7_C6D33_r02,524,1,285.0122,1,Ceftiofur_3,3.04,266828,2
+Ceftiofur ,7_C6D33_r03,524,1,285.0122,1,Ceftiofur_3,3.04,266459,3
+Ceftiofur ,7_C7D15_r01,524,1,285.0122,1,Ceftiofur_3,3.01,515824,2
+Ceftiofur ,7_C7D15_r02,524,1,285.0122,1,Ceftiofur_3,3.01,525790,3
+Ceftiofur ,7_C7D15_r03,524,1,285.0122,1,Ceftiofur_3,2.99,530888,2
+Ceftiofur ,7_C7D32_r01,524,1,285.0122,1,Ceftiofur_3,2.99,563948,2
+Ceftiofur ,7_C7D32_r02,524,1,285.0122,1,Ceftiofur_3,2.99,557483,3
+Ceftiofur ,7_C7D32_r03,524,1,285.0122,1,Ceftiofur_3,2.99,564434,2
+Ceftiofur ,7_C7D33_r01,524,1,285.0122,1,Ceftiofur_3,3.01,359788,2
+Ceftiofur ,7_C7D33_r02,524,1,285.0122,1,Ceftiofur_3,3.01,386508,2
+Ceftiofur ,7_C7D33_r03,524,1,285.0122,1,Ceftiofur_3,3.01,371261,2
+Ceftiofur ,7_D1D32_r01,524,1,285.0122,1,Ceftiofur_3,2.99,486414,2
+Ceftiofur ,7_D1D32_r02,524,1,285.0122,1,Ceftiofur_3,2.99,479505,3
+Ceftiofur ,7_D1D32_r03,524,1,285.0122,1,Ceftiofur_3,3.01,476938,3
+Ceftiofur ,7_D2D32_r01,524,1,285.0122,1,Ceftiofur_3,2.99,486808,2
+Ceftiofur ,7_D2D32_r02,524,1,285.0122,1,Ceftiofur_3,2.96,521458,2
+Ceftiofur ,7_D2D32_r03,524,1,285.0122,1,Ceftiofur_3,2.99,490824,3
+Ceftiofur ,7_D3D32_r01,524,1,285.0122,1,Ceftiofur_3,2.96,511396,2
+Ceftiofur ,7_D3D32_r02,524,1,285.0122,1,Ceftiofur_3,2.96,491419,2
+Ceftiofur ,7_D3D32_r03,524,1,285.0122,1,Ceftiofur_3,2.96,457778,3
+Ceftiofur ,6_A1D27_r01,524,1,126.0119,1,Ceftiofur_4,2.96,266797,5
+Ceftiofur ,6_A1D27_r02,524,1,126.0119,1,Ceftiofur_4,2.96,278042,5
+Ceftiofur ,6_A1D27_r03,524,1,126.0119,1,Ceftiofur_4,2.96,260101,5
+Ceftiofur ,6_A1D32_r01,524,1,126.0119,1,Ceftiofur_4,3.01,188990,5
+Ceftiofur ,6_A1D32_r02,524,1,126.0119,1,Ceftiofur_4,2.96,192062,5
+Ceftiofur ,6_A1D32_r03,524,1,126.0119,1,Ceftiofur_4,2.99,178132,5
+Ceftiofur ,6_A2D27_r01,524,1,126.0119,1,Ceftiofur_4,2.96,189894,5
+Ceftiofur ,6_A2D27_r02,524,1,126.0119,1,Ceftiofur_4,2.96,176473,5
+Ceftiofur ,6_A2D27_r03,524,1,126.0119,1,Ceftiofur_4,2.99,183551,5
+Ceftiofur ,6_A2D32_r01,524,1,126.0119,1,Ceftiofur_4,2.99,215883,5
+Ceftiofur ,6_A2D32_r02,524,1,126.0119,1,Ceftiofur_4,2.99,210261,5
+Ceftiofur ,6_A2D32_r03,524,1,126.0119,1,Ceftiofur_4,2.96,217985,5
+Ceftiofur ,6_A3D27_r01,524,1,126.0119,1,Ceftiofur_4,2.99,406828,5
+Ceftiofur ,6_A3D27_r02,524,1,126.0119,1,Ceftiofur_4,2.96,388424,5
+Ceftiofur ,6_A3D27_r03,524,1,126.0119,1,Ceftiofur_4,2.99,392158,5
+Ceftiofur ,6_A3D32_r01,524,1,126.0119,1,Ceftiofur_4,2.96,210334,5
+Ceftiofur ,6_A3D32_r02,524,1,126.0119,1,Ceftiofur_4,2.96,210452,5
+Ceftiofur ,6_A3D32_r03,524,1,126.0119,1,Ceftiofur_4,2.96,203822,5
+Ceftiofur ,6_B1D27_r01,524,1,126.0119,1,Ceftiofur_4,2.96,291669,5
+Ceftiofur ,6_B1D27_r02,524,1,126.0119,1,Ceftiofur_4,2.99,284951,5
+Ceftiofur ,6_B1D27_r03,524,1,126.0119,1,Ceftiofur_4,2.96,301106,5
+Ceftiofur ,6_B1D32_r01,524,1,126.0119,1,Ceftiofur_4,2.96,226306,5
+Ceftiofur ,6_B1D32_r02,524,1,126.0119,1,Ceftiofur_4,2.99,221402,5
+Ceftiofur ,6_B1D32_r03,524,1,126.0119,1,Ceftiofur_4,2.96,227143,5
+Ceftiofur ,6_B2D27_r01,524,1,126.0119,1,Ceftiofur_4,2.96,427180,5
+Ceftiofur ,6_B2D27_r02,524,1,126.0119,1,Ceftiofur_4,2.96,441001,5
+Ceftiofur ,6_B2D27_r03,524,1,126.0119,1,Ceftiofur_4,2.99,445533,5
+Ceftiofur ,6_B2D32_r01,524,1,126.0119,1,Ceftiofur_4,2.99,222219,5
+Ceftiofur ,6_B2D32_r02,524,1,126.0119,1,Ceftiofur_4,2.99,222306,5
+Ceftiofur ,6_B2D32_r03,524,1,126.0119,1,Ceftiofur_4,2.99,239208,5
+Ceftiofur ,6_B3D27_r01,524,1,126.0119,1,Ceftiofur_4,2.96,238051,5
+Ceftiofur ,6_B3D27_r02,524,1,126.0119,1,Ceftiofur_4,2.99,234266,5
+Ceftiofur ,6_B3D27_r03,524,1,126.0119,1,Ceftiofur_4,2.99,231002,5
+Ceftiofur ,6_B3D32_r01,524,1,126.0119,1,Ceftiofur_4,3.01,226624,5
+Ceftiofur ,6_B3D32_r02,524,1,126.0119,1,Ceftiofur_4,3.01,240660,5
+Ceftiofur ,6_B3D32_r03,524,1,126.0119,1,Ceftiofur_4,2.96,227511,5
+Ceftiofur ,6_C1D27_r01,524,1,126.0119,1,Ceftiofur_4,2.96,237808,5
+Ceftiofur ,6_C1D27_r02,524,1,126.0119,1,Ceftiofur_4,2.96,229157,5
+Ceftiofur ,6_C1D27_r03,524,1,126.0119,1,Ceftiofur_4,2.96,215516,5
+Ceftiofur ,6_C1D32_r01,524,1,126.0119,1,Ceftiofur_4,2.99,208780,5
+Ceftiofur ,6_C1D32_r02,524,1,126.0119,1,Ceftiofur_4,2.99,209077,5
+Ceftiofur ,6_C1D32_r03,524,1,126.0119,1,Ceftiofur_4,2.99,205182,5
+Ceftiofur ,6_C2D27_r01,524,1,126.0119,1,Ceftiofur_4,2.96,206306,5
+Ceftiofur ,6_C2D27_r02,524,1,126.0119,1,Ceftiofur_4,2.96,212965,5
+Ceftiofur ,6_C2D27_r03,524,1,126.0119,1,Ceftiofur_4,2.99,213392,5
+Ceftiofur ,6_C2D32_r01,524,1,126.0119,1,Ceftiofur_4,2.96,235537,5
+Ceftiofur ,6_C2D32_r02,524,1,126.0119,1,Ceftiofur_4,3.04,239376,5
+Ceftiofur ,6_C2D32_r03,524,1,126.0119,1,Ceftiofur_4,2.99,235376,5
+Ceftiofur ,6_C3D27_r01,524,1,126.0119,1,Ceftiofur_4,2.96,218353,5
+Ceftiofur ,6_C3D27_r02,524,1,126.0119,1,Ceftiofur_4,3.01,216767,5
+Ceftiofur ,6_C3D27_r03,524,1,126.0119,1,Ceftiofur_4,2.96,218537,5
+Ceftiofur ,6_C3D32_r01,524,1,126.0119,1,Ceftiofur_4,3.01,238484,5
+Ceftiofur ,6_C3D32_r02,524,1,126.0119,1,Ceftiofur_4,2.96,243953,5
+Ceftiofur ,6_C3D32_r03,524,1,126.0119,1,Ceftiofur_4,3.04,241255,5
+Ceftiofur ,6_D1D27_r01,524,1,126.0119,1,Ceftiofur_4,2.99,252352,5
+Ceftiofur ,6_D1D27_r02,524,1,126.0119,1,Ceftiofur_4,2.99,253565,5
+Ceftiofur ,6_D1D27_r03,524,1,126.0119,1,Ceftiofur_4,3.01,262431,5
+Ceftiofur ,6_D2D27_r01,524,1,126.0119,1,Ceftiofur_4,2.96,223174,5
+Ceftiofur ,6_D2D27_r02,524,1,126.0119,1,Ceftiofur_4,3.01,222924,5
+Ceftiofur ,6_D2D27_r03,524,1,126.0119,1,Ceftiofur_4,2.96,228533,5
+Ceftiofur ,6_D3D27_r01,524,1,126.0119,1,Ceftiofur_4,3.01,222243,5
+Ceftiofur ,6_D3D27_r02,524,1,126.0119,1,Ceftiofur_4,2.96,229540,5
+Ceftiofur ,6_D3D27_r03,524,1,126.0119,1,Ceftiofur_4,2.99,210959,5
+Ceftiofur ,7_A1D15_r01,524,1,126.0119,1,Ceftiofur_4,2.99,194813,5
+Ceftiofur ,7_A1D15_r02,524,1,126.0119,1,Ceftiofur_4,3.06,195320,5
+Ceftiofur ,7_A1D15_r03,524,1,126.0119,1,Ceftiofur_4,3.01,187814,5
+Ceftiofur ,7_A1D33_r01,524,1,126.0119,1,Ceftiofur_4,2.99,181464,5
+Ceftiofur ,7_A1D33_r02,524,1,126.0119,1,Ceftiofur_4,3.01,173314,5
+Ceftiofur ,7_A1D33_r03,524,1,126.0119,1,Ceftiofur_4,2.99,181684,5
+Ceftiofur ,7_A2D33_r01,524,1,126.0119,1,Ceftiofur_4,2.99,129920,5
+Ceftiofur ,7_A2D33_r02,524,1,126.0119,1,Ceftiofur_4,2.96,129815,5
+Ceftiofur ,7_A2D33_r03,524,1,126.0119,1,Ceftiofur_4,2.96,137209,5
+Ceftiofur ,7_A3D33_r01,524,1,126.0119,1,Ceftiofur_4,2.99,207170,5
+Ceftiofur ,7_A3D33_r02,524,1,126.0119,1,Ceftiofur_4,2.99,210178,5
+Ceftiofur ,7_A3D33_r03,524,1,126.0119,1,Ceftiofur_4,2.99,196733,5
+Ceftiofur ,7_A4D15_r01,524,1,126.0119,1,Ceftiofur_4,3.01,229808,5
+Ceftiofur ,7_A4D15_r02,524,1,126.0119,1,Ceftiofur_4,3.01,254338,5
+Ceftiofur ,7_A4D15_r03,524,1,126.0119,1,Ceftiofur_4,2.99,238083,5
+Ceftiofur ,7_A4D32_r01,524,1,126.0119,1,Ceftiofur_4,2.99,230081,5
+Ceftiofur ,7_A4D32_r02,524,1,126.0119,1,Ceftiofur_4,2.96,233567,5
+Ceftiofur ,7_A4D32_r03,524,1,126.0119,1,Ceftiofur_4,2.99,250800,5
+Ceftiofur ,7_A4D33_r01,524,1,126.0119,1,Ceftiofur_4,3.01,127295,5
+Ceftiofur ,7_A4D33_r02,524,1,126.0119,1,Ceftiofur_4,3.01,133832,5
+Ceftiofur ,7_A4D33_r03,524,1,126.0119,1,Ceftiofur_4,2.99,132038,5
+Ceftiofur ,7_A5D15_r01,524,1,126.0119,1,Ceftiofur_4,3.01,171630,5
+Ceftiofur ,7_A5D15_r02,524,1,126.0119,1,Ceftiofur_4,2.99,177065,5
+Ceftiofur ,7_A5D15_r03,524,1,126.0119,1,Ceftiofur_4,3.11,171158,5
+Ceftiofur ,7_A5D32_r01,524,1,126.0119,1,Ceftiofur_4,2.96,229970,5
+Ceftiofur ,7_A5D32_r02,524,1,126.0119,1,Ceftiofur_4,2.99,237031,5
+Ceftiofur ,7_A5D32_r03,524,1,126.0119,1,Ceftiofur_4,2.99,236669,5
+Ceftiofur ,7_A5D33_r01,524,1,126.0119,1,Ceftiofur_4,2.99,183236,5
+Ceftiofur ,7_A5D33_r02,524,1,126.0119,1,Ceftiofur_4,2.99,175771,5
+Ceftiofur ,7_A5D33_r03,524,1,126.0119,1,Ceftiofur_4,2.99,182185,5
+Ceftiofur ,7_C1D15_r01,524,1,126.0119,1,Ceftiofur_4,3.01,200565,5
+Ceftiofur ,7_C1D15_r02,524,1,126.0119,1,Ceftiofur_4,3.01,198741,5
+Ceftiofur ,7_C1D15_r03,524,1,126.0119,1,Ceftiofur_4,3.01,197101,5
+Ceftiofur ,7_C1D33_r01,524,1,126.0119,1,Ceftiofur_4,2.99,192842,5
+Ceftiofur ,7_C1D33_r02,524,1,126.0119,1,Ceftiofur_4,2.99,187046,5
+Ceftiofur ,7_C1D33_r03,524,1,126.0119,1,Ceftiofur_4,2.99,183700,5
+Ceftiofur ,7_C2D33_r01,524,1,126.0119,1,Ceftiofur_4,2.99,171681,5
+Ceftiofur ,7_C2D33_r02,524,1,126.0119,1,Ceftiofur_4,2.99,172976,5
+Ceftiofur ,7_C2D33_r03,524,1,126.0119,1,Ceftiofur_4,3.01,167219,5
+Ceftiofur ,7_C3D33_r01,524,1,126.0119,1,Ceftiofur_4,3.01,158097,5
+Ceftiofur ,7_C3D33_r02,524,1,126.0119,1,Ceftiofur_4,3.01,158369,5
+Ceftiofur ,7_C3D33_r03,524,1,126.0119,1,Ceftiofur_4,2.99,153397,5
+Ceftiofur ,7_C6D15_r01,524,1,126.0119,1,Ceftiofur_4,3.01,257844,5
+Ceftiofur ,7_C6D15_r02,524,1,126.0119,1,Ceftiofur_4,3.01,268171,5
+Ceftiofur ,7_C6D15_r03,524,1,126.0119,1,Ceftiofur_4,3.01,258625,5
+Ceftiofur ,7_C6D32_r01,524,1,126.0119,1,Ceftiofur_4,2.99,208317,5
+Ceftiofur ,7_C6D32_r02,524,1,126.0119,1,Ceftiofur_4,2.99,207662,5
+Ceftiofur ,7_C6D32_r03,524,1,126.0119,1,Ceftiofur_4,2.99,205905,5
+Ceftiofur ,7_C6D33_r01,524,1,126.0119,1,Ceftiofur_4,2.99,131376,5
+Ceftiofur ,7_C6D33_r02,524,1,126.0119,1,Ceftiofur_4,3.04,133212,5
+Ceftiofur ,7_C6D33_r03,524,1,126.0119,1,Ceftiofur_4,2.99,138576,5
+Ceftiofur ,7_C7D15_r01,524,1,126.0119,1,Ceftiofur_4,3.01,263914,5
+Ceftiofur ,7_C7D15_r02,524,1,126.0119,1,Ceftiofur_4,2.99,261457,5
+Ceftiofur ,7_C7D15_r03,524,1,126.0119,1,Ceftiofur_4,3.01,259623,5
+Ceftiofur ,7_C7D32_r01,524,1,126.0119,1,Ceftiofur_4,3.01,278681,5
+Ceftiofur ,7_C7D32_r02,524,1,126.0119,1,Ceftiofur_4,3.04,267290,5
+Ceftiofur ,7_C7D32_r03,524,1,126.0119,1,Ceftiofur_4,2.99,271526,5
+Ceftiofur ,7_C7D33_r01,524,1,126.0119,1,Ceftiofur_4,3.01,187049,5
+Ceftiofur ,7_C7D33_r02,524,1,126.0119,1,Ceftiofur_4,2.99,178235,5
+Ceftiofur ,7_C7D33_r03,524,1,126.0119,1,Ceftiofur_4,2.99,184406,5
+Ceftiofur ,7_D1D32_r01,524,1,126.0119,1,Ceftiofur_4,2.99,238477,5
+Ceftiofur ,7_D1D32_r02,524,1,126.0119,1,Ceftiofur_4,2.99,240010,5
+Ceftiofur ,7_D1D32_r03,524,1,126.0119,1,Ceftiofur_4,2.99,225241,5
+Ceftiofur ,7_D2D32_r01,524,1,126.0119,1,Ceftiofur_4,2.99,242959,5
+Ceftiofur ,7_D2D32_r02,524,1,126.0119,1,Ceftiofur_4,2.99,248444,5
+Ceftiofur ,7_D2D32_r03,524,1,126.0119,1,Ceftiofur_4,2.99,236457,5
+Ceftiofur ,7_D3D32_r01,524,1,126.0119,1,Ceftiofur_4,2.96,231853,5
+Ceftiofur ,7_D3D32_r02,524,1,126.0119,1,Ceftiofur_4,2.99,232310,5
+Ceftiofur ,7_D3D32_r03,524,1,126.0119,1,Ceftiofur_4,2.96,239117,5
+Ceftiofur ,6_A1D27_r01,524,1,167.0278,1,Ceftiofur_5,2.96,225232,6
+Ceftiofur ,6_A1D27_r02,524,1,167.0278,1,Ceftiofur_5,2.96,216354,6
+Ceftiofur ,6_A1D27_r03,524,1,167.0278,1,Ceftiofur_5,2.96,217133,6
+Ceftiofur ,6_A1D32_r01,524,1,167.0278,1,Ceftiofur_5,2.99,153651,6
+Ceftiofur ,6_A1D32_r02,524,1,167.0278,1,Ceftiofur_5,2.96,161854,6
+Ceftiofur ,6_A1D32_r03,524,1,167.0278,1,Ceftiofur_5,2.99,156015,6
+Ceftiofur ,6_A2D27_r01,524,1,167.0278,1,Ceftiofur_5,2.96,147426,6
+Ceftiofur ,6_A2D27_r02,524,1,167.0278,1,Ceftiofur_5,2.96,148425,6
+Ceftiofur ,6_A2D27_r03,524,1,167.0278,1,Ceftiofur_5,2.96,147132,6
+Ceftiofur ,6_A2D32_r01,524,1,167.0278,1,Ceftiofur_5,2.96,182595,6
+Ceftiofur ,6_A2D32_r02,524,1,167.0278,1,Ceftiofur_5,2.96,177855,6
+Ceftiofur ,6_A2D32_r03,524,1,167.0278,1,Ceftiofur_5,2.99,180368,6
+Ceftiofur ,6_A3D27_r01,524,1,167.0278,1,Ceftiofur_5,3.01,316585,6
+Ceftiofur ,6_A3D27_r02,524,1,167.0278,1,Ceftiofur_5,2.99,354658,6
+Ceftiofur ,6_A3D27_r03,524,1,167.0278,1,Ceftiofur_5,2.99,333769,6
+Ceftiofur ,6_A3D32_r01,524,1,167.0278,1,Ceftiofur_5,2.96,170850,6
+Ceftiofur ,6_A3D32_r02,524,1,167.0278,1,Ceftiofur_5,2.96,174518,6
+Ceftiofur ,6_A3D32_r03,524,1,167.0278,1,Ceftiofur_5,2.96,171953,6
+Ceftiofur ,6_B1D27_r01,524,1,167.0278,1,Ceftiofur_5,2.96,229826,6
+Ceftiofur ,6_B1D27_r02,524,1,167.0278,1,Ceftiofur_5,2.99,231436,6
+Ceftiofur ,6_B1D27_r03,524,1,167.0278,1,Ceftiofur_5,2.99,229444,6
+Ceftiofur ,6_B1D32_r01,524,1,167.0278,1,Ceftiofur_5,3.01,183338,6
+Ceftiofur ,6_B1D32_r02,524,1,167.0278,1,Ceftiofur_5,3.01,188981,6
+Ceftiofur ,6_B1D32_r03,524,1,167.0278,1,Ceftiofur_5,2.96,187689,6
+Ceftiofur ,6_B2D27_r01,524,1,167.0278,1,Ceftiofur_5,2.96,359693,6
+Ceftiofur ,6_B2D27_r02,524,1,167.0278,1,Ceftiofur_5,2.99,348158,6
+Ceftiofur ,6_B2D27_r03,524,1,167.0278,1,Ceftiofur_5,2.96,364742,6
+Ceftiofur ,6_B2D32_r01,524,1,167.0278,1,Ceftiofur_5,2.96,186329,6
+Ceftiofur ,6_B2D32_r02,524,1,167.0278,1,Ceftiofur_5,2.99,181530,6
+Ceftiofur ,6_B2D32_r03,524,1,167.0278,1,Ceftiofur_5,3.04,187024,6
+Ceftiofur ,6_B3D27_r01,524,1,167.0278,1,Ceftiofur_5,2.99,195325,6
+Ceftiofur ,6_B3D27_r02,524,1,167.0278,1,Ceftiofur_5,2.96,196369,6
+Ceftiofur ,6_B3D27_r03,524,1,167.0278,1,Ceftiofur_5,2.96,205880,6
+Ceftiofur ,6_B3D32_r01,524,1,167.0278,1,Ceftiofur_5,2.99,188576,6
+Ceftiofur ,6_B3D32_r02,524,1,167.0278,1,Ceftiofur_5,3.01,193789,6
+Ceftiofur ,6_B3D32_r03,524,1,167.0278,1,Ceftiofur_5,2.99,186748,6
+Ceftiofur ,6_C1D27_r01,524,1,167.0278,1,Ceftiofur_5,2.96,181324,6
+Ceftiofur ,6_C1D27_r02,524,1,167.0278,1,Ceftiofur_5,2.96,188365,6
+Ceftiofur ,6_C1D27_r03,524,1,167.0278,1,Ceftiofur_5,2.96,176708,6
+Ceftiofur ,6_C1D32_r01,524,1,167.0278,1,Ceftiofur_5,2.99,167371,6
+Ceftiofur ,6_C1D32_r02,524,1,167.0278,1,Ceftiofur_5,3.01,166683,6
+Ceftiofur ,6_C1D32_r03,524,1,167.0278,1,Ceftiofur_5,2.99,162934,6
+Ceftiofur ,6_C2D27_r01,524,1,167.0278,1,Ceftiofur_5,2.96,170813,6
+Ceftiofur ,6_C2D27_r02,524,1,167.0278,1,Ceftiofur_5,2.96,177730,6
+Ceftiofur ,6_C2D27_r03,524,1,167.0278,1,Ceftiofur_5,2.96,171416,6
+Ceftiofur ,6_C2D32_r01,524,1,167.0278,1,Ceftiofur_5,2.96,186821,6
+Ceftiofur ,6_C2D32_r02,524,1,167.0278,1,Ceftiofur_5,3.04,186750,6
+Ceftiofur ,6_C2D32_r03,524,1,167.0278,1,Ceftiofur_5,2.99,197564,6
+Ceftiofur ,6_C3D27_r01,524,1,167.0278,1,Ceftiofur_5,2.96,181654,6
+Ceftiofur ,6_C3D27_r02,524,1,167.0278,1,Ceftiofur_5,3.01,188551,6
+Ceftiofur ,6_C3D27_r03,524,1,167.0278,1,Ceftiofur_5,2.96,178950,6
+Ceftiofur ,6_C3D32_r01,524,1,167.0278,1,Ceftiofur_5,3.01,201918,6
+Ceftiofur ,6_C3D32_r02,524,1,167.0278,1,Ceftiofur_5,2.99,201014,6
+Ceftiofur ,6_C3D32_r03,524,1,167.0278,1,Ceftiofur_5,2.96,201727,6
+Ceftiofur ,6_D1D27_r01,524,1,167.0278,1,Ceftiofur_5,2.99,214973,6
+Ceftiofur ,6_D1D27_r02,524,1,167.0278,1,Ceftiofur_5,2.99,204169,6
+Ceftiofur ,6_D1D27_r03,524,1,167.0278,1,Ceftiofur_5,3.01,191437,6
+Ceftiofur ,6_D2D27_r01,524,1,167.0278,1,Ceftiofur_5,2.96,179075,6
+Ceftiofur ,6_D2D27_r02,524,1,167.0278,1,Ceftiofur_5,2.99,179184,6
+Ceftiofur ,6_D2D27_r03,524,1,167.0278,1,Ceftiofur_5,3.01,184124,6
+Ceftiofur ,6_D3D27_r01,524,1,167.0278,1,Ceftiofur_5,3.04,196195,6
+Ceftiofur ,6_D3D27_r02,524,1,167.0278,1,Ceftiofur_5,2.99,181125,6
+Ceftiofur ,6_D3D27_r03,524,1,167.0278,1,Ceftiofur_5,2.99,184543,6
+Ceftiofur ,7_A1D15_r01,524,1,167.0278,1,Ceftiofur_5,2.99,160789,6
+Ceftiofur ,7_A1D15_r02,524,1,167.0278,1,Ceftiofur_5,3.06,156776,6
+Ceftiofur ,7_A1D15_r03,524,1,167.0278,1,Ceftiofur_5,3.04,155268,6
+Ceftiofur ,7_A1D33_r01,524,1,167.0278,1,Ceftiofur_5,2.99,145784,6
+Ceftiofur ,7_A1D33_r02,524,1,167.0278,1,Ceftiofur_5,2.99,152426,6
+Ceftiofur ,7_A1D33_r03,524,1,167.0278,1,Ceftiofur_5,3.01,148557,6
+Ceftiofur ,7_A2D33_r01,524,1,167.0278,1,Ceftiofur_5,3.01,112848,6
+Ceftiofur ,7_A2D33_r02,524,1,167.0278,1,Ceftiofur_5,2.99,102929,6
+Ceftiofur ,7_A2D33_r03,524,1,167.0278,1,Ceftiofur_5,2.96,110448,6
+Ceftiofur ,7_A3D33_r01,524,1,167.0278,1,Ceftiofur_5,3.01,173130,6
+Ceftiofur ,7_A3D33_r02,524,1,167.0278,1,Ceftiofur_5,2.99,162201,6
+Ceftiofur ,7_A3D33_r03,524,1,167.0278,1,Ceftiofur_5,2.99,169195,6
+Ceftiofur ,7_A4D15_r01,524,1,167.0278,1,Ceftiofur_5,2.99,195983,6
+Ceftiofur ,7_A4D15_r02,524,1,167.0278,1,Ceftiofur_5,3.01,196284,6
+Ceftiofur ,7_A4D15_r03,524,1,167.0278,1,Ceftiofur_5,3.01,203808,6
+Ceftiofur ,7_A4D32_r01,524,1,167.0278,1,Ceftiofur_5,2.99,204228,6
+Ceftiofur ,7_A4D32_r02,524,1,167.0278,1,Ceftiofur_5,2.99,197383,6
+Ceftiofur ,7_A4D32_r03,524,1,167.0278,1,Ceftiofur_5,3.04,189826,6
+Ceftiofur ,7_A4D33_r01,524,1,167.0278,1,Ceftiofur_5,3.04,105422,6
+Ceftiofur ,7_A4D33_r02,524,1,167.0278,1,Ceftiofur_5,3.01,104052,7
+Ceftiofur ,7_A4D33_r03,524,1,167.0278,1,Ceftiofur_5,2.99,108303,6
+Ceftiofur ,7_A5D15_r01,524,1,167.0278,1,Ceftiofur_5,2.99,144784,6
+Ceftiofur ,7_A5D15_r02,524,1,167.0278,1,Ceftiofur_5,2.99,138098,6
+Ceftiofur ,7_A5D15_r03,524,1,167.0278,1,Ceftiofur_5,3.09,143437,6
+Ceftiofur ,7_A5D32_r01,524,1,167.0278,1,Ceftiofur_5,2.99,194776,6
+Ceftiofur ,7_A5D32_r02,524,1,167.0278,1,Ceftiofur_5,2.99,191886,6
+Ceftiofur ,7_A5D32_r03,524,1,167.0278,1,Ceftiofur_5,2.99,188924,6
+Ceftiofur ,7_A5D33_r01,524,1,167.0278,1,Ceftiofur_5,2.99,141754,6
+Ceftiofur ,7_A5D33_r02,524,1,167.0278,1,Ceftiofur_5,2.96,147292,6
+Ceftiofur ,7_A5D33_r03,524,1,167.0278,1,Ceftiofur_5,2.99,141518,6
+Ceftiofur ,7_C1D15_r01,524,1,167.0278,1,Ceftiofur_5,2.99,167114,6
+Ceftiofur ,7_C1D15_r02,524,1,167.0278,1,Ceftiofur_5,2.99,159075,6
+Ceftiofur ,7_C1D15_r03,524,1,167.0278,1,Ceftiofur_5,3.01,161355,6
+Ceftiofur ,7_C1D33_r01,524,1,167.0278,1,Ceftiofur_5,2.99,161642,6
+Ceftiofur ,7_C1D33_r02,524,1,167.0278,1,Ceftiofur_5,2.99,158582,6
+Ceftiofur ,7_C1D33_r03,524,1,167.0278,1,Ceftiofur_5,2.96,151904,6
+Ceftiofur ,7_C2D33_r01,524,1,167.0278,1,Ceftiofur_5,2.99,141386,6
+Ceftiofur ,7_C2D33_r02,524,1,167.0278,1,Ceftiofur_5,2.99,134943,6
+Ceftiofur ,7_C2D33_r03,524,1,167.0278,1,Ceftiofur_5,3.06,140509,6
+Ceftiofur ,7_C3D33_r01,524,1,167.0278,1,Ceftiofur_5,2.99,130810,6
+Ceftiofur ,7_C3D33_r02,524,1,167.0278,1,Ceftiofur_5,3.01,130574,6
+Ceftiofur ,7_C3D33_r03,524,1,167.0278,1,Ceftiofur_5,2.99,133053,6
+Ceftiofur ,7_C6D15_r01,524,1,167.0278,1,Ceftiofur_5,2.99,224284,6
+Ceftiofur ,7_C6D15_r02,524,1,167.0278,1,Ceftiofur_5,3.01,221543,6
+Ceftiofur ,7_C6D15_r03,524,1,167.0278,1,Ceftiofur_5,2.99,223336,6
+Ceftiofur ,7_C6D32_r01,524,1,167.0278,1,Ceftiofur_5,2.99,167526,6
+Ceftiofur ,7_C6D32_r02,524,1,167.0278,1,Ceftiofur_5,2.99,170130,6
+Ceftiofur ,7_C6D32_r03,524,1,167.0278,1,Ceftiofur_5,2.99,169563,6
+Ceftiofur ,7_C6D33_r01,524,1,167.0278,1,Ceftiofur_5,3.01,105846,6
+Ceftiofur ,7_C6D33_r02,524,1,167.0278,1,Ceftiofur_5,3.09,111162,6
+Ceftiofur ,7_C6D33_r03,524,1,167.0278,1,Ceftiofur_5,3.01,103088,6
+Ceftiofur ,7_C7D15_r01,524,1,167.0278,1,Ceftiofur_5,3.04,207177,6
+Ceftiofur ,7_C7D15_r02,524,1,167.0278,1,Ceftiofur_5,2.99,207479,6
+Ceftiofur ,7_C7D15_r03,524,1,167.0278,1,Ceftiofur_5,2.99,221668,6
+Ceftiofur ,7_C7D32_r01,524,1,167.0278,1,Ceftiofur_5,3.01,215670,6
+Ceftiofur ,7_C7D32_r02,524,1,167.0278,1,Ceftiofur_5,2.99,217503,6
+Ceftiofur ,7_C7D32_r03,524,1,167.0278,1,Ceftiofur_5,2.99,218540,6
+Ceftiofur ,7_C7D33_r01,524,1,167.0278,1,Ceftiofur_5,2.99,142281,6
+Ceftiofur ,7_C7D33_r02,524,1,167.0278,1,Ceftiofur_5,2.99,160664,6
+Ceftiofur ,7_C7D33_r03,524,1,167.0278,1,Ceftiofur_5,2.99,149293,6
+Ceftiofur ,7_D1D32_r01,524,1,167.0278,1,Ceftiofur_5,3.01,194951,6
+Ceftiofur ,7_D1D32_r02,524,1,167.0278,1,Ceftiofur_5,2.99,198351,6
+Ceftiofur ,7_D1D32_r03,524,1,167.0278,1,Ceftiofur_5,2.99,188583,6
+Ceftiofur ,7_D2D32_r01,524,1,167.0278,1,Ceftiofur_5,2.96,205169,6
+Ceftiofur ,7_D2D32_r02,524,1,167.0278,1,Ceftiofur_5,2.99,194943,6
+Ceftiofur ,7_D2D32_r03,524,1,167.0278,1,Ceftiofur_5,3.01,195203,6
+Ceftiofur ,7_D3D32_r01,524,1,167.0278,1,Ceftiofur_5,3.01,191959,6
+Ceftiofur ,7_D3D32_r02,524,1,167.0278,1,Ceftiofur_5,2.96,189122,6
+Ceftiofur ,7_D3D32_r03,524,1,167.0278,1,Ceftiofur_5,2.96,202352,6
+Ceftiofur ,6_A1D27_r01,524,1,197.0503,1,Ceftiofur_6,2.99,204079,7
+Ceftiofur ,6_A1D27_r02,524,1,197.0503,1,Ceftiofur_6,2.96,204513,7
+Ceftiofur ,6_A1D27_r03,524,1,197.0503,1,Ceftiofur_6,2.99,202903,7
+Ceftiofur ,6_A1D32_r01,524,1,197.0503,1,Ceftiofur_6,3.01,142090,7
+Ceftiofur ,6_A1D32_r02,524,1,197.0503,1,Ceftiofur_6,2.96,140487,7
+Ceftiofur ,6_A1D32_r03,524,1,197.0503,1,Ceftiofur_6,2.96,139290,7
+Ceftiofur ,6_A2D27_r01,524,1,197.0503,1,Ceftiofur_6,2.96,132285,7
+Ceftiofur ,6_A2D27_r02,524,1,197.0503,1,Ceftiofur_6,2.99,140046,7
+Ceftiofur ,6_A2D27_r03,524,1,197.0503,1,Ceftiofur_6,2.96,136180,7
+Ceftiofur ,6_A2D32_r01,524,1,197.0503,1,Ceftiofur_6,2.96,160251,7
+Ceftiofur ,6_A2D32_r02,524,1,197.0503,1,Ceftiofur_6,2.96,164816,7
+Ceftiofur ,6_A2D32_r03,524,1,197.0503,1,Ceftiofur_6,2.96,172908,7
+Ceftiofur ,6_A3D27_r01,524,1,197.0503,1,Ceftiofur_6,2.99,287509,7
+Ceftiofur ,6_A3D27_r02,524,1,197.0503,1,Ceftiofur_6,2.96,289662,7
+Ceftiofur ,6_A3D27_r03,524,1,197.0503,1,Ceftiofur_6,2.99,293506,7
+Ceftiofur ,6_A3D32_r01,524,1,197.0503,1,Ceftiofur_6,2.96,157495,7
+Ceftiofur ,6_A3D32_r02,524,1,197.0503,1,Ceftiofur_6,2.96,155753,7
+Ceftiofur ,6_A3D32_r03,524,1,197.0503,1,Ceftiofur_6,2.96,154438,7
+Ceftiofur ,6_B1D27_r01,524,1,197.0503,1,Ceftiofur_6,2.99,217647,7
+Ceftiofur ,6_B1D27_r02,524,1,197.0503,1,Ceftiofur_6,2.96,217368,7
+Ceftiofur ,6_B1D27_r03,524,1,197.0503,1,Ceftiofur_6,2.94,217574,7
+Ceftiofur ,6_B1D32_r01,524,1,197.0503,1,Ceftiofur_6,2.99,175686,7
+Ceftiofur ,6_B1D32_r02,524,1,197.0503,1,Ceftiofur_6,2.99,169549,7
+Ceftiofur ,6_B1D32_r03,524,1,197.0503,1,Ceftiofur_6,2.96,168248,7
+Ceftiofur ,6_B2D27_r01,524,1,197.0503,1,Ceftiofur_6,2.96,320664,7
+Ceftiofur ,6_B2D27_r02,524,1,197.0503,1,Ceftiofur_6,2.96,320533,7
+Ceftiofur ,6_B2D27_r03,524,1,197.0503,1,Ceftiofur_6,2.96,309000,7
+Ceftiofur ,6_B2D32_r01,524,1,197.0503,1,Ceftiofur_6,2.96,174150,7
+Ceftiofur ,6_B2D32_r02,524,1,197.0503,1,Ceftiofur_6,3.01,179478,7
+Ceftiofur ,6_B2D32_r03,524,1,197.0503,1,Ceftiofur_6,2.99,179787,7
+Ceftiofur ,6_B3D27_r01,524,1,197.0503,1,Ceftiofur_6,2.94,172298,7
+Ceftiofur ,6_B3D27_r02,524,1,197.0503,1,Ceftiofur_6,2.96,180714,7
+Ceftiofur ,6_B3D27_r03,524,1,197.0503,1,Ceftiofur_6,2.96,182713,7
+Ceftiofur ,6_B3D32_r01,524,1,197.0503,1,Ceftiofur_6,2.99,177661,7
+Ceftiofur ,6_B3D32_r02,524,1,197.0503,1,Ceftiofur_6,3.01,175128,7
+Ceftiofur ,6_B3D32_r03,524,1,197.0503,1,Ceftiofur_6,2.99,177774,7
+Ceftiofur ,6_C1D27_r01,524,1,197.0503,1,Ceftiofur_6,2.96,170152,7
+Ceftiofur ,6_C1D27_r02,524,1,197.0503,1,Ceftiofur_6,2.99,176811,7
+Ceftiofur ,6_C1D27_r03,524,1,197.0503,1,Ceftiofur_6,2.96,169461,7
+Ceftiofur ,6_C1D32_r01,524,1,197.0503,1,Ceftiofur_6,2.99,149418,7
+Ceftiofur ,6_C1D32_r02,524,1,197.0503,1,Ceftiofur_6,2.96,151093,7
+Ceftiofur ,6_C1D32_r03,524,1,197.0503,1,Ceftiofur_6,2.99,152218,7
+Ceftiofur ,6_C2D27_r01,524,1,197.0503,1,Ceftiofur_6,2.96,161758,7
+Ceftiofur ,6_C2D27_r02,524,1,197.0503,1,Ceftiofur_6,2.96,159465,7
+Ceftiofur ,6_C2D27_r03,524,1,197.0503,1,Ceftiofur_6,2.96,168821,7
+Ceftiofur ,6_C2D32_r01,524,1,197.0503,1,Ceftiofur_6,2.96,183521,7
+Ceftiofur ,6_C2D32_r02,524,1,197.0503,1,Ceftiofur_6,3.04,175886,7
+Ceftiofur ,6_C2D32_r03,524,1,197.0503,1,Ceftiofur_6,2.96,176175,7
+Ceftiofur ,6_C3D27_r01,524,1,197.0503,1,Ceftiofur_6,2.99,170490,7
+Ceftiofur ,6_C3D27_r02,524,1,197.0503,1,Ceftiofur_6,3.04,161767,7
+Ceftiofur ,6_C3D27_r03,524,1,197.0503,1,Ceftiofur_6,2.99,165543,7
+Ceftiofur ,6_C3D32_r01,524,1,197.0503,1,Ceftiofur_6,3.01,187204,7
+Ceftiofur ,6_C3D32_r02,524,1,197.0503,1,Ceftiofur_6,2.99,181500,7
+Ceftiofur ,6_C3D32_r03,524,1,197.0503,1,Ceftiofur_6,2.96,183646,7
+Ceftiofur ,6_D1D27_r01,524,1,197.0503,1,Ceftiofur_6,2.96,185472,7
+Ceftiofur ,6_D1D27_r02,524,1,197.0503,1,Ceftiofur_6,2.99,191033,7
+Ceftiofur ,6_D1D27_r03,524,1,197.0503,1,Ceftiofur_6,3.04,191114,7
+Ceftiofur ,6_D2D27_r01,524,1,197.0503,1,Ceftiofur_6,2.96,172055,7
+Ceftiofur ,6_D2D27_r02,524,1,197.0503,1,Ceftiofur_6,2.99,163289,7
+Ceftiofur ,6_D2D27_r03,524,1,197.0503,1,Ceftiofur_6,2.96,165918,7
+Ceftiofur ,6_D3D27_r01,524,1,197.0503,1,Ceftiofur_6,3.06,167985,7
+Ceftiofur ,6_D3D27_r02,524,1,197.0503,1,Ceftiofur_6,2.99,168616,7
+Ceftiofur ,6_D3D27_r03,524,1,197.0503,1,Ceftiofur_6,2.99,169137,7
+Ceftiofur ,7_A1D15_r01,524,1,197.0503,1,Ceftiofur_6,2.99,147822,7
+Ceftiofur ,7_A1D15_r02,524,1,197.0503,1,Ceftiofur_6,3.04,141481,7
+Ceftiofur ,7_A1D15_r03,524,1,197.0503,1,Ceftiofur_6,3.01,143832,7
+Ceftiofur ,7_A1D33_r01,524,1,197.0503,1,Ceftiofur_6,2.99,128949,7
+Ceftiofur ,7_A1D33_r02,524,1,197.0503,1,Ceftiofur_6,2.99,128022,7
+Ceftiofur ,7_A1D33_r03,524,1,197.0503,1,Ceftiofur_6,2.99,133582,7
+Ceftiofur ,7_A2D33_r01,524,1,197.0503,1,Ceftiofur_6,2.99,95726,7
+Ceftiofur ,7_A2D33_r02,524,1,197.0503,1,Ceftiofur_6,2.99,97277,7
+Ceftiofur ,7_A2D33_r03,524,1,197.0503,1,Ceftiofur_6,2.99,98879,7
+Ceftiofur ,7_A3D33_r01,524,1,197.0503,1,Ceftiofur_6,2.99,150742,7
+Ceftiofur ,7_A3D33_r02,524,1,197.0503,1,Ceftiofur_6,2.99,156714,7
+Ceftiofur ,7_A3D33_r03,524,1,197.0503,1,Ceftiofur_6,2.99,149241,7
+Ceftiofur ,7_A4D15_r01,524,1,197.0503,1,Ceftiofur_6,3.01,189775,7
+Ceftiofur ,7_A4D15_r02,524,1,197.0503,1,Ceftiofur_6,2.99,189231,7
+Ceftiofur ,7_A4D15_r03,524,1,197.0503,1,Ceftiofur_6,2.99,178956,7
+Ceftiofur ,7_A4D32_r01,524,1,197.0503,1,Ceftiofur_6,2.99,191165,7
+Ceftiofur ,7_A4D32_r02,524,1,197.0503,1,Ceftiofur_6,2.96,177891,7
+Ceftiofur ,7_A4D32_r03,524,1,197.0503,1,Ceftiofur_6,2.96,182817,7
+Ceftiofur ,7_A4D33_r01,524,1,197.0503,1,Ceftiofur_6,3.04,97726,7
+Ceftiofur ,7_A4D33_r02,524,1,197.0503,1,Ceftiofur_6,2.99,105324,6
+Ceftiofur ,7_A4D33_r03,524,1,197.0503,1,Ceftiofur_6,2.99,95160,7
+Ceftiofur ,7_A5D15_r01,524,1,197.0503,1,Ceftiofur_6,3.01,130626,7
+Ceftiofur ,7_A5D15_r02,524,1,197.0503,1,Ceftiofur_6,3.01,130626,7
+Ceftiofur ,7_A5D15_r03,524,1,197.0503,1,Ceftiofur_6,3.09,131433,7
+Ceftiofur ,7_A5D32_r01,524,1,197.0503,1,Ceftiofur_6,2.99,174528,7
+Ceftiofur ,7_A5D32_r02,524,1,197.0503,1,Ceftiofur_6,2.99,177183,7
+Ceftiofur ,7_A5D32_r03,524,1,197.0503,1,Ceftiofur_6,2.99,181787,7
+Ceftiofur ,7_A5D33_r01,524,1,197.0503,1,Ceftiofur_6,2.99,123329,7
+Ceftiofur ,7_A5D33_r02,524,1,197.0503,1,Ceftiofur_6,2.99,125757,7
+Ceftiofur ,7_A5D33_r03,524,1,197.0503,1,Ceftiofur_6,2.99,122675,7
+Ceftiofur ,7_C1D15_r01,524,1,197.0503,1,Ceftiofur_6,3.01,149300,7
+Ceftiofur ,7_C1D15_r02,524,1,197.0503,1,Ceftiofur_6,3.01,154118,7
+Ceftiofur ,7_C1D15_r03,524,1,197.0503,1,Ceftiofur_6,3.01,142754,7
+Ceftiofur ,7_C1D33_r01,524,1,197.0503,1,Ceftiofur_6,2.99,133376,7
+Ceftiofur ,7_C1D33_r02,524,1,197.0503,1,Ceftiofur_6,2.99,142379,7
+Ceftiofur ,7_C1D33_r03,524,1,197.0503,1,Ceftiofur_6,2.99,135061,7
+Ceftiofur ,7_C2D33_r01,524,1,197.0503,1,Ceftiofur_6,3.01,131935,7
+Ceftiofur ,7_C2D33_r02,524,1,197.0503,1,Ceftiofur_6,2.99,128772,7
+Ceftiofur ,7_C2D33_r03,524,1,197.0503,1,Ceftiofur_6,3.01,125934,7
+Ceftiofur ,7_C3D33_r01,524,1,197.0503,1,Ceftiofur_6,2.99,118151,7
+Ceftiofur ,7_C3D33_r02,524,1,197.0503,1,Ceftiofur_6,2.99,124308,7
+Ceftiofur ,7_C3D33_r03,524,1,197.0503,1,Ceftiofur_6,2.99,122638,7
+Ceftiofur ,7_C6D15_r01,524,1,197.0503,1,Ceftiofur_6,3.01,199191,7
+Ceftiofur ,7_C6D15_r02,524,1,197.0503,1,Ceftiofur_6,3.01,205005,7
+Ceftiofur ,7_C6D15_r03,524,1,197.0503,1,Ceftiofur_6,2.99,191445,7
+Ceftiofur ,7_C6D32_r01,524,1,197.0503,1,Ceftiofur_6,2.99,155478,7
+Ceftiofur ,7_C6D32_r02,524,1,197.0503,1,Ceftiofur_6,2.99,154802,7
+Ceftiofur ,7_C6D32_r03,524,1,197.0503,1,Ceftiofur_6,2.96,153448,7
+Ceftiofur ,7_C6D33_r01,524,1,197.0503,1,Ceftiofur_6,2.99,100507,7
+Ceftiofur ,7_C6D33_r02,524,1,197.0503,1,Ceftiofur_6,3.04,95528,7
+Ceftiofur ,7_C6D33_r03,524,1,197.0503,1,Ceftiofur_6,2.99,102375,7
+Ceftiofur ,7_C7D15_r01,524,1,197.0503,1,Ceftiofur_6,2.99,200293,7
+Ceftiofur ,7_C7D15_r02,524,1,197.0503,1,Ceftiofur_6,2.99,188525,7
+Ceftiofur ,7_C7D15_r03,524,1,197.0503,1,Ceftiofur_6,3.01,191481,7
+Ceftiofur ,7_C7D32_r01,524,1,197.0503,1,Ceftiofur_6,2.99,204807,7
+Ceftiofur ,7_C7D32_r02,524,1,197.0503,1,Ceftiofur_6,3.01,204007,7
+Ceftiofur ,7_C7D32_r03,524,1,197.0503,1,Ceftiofur_6,2.99,199763,7
+Ceftiofur ,7_C7D33_r01,524,1,197.0503,1,Ceftiofur_6,2.99,133167,7
+Ceftiofur ,7_C7D33_r02,524,1,197.0503,1,Ceftiofur_6,2.99,134480,7
+Ceftiofur ,7_C7D33_r03,524,1,197.0503,1,Ceftiofur_6,2.99,144916,7
+Ceftiofur ,7_D1D32_r01,524,1,197.0503,1,Ceftiofur_6,2.96,179810,7
+Ceftiofur ,7_D1D32_r02,524,1,197.0503,1,Ceftiofur_6,2.99,179242,7
+Ceftiofur ,7_D1D32_r03,524,1,197.0503,1,Ceftiofur_6,2.99,176227,7
+Ceftiofur ,7_D2D32_r01,524,1,197.0503,1,Ceftiofur_6,2.99,181515,7
+Ceftiofur ,7_D2D32_r02,524,1,197.0503,1,Ceftiofur_6,2.96,185807,7
+Ceftiofur ,7_D2D32_r03,524,1,197.0503,1,Ceftiofur_6,2.96,185708,7
+Ceftiofur ,7_D3D32_r01,524,1,197.0503,1,Ceftiofur_6,2.99,175911,7
+Ceftiofur ,7_D3D32_r02,524,1,197.0503,1,Ceftiofur_6,2.96,178340,7
+Ceftiofur ,7_D3D32_r03,524,1,197.0503,1,Ceftiofur_6,2.96,174716,7
+Ceftiofur ,6_A1D27_r01,524,1,324.0592,1,Ceftiofur_7,2.94,333248,4
+Ceftiofur ,6_A1D27_r02,524,1,324.0592,1,Ceftiofur_7,2.96,347213,4
+Ceftiofur ,6_A1D27_r03,524,1,324.0592,1,Ceftiofur_7,2.96,331469,4
+Ceftiofur ,6_A1D32_r01,524,1,324.0592,1,Ceftiofur_7,3.01,236794,4
+Ceftiofur ,6_A1D32_r02,524,1,324.0592,1,Ceftiofur_7,2.96,226467,4
+Ceftiofur ,6_A1D32_r03,524,1,324.0592,1,Ceftiofur_7,2.99,224329,4
+Ceftiofur ,6_A2D27_r01,524,1,324.0592,1,Ceftiofur_7,2.96,224262,4
+Ceftiofur ,6_A2D27_r02,524,1,324.0592,1,Ceftiofur_7,2.94,226423,4
+Ceftiofur ,6_A2D27_r03,524,1,324.0592,1,Ceftiofur_7,2.96,231068,4
+Ceftiofur ,6_A2D32_r01,524,1,324.0592,1,Ceftiofur_7,2.96,259755,4
+Ceftiofur ,6_A2D32_r02,524,1,324.0592,1,Ceftiofur_7,2.96,262592,4
+Ceftiofur ,6_A2D32_r03,524,1,324.0592,1,Ceftiofur_7,2.99,266679,4
+Ceftiofur ,6_A3D27_r01,524,1,324.0592,1,Ceftiofur_7,2.96,484899,4
+Ceftiofur ,6_A3D27_r02,524,1,324.0592,1,Ceftiofur_7,2.96,510926,4
+Ceftiofur ,6_A3D27_r03,524,1,324.0592,1,Ceftiofur_7,2.99,497490,4
+Ceftiofur ,6_A3D32_r01,524,1,324.0592,1,Ceftiofur_7,2.99,262916,4
+Ceftiofur ,6_A3D32_r02,524,1,324.0592,1,Ceftiofur_7,2.96,260917,4
+Ceftiofur ,6_A3D32_r03,524,1,324.0592,1,Ceftiofur_7,2.99,263879,4
+Ceftiofur ,6_B1D27_r01,524,1,324.0592,1,Ceftiofur_7,2.96,337599,4
+Ceftiofur ,6_B1D27_r02,524,1,324.0592,1,Ceftiofur_7,2.96,356620,4
+Ceftiofur ,6_B1D27_r03,524,1,324.0592,1,Ceftiofur_7,2.96,361089,4
+Ceftiofur ,6_B1D32_r01,524,1,324.0592,1,Ceftiofur_7,2.96,280291,4
+Ceftiofur ,6_B1D32_r02,524,1,324.0592,1,Ceftiofur_7,2.99,277763,4
+Ceftiofur ,6_B1D32_r03,524,1,324.0592,1,Ceftiofur_7,2.96,291904,4
+Ceftiofur ,6_B2D27_r01,524,1,324.0592,1,Ceftiofur_7,2.99,513910,4
+Ceftiofur ,6_B2D27_r02,524,1,324.0592,1,Ceftiofur_7,2.96,540942,4
+Ceftiofur ,6_B2D27_r03,524,1,324.0592,1,Ceftiofur_7,2.96,519900,4
+Ceftiofur ,6_B2D32_r01,524,1,324.0592,1,Ceftiofur_7,2.96,274617,4
+Ceftiofur ,6_B2D32_r02,524,1,324.0592,1,Ceftiofur_7,2.99,273174,4
+Ceftiofur ,6_B2D32_r03,524,1,324.0592,1,Ceftiofur_7,2.99,279264,4
+Ceftiofur ,6_B3D27_r01,524,1,324.0592,1,Ceftiofur_7,2.96,281342,4
+Ceftiofur ,6_B3D27_r02,524,1,324.0592,1,Ceftiofur_7,2.99,282158,4
+Ceftiofur ,6_B3D27_r03,524,1,324.0592,1,Ceftiofur_7,2.96,289001,4
+Ceftiofur ,6_B3D32_r01,524,1,324.0592,1,Ceftiofur_7,2.99,288715,4
+Ceftiofur ,6_B3D32_r02,524,1,324.0592,1,Ceftiofur_7,3.01,284899,4
+Ceftiofur ,6_B3D32_r03,524,1,324.0592,1,Ceftiofur_7,2.96,286656,4
+Ceftiofur ,6_C1D27_r01,524,1,324.0592,1,Ceftiofur_7,2.96,278101,4
+Ceftiofur ,6_C1D27_r02,524,1,324.0592,1,Ceftiofur_7,2.96,270810,4
+Ceftiofur ,6_C1D27_r03,524,1,324.0592,1,Ceftiofur_7,2.96,274661,4
+Ceftiofur ,6_C1D32_r01,524,1,324.0592,1,Ceftiofur_7,2.99,256426,4
+Ceftiofur ,6_C1D32_r02,524,1,324.0592,1,Ceftiofur_7,2.96,247290,4
+Ceftiofur ,6_C1D32_r03,524,1,324.0592,1,Ceftiofur_7,3.01,246165,4
+Ceftiofur ,6_C2D27_r01,524,1,324.0592,1,Ceftiofur_7,2.96,271376,4
+Ceftiofur ,6_C2D27_r02,524,1,324.0592,1,Ceftiofur_7,2.96,253875,4
+Ceftiofur ,6_C2D27_r03,524,1,324.0592,1,Ceftiofur_7,2.96,256529,4
+Ceftiofur ,6_C2D32_r01,524,1,324.0592,1,Ceftiofur_7,2.96,288347,4
+Ceftiofur ,6_C2D32_r02,524,1,324.0592,1,Ceftiofur_7,3.01,291679,4
+Ceftiofur ,6_C2D32_r03,524,1,324.0592,1,Ceftiofur_7,2.99,286516,4
+Ceftiofur ,6_C3D27_r01,524,1,324.0592,1,Ceftiofur_7,2.96,259035,4
+Ceftiofur ,6_C3D27_r02,524,1,324.0592,1,Ceftiofur_7,3.01,272731,4
+Ceftiofur ,6_C3D27_r03,524,1,324.0592,1,Ceftiofur_7,2.96,272353,4
+Ceftiofur ,6_C3D32_r01,524,1,324.0592,1,Ceftiofur_7,3.01,292727,4
+Ceftiofur ,6_C3D32_r02,524,1,324.0592,1,Ceftiofur_7,2.96,304215,4
+Ceftiofur ,6_C3D32_r03,524,1,324.0592,1,Ceftiofur_7,2.99,301025,4
+Ceftiofur ,6_D1D27_r01,524,1,324.0592,1,Ceftiofur_7,2.96,305830,4
+Ceftiofur ,6_D1D27_r02,524,1,324.0592,1,Ceftiofur_7,2.99,308324,4
+Ceftiofur ,6_D1D27_r03,524,1,324.0592,1,Ceftiofur_7,3.01,310477,4
+Ceftiofur ,6_D2D27_r01,524,1,324.0592,1,Ceftiofur_7,2.96,270898,4
+Ceftiofur ,6_D2D27_r02,524,1,324.0592,1,Ceftiofur_7,2.99,278447,4
+Ceftiofur ,6_D2D27_r03,524,1,324.0592,1,Ceftiofur_7,2.96,279512,4
+Ceftiofur ,6_D3D27_r01,524,1,324.0592,1,Ceftiofur_7,3.04,279360,4
+Ceftiofur ,6_D3D27_r02,524,1,324.0592,1,Ceftiofur_7,2.96,278762,4
+Ceftiofur ,6_D3D27_r03,524,1,324.0592,1,Ceftiofur_7,2.99,273309,4
+Ceftiofur ,7_A1D15_r01,524,1,324.0592,1,Ceftiofur_7,3.01,240422,4
+Ceftiofur ,7_A1D15_r02,524,1,324.0592,1,Ceftiofur_7,3.06,246270,4
+Ceftiofur ,7_A1D15_r03,524,1,324.0592,1,Ceftiofur_7,2.99,235772,4
+Ceftiofur ,7_A1D33_r01,524,1,324.0592,1,Ceftiofur_7,2.99,220828,4
+Ceftiofur ,7_A1D33_r02,524,1,324.0592,1,Ceftiofur_7,2.99,219784,4
+Ceftiofur ,7_A1D33_r03,524,1,324.0592,1,Ceftiofur_7,2.96,223123,4
+Ceftiofur ,7_A2D33_r01,524,1,324.0592,1,Ceftiofur_7,2.99,161583,4
+Ceftiofur ,7_A2D33_r02,524,1,324.0592,1,Ceftiofur_7,2.96,161347,4
+Ceftiofur ,7_A2D33_r03,524,1,324.0592,1,Ceftiofur_7,2.96,154357,4
+Ceftiofur ,7_A3D33_r01,524,1,324.0592,1,Ceftiofur_7,2.99,255706,4
+Ceftiofur ,7_A3D33_r02,524,1,324.0592,1,Ceftiofur_7,2.99,251572,4
+Ceftiofur ,7_A3D33_r03,524,1,324.0592,1,Ceftiofur_7,2.99,243055,4
+Ceftiofur ,7_A4D15_r01,524,1,324.0592,1,Ceftiofur_7,2.99,295938,4
+Ceftiofur ,7_A4D15_r02,524,1,324.0592,1,Ceftiofur_7,2.99,305382,4
+Ceftiofur ,7_A4D15_r03,524,1,324.0592,1,Ceftiofur_7,2.99,287193,4
+Ceftiofur ,7_A4D32_r01,524,1,324.0592,1,Ceftiofur_7,2.99,295533,4
+Ceftiofur ,7_A4D32_r02,524,1,324.0592,1,Ceftiofur_7,2.96,297446,4
+Ceftiofur ,7_A4D32_r03,524,1,324.0592,1,Ceftiofur_7,2.99,300615,4
+Ceftiofur ,7_A4D33_r01,524,1,324.0592,1,Ceftiofur_7,3.06,157555,4
+Ceftiofur ,7_A4D33_r02,524,1,324.0592,1,Ceftiofur_7,2.99,152360,4
+Ceftiofur ,7_A4D33_r03,524,1,324.0592,1,Ceftiofur_7,2.99,166732,4
+Ceftiofur ,7_A5D15_r01,524,1,324.0592,1,Ceftiofur_7,2.99,213694,4
+Ceftiofur ,7_A5D15_r02,524,1,324.0592,1,Ceftiofur_7,2.99,217121,4
+Ceftiofur ,7_A5D15_r03,524,1,324.0592,1,Ceftiofur_7,3.09,222510,4
+Ceftiofur ,7_A5D32_r01,524,1,324.0592,1,Ceftiofur_7,2.96,281941,4
+Ceftiofur ,7_A5D32_r02,524,1,324.0592,1,Ceftiofur_7,3.01,274924,4
+Ceftiofur ,7_A5D32_r03,524,1,324.0592,1,Ceftiofur_7,2.99,293955,4
+Ceftiofur ,7_A5D33_r01,524,1,324.0592,1,Ceftiofur_7,2.99,207287,4
+Ceftiofur ,7_A5D33_r02,524,1,324.0592,1,Ceftiofur_7,2.96,210663,4
+Ceftiofur ,7_A5D33_r03,524,1,324.0592,1,Ceftiofur_7,2.99,225094,4
+Ceftiofur ,7_C1D15_r01,524,1,324.0592,1,Ceftiofur_7,2.99,237781,4
+Ceftiofur ,7_C1D15_r02,524,1,324.0592,1,Ceftiofur_7,2.99,249307,4
+Ceftiofur ,7_C1D15_r03,524,1,324.0592,1,Ceftiofur_7,3.01,240392,4
+Ceftiofur ,7_C1D33_r01,524,1,324.0592,1,Ceftiofur_7,3.01,229794,4
+Ceftiofur ,7_C1D33_r02,524,1,324.0592,1,Ceftiofur_7,2.99,241172,4
+Ceftiofur ,7_C1D33_r03,524,1,324.0592,1,Ceftiofur_7,3.01,227550,4
+Ceftiofur ,7_C2D33_r01,524,1,324.0592,1,Ceftiofur_7,2.99,212598,4
+Ceftiofur ,7_C2D33_r02,524,1,324.0592,1,Ceftiofur_7,3.01,201881,4
+Ceftiofur ,7_C2D33_r03,524,1,324.0592,1,Ceftiofur_7,3.01,213759,4
+Ceftiofur ,7_C3D33_r01,524,1,324.0592,1,Ceftiofur_7,2.99,198189,4
+Ceftiofur ,7_C3D33_r02,524,1,324.0592,1,Ceftiofur_7,2.99,195262,4
+Ceftiofur ,7_C3D33_r03,524,1,324.0592,1,Ceftiofur_7,2.96,189981,4
+Ceftiofur ,7_C6D15_r01,524,1,324.0592,1,Ceftiofur_7,2.99,305479,4
+Ceftiofur ,7_C6D15_r02,524,1,324.0592,1,Ceftiofur_7,2.99,330337,4
+Ceftiofur ,7_C6D15_r03,524,1,324.0592,1,Ceftiofur_7,2.99,325601,4
+Ceftiofur ,7_C6D32_r01,524,1,324.0592,1,Ceftiofur_7,3.01,257441,4
+Ceftiofur ,7_C6D32_r02,524,1,324.0592,1,Ceftiofur_7,2.99,262127,4
+Ceftiofur ,7_C6D32_r03,524,1,324.0592,1,Ceftiofur_7,2.96,251609,4
+Ceftiofur ,7_C6D33_r01,524,1,324.0592,1,Ceftiofur_7,3.01,168232,4
+Ceftiofur ,7_C6D33_r02,524,1,324.0592,1,Ceftiofur_7,3.06,156997,4
+Ceftiofur ,7_C6D33_r03,524,1,324.0592,1,Ceftiofur_7,2.99,160186,4
+Ceftiofur ,7_C7D15_r01,524,1,324.0592,1,Ceftiofur_7,2.99,317069,4
+Ceftiofur ,7_C7D15_r02,524,1,324.0592,1,Ceftiofur_7,2.99,311516,4
+Ceftiofur ,7_C7D15_r03,524,1,324.0592,1,Ceftiofur_7,3.01,329551,4
+Ceftiofur ,7_C7D32_r01,524,1,324.0592,1,Ceftiofur_7,2.99,333424,4
+Ceftiofur ,7_C7D32_r02,524,1,324.0592,1,Ceftiofur_7,2.99,336508,4
+Ceftiofur ,7_C7D32_r03,524,1,324.0592,1,Ceftiofur_7,2.99,337560,4
+Ceftiofur ,7_C7D33_r01,524,1,324.0592,1,Ceftiofur_7,2.99,223263,4
+Ceftiofur ,7_C7D33_r02,524,1,324.0592,1,Ceftiofur_7,3.01,234420,4
+Ceftiofur ,7_C7D33_r03,524,1,324.0592,1,Ceftiofur_7,2.99,222196,4
+Ceftiofur ,7_D1D32_r01,524,1,324.0592,1,Ceftiofur_7,2.96,291140,4
+Ceftiofur ,7_D1D32_r02,524,1,324.0592,1,Ceftiofur_7,2.99,295555,4
+Ceftiofur ,7_D1D32_r03,524,1,324.0592,1,Ceftiofur_7,3.01,302028,4
+Ceftiofur ,7_D2D32_r01,524,1,324.0592,1,Ceftiofur_7,2.99,310273,4
+Ceftiofur ,7_D2D32_r02,524,1,324.0592,1,Ceftiofur_7,2.99,297145,4
+Ceftiofur ,7_D2D32_r03,524,1,324.0592,1,Ceftiofur_7,2.99,288443,4
+Ceftiofur ,7_D3D32_r01,524,1,324.0592,1,Ceftiofur_7,2.96,297181,4
+Ceftiofur ,7_D3D32_r02,524,1,324.0592,1,Ceftiofur_7,2.96,297380,4
+Ceftiofur ,7_D3D32_r03,524,1,324.0592,1,Ceftiofur_7,2.96,292999,4
+Ceftiofur ,6_A1D27_r01,524,1,156.023,1,Ceftiofur_8,2.96,107898,8
+Ceftiofur ,6_A1D27_r02,524,1,156.023,1,Ceftiofur_8,2.96,106788,8
+Ceftiofur ,6_A1D27_r03,524,1,156.023,1,Ceftiofur_8,2.96,105825,8
+Ceftiofur ,6_A1D32_r01,524,1,156.023,1,Ceftiofur_8,3.01,70626,8
+Ceftiofur ,6_A1D32_r02,524,1,156.023,1,Ceftiofur_8,2.96,74690,8
+Ceftiofur ,6_A1D32_r03,524,1,156.023,1,Ceftiofur_8,2.96,73837,8
+Ceftiofur ,6_A2D27_r01,524,1,156.023,1,Ceftiofur_8,2.96,72096,8
+Ceftiofur ,6_A2D27_r02,524,1,156.023,1,Ceftiofur_8,2.96,68957,8
+Ceftiofur ,6_A2D27_r03,524,1,156.023,1,Ceftiofur_8,2.94,66253,8
+Ceftiofur ,6_A2D32_r01,524,1,156.023,1,Ceftiofur_8,2.99,88538,8
+Ceftiofur ,6_A2D32_r02,524,1,156.023,1,Ceftiofur_8,2.96,84701,8
+Ceftiofur ,6_A2D32_r03,524,1,156.023,1,Ceftiofur_8,2.99,85561,8
+Ceftiofur ,6_A3D27_r01,524,1,156.023,1,Ceftiofur_8,2.99,169373,8
+Ceftiofur ,6_A3D27_r02,524,1,156.023,1,Ceftiofur_8,2.96,161663,8
+Ceftiofur ,6_A3D27_r03,524,1,156.023,1,Ceftiofur_8,2.99,161435,8
+Ceftiofur ,6_A3D32_r01,524,1,156.023,1,Ceftiofur_8,2.96,80129,8
+Ceftiofur ,6_A3D32_r02,524,1,156.023,1,Ceftiofur_8,2.96,87920,8
+Ceftiofur ,6_A3D32_r03,524,1,156.023,1,Ceftiofur_8,2.96,84209,8
+Ceftiofur ,6_B1D27_r01,524,1,156.023,1,Ceftiofur_8,2.99,111771,8
+Ceftiofur ,6_B1D27_r02,524,1,156.023,1,Ceftiofur_8,2.99,115145,8
+Ceftiofur ,6_B1D27_r03,524,1,156.023,1,Ceftiofur_8,2.94,112425,8
+Ceftiofur ,6_B1D32_r01,524,1,156.023,1,Ceftiofur_8,2.99,94124,8
+Ceftiofur ,6_B1D32_r02,524,1,156.023,1,Ceftiofur_8,2.99,91379,8
+Ceftiofur ,6_B1D32_r03,524,1,156.023,1,Ceftiofur_8,2.96,94271,8
+Ceftiofur ,6_B2D27_r01,524,1,156.023,1,Ceftiofur_8,2.99,169137,8
+Ceftiofur ,6_B2D27_r02,524,1,156.023,1,Ceftiofur_8,2.96,179287,8
+Ceftiofur ,6_B2D27_r03,524,1,156.023,1,Ceftiofur_8,2.96,181037,8
+Ceftiofur ,6_B2D32_r01,524,1,156.023,1,Ceftiofur_8,2.96,87722,8
+Ceftiofur ,6_B2D32_r02,524,1,156.023,1,Ceftiofur_8,2.99,83531,8
+Ceftiofur ,6_B2D32_r03,524,1,156.023,1,Ceftiofur_8,2.99,89489,8
+Ceftiofur ,6_B3D27_r01,524,1,156.023,1,Ceftiofur_8,2.99,96057,8
+Ceftiofur ,6_B3D27_r02,524,1,156.023,1,Ceftiofur_8,2.96,99063,8
+Ceftiofur ,6_B3D27_r03,524,1,156.023,1,Ceftiofur_8,2.96,90427,8
+Ceftiofur ,6_B3D32_r01,524,1,156.023,1,Ceftiofur_8,2.99,92254,8
+Ceftiofur ,6_B3D32_r02,524,1,156.023,1,Ceftiofur_8,3.01,97196,8
+Ceftiofur ,6_B3D32_r03,524,1,156.023,1,Ceftiofur_8,2.99,96108,8
+Ceftiofur ,6_C1D27_r01,524,1,156.023,1,Ceftiofur_8,2.96,91794,8
+Ceftiofur ,6_C1D27_r02,524,1,156.023,1,Ceftiofur_8,2.99,91147,8
+Ceftiofur ,6_C1D27_r03,524,1,156.023,1,Ceftiofur_8,2.96,85951,8
+Ceftiofur ,6_C1D32_r01,524,1,156.023,1,Ceftiofur_8,2.99,81678,8
+Ceftiofur ,6_C1D32_r02,524,1,156.023,1,Ceftiofur_8,2.96,78512,8
+Ceftiofur ,6_C1D32_r03,524,1,156.023,1,Ceftiofur_8,2.96,84481,8
+Ceftiofur ,6_C2D27_r01,524,1,156.023,1,Ceftiofur_8,2.99,78505,8
+Ceftiofur ,6_C2D27_r02,524,1,156.023,1,Ceftiofur_8,2.99,84084,8
+Ceftiofur ,6_C2D27_r03,524,1,156.023,1,Ceftiofur_8,2.96,84958,8
+Ceftiofur ,6_C2D32_r01,524,1,156.023,1,Ceftiofur_8,2.96,99702,8
+Ceftiofur ,6_C2D32_r02,524,1,156.023,1,Ceftiofur_8,3.01,96087,8
+Ceftiofur ,6_C2D32_r03,524,1,156.023,1,Ceftiofur_8,2.99,97057,8
+Ceftiofur ,6_C3D27_r01,524,1,156.023,1,Ceftiofur_8,2.96,85943,8
+Ceftiofur ,6_C3D27_r02,524,1,156.023,1,Ceftiofur_8,3.06,90677,8
+Ceftiofur ,6_C3D27_r03,524,1,156.023,1,Ceftiofur_8,2.96,88001,8
+Ceftiofur ,6_C3D32_r01,524,1,156.023,1,Ceftiofur_8,3.01,98372,8
+Ceftiofur ,6_C3D32_r02,524,1,156.023,1,Ceftiofur_8,2.99,102481,8
+Ceftiofur ,6_C3D32_r03,524,1,156.023,1,Ceftiofur_8,2.96,98615,8
+Ceftiofur ,6_D1D27_r01,524,1,156.023,1,Ceftiofur_8,3.01,105677,8
+Ceftiofur ,6_D1D27_r02,524,1,156.023,1,Ceftiofur_8,2.99,97631,8
+Ceftiofur ,6_D1D27_r03,524,1,156.023,1,Ceftiofur_8,3.01,99048,8
+Ceftiofur ,6_D2D27_r01,524,1,156.023,1,Ceftiofur_8,2.96,90493,8
+Ceftiofur ,6_D2D27_r02,524,1,156.023,1,Ceftiofur_8,2.96,88709,8
+Ceftiofur ,6_D2D27_r03,524,1,156.023,1,Ceftiofur_8,2.96,89905,8
+Ceftiofur ,6_D3D27_r01,524,1,156.023,1,Ceftiofur_8,3.01,91956,8
+Ceftiofur ,6_D3D27_r02,524,1,156.023,1,Ceftiofur_8,2.94,87465,8
+Ceftiofur ,6_D3D27_r03,524,1,156.023,1,Ceftiofur_8,2.99,92374,8
+Ceftiofur ,7_A1D15_r01,524,1,156.023,1,Ceftiofur_8,2.99,76485,8
+Ceftiofur ,7_A1D15_r02,524,1,156.023,1,Ceftiofur_8,3.04,72016,8
+Ceftiofur ,7_A1D15_r03,524,1,156.023,1,Ceftiofur_8,3.04,82445,8
+Ceftiofur ,7_A1D33_r01,524,1,156.023,1,Ceftiofur_8,2.99,72491,8
+Ceftiofur ,7_A1D33_r02,524,1,156.023,1,Ceftiofur_8,3.01,69711,8
+Ceftiofur ,7_A1D33_r03,524,1,156.023,1,Ceftiofur_8,3.01,69682,8
+Ceftiofur ,7_A2D33_r01,524,1,156.023,1,Ceftiofur_8,2.99,53986,8
+Ceftiofur ,7_A2D33_r02,524,1,156.023,1,Ceftiofur_8,2.99,50818,8
+Ceftiofur ,7_A2D33_r03,524,1,156.023,1,Ceftiofur_8,2.96,54676,8
+Ceftiofur ,7_A3D33_r01,524,1,156.023,1,Ceftiofur_8,2.99,82406,8
+Ceftiofur ,7_A3D33_r02,524,1,156.023,1,Ceftiofur_8,3.04,79846,8
+Ceftiofur ,7_A3D33_r03,524,1,156.023,1,Ceftiofur_8,2.99,81832,8
+Ceftiofur ,7_A4D15_r01,524,1,156.023,1,Ceftiofur_8,2.99,95726,8
+Ceftiofur ,7_A4D15_r02,524,1,156.023,1,Ceftiofur_8,3.04,96954,8
+Ceftiofur ,7_A4D15_r03,524,1,156.023,1,Ceftiofur_8,3.01,96734,8
+Ceftiofur ,7_A4D32_r01,524,1,156.023,1,Ceftiofur_8,2.99,95380,8
+Ceftiofur ,7_A4D32_r02,524,1,156.023,1,Ceftiofur_8,2.96,96226,8
+Ceftiofur ,7_A4D32_r03,524,1,156.023,1,Ceftiofur_8,3.01,96528,8
+Ceftiofur ,7_A4D33_r01,524,1,156.023,1,Ceftiofur_8,3.01,50627,8
+Ceftiofur ,7_A4D33_r02,524,1,156.023,1,Ceftiofur_8,3.04,54582,8
+Ceftiofur ,7_A4D33_r03,524,1,156.023,1,Ceftiofur_8,3.01,49529,8
+Ceftiofur ,7_A5D15_r01,524,1,156.023,1,Ceftiofur_8,3.01,70432,8
+Ceftiofur ,7_A5D15_r02,524,1,156.023,1,Ceftiofur_8,2.99,63526,8
+Ceftiofur ,7_A5D15_r03,524,1,156.023,1,Ceftiofur_8,3.09,68056,8
+Ceftiofur ,7_A5D32_r01,524,1,156.023,1,Ceftiofur_8,2.99,92909,8
+Ceftiofur ,7_A5D32_r02,524,1,156.023,1,Ceftiofur_8,2.99,92924,8
+Ceftiofur ,7_A5D32_r03,524,1,156.023,1,Ceftiofur_8,2.96,96211,8
+Ceftiofur ,7_A5D33_r01,524,1,156.023,1,Ceftiofur_8,2.99,70255,8
+Ceftiofur ,7_A5D33_r02,524,1,156.023,1,Ceftiofur_8,2.96,73014,8
+Ceftiofur ,7_A5D33_r03,524,1,156.023,1,Ceftiofur_8,2.99,77530,8
+Ceftiofur ,7_C1D15_r01,524,1,156.023,1,Ceftiofur_8,2.99,79935,8
+Ceftiofur ,7_C1D15_r02,524,1,156.023,1,Ceftiofur_8,2.99,79832,8
+Ceftiofur ,7_C1D15_r03,524,1,156.023,1,Ceftiofur_8,3.01,78920,8
+Ceftiofur ,7_C1D33_r01,524,1,156.023,1,Ceftiofur_8,2.99,73837,8
+Ceftiofur ,7_C1D33_r02,524,1,156.023,1,Ceftiofur_8,2.96,79089,8
+Ceftiofur ,7_C1D33_r03,524,1,156.023,1,Ceftiofur_8,2.99,72734,8
+Ceftiofur ,7_C2D33_r01,524,1,156.023,1,Ceftiofur_8,3.01,69395,8
+Ceftiofur ,7_C2D33_r02,524,1,156.023,1,Ceftiofur_8,2.99,67961,8
+Ceftiofur ,7_C2D33_r03,524,1,156.023,1,Ceftiofur_8,3.01,69626,8
+Ceftiofur ,7_C3D33_r01,524,1,156.023,1,Ceftiofur_8,2.99,62128,8
+Ceftiofur ,7_C3D33_r02,524,1,156.023,1,Ceftiofur_8,2.96,63099,8
+Ceftiofur ,7_C3D33_r03,524,1,156.023,1,Ceftiofur_8,2.96,62709,8
+Ceftiofur ,7_C6D15_r01,524,1,156.023,1,Ceftiofur_8,2.99,110103,8
+Ceftiofur ,7_C6D15_r02,524,1,156.023,1,Ceftiofur_8,3.01,107390,8
+Ceftiofur ,7_C6D15_r03,524,1,156.023,1,Ceftiofur_8,2.99,105773,8
+Ceftiofur ,7_C6D32_r01,524,1,156.023,1,Ceftiofur_8,2.99,87540,8
+Ceftiofur ,7_C6D32_r02,524,1,156.023,1,Ceftiofur_8,2.99,82178,8
+Ceftiofur ,7_C6D32_r03,524,1,156.023,1,Ceftiofur_8,2.99,78530,8
+Ceftiofur ,7_C6D33_r01,524,1,156.023,1,Ceftiofur_8,2.99,50198,8
+Ceftiofur ,7_C6D33_r02,524,1,156.023,1,Ceftiofur_8,3.04,54170,8
+Ceftiofur ,7_C6D33_r03,524,1,156.023,1,Ceftiofur_8,2.99,50228,8
+Ceftiofur ,7_C7D15_r01,524,1,156.023,1,Ceftiofur_8,2.99,102029,8
+Ceftiofur ,7_C7D15_r02,524,1,156.023,1,Ceftiofur_8,2.99,102978,8
+Ceftiofur ,7_C7D15_r03,524,1,156.023,1,Ceftiofur_8,3.04,103238,8
+Ceftiofur ,7_C7D32_r01,524,1,156.023,1,Ceftiofur_8,3.01,109345,8
+Ceftiofur ,7_C7D32_r02,524,1,156.023,1,Ceftiofur_8,3.04,107273,8
+Ceftiofur ,7_C7D32_r03,524,1,156.023,1,Ceftiofur_8,2.96,104773,8
+Ceftiofur ,7_C7D33_r01,524,1,156.023,1,Ceftiofur_8,3.01,68325,8
+Ceftiofur ,7_C7D33_r02,524,1,156.023,1,Ceftiofur_8,2.99,77618,8
+Ceftiofur ,7_C7D33_r03,524,1,156.023,1,Ceftiofur_8,2.99,71042,8
+Ceftiofur ,7_D1D32_r01,524,1,156.023,1,Ceftiofur_8,2.96,94476,8
+Ceftiofur ,7_D1D32_r02,524,1,156.023,1,Ceftiofur_8,2.99,91622,8
+Ceftiofur ,7_D1D32_r03,524,1,156.023,1,Ceftiofur_8,3.01,93313,8
+Ceftiofur ,7_D2D32_r01,524,1,156.023,1,Ceftiofur_8,3.01,89526,8
+Ceftiofur ,7_D2D32_r02,524,1,156.023,1,Ceftiofur_8,2.99,95991,8
+Ceftiofur ,7_D2D32_r03,524,1,156.023,1,Ceftiofur_8,2.96,96778,8
+Ceftiofur ,7_D3D32_r01,524,1,156.023,1,Ceftiofur_8,2.99,94100,8
+Ceftiofur ,7_D3D32_r02,524,1,156.023,1,Ceftiofur_8,2.96,98276,8
+Ceftiofur ,7_D3D32_r03,524,1,156.023,1,Ceftiofur_8,2.99,92889,8

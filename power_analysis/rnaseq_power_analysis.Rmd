@@ -152,6 +152,8 @@ if (!file.exists("data/power_rnaseq.rds")) {
 ```
 
 ```{r, fig.width = 10, fig.height = 8}
+library(dplyr)
+
 evalDE <- evaluateDE(sim, alpha.type = "adjusted", MTC = "BH", 
                      alpha.nominal = 0.05, stratify.by = "mean")
 plotEvalDE(evalDE, rate = "stratified", annot = FALSE)

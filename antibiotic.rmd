@@ -1,0 +1,72 @@
+---
+title: "Antibiotics quantification"
+output: html_notebook
+---
+
+# Antibiotics quantification
+
+```{r}
+library(mbtools)
+```
+
+## Dilution curve
+
+```{r}
+dilution <- fread("data/seaweed/cefoperazone_calibration_2ul.csv")
+dilution[, c("id", "replicate") := tstrsplit(Replicate, "_")]
+dilution[, "concentration_on_column" := `concentration ug/mL` / 8]
+mod <- lm(concentration_on_column ~ Area, data = dilution)
+summary(mod)
+```
+
+## Fecal samples
+
+Let's start by reading the data.
+
+```{r}
+cefoperazone_fecal <- fread("data/seaweed/cefoperazone_fecal_5ul.csv")
+cefoperazone_fecal[, 
+  c("hplc_batch", "id", "replicate") := tstrsplit(Replicate, "_")]
+cefoperazone_fecal[, c("mouse", "day") := list(
+  substr(id, 1, 2), substr(id, 4, 5))]
+cefoperazone_fecal[, "Replicate" := NULL]
+metadata_fecal <- fread("data/seaweed/cefoperazone_fecal_metadata.csv")[
+  , "day" := as.character(day)]
+cefoperazone_fecal <- metadata_fecal[cefoperazone_fecal, on = c("id", "day")]
+```
+
+Now let's compare the levels of cefoperazone.
+
+```{r}
+library(ggplot2)
+theme_set(theme_minimal())
+
+cef <- cefoperazone_fecal[Compound == "Cefoperazone" & `Fragment Ion` == "Cefoperazone_t1"]
+cef[, "concentration" := coef(mod)[1] + coef(mod)[2] * Area * 2/5 * 250]
+ggplot(cef, aes(x = response, y = concentration, color = response)) +
+  geom_boxplot(outlier.color = NA) + geom_jitter(height = 0, width = 0.2) +
+  labs(y = "concentration [µg/mL]", x="") +
+  facet_wrap(~ day, scales="free_y")
+```
+
+## Plasma data
+
+```{r}
+cefoperazone_plasma <- fread("data/seaweed/cefoperazone_plasma_5ul.csv")
+cefoperazone_plasma[, 
+  c("mouse", "replicate") := tstrsplit(Replicate, "_")]
+cefoperazone_plasma[, "Replicate" := NULL]
+metadata_plasma <- fread("data/seaweed/cefoperazone_plasma_metadata.csv")[
+  , "day" := as.character(day)][, "mouse" := id]
+cefoperazone_plasma <- metadata_plasma[cefoperazone_plasma, on = c("mouse")]
+```
+
+And let's visualize this again:
+
+```{r}
+cef <- cefoperazone_plasma[Compound == "Cefoperazone" & `Fragment Ion` == "Cefoperazone_t1"]
+cef[, "concentration" := coef(mod)[1] + coef(mod)[2] * Area * 2/5 * 250]
+ggplot(cef, aes(x = response, y = concentration, color = response)) +
+  labs(y = "concentration [µg/mL]", x="") +
+  geom_boxplot() + geom_jitter(height = 0, width = 0.2)
+```
