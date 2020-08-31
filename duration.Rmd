@@ -98,8 +98,8 @@ pl
 We can see that most of the Cyanobacteria and Proteobacteria are actually Chloroplasts and Mitochondria:
 
 ```{r}
-non_non-responders <- subset_samples(total, Response == "responder")
-cyano_proteo <- subset_taxa(non_non-responders, 
+non_responders <- subset_samples(total, Response == "responder")
+cyano_proteo <- subset_taxa(non_responders, 
                             Phylum %in% c("Cyanobacteria", "Proteobacteria"))
 class <- taxa_count(cyano_proteo, "Order")[order(-reads), sum(reads), by = taxa]
 fam <- taxa_count(cyano_proteo, "Family")[order(-reads), sum(reads), by = taxa]
