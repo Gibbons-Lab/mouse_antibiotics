@@ -15,8 +15,9 @@ library(mbtools)
 dilution <- fread("data/seaweed/cefoperazone_calibration_2ul.csv")
 dilution[, c("id", "replicate") := tstrsplit(Replicate, "_")]
 dilution[, "concentration_on_column" := `concentration ug/mL` / 8]
-mod <- lm(concentration_on_column ~ Area, data = dilution)
+mod <- lm(concentration_on_column ~ 0 + Area, data = dilution)
 summary(mod)
+ggplot(dilution, aes(x=Area, y=concentration_on_column)) + geom_point() + stat_smooth(method="lm")
 ```
 
 ## Fecal samples
@@ -35,21 +36,26 @@ metadata_fecal <- fread("data/seaweed/cefoperazone_fecal_metadata.csv")[
 cefoperazone_fecal <- metadata_fecal[cefoperazone_fecal, on = c("id", "day")]
 ```
 
-Now let's compare the levels of cefoperazone.
+Now let's compare the levels of cefoperazone. Men fecal pellet weight was 50mg which was suspended in a volume of 850ul. This olution was then diluted 1:250 before loading.
 
-```{r}
+```{r, fig.width=8, fig.height=3}
 library(ggplot2)
 theme_set(theme_minimal())
 
 cef <- cefoperazone_fecal[Compound == "Cefoperazone" & `Fragment Ion` == "Cefoperazone_t1"]
-cef[, "concentration" := coef(mod)[1] + coef(mod)[2] * Area * 2/5 * 250]
-ggplot(cef, aes(x = response, y = concentration, color = response)) +
+cef[, "concentration" := coef(mod)[1] * Area * 2/5 * 850/50 * 250]
+ggplot(cef, aes(x = day, y = concentration, color = response)) +
+  geom_hline(yintercept=4, lty="dashed") +
   geom_boxplot(outlier.color = NA) + geom_jitter(height = 0, width = 0.2) +
-  labs(y = "concentration [µg/mL]", x="") +
-  facet_wrap(~ day, scales="free_y")
+  labs(y = "fecal concentration [µg/mL]", x="") + guides(color=F) +
+  facet_wrap(~ response)
+ggsave("figures/fecal_AB.svg", width=8, height=3)
 ```
 
+
 ## Plasma data
+
+For blood we dilute 50ul plasma in a total volume of 600ul and this was diluted 1:1 again after centrifugation. So we have a total dilution of 24-fold.
 
 ```{r}
 cefoperazone_plasma <- fread("data/seaweed/cefoperazone_plasma_5ul.csv")
@@ -63,10 +69,11 @@ cefoperazone_plasma <- metadata_plasma[cefoperazone_plasma, on = c("mouse")]
 
 And let's visualize this again:
 
-```{r}
+```{r, fig.width = 4, fig.height=3}
 cef <- cefoperazone_plasma[Compound == "Cefoperazone" & `Fragment Ion` == "Cefoperazone_t1"]
-cef[, "concentration" := coef(mod)[1] + coef(mod)[2] * Area * 2/5 * 250]
+cef[, "concentration" := coef(mod)[1] * Area * 2/5 * 24 * 1e3]
 ggplot(cef, aes(x = response, y = concentration, color = response)) +
-  labs(y = "concentration [µg/mL]", x="") +
+  labs(y = "concentration [ng/mL]", x="") +
   geom_boxplot() + geom_jitter(height = 0, width = 0.2)
+ggsave("figures/blood_AB.svg", width=4, height=3)
 ```

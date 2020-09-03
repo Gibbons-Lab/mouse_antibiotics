@@ -26,17 +26,18 @@ ps
 
 Now lets have a look at ordination.
 
-```{r}
+```{r, fig.width=6, fig.height=4}
 theme_set(theme_bw())
 
 rare <- rarefy_even_depth(ps, 20000)
 sample_data(rare)$Days <- factor(sample_data(rare)$Days)
 ord <- ordinate(rare, method="PCoA")
 
-plot_ordination(rare, ord, color="Response", shape="Treatment") +
+plot_ordination(rare, ord, color="Response", shape="Treatment", label="Subject") +
     stat_ellipse(aes(group = Response), type = "t") +
     scale_shape_manual(values = c(before = 1, during = 10)) +
     labs(shape = "sample time")
+ggsave("figures/additional_pcoa.svg", width=6, height=4)
 ```
 
 Let's see if the response ype can not be distinguished from the initial samples.
@@ -54,4 +55,32 @@ So can not be distinguished before, but can be distinguished after:
 during <- subset_samples(rare, Treatment == "during")
 model <- vegan::adonis(otu_table(during) ~ Response, data=as(sample_data(during), "data.frame"))
 model
+```
+
+```{r}
+phyla <- taxa_count(ps, "Phylum")
+
+sdata <- as.data.table(as(sample_data(ps), "data.frame"))
+phyla <- phyla[sdata, on = c(sample = "group_id")]
+head(phyla)
+```
+
+Phyla distributions:
+
+```{r, fig.height = 5, fig.width = 8}
+phyla[, relative := reads / sum(reads), by = "sample"]
+phyla[, "seaweed" := "seaweed diet"]
+phyla[grepl("A|B", Subject), seaweed := "normal diet"]
+
+high_taxa <- phyla[relative > 1e-2, unique(taxa)] 
+
+pl <- ggplot(phyla[taxa %in% high_taxa], 
+             aes(x = factor(Days), y = relative, fill = taxa)) + 
+  geom_bar(stat = "identity", position = "fill") + 
+  scale_y_continuous(labels = scales::percent) +
+  facet_grid(seaweed ~ Response) + 
+  theme_classic() +
+  labs(x = "day", y = "relative abundance", fill = "phylum")
+ggsave("figures/phyla_day_seaweed.png", height = 5, width = 8, dpi = 300)
+pl
 ```

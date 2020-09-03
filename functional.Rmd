@@ -170,8 +170,8 @@ pl
 Lets see the most prominent pathways in the significant hits for day 29.
 
 ```{r}
-sig <- tests[day == 29 & padj < 0.05]
-sig[, .N, by = "subpathway"][order(-N)]
+sig <- tests[padj < 0.05]
+sig[, .(n=.N, coef=median(log2FoldChange)), by = c("subpathway", "coefficient", "day")][order(day, -n)]
 ```
 
 Lets have a look at some of the obvious pathways:

@@ -288,7 +288,7 @@ Phyla distributions:
 ```{r, fig.height = 5, fig.width = 8}
 phyla[, relative := reads / sum(reads), by = Sample]
 pl <- ggplot(phyla[taxa %in% high_taxa], 
-             aes(x = factor(DaysElapsed), y = reads, fill = taxa)) + 
+             aes(x = factor(DaysElapsed), y = relative, fill = taxa)) + 
   geom_bar(stat = "identity", position = "fill") + 
   scale_y_continuous(labels = scales::percent) +
   facet_grid(c("normal diet", "seaweed diet")[as.numeric(seaweed) + 1] ~ Response) + 

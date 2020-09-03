@@ -29,28 +29,6 @@ phyla <- phyla[sdata, on = c(sample = "Description")]
 head(phyla)
 ```
 
-# Community collapse
-
-Microbial collapse usually implies a lower bacterial biomass compared with background signals such as DNA from food and the host.
-
-```{r}
-chloro_mit <- subset_taxa(ps, 
-                          Class == "Chloroplast" | Family == "Mitochondria")
-rel <- data.table(sample = sample_names(ps), 
-                  relative = sample_sums(chloro_mit) / sample_sums(ps))
-rel <- sdata[rel, on = c(Description = "sample")]
-```
-
-Let's have a look at the proportion of Mitochondria or Choloroplasts by duration.
-
-```{r, fig.width=3, fig.height=4}
-ggplot(rel, aes(x = TimepointCat, y = relative, color = Response)) +
-  geom_hline(yintercept = 0.1, lty="dashed") +
-  geom_jitter(width=0.2) +
-  labs(x="sample time", y="Mitochondria/Chloroplasts [fraction of total]") +
-  theme(axis.text.x = element_text(angle = 30, hjust = 1, vjust = 1))
-ggsave("figures/duration_chloro_mit.svg", width=3, height=4)
-```
 
 # Phyla abundances
 
@@ -95,6 +73,8 @@ ggsave("figures/treatment_duration.png", height = 4, width = 8, dpi = 300)
 pl
 ```
 
+# Community collap
+
 We can see that most of the Cyanobacteria and Proteobacteria are actually Chloroplasts and Mitochondria:
 
 ```{r}
@@ -105,6 +85,34 @@ class <- taxa_count(cyano_proteo, "Order")[order(-reads), sum(reads), by = taxa]
 fam <- taxa_count(cyano_proteo, "Family")[order(-reads), sum(reads), by = taxa]
 print(class[, .(taxa, relative = V1 / sum(V1))])
 print(fam[, .(taxa, relative = V1 / sum(V1))])
+```
+
+Microbial collapse usually implies a lower bacterial biomass compared with background signals such as DNA from food and the host.
+
+```{r}
+chloro_mit <- subset_taxa(ps, 
+                          Class == "Chloroplast" | Family == "Mitochondria")
+rel <- data.table(sample = sample_names(ps), 
+                  relative = sample_sums(chloro_mit) / sample_sums(ps))
+rel <- sdata[rel, on = c(Description = "sample")]
+```
+
+Let's have a look at the proportion of Mitochondria or Choloroplasts by duration.
+
+```{r, fig.width=3, fig.height=4}
+ggplot(rel, aes(x = TimepointCat, y = relative, color = Response)) +
+  geom_hline(yintercept = 0.1, lty="dashed") +
+  geom_jitter(width=0.2) +
+  labs(x="sample time", y="Mitochondria/Chloroplasts [fraction of total]") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1, vjust = 1))
+ggsave("figures/duration_chloro_mit.svg", width=3, height=4)
+```
+
+Corresponding test
+
+```{r}
+print(rel[TimepointCat == "during", mean(relative), by="Response"])[, diff(V1)]
+wilcox.test(relative ~ Response, rel[TimepointCat == "during"])
 ```
 
 ## Summarized
@@ -245,21 +253,26 @@ for (lev in status_counts[, unique(status)]) {
 
 ## Shannon index
 
-```{r, fig.width=6, fig.height=4}
+```{r, fig.width=5, fig.height=4}
 shannon <- estimate_richness(rarefy_even_depth(total, 10000), 
                              measures = "Shannon")
 shannon <- data.table(sample = rownames(shannon), shannon = shannon[, 1])
 shannon <- shannon[sdata, on = c(sample = "Description")]
 shannon[Day >= 0 & Day < 32, Day := Day - duration]
+shannon[, "exposure" := sprintf("%dd exposure", duration)]
+shannon[duration == 0, exposure := "no antibiotics"]
 
 pl <- ggplot(shannon[Day >= -1 & Day < 10], 
              aes(x = Day, y = shannon, color = Response)) + 
-  #geom_line(alpha=0.25, aes(group=Mouse)) +  
-  stat_summary(fun.data = mean_sdl, fun.args = list(mult = 1), 
-               geom = "pointrange") +
-  stat_summary(fun.data = mean_sdl, fun.args = list(mult = 1), geom = "line") +
+  geom_point(aes(group=Mouse)) +
+  geom_line(aes(group=Mouse)) +  
+  #stat_summary(fun.data = mean_sdl, fun.args = list(mult = 1), 
+  #             geom = "pointrange") +
+  #stat_summary(fun.data = mean_sdl, fun.args = list(mult = 1), geom = "line") +
   xlim(-1, 8) + theme_bw() + 
-  labs(y = "alpha diversity [Shannon index]", x = "days after treatment")
+  labs(y = "alpha diversity [Shannon index]", x = "days after treatment", color = "") +
+  facet_wrap(~ reorder(exposure, duration)) +
+  theme(legend.position = c(0.85, 0.25))
 ggsave("figures/shannon_time.svg", width = 6, height = 4)
 pl
 ```

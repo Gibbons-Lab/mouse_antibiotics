@@ -7,6 +7,7 @@ output: html_notebook
 
 ```{r}
 library(mbtools)
+theme_set(theme_bw())
 
 counts <- fread("data/rnaseq/txcounts.csv")
 counts[, sample := tstrsplit(sample, "-")[[3]]]
@@ -18,7 +19,7 @@ counts[, transcript := NULL]
 counts <- as.matrix(counts)
 rownames(counts) <- nm
 
-meta <- fread("data/rnaseq/seq_samples.csv", key="Sample")[colnames(counts)]
+meta <- fread("data/rnaseq/seq_samples.csv", key="Sample")
 meta[, day := substr(Sample, 4, 6)]
 meta[, mouse := substr(Sample, 1, 3)]
 meta
@@ -67,7 +68,8 @@ ggplot(contigs, aes(x=factor(count))) +
 ggsave("figures/contig_counts.svg", width = 6, height = 4)
 ```
 
-We will also filter low abundance transcripts from the count matrix.
+
+We filter low abundance transcripts from the count matrix.
 
 ```{r}
 counts <- t(filter_counts(t(counts), abundance = 10, presence = 0.25))
@@ -90,45 +92,6 @@ ggplot(red[day == 29], aes(x = PC1, y = PC2, shape = day, color = type)) +
 ggsave("figures/transcript_pca.svg", width = 6, height = 4)
 ```
 
-## With responders
-
-```{r, message = FALSE, warning = FALSE}
-library(DESeq2)
-
-setkey(meta, Sample)
-meta <- meta[colnames(counts)]
-
-days <- c(20, 25, 29) 
-tests <- list()
-for (d in days) {
-  ds <- DESeqDataSetFromMatrix(counts[, meta$day == d], meta[day == d], ~ RIN + type)
-  ds <- DESeq(ds, parallel = TRUE)
-  res <- results(ds)
-  res <- lfcShrink(ds, 3, parallel = TRUE)
-  res$id <- rownames(res)
-  coef_name <- resultsNames(ds)[3]
-  res <- as.data.table(res)
-  res[, day := d]
-  res[, coefficient := coef_name]
-  tests[[d]] <- res
-}
-
-tests <- rbindlist(tests)
-```
-
-We will merge this with the annotations for the contigs.
-
-```{r}
-anns <- fread("data/rnaseq/transcripts_seed.csv")
-tests <- anns[tests, on = c(query = "id")]
-sig <- tests[padj < 0.05][order(padj)]
-```
-
-However if we compare the dimensions:
-
-```{r}
-tests[day == 29, table(padj < 0.05)]
-```
 
 So more than a third of all tests are significant. We can also check that by day.
 
