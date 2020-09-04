@@ -165,21 +165,20 @@ To see the large transcriptional shift we can use a volcano plot:
 day_labels <- sig_counts[order(day), 
                          sprintf("day %d - %2.1f%%", day, 100 * ptr)]
 
-pl <- ggplot(tests, aes(x = log2FoldChange, y = -log10(pvalue), 
+ggplot(tests, aes(x = log2FoldChange, y = -log10(pvalue), 
                         color = factor(day))) +
   geom_vline(xintercept = 0, lty = "dashed") +
   geom_point(aes(size = (padj < 0.05 & !is.na(padj))), 
              alpha = 0.5, stroke = 0) + 
   scale_size_discrete(range = c(1, 2)) + guides(size = "none") +
   facet_wrap(~ coefficient) +
-  theme_minimal() + theme(legend.position = c(0.15, 0.9), 
+  theme_minimal() + theme(legend.position = c(0.5, 0.9), 
                      legend.background = element_blank(),
                      legend.key = element_blank(),
                      legend.text = element_text(size = 10)) + 
   labs(x = "log2 fold change", color = "") + 
   scale_color_discrete(labels = day_labels)
 ggsave("figures/volcano_functional.png", height = 3.5, width = 8, dpi = 300)
-pl
 ```
 
 Lets see the most prominent pathways in the significant hits.
