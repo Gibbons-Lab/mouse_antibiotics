@@ -120,7 +120,19 @@ ggsave("figures/treatment_pcoa_seaweed.svg", width = 6, height = 4)
 pl  
 ```
 
-And the corresponding PERMANOVA
+And the corresponding PERMANOVA for all samples:
+
+```{r}
+library(vegan)
+
+allresp <- rarefy_even_depth(treat, 5000)
+counts <- as.matrix(taxa_count(allresp, NA))
+sda <- as(sample_data(allresp), "data.frame")
+permanova <- adonis(counts ~ seaweed*Response, data = sda)
+permanova
+```
+
+...and only controls vs. non-responders:
 
 ```{r}
 library(vegan)
@@ -201,6 +213,10 @@ ggsave("figures/qpcr_vs_chloro_mit.svg", height = 4, width = 6)
 pl
 ```
 
+```{r}
+rel[DaysElapsed == 31, cor.test(1/Ct, relative, method="spearman")]
+```
+
 Or rather do it with discretized cycle times.
 
 ```{r, fig.height=4, fig.width=4.5}
@@ -223,7 +239,8 @@ And there is also a relationship between the fraction of Chloroplasts and Mitoch
 and Response:
 
 ```{r}
-pairwise.wilcox.test(rel[, relative], rel[, Response], 
+rel[Days==31, table(Response)]
+pairwise.wilcox.test(rel[Days==31, relative], rel[Days==31, Response], 
                      p.adjust.method = "bonferroni")
 ```
 
@@ -253,6 +270,16 @@ pl <- ggplot(weights, aes(x=day, y=weight)) +
   labs(x = "time [days]", y = "weight [g]") + guides(color = "none")
 ggsave("figures/weights_seaweed.svg", width = 7, height = 4)
 pl
+```
+
+```{r}
+window <- weights[Response == "responder" & day>35 & day<40]
+print(nrow(window))
+wilcox.test(weight ~ seaweed, data=window)
+
+window <- weights[Response != "non-responder" & day>35 & day<40]
+print(nrow(window))
+wilcox.test(weight ~ Response, data=weights[Response != "non-responder" & day>35 & day<40])
 ```
 
 ## Diet effect on diversity

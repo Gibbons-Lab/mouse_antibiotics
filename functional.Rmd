@@ -75,10 +75,16 @@ pca <- prcomp(log2(mbtools::normalize(t(count_mat)) + 0.5))
 explained <- pca$sdev^2 / sum(pca$sdev^2)
 red <- as.data.table(pca$x)
 red[, sample := rownames(pca$x)]
-red <- meta[red, on = c(Sample = "sample")][day == 29]
-ggplot(red, aes(x = PC1, y = PC2, color = type)) + geom_point(size = 2) +
+red <- meta[red, on = c(Sample = "sample")]
+red[, "type" := factor(type, c("untreated", "non-responder", "responder"))]
+red[, "timepoint_cat" := "before"]
+red[day >= 27, "timepoint_cat" := "during"]
+ggplot(red, aes(x = PC1, y = PC2, color = type, shape=timepoint_cat)) + geom_point(size = 2) +
   labs(x = sprintf("PC1 (%.1f%%)", explained[1] * 100), 
-       y = sprintf("PC2 (%.1f%%)", explained[2] * 100)) +
+       y = sprintf("PC2 (%.1f%%)", explained[2] * 100),
+       shape = "sample time") +
+  stat_ellipse(aes(group = type), type = "t") +
+  scale_shape_manual(values = c(before = 1, during = 19)) +
   theme_bw()
 ggsave("figures/functional_pca.svg", width = 6, height = 4)
 ```
@@ -88,8 +94,16 @@ PERMANOVA:
 ```{r}
 library(vegan)
 
-counts <- log2(mbtools::normalize(t(count_mat[, meta$day >= 29])) + 0.5)
-permanova <- adonis2(counts ~ type, data = meta[meta$day >= 29], 
+counts <- log2(mbtools::normalize(t(count_mat)) + 0.5)
+permanova <- adonis2(counts ~ day*type, data = meta, 
+                     method = "euclidean")
+permanova
+```
+
+We can also check for only respondersr vs controls before.
+
+```{r}
+permanova <- adonis2(counts[meta$day < 29, ] ~ type, data = meta[day < 29], 
                      method = "euclidean")
 permanova
 ```
@@ -108,10 +122,10 @@ days <- c(20, 25, 29)
 tests <- list()
 for (d in days) {
   ds <- DESeqDataSetFromMatrix(count_mat[, meta$day == d], 
-                               meta[day == d], ~ RIN + type)
-  ds <- DESeq(ds, parallel = TRUE, fitType = "local")
-  res <- results(ds)
-  res <- lfcShrink(ds, 3, parallel = TRUE)
+                               colData=meta[day == d], design=~ RIN + type)
+  ds <- DESeq(ds, parallel = FALSE, fitType = "local")
+  res <- lfcShrink(ds, coef=3, parallel = TRUE)
+  print(resultsNames(ds))
   res$id <- rownames(res)
   coef_name <- resultsNames(ds)[3]
   res <- as.data.table(res)
@@ -147,7 +161,7 @@ ggplot(tests, aes(x = pvalue)) + geom_histogram(bins = 20) + theme_bw()
 
 To see the large transcriptional shift we can use a volcano plot:
 
-```{r, fig.height=4, fig.width=5}
+```{r, fig.height=3.5, fig.width=8}
 day_labels <- sig_counts[order(day), 
                          sprintf("day %d - %2.1f%%", day, 100 * ptr)]
 
@@ -157,21 +171,23 @@ pl <- ggplot(tests, aes(x = log2FoldChange, y = -log10(pvalue),
   geom_point(aes(size = (padj < 0.05 & !is.na(padj))), 
              alpha = 0.5, stroke = 0) + 
   scale_size_discrete(range = c(1, 2)) + guides(size = "none") +
-  theme_bw() + theme(legend.position = c(0.15, 0.9), 
+  facet_wrap(~ coefficient) +
+  theme_minimal() + theme(legend.position = c(0.15, 0.9), 
                      legend.background = element_blank(),
                      legend.key = element_blank(),
                      legend.text = element_text(size = 10)) + 
   labs(x = "log2 fold change", color = "") + 
   scale_color_discrete(labels = day_labels)
-ggsave("figures/volcano_functional.png", height = 4, width = 5, dpi = 300)
+ggsave("figures/volcano_functional.png", height = 3.5, width = 8, dpi = 300)
 pl
 ```
 
-Lets see the most prominent pathways in the significant hits for day 29.
+Lets see the most prominent pathways in the significant hits.
 
-```{r}
+```{r, fig.height=40, fig.width=10}
 sig <- tests[padj < 0.05]
-sig[, .(n=.N, coef=median(log2FoldChange)), by = c("subpathway", "coefficient", "day")][order(day, -n)]
+cn <- sig[, .(n=.N, coef=median(log2FoldChange)), by = c("subpathway", "coefficient", "day")][order(day, -n)]
+ggplot(cn, aes(x=n, y=reorder(subpathway, n), fill=coefficient)) + geom_bar(stat="identity", position="stack")
 ```
 
 Lets have a look at some of the obvious pathways:

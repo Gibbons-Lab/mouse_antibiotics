@@ -36,7 +36,7 @@ metadata_fecal <- fread("data/seaweed/cefoperazone_fecal_metadata.csv")[
 cefoperazone_fecal <- metadata_fecal[cefoperazone_fecal, on = c("id", "day")]
 ```
 
-Now let's compare the levels of cefoperazone. Men fecal pellet weight was 50mg which was suspended in a volume of 850ul. This olution was then diluted 1:250 before loading.
+Now let's compare the levels of cefoperazone. Men fecal pellet weight was 50mg which was suspended in a volume of 850ul. This olution was then diluted 1:250 before loading. We also injected 2ul in the calibration curve but 5ul here. So we will adjust for that as well.
 
 ```{r, fig.width=8, fig.height=3}
 library(ggplot2)
@@ -73,7 +73,7 @@ And let's visualize this again:
 cef <- cefoperazone_plasma[Compound == "Cefoperazone" & `Fragment Ion` == "Cefoperazone_t1"]
 cef[, "concentration" := coef(mod)[1] * Area * 2/5 * 24 * 1e3]
 ggplot(cef, aes(x = response, y = concentration, color = response)) +
-  labs(y = "concentration [ng/mL]", x="") +
+  labs(y = "plasma concentration [ng/mL]", x="") +
   geom_boxplot() + geom_jitter(height = 0, width = 0.2)
 ggsave("figures/blood_AB.svg", width=4, height=3)
 ```
