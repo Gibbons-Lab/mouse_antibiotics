@@ -19,6 +19,8 @@ counts[, sample := tstrsplit(sample, "-")[[3]]]
 meta <- fread("data/rnaseq/seq_samples.csv", key = "Sample")
 meta[, day := substr(Sample, 4, 6)]
 meta[, mouse := substr(Sample, 1, 2)]
+meta[, "timepoint_cat" := "before"]
+meta[day >= 27, "timepoint_cat" := "during"]
 meta
 ```
 
@@ -77,12 +79,11 @@ red <- as.data.table(pca$x)
 red[, sample := rownames(pca$x)]
 red <- meta[red, on = c(Sample = "sample")]
 red[, "type" := factor(type, c("untreated", "non-responder", "responder"))]
-red[, "timepoint_cat" := "before"]
-red[day >= 27, "timepoint_cat" := "during"]
 ggplot(red, aes(x = PC1, y = PC2, color = type, shape=timepoint_cat)) + geom_point(size = 2) +
   labs(x = sprintf("PC1 (%.1f%%)", explained[1] * 100), 
        y = sprintf("PC2 (%.1f%%)", explained[2] * 100),
        shape = "sample time") +
+  stat_ellipse(data = red[timepoint_cat == "before"], color="black", lty="dashed") +
   stat_ellipse(aes(group = type), type = "t") +
   scale_shape_manual(values = c(before = 1, during = 19)) +
   theme_bw()
@@ -94,17 +95,13 @@ PERMANOVA:
 ```{r}
 library(vegan)
 
-counts <- log2(mbtools::normalize(t(count_mat)) + 0.5)
-permanova <- adonis2(counts ~ day*type, data = meta, 
-                     method = "euclidean")
-permanova
-```
+cn <- log2(mbtools::normalize(t(count_mat)) + 0.5)
 
-We can also check for only respondersr vs controls before.
-
-```{r}
-permanova <- adonis2(counts[meta$day < 29, ] ~ type, data = meta[day < 29], 
-                     method = "euclidean")
+permanova <- lapply(c("before", "during"), function(cat) {
+  adonis(cn[meta$timepoint_cat == cat, ] ~ type, 
+         data = meta[timepoint_cat == cat], 
+         method = "euclidean")
+})
 permanova
 ```
 
@@ -201,6 +198,8 @@ norm_counts <- t(mbtools::normalize(t(count_mat)))[, meta$day == 29]
 
 keyword <- "Motility"
 selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
+signs <- sig[grepl(keyword, superpathway), table(sign(log2FoldChange))]
+names(signs) <- c("higher in non-responders", "higer in untreated")
 rownames(selected) <- stringr::str_trunc(sig[grepl(keyword, superpathway), 
                                              description], 80)
 anns <- data.frame(type = meta[day == 29, type])
@@ -212,6 +211,7 @@ pheatmap(log10(selected + 1), annotation_col = anns, annotation_colors = cols,
          filename = sprintf("figures/heatmap_%s.pdf", keyword), 
          cellwidth = 10, cellheight = 10, legend_breaks = 0:6)
 
+signs
 pheatmap(log10(selected + 1), annotation_col = anns, annotation_colors = cols,
          color = viridis(128), legend_breaks = 0:6)
 ```

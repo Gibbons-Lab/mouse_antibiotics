@@ -81,7 +81,6 @@ sdata <- as(sample_data(seaweed), "data.frame")
 sdata$TimepointCat <- "before"
 sdata$TimepointCat[sdata$Days == 31] <- "during"
 sdata$TimepointCat[sdata$Days > 31] <- "after"
-sdata$TimepointCat[sdata$Response == "cnt"] <- "before"
 sdata$TimepointCat <- factor(sdata$TimepointCat, 
                              levels = c("before", "during", "after"))
 sdata$Response <- factor(map[as.character(sdata$Response)], 

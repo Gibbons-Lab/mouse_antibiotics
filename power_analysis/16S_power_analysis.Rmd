@@ -9,7 +9,7 @@ for the data. We will model counts using Beta-Binomial model as used in
 `corncob` package first.
 
 ```{r}
-devtools::install_github("bryandmartin/corncob")
+remotes::install_github("bryandmartin/corncob")
 ```
 
 We can now start running power analyses for the data. For that we will use a reference dataset
@@ -29,6 +29,10 @@ rownames(meta) <- rownames(seqtab)
 ref <- phyloseq(otu_table(seqtab, taxa_are_rows = FALSE), tax_table(taxa),
                 sample_data(meta))
 ref <- subset_samples(ref, Treatment == "NC")
+
+# remove unclear genus
+ref <- subset_taxa(ref, Genus != "Incertae_Sedis")
+ref <- rarefy_even_depth(ref, 10000)
 ```
 
 This leaves us with 48 samples. We will now generate new data from the fitted
@@ -48,7 +52,7 @@ so on.
 ```{r}
 if (!file.exists("data/permanova_power.csv")) {
   pa <- power_analysis(ref, fraction_differential = 0.1,
-                       n = ceiling(2 ^ seq(2, 6, length.out = 12) / 2) * 2)
+                       threads = 16, n_power = 10, n_groups = 10, min_mu = 1e-3)
   power <- pa$power
   fwrite(power, "data/permanova_power.csv")
 } else {
@@ -71,14 +75,14 @@ ggplot(power[effect > 0], aes(x = n, y = power, col = asym_r2,
 ggsave("figures/permanova_power.svg", width = 5, height = 3)
 ```
 
-We can also look at the false discovery rate which is simply the power for a zero effect (no true difference).
+We can also look at the false discovery rate.
 
 ```{r, fig.width = 4, fig.height = 3}
-ggplot(power[effect == 0], aes(x = n, y = power, group = effect)) +
-  scale_x_log10() + ylim(0, 0.1) +
+ggplot(power[effect == 0.5], aes(x = n, y = fdr)) +
+  scale_x_log10() + ylim(-0.3, 0.6) +
   geom_hline(yintercept = 0.05, lty = "dashed") + 
   geom_point() + geom_line() +
-  geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd)) +
+  geom_linerange(aes(ymin = fdr - fdr_sd, ymax = fdr + fdr_sd)) +
   labs(y = "false discovery rate", color = "R2 [log10]")
 ggsave("figures/permanova_fdr.svg", width = 4, height = 3)
 ```
@@ -90,11 +94,15 @@ look at ranks more detailed than genus so we will summarize the data on that lev
 is that power will depend on the proportion. Very rare taxa will have lower power.
 
 ```{r}
+source("../helpers.R")
+
 if (!file.exists("data/mw_power.csv")) {
-  pa <- power_analysis(tax_glom(ref, "Genus"), 
-                       fraction_differential = 0.5, method = "mw")
-  power <- pa$power
-  fwrite(power, "data/mw_power.csv")
+  collapsed <- collapse(ref, "Genus", 0)
+  pa <- power_analysis(collapsed, 
+                       fraction_differential = 0.5, method = "mw", threads=16, 
+                       n_power=10, n_groups=10, min_mu = 1e-3)
+  mw_power <- pa$power
+  fwrite(mw_power, "data/mw_power.csv")
 } else {
   mw_power <- fread("data/mw_power.csv")
 }
@@ -104,7 +112,7 @@ And we can visualize the power curves again. Since we have an additional level o
 this time (individual taxa), we will stratify by the effect size (fold change).
 
 ```{r, fig.width = 5, fig.height = 3}
-power <- mw_power[mu>1e-3, .(power = mean(power), power_sd = sd(power)), by = c("effect", "n")]
+power <- mw_power
 power[, "fold_change" := 1 / (1 - effect)]
 label <- as_labeller(function(x) sprintf("fold change = %.2gx", as.numeric(x)))
 ggplot(power[effect > 0], aes(x = n, y = power, col=factor(round(fold_change, 1)), group=fold_change)) +
@@ -117,14 +125,60 @@ ggplot(power[effect > 0], aes(x = n, y = power, col=factor(round(fold_change, 1)
 ggsave("figures/mw_power.png", width = 5, height = 3, dpi = 300)
 ```
 
-And we can agin estimate the FDR:
+And we can again estimate the FDR:
 
 ```{r, fig.width = 4, fig.height = 3}
-ggplot(power[effect == 0], aes(x = n, y = power)) +
+ggplot(power[effect > 0], aes(x = n, y = fdr, group=effect, color=factor(round(fold_change, 1)))) +
   scale_x_log10() + ylim(0, 0.1) +
   geom_hline(yintercept = 0.05, lty = "dashed") + 
   geom_point() + geom_line() +
-  geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd)) + 
-  labs(y = "false discovery rate", color = "signal/noise [log10]")
+  geom_linerange(aes(ymin = fdr - fdr_sd, ymax = fdr + fdr_sd)) + 
+  labs(y = "false discovery rate", color = "fold change")
 ggsave("figures/mw_fdr.svg", width = 4, height = 3)
+```
+
+## Corncob power analysis
+
+```{r}
+source("../helpers.R")
+
+if (!file.exists("data/cc_power.csv")) {
+  collapsed <- collapse(ref, "Genus", 0)
+  pa <- power_analysis(
+    collapsed, method = "corncob", threads=16, min_mu=1e-3, n_power = 10, n_groups = 10)
+  cc_power <- pa$power
+  fwrite(cc_power, "data/cc_power.csv")
+} else {
+  cc_power <- fread("data/cc_power.csv")
+}
+```
+
+
+And we can visualize the power curves again. Since we have an additional level of information
+this time (individual taxa), we will stratify by the effect size (fold change).
+
+```{r, fig.width = 5, fig.height = 3}
+power <- cc_power
+power[, "fold_change" := 1 / (1 - effect)]
+label <- as_labeller(function(x) sprintf("fold change = %.2gx", as.numeric(x)))
+ggplot(power[effect > 0], aes(x = n, y = power, col=factor(round(fold_change, 1)), group=fold_change)) +
+  scale_x_log10() +
+  geom_hline(yintercept = 0.8, lty = "dashed") + 
+  geom_point(size=2) + geom_line(size = 1) +
+  geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd),
+                 alpha = 0.5) +
+  labs(color = "fold change")
+ggsave("figures/cc_power.png", width = 5, height = 3, dpi = 300)
+```
+
+And we can again estimate the FDR:
+
+```{r, fig.width = 4, fig.height = 3}
+ggplot(power[effect > 0], aes(x = n, y = fdr, group=effect, color=factor(round(fold_change, 1)))) +
+  scale_x_log10() + ylim(0, 0.1) +
+  geom_hline(yintercept = 0.05, lty = "dashed") + 
+  geom_point() + geom_line() +
+  geom_linerange(aes(ymin = fdr - fdr_sd, ymax = fdr + fdr_sd)) + 
+  labs(y = "false discovery rate", color = "fold change")
+ggsave("figures/cc_fdr.svg", width = 4, height = 3)
 ```

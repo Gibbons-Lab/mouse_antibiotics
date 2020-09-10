@@ -111,8 +111,12 @@ Okay so we can easily rarefy to 10k reads.
 ord <- rarefy_even_depth(treat, 5000) %>% 
        ordinate(., method = "PCoA", distance = "bray")
 
+data <- plot_ordination(treat, ord, color = "Response", 
+                      shape = "TimepointCat", justDF = T)
 pl <- plot_ordination(treat, ord, color = "Response", 
                       shape = "TimepointCat") +
+      stat_ellipse(data = data[data$TimepointCat == "before", ], 
+                   aes(group = TimepointCat), lty = "dashed") +
       stat_ellipse(aes(group = Response), type = "t") +
       scale_shape_manual(values = c(before = 1, during = 10, after = 19)) +
       labs(shape = "sample time") + theme_bw()
@@ -147,14 +151,62 @@ permanova
 
 So seaweed is not related to the response type.
 
-To see which taxa mostly drive that:
+## Differential tests
+
+We will use corn cob to test for differences in abundance between responders and non-responders for each timepoint category.
+
+We will use a few helpers to summarize the tables and corncob output.
 
 ```{r}
-coef <- permanova$coefficients["Response1", ]
-coeffs <- as(tax_table(ps)[names(coef), ], "matrix") %>% as.data.table
-coeffs[, coef := coef]
-coeffs[order(-abs(coef)), !"sequence", with = F]
+source("helpers.R")
 ```
+
+### For phyla
+
+```{r}
+library(corncob)
+
+phylum <- subset_samples(ps, Response != "control" & TimepointCat == "during") %>% collapse("Phylum")
+
+tests <- differentialTest(
+  formula = ~ Response,
+  phi.formula = ~ 1,
+  formula_null = ~ 1,
+  phi.formula_null = ~ 1,
+  data = phylum,
+  test = "LRT",
+  boot = F
+) %>% results_table()
+
+```
+
+```{r}
+fwrite(tests[order(padj)], "data/tests_seaweed_during_phyla.csv")
+tests[padj < 0.05]
+```
+
+For genera:
+
+```{r}
+genera <- subset_samples(ps, Response != "control" & TimepointCat == "during") %>% collapse("Genus")
+
+tests <- differentialTest(
+  formula = ~ Response,
+  phi.formula = ~ 1,
+  formula_null = ~ 1,
+  phi.formula_null = ~ 1,
+  data = genera,
+  test = "LRT",
+  boot = F
+) %>% results_table()
+
+```
+
+```{r}
+fwrite(tests[order(padj)], "data/tests_seaweed_during_genera.csv")
+tests[padj < 0.05]
+```
+
 
 # Relationship with qPCR cycle numbers
 
@@ -163,7 +215,6 @@ pl <- ggplot(sdata[DaysElapsed == 31], aes(x = Response, y = 1 / Ct,
                                            col = Response)) +
   geom_boxplot(width=0.5) + geom_jitter(width = 0.3) +
   guides(color = "none") + labs(x = "", y = "qPCR abundance [1/Ct]") +
-  geom_hline(yintercept = 0.07, lty = "dashed") +
   theme_bw() + theme(axis.text.x = element_text(angle = 30, hjust = 1, 
                                                 vjust = 1)) 
 ggsave("figures/qpcr_cycles.svg", width = 1.5, height = 4)

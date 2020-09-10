@@ -91,12 +91,3 @@ ggplot(red[day == 29], aes(x = PC1, y = PC2, shape = day, color = type)) +
   theme_bw()
 ggsave("figures/transcript_pca.svg", width = 6, height = 4)
 ```
-
-
-So more than a third of all tests are significant. We can also check that by day.
-
-```{r}
-tests[, sum(padj < 0.05, na.rm = T) / sum(!is.na(padj)), by = c("day", "coef_name")]
-```
-
-This is still below the nominal p-value, but the transcripts themselves are sample specific. 

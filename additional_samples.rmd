@@ -3,7 +3,7 @@ title: "Additional seaweed samples (validation)"
 output: html_notebook
 ---
 
-Let's import the additional samples to check whether there were differences prior to antibiotic treatment.
+Let's import the additional samples to check whether there were differences prior to antibiotic TimepointCat.
 
 ```{r}
 library(mbtools)
@@ -18,7 +18,7 @@ sdata <- merge(
   unique(manifest[, c("Subject", "Response")]), 
   by = "Subject"
 )
-sdata[["Treatment"]] <- c("before", "during")[(sdata$Days >= 27) + 1] %>% factor()
+sdata[["TimepointCat"]] <- c("before", "during")[(sdata$Days >= 27) + 1] %>% factor()
 rownames(sdata) <- sdata$group_id
 sample_data(ps) <- sdata
 ps
@@ -33,7 +33,10 @@ rare <- rarefy_even_depth(ps, 20000)
 sample_data(rare)$Days <- factor(sample_data(rare)$Days)
 ord <- ordinate(rare, method="PCoA")
 
-plot_ordination(rare, ord, color="Response", shape="Treatment", label="Subject") +
+data <- plot_ordination(rare, ord, color="Response", shape="TimepointCat", label="Subject", justDF=T)
+plot_ordination(rare, ord, color="Response", shape="TimepointCat", label="Subject") +
+    stat_ellipse(data = data[data$TimepointCat == "before", ],
+                 aes(group = TimepointCat), type = "t", lty="dashed") +
     stat_ellipse(aes(group = Response), type = "t") +
     scale_shape_manual(values = c(before = 1, during = 10)) +
     labs(shape = "sample time")
@@ -44,7 +47,7 @@ Let's see if the response ype can not be distinguished from the initial samples.
 
 
 ```{r}
-before <- subset_samples(rare, Treatment == "before")
+before <- subset_samples(rare, TimepointCat == "before")
 model <- vegan::adonis(otu_table(before) ~ Response, data=as(sample_data(before), "data.frame"))
 model
 ```
@@ -52,7 +55,7 @@ model
 So can not be distinguished before, but can be distinguished after:
 
 ```{r}
-during <- subset_samples(rare, Treatment == "during")
+during <- subset_samples(rare, TimepointCat == "during")
 model <- vegan::adonis(otu_table(during) ~ Response, data=as(sample_data(during), "data.frame"))
 model
 ```
@@ -83,4 +86,72 @@ pl <- ggplot(phyla[taxa %in% high_taxa],
   labs(x = "day", y = "relative abundance", fill = "phylum")
 ggsave("figures/phyla_day_seaweed.png", height = 5, width = 8, dpi = 300)
 pl
+```
+
+## Differential tests
+
+We will use corn cob to test for differences in abundance between responders and non-responders for each timepoint category.
+
+We will use a few helpers to summarize the tables and corncob output.
+
+```{r}
+source("helpers.R")
+```
+
+### For phyla
+
+```{r}
+library(corncob)
+
+phylum <- subset_samples(ps, Response != "control") %>% collapse("Phylum")
+cats <- levels(sample_data(phylum)$TimepointCat)
+xtabs(~ Response + TimepointCat, as(sample_data(phylum), "data.frame"))
+
+tests <- lapply(cats, function(cat) {
+  tests <- differentialTest(
+    formula = ~ Response,
+    phi.formula = ~ 1,
+    formula_null = ~ 1,
+    phi.formula_null = ~ 1,
+    data = prune_samples(sample_data(phylum)$TimepointCat == cat, phylum),
+    test = "LRT",
+    boot = F
+  ) %>% results_table()
+  tests$TimepointCat <- cat
+  tests
+}) %>% rbindlist()
+```
+
+```{r}
+fwrite(tests[order(padj)], "data/tests_additional_phyla.csv")
+tests[padj<0.05, table(TimepointCat)]
+tests[padj < 0.05 & TimepointCat == "during"]
+```
+
+For genera:
+
+```{r}
+genera <- subset_samples(ps, Response != "control") %>% collapse("Genus")
+cats <- levels(sample_data(genera)$TimepointCat)
+
+tests <- lapply(cats, function(cat) {
+  tests <- differentialTest(
+    formula = ~ Response,
+    phi.formula = ~ 1,
+    formula_null = ~ 1,
+    phi.formula_null = ~ 1,
+    data = prune_samples(sample_data(genera)$TimepointCat == cat, genera),
+    test = "LRT",
+    boot = F
+  ) %>% results_table()
+  tests$TimepointCat <- cat
+  tests
+}) %>% rbindlist()
+
+```
+
+```{r}
+fwrite(tests[order(padj)], "data/tests_additional_genera.csv")
+tests[padj<0.05, table(TimepointCat)]
+tests[padj < 0.05 & TimepointCat == "during"]
 ```
