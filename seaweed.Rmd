@@ -166,7 +166,7 @@ source("helpers.R")
 ```{r}
 library(corncob)
 
-phylum <- subset_samples(ps, Response != "control" & TimepointCat == "during") %>% collapse("Phylum")
+phylum <- subset_samples(ps, Response != "response" & TimepointCat == "during") %>% collapse("Phylum")
 
 tests <- differentialTest(
   formula = ~ Response,
@@ -188,7 +188,7 @@ tests[padj < 0.05]
 For genera:
 
 ```{r}
-genera <- subset_samples(ps, Response != "control" & TimepointCat == "during") %>% collapse("Genus")
+genera <- subset_samples(ps, Response != "responder" & TimepointCat == "during") %>% collapse("Genus")
 
 tests <- differentialTest(
   formula = ~ Response,
@@ -204,7 +204,7 @@ tests <- differentialTest(
 
 ```{r}
 fwrite(tests[order(padj)], "data/tests_seaweed_during_genera.csv")
-tests[padj < 0.05]
+tests[order(padj)]
 ```
 
 

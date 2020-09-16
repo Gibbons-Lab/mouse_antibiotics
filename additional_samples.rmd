@@ -125,7 +125,7 @@ tests <- lapply(cats, function(cat) {
 ```{r}
 fwrite(tests[order(padj)], "data/tests_additional_phyla.csv")
 tests[padj<0.05, table(TimepointCat)]
-tests[padj < 0.05 & TimepointCat == "during"]
+tests[padj < 0.05]
 ```
 
 For genera:
@@ -153,5 +153,5 @@ tests <- lapply(cats, function(cat) {
 ```{r}
 fwrite(tests[order(padj)], "data/tests_additional_genera.csv")
 tests[padj<0.05, table(TimepointCat)]
-tests[padj < 0.05 & TimepointCat == "during"]
+tests[padj < 0.05 & TimepointCat == "before"]
 ```

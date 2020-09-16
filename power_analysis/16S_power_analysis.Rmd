@@ -32,7 +32,6 @@ ref <- subset_samples(ref, Treatment == "NC")
 
 # remove unclear genus
 ref <- subset_taxa(ref, Genus != "Incertae_Sedis")
-ref <- rarefy_even_depth(ref, 10000)
 ```
 
 This leaves us with 48 samples. We will now generate new data from the fitted
@@ -51,8 +50,8 @@ so on.
 
 ```{r}
 if (!file.exists("data/permanova_power.csv")) {
-  pa <- power_analysis(ref, fraction_differential = 0.1,
-                       threads = 16, n_power = 10, n_groups = 10, min_mu = 1e-3)
+  pa <- power_analysis(rarefy_even_depth(ref), fraction_differential = 0.1, min_mu_over_phi = 0.1, min_mu=1e-6, 
+                       threads = 16, n_power = 10, n_groups = 10)
   power <- pa$power
   fwrite(power, "data/permanova_power.csv")
 } else {
@@ -68,7 +67,7 @@ theme_set(theme_minimal())
 ggplot(power[effect > 0], aes(x = n, y = power, col = asym_r2, 
                               group = effect)) +
   scale_x_log10() + 
-  geom_hline(yintercept = 0.8, lty = "dashed") + 
+  geom_hline(yintercept = c(0.5, 0.8), lty = "dashed") + 
   geom_point(size = 2) + geom_line(size = 1) +
   geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd)) +
   labs(color = expression(R^2))
@@ -79,7 +78,7 @@ We can also look at the false discovery rate.
 
 ```{r, fig.width = 4, fig.height = 3}
 ggplot(power[effect == 0.5], aes(x = n, y = fdr)) +
-  scale_x_log10() + ylim(-0.3, 0.6) +
+  scale_x_log10() +
   geom_hline(yintercept = 0.05, lty = "dashed") + 
   geom_point() + geom_line() +
   geom_linerange(aes(ymin = fdr - fdr_sd, ymax = fdr + fdr_sd)) +
@@ -97,10 +96,10 @@ is that power will depend on the proportion. Very rare taxa will have lower powe
 source("../helpers.R")
 
 if (!file.exists("data/mw_power.csv")) {
-  collapsed <- collapse(ref, "Genus", 0)
+  collapsed <- collapse(ref, "Genus", 0, 1)
   pa <- power_analysis(collapsed, 
-                       fraction_differential = 0.5, method = "mw", threads=16, 
-                       n_power=10, n_groups=10, min_mu = 1e-3)
+                       fraction_differential = 0.1, method = "mw", threads=16, 
+                       n_power=10, n_groups=10, min_mu = 1e-3, min_mu_over_phi=0)
   mw_power <- pa$power
   fwrite(mw_power, "data/mw_power.csv")
 } else {
@@ -117,7 +116,7 @@ power[, "fold_change" := 1 / (1 - effect)]
 label <- as_labeller(function(x) sprintf("fold change = %.2gx", as.numeric(x)))
 ggplot(power[effect > 0], aes(x = n, y = power, col=factor(round(fold_change, 1)), group=fold_change)) +
   scale_x_log10() +
-  geom_hline(yintercept = 0.8, lty = "dashed") + 
+  geom_hline(yintercept = c(0.5, 0.8), lty = "dashed") + 
   geom_point(size=2) + geom_line(size = 1) +
   geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd),
                  alpha = 0.5) +
@@ -128,8 +127,9 @@ ggsave("figures/mw_power.png", width = 5, height = 3, dpi = 300)
 And we can again estimate the FDR:
 
 ```{r, fig.width = 4, fig.height = 3}
-ggplot(power[effect > 0], aes(x = n, y = fdr, group=effect, color=factor(round(fold_change, 1)))) +
-  scale_x_log10() + ylim(0, 0.1) +
+fdr <- power[effect > 0, .(fdr = mean(fdr), fdr_sd = sd(fdr)), by = "n"]
+ggplot(fdr, aes(x = n, y = fdr)) +
+  scale_x_log10() +
   geom_hline(yintercept = 0.05, lty = "dashed") + 
   geom_point() + geom_line() +
   geom_linerange(aes(ymin = fdr - fdr_sd, ymax = fdr + fdr_sd)) + 
@@ -143,9 +143,9 @@ ggsave("figures/mw_fdr.svg", width = 4, height = 3)
 source("../helpers.R")
 
 if (!file.exists("data/cc_power.csv")) {
-  collapsed <- collapse(ref, "Genus", 0)
+  collapsed <- collapse(ref, "Genus", 0, 1)
   pa <- power_analysis(
-    collapsed, method = "corncob", threads=16, min_mu=1e-3, n_power = 10, n_groups = 10)
+    collapsed, method = "corncob", threads=16, min_mu=1e-4, min_mu_over_phi=1, n_power = 10, n_groups = 10)
   cc_power <- pa$power
   fwrite(cc_power, "data/cc_power.csv")
 } else {
@@ -163,7 +163,7 @@ power[, "fold_change" := 1 / (1 - effect)]
 label <- as_labeller(function(x) sprintf("fold change = %.2gx", as.numeric(x)))
 ggplot(power[effect > 0], aes(x = n, y = power, col=factor(round(fold_change, 1)), group=fold_change)) +
   scale_x_log10() +
-  geom_hline(yintercept = 0.8, lty = "dashed") + 
+  geom_hline(yintercept = c(0.5, 0.8), lty = "dashed") + 
   geom_point(size=2) + geom_line(size = 1) +
   geom_linerange(aes(ymin = power - power_sd, ymax = power + power_sd),
                  alpha = 0.5) +
@@ -174,8 +174,9 @@ ggsave("figures/cc_power.png", width = 5, height = 3, dpi = 300)
 And we can again estimate the FDR:
 
 ```{r, fig.width = 4, fig.height = 3}
-ggplot(power[effect > 0], aes(x = n, y = fdr, group=effect, color=factor(round(fold_change, 1)))) +
-  scale_x_log10() + ylim(0, 0.1) +
+fdr <- power[effect > 0, .(fdr = mean(fdr), fdr_sd = sd(fdr)), by = "n"]
+ggplot(fdr, aes(x = n, y = fdr)) +
+  scale_x_log10() +
   geom_hline(yintercept = 0.05, lty = "dashed") + 
   geom_point() + geom_line() +
   geom_linerange(aes(ymin = fdr - fdr_sd, ymax = fdr + fdr_sd)) + 

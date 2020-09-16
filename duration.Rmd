@@ -177,14 +177,27 @@ pl
 
 # Corresponding PERMANOVA
 
+Before exposure:
 ```{r}
 library(vegan)
 
-ps <- subset_samples(treat, Response != "responder") %>% 
+ps <- subset_samples(treat, TimepointCat == "before") %>% 
       rarefy_even_depth(., 10000)
 counts <- as.matrix(taxa_count(ps, NA))
 sda <- as(sample_data(ps), "data.frame")
-permanova <- adonis(counts ~ since_treatment*Response, data = sda)
+permanova <- adonis(counts ~ Response, data = sda)
+permanova
+```
+
+After exposure:
+```{r}
+library(vegan)
+
+ps <- subset_samples(treat, TimepointCat != "before") %>% 
+      rarefy_even_depth(., 10000)
+counts <- as.matrix(taxa_count(ps, NA))
+sda <- as(sample_data(ps), "data.frame")
+permanova <- adonis(counts ~ Response, data = sda)
 permanova
 ```
 
@@ -289,19 +302,20 @@ Controls vs non-responders
 ```{r}
 library(corncob)
 
-phylum <- subset_samples(treat, Response != "responder") %>% collapse("Phylum")
+phylum <- subset_samples(treat, TimepointCat == "before") %>% collapse("Phylum", 1e-3)
 
 tests <- differentialTest(
   formula = ~ Response,
   phi.formula = ~ 1,
   formula_null = ~ 1,
   phi.formula_null = ~ 1,
-  data = prune_samples(sample_data(phylum)$TimepointCat == cat, phylum),
+  data = phylum,
   test = "LRT",
   boot = F
 ) %>% results_table()
 
-tests
+fwrite(tests, "data/tests_duration_phyla_controls.csv")
+tests[order(padj)]
 ```
 
 Non-responders vs. responders
@@ -337,6 +351,25 @@ tests[padj < 0.05]
 For genera:
 
 ```{r}
+library(corncob)
+
+genera <- subset_samples(treat, TimepointCat == "before") %>% collapse("Genus", 1e-3, 0.8)
+
+tests <- differentialTest(
+  formula = ~ Response,
+  phi.formula = ~ 1,
+  formula_null = ~ 1,
+  phi.formula_null = ~ 1,
+  data = genera,
+  test = "LRT",
+  boot = F
+) %>% results_table()
+
+fwrite(tests, "data/tests_duration_genus_before.csv")
+tests[order(padj)]
+```
+
+```{r}
 genera <- subset_samples(treat, Response != "control") %>% collapse("Genus")
 cats <- levels(sample_data(genera)$TimepointCat)
 
@@ -359,10 +392,10 @@ tests <- lapply(cats, function(cat) {
 ```{r}
 fwrite(tests[order(padj)], "data/tests_duration_genera.csv")
 tests[padj<0.05, table(TimepointCat)]
-tests[padj < 0.05]
+tests[order(padj)]
 ```
 
-## Select phyla
+## Major phyla timecourses
 
 ```{r, fig.height = 4, fig.width = 6}
 shifted <- phyla[Day - duration >= 0 & Day <= 32]
