@@ -141,7 +141,7 @@ permanova
 ```{r}
 library(vegan)
 
-noresp <- subset_samples(treat, Response != "responder") %>% 
+noresp <- subset_samples(treat, TimepointCat == "before") %>% 
           rarefy_even_depth(., 5000)
 counts <- as.matrix(taxa_count(noresp, NA))
 sda <- as(sample_data(noresp), "data.frame")
@@ -166,7 +166,7 @@ source("helpers.R")
 ```{r}
 library(corncob)
 
-phylum <- subset_samples(ps, Response != "response" & TimepointCat == "during") %>% collapse("Phylum")
+phylum <- subset_samples(ps, TimepointCat == "before") %>% collapse("Phylum")
 
 tests <- differentialTest(
   formula = ~ Response,
@@ -181,6 +181,28 @@ tests <- differentialTest(
 ```
 
 ```{r}
+fwrite(tests[order(padj)], "data/tests_seaweed_before_phyla.csv")
+tests[order(padj)]
+```
+
+```{r}
+library(corncob)
+
+phylum <- subset_samples(ps, Response != "responder" & TimepointCat == "during") %>% collapse("Phylum")
+
+tests <- differentialTest(
+  formula = ~ Response,
+  phi.formula = ~ 1,
+  formula_null = ~ 1,
+  phi.formula_null = ~ 1,
+  data = phylum,
+  test = "LRT",
+  boot = F
+) %>% results_table()
+tests[order(padj)]
+```
+
+```{r}
 fwrite(tests[order(padj)], "data/tests_seaweed_during_phyla.csv")
 tests[padj < 0.05]
 ```
@@ -188,7 +210,27 @@ tests[padj < 0.05]
 For genera:
 
 ```{r}
-genera <- subset_samples(ps, Response != "responder" & TimepointCat == "during") %>% collapse("Genus")
+genera <- subset_samples(ps, TimepointCat == "before") %>% collapse("Genus")
+
+tests <- differentialTest(
+  formula = ~ Response,
+  phi.formula = ~ 1,
+  formula_null = ~ 1,
+  phi.formula_null = ~ 1,
+  data = genera,
+  test = "LRT",
+  boot = F
+) %>% results_table()
+
+```
+
+```{r}
+fwrite(tests[order(padj)], "data/tests_seaweed_before_genera.csv")
+tests[order(padj)]
+```
+
+```{r}
+genera <- subset_samples(ps, Response != "response" & TimepointCat == "during") %>% collapse("Genus")
 
 tests <- differentialTest(
   formula = ~ Response,
