@@ -182,13 +182,13 @@ Lets see the most prominent pathways in the significant hits.
 
 ```{r, fig.height=40, fig.width=10}
 sig <- tests[padj < 0.05]
-cn <- sig[, .(n=.N, coef=median(log2FoldChange)), by = c("subpathway", "coefficient", "day")][order(day, -n)]
-ggplot(cn, aes(x=n, y=reorder(subpathway, n), fill=coefficient)) + geom_bar(stat="identity", position="stack")
+cn <- sig[, .(n=.N, coef=median(log2FoldChange)), by = c("superpathway", "coefficient", "day")][order(day, -n)]
+ggplot(cn, aes(x=n, y=reorder(superpathway, n), fill=coefficient)) + geom_bar(stat="identity", position="stack")
 ```
 
 Lets have a look at some of the obvious pathways:
 
-```{r, fig.height=8, fig.width=10}
+```{r, fig.height=16, fig.width=10}
 library(viridis)
 library(scales)
 library(pheatmap)
@@ -196,7 +196,7 @@ library(pheatmap)
 pws <- idmap[sig$id, superpathway]
 norm_counts <- t(mbtools::normalize(t(count_mat)))[, meta$day == 29]
 
-keyword <- "Motility"
+keyword <- "Carbo"
 selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
 signs <- sig[grepl(keyword, superpathway), table(sign(log2FoldChange))]
 names(signs) <- c("higher in non-responders", "higer in untreated")

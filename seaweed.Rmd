@@ -55,6 +55,12 @@ ggsave("figures/treatment_seaweed.png", height = 4, width = 8, dpi = 300)
 pl
 ```
 
+Sample sizes:
+
+```{r}
+treated[, uniqueN(sample), by = c("Response", "seaweed")]
+```
+
 We can see that most of the Cyanobacteria and Proteobacteria are actually Chloroplasts and Mitochondria:
 
 ```{r}
@@ -375,6 +381,14 @@ print(nrow(window))
 wilcox.test(weight ~ Response, data=weights[Response != "non-responder" & day>35 & day<40])
 ```
 
+```{r}
+model <- glm(weight ~ day*Response, data=weights)
+summary(model)
+
+model <- lm(weight ~ day*Response, data=weights[Response != "control"])
+summary(model)
+```
+
 ## Diet effect on diversity
 
 ## Shannon index
@@ -416,6 +430,12 @@ pl <- ggplot(phyla[taxa %in% high_taxa],
   labs(x = "day", y = "relative abundance", fill = "phylum")
 ggsave("figures/phyla_day_seaweed.png", height = 5, width = 8, dpi = 300)
 pl
+```
+
+Sample sizes:
+
+```{r}
+phyla[, uniqueN(sample), by = c("Response", "seaweed", "DaysElapsed")][order(Response, seaweed)]
 ```
 
 And the corresponding PERMANOVA:

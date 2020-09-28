@@ -49,7 +49,6 @@ ggplot(cef, aes(x = day, y = concentration, color = response)) +
   geom_hline(yintercept=4, lty="dashed") +
   geom_boxplot(outlier.color = NA) + geom_jitter(height = 0, width = 0.2) +
   labs(y = "fecal concentration [µg/mL]", x="") + guides(color=F) +
-  scale_y_log10() +
   facet_wrap(~ response)
 ggsave("figures/fecal_AB.svg", width=8, height=3)
 ```
@@ -76,7 +75,6 @@ cef <- cefoperazone_plasma[Compound == "Cefoperazone" & `Fragment Ion` == "Cefop
 cef[, "concentration" := coef(mod)[1] * Area * 2/5 * 24 * 1e3]
 ggplot(cef, aes(x = response, y = concentration, color = response)) +
   labs(y = "plasma concentration [ng/mL]", x="") +
-  geom_boxplot() + geom_jitter(height = 0, width = 0.2) +
-  scale_y_log10()
+  geom_boxplot() + geom_jitter(height = 0, width = 0.2)
 ggsave("figures/blood_AB.svg", width=4, height=3)
 ```

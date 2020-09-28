@@ -88,6 +88,12 @@ ggsave("figures/phyla_day_seaweed.png", height = 5, width = 8, dpi = 300)
 pl
 ```
 
+Sample sizes:
+
+```{r}
+phyla[, uniqueN(sample), by = c("Response", "Days", "seaweed")][order(Response, Days)]
+```
+
 ## Differential tests
 
 We will use corn cob to test for differences in abundance between responders and non-responders for each timepoint category.
@@ -103,55 +109,86 @@ source("helpers.R")
 ```{r}
 library(corncob)
 
-phylum <- subset_samples(ps, Response != "control") %>% collapse("Phylum")
-cats <- levels(sample_data(phylum)$TimepointCat)
-xtabs(~ Response + TimepointCat, as(sample_data(phylum), "data.frame"))
+phylum <- subset_samples(ps, TimepointCat == "before") %>% collapse("Phylum")
 
-tests <- lapply(cats, function(cat) {
-  tests <- differentialTest(
-    formula = ~ Response,
-    phi.formula = ~ 1,
-    formula_null = ~ 1,
-    phi.formula_null = ~ 1,
-    data = prune_samples(sample_data(phylum)$TimepointCat == cat, phylum),
-    test = "LRT",
-    boot = F
-  ) %>% results_table()
-  tests$TimepointCat <- cat
-  tests
-}) %>% rbindlist()
+tests <- differentialTest(
+  formula = ~ Response,
+  phi.formula = ~ 1,
+  formula_null = ~ 1,
+  phi.formula_null = ~ 1,
+  data = phylum,
+  test = "LRT",
+  boot = F
+) %>% results_table()
+
 ```
 
 ```{r}
-fwrite(tests[order(padj)], "data/tests_additional_phyla.csv")
-tests[padj<0.05, table(TimepointCat)]
+fwrite(tests[order(padj)], "data/tests_additional_before_phyla.csv")
+tests[order(padj)]
+```
+
+```{r}
+library(corncob)
+
+phylum <- subset_samples(ps, Response != "responder" & TimepointCat == "during") %>% collapse("Phylum")
+
+tests <- differentialTest(
+  formula = ~ Response,
+  phi.formula = ~ 1,
+  formula_null = ~ 1,
+  phi.formula_null = ~ 1,
+  data = phylum,
+  test = "LRT",
+  boot = F
+) %>% results_table()
+tests[order(padj)]
+```
+
+```{r}
+fwrite(tests[order(padj)], "data/tests_additional_during_phyla.csv")
 tests[padj < 0.05]
 ```
 
 For genera:
 
 ```{r}
-genera <- subset_samples(ps, Response != "control") %>% collapse("Genus")
-cats <- levels(sample_data(genera)$TimepointCat)
+genera <- subset_samples(ps, TimepointCat == "before") %>% collapse("Genus")
 
-tests <- lapply(cats, function(cat) {
-  tests <- differentialTest(
-    formula = ~ Response,
-    phi.formula = ~ 1,
-    formula_null = ~ 1,
-    phi.formula_null = ~ 1,
-    data = prune_samples(sample_data(genera)$TimepointCat == cat, genera),
-    test = "LRT",
-    boot = F
-  ) %>% results_table()
-  tests$TimepointCat <- cat
-  tests
-}) %>% rbindlist()
+tests <- differentialTest(
+  formula = ~ Response,
+  phi.formula = ~ 1,
+  formula_null = ~ 1,
+  phi.formula_null = ~ 1,
+  data = genera,
+  test = "LRT",
+  boot = F
+) %>% results_table()
 
 ```
 
 ```{r}
-fwrite(tests[order(padj)], "data/tests_additional_genera.csv")
-tests[padj<0.05, table(TimepointCat)]
-tests[padj < 0.05 & TimepointCat == "before"]
+fwrite(tests[order(padj)], "data/tests_additional_before_genera.csv")
+tests[order(padj)]
 ```
+
+```{r}
+genera <- subset_samples(ps, Response != "control" & TimepointCat == "during") %>% collapse("Genus")
+
+tests <- differentialTest(
+  formula = ~ Response,
+  phi.formula = ~ 1,
+  formula_null = ~ 1,
+  phi.formula_null = ~ 1,
+  data = genera,
+  test = "LRT",
+  boot = F
+) %>% results_table()
+
+```
+
+```{r}
+fwrite(tests[order(padj)], "data/tests_additional_during_genera.csv")
+tests[order(padj)]
+```
+

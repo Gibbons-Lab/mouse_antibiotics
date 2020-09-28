@@ -38,6 +38,17 @@ This leaves us with 48 samples. We will now generate new data from the fitted
 Beta-Binomial of the reference data. Many ASVs will be omitted in that step
 since they have zero counts in all of the control samples.
 
+But before we can check if the used Beta-binomial distributions correspond well to the actual data. We will use the genus level data for this.
+
+```{r, fig.width=12, fig.height=10}
+source("../helpers.R")
+
+most <- collapse(ref, "Genus", 1e-3, 0.9)
+plot_bb_fits(most, bins=10) + theme_bw()
+```
+
+This looks fairly good.
+
 # PERMANOVA power analysis
 
 We will start by testing the power of PERMANOVA. Power will bes estimated across 100
