@@ -2,7 +2,7 @@ This repository contains computational protocols and additional data
 for the manuscript
 
 *Non-responder phenotype reveals apparent microbiome-wide antibiotic tolerance in the murine gut.*<br>
-by Christian Diener#, Anna H. Hoge#, Sean M. Kearney, Ulrike Kusebauch, Sushmita Patwardhan, Robert L. Moritz, Susan E. Erdman, and Sean M. Gibbons
+by Christian Diener#, Anna H. Hoge#, Sean M. Kearney, Ulrike Kusebauch, Sushmita Patwardhan, Robert L. Moritz, Susan E. Erdman, and Sean M. Gibbons.
 [Link to Preprint](https://www.biorxiv.org/content/10.1101/566190v1.abstract)
 ## Installation and setup
 
