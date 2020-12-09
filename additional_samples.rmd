@@ -34,7 +34,7 @@ sample_data(rare)$Days <- factor(sample_data(rare)$Days)
 ord <- ordinate(rare, method="PCoA")
 
 data <- plot_ordination(rare, ord, color="Response", shape="TimepointCat", label="Subject", justDF=T)
-plot_ordination(rare, ord, color="Response", shape="TimepointCat", label="Subject") +
+plot_ordination(rare, ord, color="Response", shape="TimepointCat", label="id") +
     stat_ellipse(data = data[data$TimepointCat == "before", ],
                  aes(group = TimepointCat), type = "t", lty="dashed") +
     stat_ellipse(aes(group = Response), type = "t") +
