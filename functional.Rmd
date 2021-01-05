@@ -204,7 +204,7 @@ keyword <- ""
 selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
 signs <- sig[grepl(keyword, superpathway), table(sign(log2FoldChange))]
 names(signs) <- c("higher in non-responders", "higer in untreated")
-seed <- stringr::str_trunc(sig[grepl(keyword, superpathway), description])
+seed <- sig[grepl(keyword, superpathway), description]
 selected <- as.data.frame(selected)
 selected$description <- seed
 fig_data[["Fig. 5A-E"]] <- selected
