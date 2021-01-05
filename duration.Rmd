@@ -17,6 +17,9 @@ theme_set(theme_bw())
 ps <- readRDS("data/duration_exp.rds")
 
 total <- subset_samples(ps, Spore == 0)
+
+# used to keep track of the raw data for the figures
+fig_data <- list()
 ```
 
 We sill start by building up a dataframe that combines phyla abundances and sample metadata.
@@ -27,6 +30,8 @@ phyla <- taxa_count(total, "Phylum")
 sdata <- as.data.table(as(sample_data(total), "data.frame"))
 phyla <- phyla[sdata, on = c(sample = "Description")]
 head(phyla)
+
+fig_data["Fig. 1B"] <- phyla
 ```
 
 
@@ -95,6 +100,8 @@ chloro_mit <- subset_taxa(ps,
 rel <- data.table(sample = sample_names(ps), 
                   relative = sample_sums(chloro_mit) / sample_sums(ps))
 rel <- sdata[rel, on = c(Description = "sample")]
+
+fig_data[["Fig. 1C"]] <- rel
 ```
 
 Let's have a look at the proportion of Mitochondria or Choloroplasts by duration.
@@ -168,9 +175,10 @@ pl <- plot_ordination(treat, ord, color = "Response",
       stat_ellipse(data=data[data$TimepointCat == "before", ], 
                    aes(group = TimepointCat), lty="dashed") +
       stat_ellipse(aes(group = Response), type = "t") +
-      scale_shape_manual(values = c(before = 1, during = 10, after = 19)) +
+      scale_shape_manual(values = c(before = 1, during = 2, after = 19)) +
       labs(shape = "sample time") + theme_bw()
 
+fig_data["Fig. 1C"] <- data
 ggsave("figures/treatment_pcoa_duration.svg", width = 6, height = 4)
 pl  
 ```
@@ -228,6 +236,7 @@ status_counts <- history[, .(n = .N, duration = duration[1],
                              response = response[1]), 
                          by = c("mouse", "status")]
 status_counts[, duration := factor(duration)]
+fig_data[["Fig. 1D"]] <- status_counts
 ```
 
 Now let's plot all of that:
@@ -281,6 +290,8 @@ pl <- ggplot(shannon[Day >= -1],
   labs(y = "alpha diversity [Shannon index]", x = "days after treatment", color = "") +
   facet_wrap(~ reorder(exposure, duration)) +
   theme(legend.position = c(0.85, 0.25))
+
+fig_data[["Fig. 3A"]] <- shannon
 ggsave("figures/shannon_time.svg", width = 6, height = 4)
 pl
 ```
@@ -297,9 +308,6 @@ nrow(nrc)
 wilcox.test(nrc[Day == 2, shannon], nrc[Day %in% c(6, 8), shannon])
 ```
 
-```{r}
-wilcox.test(r[Response == "non-responder", shannon], r[Response == "control", shannon])
-```
 
 ## Differential tests
 
@@ -461,6 +469,14 @@ pl <- ggplot(shifted[taxa %in% c("Bacteroidetes", "Firmicutes")],
   geom_line(aes(group = interaction(Mouse, taxa)), alpha = 0.5) + 
   facet_wrap(~ Response, nrow = 3, strip.position = "right") + theme_bw() +
   labs(x = "days after treatment", y = "relative abundance")
+
+fig_data[["Fig. 3B"]] <- shifted[taxa %in% c("Bacteroidetes", "Firmicutes")]
 ggsave("figures/bac_firm_time.svg", width = 6, height = 4)
 pl
+```
+
+Finally we will save the raw data for the figures to be filled in by the other notebooks.
+
+```{r}
+saveRDS(fig_data, "data/fig_data.rds")
 ```
