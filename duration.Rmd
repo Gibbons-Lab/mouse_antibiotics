@@ -31,7 +31,7 @@ sdata <- as.data.table(as(sample_data(total), "data.frame"))
 phyla <- phyla[sdata, on = c(sample = "Description")]
 head(phyla)
 
-fig_data["Fig. 1B"] <- phyla
+fig_data[["Fig. 1B"]] <- phyla
 ```
 
 
@@ -178,7 +178,7 @@ pl <- plot_ordination(treat, ord, color = "Response",
       scale_shape_manual(values = c(before = 1, during = 2, after = 19)) +
       labs(shape = "sample time") + theme_bw()
 
-fig_data["Fig. 1C"] <- data
+fig_data[["Fig. 1D"]] <- data
 ggsave("figures/treatment_pcoa_duration.svg", width = 6, height = 4)
 pl  
 ```
@@ -236,7 +236,7 @@ status_counts <- history[, .(n = .N, duration = duration[1],
                              response = response[1]), 
                          by = c("mouse", "status")]
 status_counts[, duration := factor(duration)]
-fig_data[["Fig. 1D"]] <- status_counts
+fig_data[["Fig. 1E"]] <- status_counts
 ```
 
 Now let's plot all of that:

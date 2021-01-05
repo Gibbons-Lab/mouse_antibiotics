@@ -285,5 +285,6 @@ pl
 Finally we save the raw figure data.
 
 ```{r}
+fig_data <- lapply(fig_data, as.data.frame)
 openxlsx::write.xlsx(fig_data[sort(names(fig_data))], "data/TableS1.xlsx")
 ```
