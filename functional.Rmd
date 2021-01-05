@@ -184,7 +184,7 @@ ggsave("figures/volcano_functional.png", height = 3.5, width = 8, dpi = 300)
 
 Lets see the most prominent pathways in the significant hits.
 
-```{r, fig.height=40, fig.width=10}
+```{r, fig.height=10, fig.width=8}
 sig <- tests[padj < 0.05]
 cn <- sig[, .(n=.N, coef=median(log2FoldChange)), by = c("superpathway", "coefficient", "day")][order(day, -n)]
 ggplot(cn, aes(x=n, y=reorder(superpathway, n), fill=coefficient)) + geom_bar(stat="identity", position="stack")
@@ -204,8 +204,9 @@ keyword <- ""
 selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
 signs <- sig[grepl(keyword, superpathway), table(sign(log2FoldChange))]
 names(signs) <- c("higher in non-responders", "higer in untreated")
-rownames(selected) <- stringr::str_trunc(sig[grepl(keyword, superpathway), 
-                                             description], 80)
+seed <- stringr::str_trunc(sig[grepl(keyword, superpathway), description])
+selected <- as.data.frame(selected)
+selected$description <- seed
 fig_data[["Fig. 5A-E"]] <- selected
 ```
 
