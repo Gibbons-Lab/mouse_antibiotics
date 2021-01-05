@@ -22,6 +22,8 @@ meta[, mouse := substr(Sample, 1, 2)]
 meta[, "timepoint_cat" := "before"]
 meta[day >= 27, "timepoint_cat" := "during"]
 meta
+
+fig_data <- readRDS("data/fig_data.rds")
 ```
 
 Now we will load the SEED annotations for the contigs:
@@ -87,6 +89,7 @@ ggplot(red, aes(x = PC1, y = PC2, color = type, shape=timepoint_cat)) + geom_poi
   stat_ellipse(aes(group = type), type = "t") +
   scale_shape_manual(values = c(before = 1, during = 19)) +
   theme_bw()
+fig_data[["Fig. 4A"]] <- red
 ggsave("figures/functional_pca.svg", width = 6, height = 4)
 ```
 
@@ -175,6 +178,7 @@ ggplot(tests, aes(x = log2FoldChange, y = -log10(pvalue),
                      legend.text = element_text(size = 10)) + 
   labs(x = "log2 fold change", color = "") + 
   scale_color_discrete(labels = day_labels)
+fig_data[["Fig. 4B-C"]] <- tests
 ggsave("figures/volcano_functional.png", height = 3.5, width = 8, dpi = 300)
 ```
 
@@ -196,6 +200,16 @@ library(pheatmap)
 pws <- idmap[sig$id, superpathway]
 norm_counts <- t(mbtools::normalize(t(count_mat)))[, meta$day == 29]
 
+keyword <- ""
+selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
+signs <- sig[grepl(keyword, superpathway), table(sign(log2FoldChange))]
+names(signs) <- c("higher in non-responders", "higer in untreated")
+rownames(selected) <- stringr::str_trunc(sig[grepl(keyword, superpathway), 
+                                             description], 80)
+fig_data[["Fig. 5A-E"]] <- selected
+```
+
+```{r}
 keyword <- "Carbo"
 selected <- norm_counts[sig[grepl(keyword, superpathway), id],]
 signs <- sig[grepl(keyword, superpathway), table(sign(log2FoldChange))]
@@ -204,7 +218,7 @@ rownames(selected) <- stringr::str_trunc(sig[grepl(keyword, superpathway),
                                              description], 80)
 anns <- data.frame(type = meta[day == 29, type])
 cols <- list(type = hue_pal()(2))
-names(cols$type) <- levels(anns$type)
+names(cols$type) <- unique(anns$type)
 rownames(anns) <- meta[day == 29, Sample]
 pheatmap(log10(selected + 1), annotation_col = anns, annotation_colors = cols,
          color = viridis(128),
@@ -266,4 +280,10 @@ pl <- ggplot(as_counts, aes(x = id, y = reads + 0.5, col = type)) +
   theme_bw() + labs(x = "Acetyl-CoA synthase", y = "normalized reads")
 ggsave("figures/acoa_synthase.svg", width = 4, height = 3)
 pl
+```
+
+Finally we save the raw figure data.
+
+```{r}
+openxlsx::write.xlsx(fig_data[sort(names(fig_data))], "data/TableS1.xlsx")
 ```

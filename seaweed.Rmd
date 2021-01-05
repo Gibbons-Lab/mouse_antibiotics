@@ -14,6 +14,7 @@ We will start by reading our data and required libraries.
 library(mbtools)
 
 ps <- readRDS("data/seaweed_exp.rds")
+fig_data <- readRDS("data/fig_data.rds")
 ```
 
 We sill start by building up a dataframe that combines phyla abundances and sample metadata.
@@ -23,6 +24,7 @@ phyla <- taxa_count(ps, "Phylum")
 
 sdata <- as.data.table(as(sample_data(ps), "data.frame"))
 phyla <- phyla[sdata, on = c(sample = "CategoricalID")]
+fig_data[["Fig. 2D"]] <- phyla
 head(phyla)
 ```
 
@@ -126,6 +128,7 @@ pl <- plot_ordination(treat, ord, color = "Response",
       stat_ellipse(aes(group = Response), type = "t") +
       scale_shape_manual(values = c(before = 1, during = 10, after = 19)) +
       labs(shape = "sample time") + theme_bw()
+fig_data[["Fig. 2E"]] <- data
 ggsave("figures/treatment_pcoa_seaweed.svg", width = 6, height = 4)
 pl  
 ```
@@ -265,6 +268,7 @@ pl <- ggplot(sdata[DaysElapsed == 31], aes(x = Response, y = 1 / Ct,
   guides(color = "none") + labs(x = "", y = "qPCR abundance [1/Ct]") +
   theme_bw() + theme(axis.text.x = element_text(angle = 30, hjust = 1, 
                                                 vjust = 1)) 
+fig_data[["Fig. 2C"]] <- sdata[DaysElapsed == 31]
 ggsave("figures/qpcr_cycles.svg", width = 1.5, height = 4)
 pl
 ```
@@ -295,6 +299,7 @@ ggplot(rel, aes(x = TimepointCat, y = relative, color = Response)) +
   geom_jitter(width=0.2) +
   labs(x="sample time", y="Mitochondria/Chloroplasts [fraction of total]") +
   theme(axis.text.x = element_text(angle = 30, hjust = 1, vjust = 1))
+fig_data[["Fig. 2B"]] <- rel
 ggsave("figures/seaweed_chloro_mit.svg", width=3, height=4)
 ```
 
@@ -367,6 +372,7 @@ pl <- ggplot(weights, aes(x=day, y=weight)) +
   geom_point(alpha = 0.5) + geom_line(aes(group = Subject), alpha = 0.5) + 
   facet_grid(seaweed ~ Response) + theme_bw() + ylim(15, 23) +
   labs(x = "time [days]", y = "weight [g]") + guides(color = "none")
+fig_data[["Fig. 3C"]] <- weights
 ggsave("figures/weights_seaweed.svg", width = 7, height = 4)
 pl
 ```
@@ -445,4 +451,10 @@ counts <- as.matrix(taxa_count(controls, NA))
 sda <- as(sample_data(controls), "data.frame")
 permanova <- adonis(counts ~ seaweed, data = sda)
 permanova
+```
+
+And let's save the raw figure data again.
+
+```{r}
+saveRDS(fig_data, "data/fig_data.rds")
 ```
